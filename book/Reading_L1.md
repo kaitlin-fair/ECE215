@@ -1,4 +1,4 @@
-> # Lesson 3 -- Circuits 1: Intro to Electrical and Computer Engineering (ECE)
+# Lesson 1 -- Intro to Circuits
 
 ## Learning Outcomes
 
