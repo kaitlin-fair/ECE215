@@ -4,11 +4,9 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Course Info
+  - caption: Course Downloads
     chapters:
-      - file: faq
-  - caption: Readings
+      - file: slides
+  - caption: Block 1 Readings
     chapters:
-      - file: markdown
-      - file: notebooks
-      - file: markdown-notebooks
+      - file: Reading_L1
