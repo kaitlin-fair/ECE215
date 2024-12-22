@@ -1,11 +1,12 @@
-# Welcome to your Jupyter Book
+# Intro to Neuromorphic Engineering
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Welcome to EC215 - Principles of Electronic Cyber Warfare!
 
-Check out the content pages bundled with this sample book to see more.
+You can download your syllabus [here](_static/ECE495_Syllabus_Fall2024.pdf) or find it on our Teams page.  
+
+This page contains the readings for this course by lecture, slides we will use during lectures, and practice problems taht will prepare you for your quizzes, projects, and exams. You can download these files for use throughout the course.
+
+Some of these files will be changed throughout the semester. It's recommended you download prior to the lecture for which the material pertains.
 
 ```{tableofcontents}
 ```
