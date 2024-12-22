@@ -4,9 +4,9 @@ Welcome to EC215 - Principles of Electronic Cyber Warfare!
 
 You can download your syllabus [here](_static/ECE495_Syllabus_Fall2024.pdf) or find it on our Teams page.  
 
-This page contains the readings for this course by lecture, slides we will use during lectures, and practice problems taht will prepare you for your quizzes, projects, and exams. You can download these files for use throughout the course.
+This page contains the readings, slides, and practice problems that you can download for use throughout the course.
 
-Some of these files will be changed throughout the semester. It's recommended you download prior to the lecture for which the material pertains.
+Some of these files will be updated throughout the semester. It's recommended you download files just prior to the lecture for which the material pertains.
 
 ```{tableofcontents}
 ```
