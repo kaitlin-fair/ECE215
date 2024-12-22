@@ -7,6 +7,7 @@ parts:
   - caption: Course Downloads
     chapters:
       - file: slides
+      - file: PPs
   - caption: Block 1 Readings
     chapters:
       - file: Reading_L1

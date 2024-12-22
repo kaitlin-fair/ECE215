@@ -1,4 +1,4 @@
-# Intro to Neuromorphic Engineering
+# Principles of Electronic Cyber Warfare
 
 Welcome to EC215 - Principles of Electronic Cyber Warfare!
 
