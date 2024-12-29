@@ -14,3 +14,4 @@ parts:
       - file: Block1/L02/ECE215_L02_Reading
       - file: Block1/L03/ECE215_L03_Reading
       - file: Block1/L04/ECE215_L04_Reading
+      - file: Block1/L05/ECE215_L05_Reading
