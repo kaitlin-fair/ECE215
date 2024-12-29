@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lesson 4 – Circuit Protection &#8212; ECE215 Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block1/L04/ECE215_L04_Reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Lesson 3 – Series and Parallel Circuits" href="../L03/ECE215_L03_Reading.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215 Course Webpage - Home"/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="ECE215 Course Webpage - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Principles of Electronic Cyber Warfare
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PPs.html">Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../L01/ECE215_L01_Reading.html">Lesson 1 – Intro to Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L02/ECE215_L02_Reading.html">Lesson 2 – KVL and KCL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L03/ECE215_L03_Reading.html">Lesson 3 – Series and Parallel Circuits</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lesson 4 – Circuit Protection</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock1/L04/ECE215_L04_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block1/L04/ECE215_L04_Reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lesson 4 – Circuit Protection</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives-covered-in-this-lesson">Learning Objectives covered in this Lesson</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuses-and-breakers">Fuses and Breakers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-9">Example Problem 9</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lesson-4-circuit-protection">
+<h1>Lesson 4 – Circuit Protection<a class="headerlink" href="#lesson-4-circuit-protection" title="Link to this heading">#</a></h1>
+<section id="learning-objectives-covered-in-this-lesson">
+<h2>Learning Objectives covered in this Lesson<a class="headerlink" href="#learning-objectives-covered-in-this-lesson" title="Link to this heading">#</a></h2>
+<ol class="arabic simple" start="2">
+<li><p>I can determine appropriate circuit breaker values for adequate system protection.</p></li>
+</ol>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>Bad things can happen if we fail to keep electricity under control:
+equipment can be damaged; buildings can catch fire; and people can be
+injured, or even killed. Fortunately, using simple devices like fuses
+and circuit breakers can protect us and our circuits if something goes
+wrong. When selecting fuses and circuit breakers for our circuits, we
+must use sound engineering analysis because selecting the wrong fuse or
+circuit breaker could prevent the circuit from working or be ineffective
+in protecting the circuit. The outcome will be dependent upon whether
+the rating of the fuse or circuit breaker was too high or too low for
+the circuit.</p>
+</section>
+<section id="fuses-and-breakers">
+<h2>Fuses and Breakers<a class="headerlink" href="#fuses-and-breakers" title="Link to this heading">#</a></h2>
+<p>Many of you have probably heard of the term, “short circuit,” and know
+that it’s “bad” (in the smoke pouring out of your electrical device kind
+of “bad”). A short circuit is simply a wire that connects the positive
+terminal of a voltage source directly to the negative terminal as in the
+example circuit below.</p>
+<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings03 ExampleProblem shortcircuit.jpg" src="../../_images/image20.jpeg" /></p>
+<p>Figure 9: A circuit containing a short circuit</p>
+<p>So in this scenario, how much current will be drawn from the source?
+Well, we’ve learned today that solving for a circuit’s equivalent
+resistance allows us to model the circuit as a source and a single
+resistor. So what is the equivalent resistance of the circuit above? If
+we model the wire as a 0-Ω resistor, we can solve for the equivalent
+resistance of the circuit (you saw that they were in parallel already,
+right?):</p>
+<div class="math notranslate nohighlight">
+\[R_{EQ(PARALLEL)} = \frac{(1\ k\Omega)(0\ \Omega)}{(1\ k\Omega) + (0\ \Omega)} = 0\ \Omega\]</div>
+<p>What this means is that the voltage source only “sees” the wire, which
+we modelled as a 0-Ω resistor. Because of this, all of the current will
+flow through the short circuit, leaving none to flow through the
+resistor. Therefore, the circuit can be redrawn as:</p>
+<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings03 ExampleProblem short circuitv2.jpg" src="../../_images/image21.jpeg" /></p>
+<p>Figure 10: An equivalent circuit for a circuit containing a short
+circuit</p>
+<p>Since the wire and the source are parallel, we know 5 V has to drop
+across the wire. Using Ohm’s Law to solve for current,</p>
+<div class="math notranslate nohighlight">
+\[I_{S} = \frac{V_{S}}{R_{EQ}} = \frac{6\ V}{0\ \Omega} = \infty\ A\]</div>
+<p>In reality, the current is not infinite. The wire itself has a small
+amount of resistance, which will keep the current from going to
+infinity.</p>
+<p>The important point, though, is that a short circuit causes a very large
+amount of current to be drawn from the source. In the wiring in a house,
+for example, a short circuit can draw enough current to melt a wire’s
+plastic coating and cause any wood or insulation near the wire to catch
+fire. This, obviously, is a bad thing. In addition to fires, short
+circuits can melt wires and destroy electrical components. To prevent
+this from occurring, engineers incorporate fuses and circuit breakers
+into their designs.</p>
+<p>A fuse is nothing more than a very thin wire which usually allows the
+current of a circuit to flow. Under normal conditions, the current flow
+is low enough for the fuse to act as a simple wire. As the current
+increases, however, the wire begins to heat until at some point, the
+fuse melts, severing the connection and stopping the flow of current.</p>
+<p>The highest current a fuse can handle without melting is the rating of
+the fuse. A fuse rated at 2 amps will be able to handle anything up to 2
+amps. Once the current rises above 2 amps, it will melt.</p>
+<p><img alt="testingfuses" src="../../_images/image22.jpeg" /></p>
+<p>Figure 11: A good fuse and blown fuses (Source:
+<a class="reference external" href="http://Electronicrepairguide.com">Electronicrepairguide.com</a>)</p>
+<p>A circuit breaker (or breaker) has the exact same function as a fuse but
+has an advantage over the fuse in that it doesn’t have to be replaced
+every time it “blows.” Most modern house and aircraft wiring systems
+have circuit breakers while most cars still have fuses. Like the fuse,
+the circuit breaker protects against current surges and has its rated
+capability printed on it. Circuit breakers are a more expensive
+investment at first but, usually, pay for themselves over a lifetime.
+Breakers generally consist of a spring-loaded switch that is held closed
+by a catch. The catch is released when the current level gets too high,
+opening the circuit to prevent damage. Usually, the breaker is reset by
+flipping a lever or pushing a button.</p>
+<p>So what rating do we choose for our fuse or circuit breaker? There are
+two rules to consider when choosing ratings:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. The rating must be higher than the expected current in the circuit.
+
+2. The rating must be lower than the failure point of the wiring.
+</pre></div>
+</div>
+<p>For ECE 315, we will calculate fuse or circuit breaker ratings in a very
+specific way. First, we will calculate the maximum current that could be
+flowing through the fuse or circuit breaker under normal operating
+conditions. Next, we will multiply this current by 1.1 (adding 10% to
+the current), and then we will round that up to the nearest whole or
+half number within the units dictated by proper engineering notation.
+This means that if, after multiplying by 1.1, the current is in
+milliamps, round up to the nearest milliamp, but if the current is in
+amps, round up to the nearest amp.</p>
+<hr class="docutils" />
+<section id="example-problem-9">
+<h3>Example Problem 9<a class="headerlink" href="#example-problem-9" title="Link to this heading">#</a></h3>
+<p>The internal circuitry of a battery powered
+camera is modeled as the resistive circuit below. What fuse rating would
+you choose to protect the circuit?</p>
+<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings04 ExampleProblem fuse andswitch.jpg" src="../../_images/image23.jpeg" /></p>
+<p><strong>Understand:</strong> In order to determine the fuse rating, we must find the
+current drawn from the source. We’ve added a switch which allows current
+to flow through to the 8-kΩ resistor when it’s closed and blocks the
+current when it’s open. And the circuit includes both series and
+parallel conncections. The circuit’s equivalent resistance (and thus the
+source current drawn from the voltage source) will change based on
+whether the switch is open or closed.</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the values of the voltage source and the
+resistors</p></li>
+<li><p><strong>Unknowns:</strong> The total current drawn from the source by the load
+and the fuse rating.</p></li>
+<li><p><strong>Assumptions:</strong> The resistance in the wire is much smaller than
+that of the resistors.</p></li>
+</ul>
+<p><strong>Plan:</strong> We will determine the current drawn from the source when the
+switch is both open and closed. The fuse rating can be determined once
+we see which configuration draws more current.</p>
+<p><strong>Solve:</strong> When the switch is open, no current gets to the 8-kΩ resistor
+and therefore it has no effect on the circuit. If we model the fuse as a
+wire (since we will assume it is not blown) and remove all hanging
+wires/components, the circuit simplifies to the circuit below: a 5.1-V
+source in series with the 1.4-kΩ and the 2-kΩ resistors.</p>
+<p><img alt="" src="../../_images/image24.png" /></p>
+<p>Solving for the equivalent resistance gives us:</p>
+<div class="math notranslate nohighlight">
+\[R_{EQ} = 1.4\ k\Omega + 2\ k\Omega = 3.4\ k\Omega\]</div>
+<p>Redrawing the circuit leads to:</p>
+<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings04 ExampleProblem fuse and switchv3.jpg" src="../../_images/image25.jpeg" /></p>
+<p>Since we model the fuse as a wire, <em>R<sub>EQ</sub></em> drops all 5.1 volts. The
+current through R<sub>EQ</sub> is therefore:</p>
+<div class="math notranslate nohighlight">
+\[I_{EQ} = \frac{V_{S}}{R_{EQ}} = \frac{5.1\ V}{3.4\ k\Omega} = 1.5\ mA\]</div>
+<p>Since <em>R<sub>EQ</sub></em> is in series with the source and the fuse, all three
+devices share the same current. Therefore the fuse rating has to be
+greater than 1.5 mA.</p>
+<p>Now, we will repeat the analysis with the switch closed. Note the switch
+is also modeled as a wire when it’s closed.</p>
+<p><img alt="" src="../../_images/image26.png" /></p>
+<p>The 2 kΩ and 8 kΩ resistors are parallel, so we can combine them with
+the equation:</p>
+<div class="math notranslate nohighlight">
+\[R_{EQ(PARALLEL)} = \frac{(2\ k\Omega)(8\ k\Omega)}{(2\ k\Omega) + (8\ k\Omega)} = 1.6\ k\Omega\]</div>
+<p>We can now redraw the circuit using this value:</p>
+<p><img alt="" src="../../_images/image27.png" /></p>
+<p>We can now find the equivalent resistance for the entire circuit:</p>
+<div class="math notranslate nohighlight">
+\[R_{EQ} = 1.4\ k\Omega + R_{EQ(PARALLEL)} = 1.4\ k\Omega + 1.6\ k\Omega = 3\ k\Omega\]</div>
+<p>Redrawing the circuit leads to:</p>
+<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings04 ExampleProblem fuse and switchv6.jpg" src="../../_images/image28.jpeg" /></p>
+<p>Again, R<sub>EQ</sub> drops all 5.1 volts. The current through R<sub>EQ</sub> is</p>
+<div class="math notranslate nohighlight">
+\[I_{EQ} = \frac{V_{S}}{R_{EQ}} = \frac{5.1\ V}{3\ k\Omega} = 1.7\ mA\]</div>
+<p>With the switch closed, the current through the fuse is 1.7 mA. With the
+switch open, the current through the fuse is only 1.5 mA. Since we want
+the circuit to work whether the switch is open or closed, we need the
+fuse to be rated higher than the highest current, 1.7 mA.</p>
+<p>Since the maximum current through the fuse under normal operating
+conditions is 1.7 mA, we multiplying this by 1.1 to get 1.87 mA.
+Rounding 1.87 mA up to the nearest whole or half number (also the
+nearest milliamp for this problem) gives us a fuse rating of 2 mA.</p>
+<p><strong>Answer:</strong> We would choose a fuse with a 2 mA rating to protect this
+circuit.</p>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block1/L04"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../L03/ECE215_L03_Reading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Lesson 3 – Series and Parallel Circuits</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives-covered-in-this-lesson">Learning Objectives covered in this Lesson</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuses-and-breakers">Fuses and Breakers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-9">Example Problem 9</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
