@@ -10,4 +10,4 @@ parts:
       - file: PPs
   - caption: Block 1 Readings
     chapters:
-      - file: Block1/Reading_L1
+      - file: Block1/L01/ECE215_L01_Reading
