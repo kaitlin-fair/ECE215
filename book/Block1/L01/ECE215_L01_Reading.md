@@ -1,22 +1,10 @@
-> # Lesson 3 -- Circuits 1: Intro to Electrical and Computer Engineering (ECE)
+# Lesson 1 -- Intro to Circuits
 
-## Learning Outcomes
+## Learning Objectives covered in this Lesson
 
-1.  Understand the basic electrical variables and how they interact to
-    produce power.
+1.  I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.
 
-2.  Understand the relationship between the variables in Ohm's Law.
-
-3.  Be able to use Ohm's Law to solve for current, voltage, or
-    resistance in a simple DC circuit.
-
-4.  Understand when Ohm's Law can be used.
-
-5.  Understand the relationship between the variables in the power
-    equation and be able to use the power equation to solve for power,
-    current, or voltage in a simple DC circuit.
-
-## Why Do We Care About ECE?
+## Motivation
 
 We probably don't need to convince you that electricity is useful, but
 perhaps it would be helpful to spend some time thinking about why you,
