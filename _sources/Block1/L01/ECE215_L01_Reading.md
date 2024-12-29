@@ -53,7 +53,7 @@ as you flip those switches.
 > whole? These are all things we'll discuss in the Introduction to
 > Circuits lessons.
 
-### Electric Charges and Voltage
+## Electric Charges and Voltage
 
 Hopefully, you already know what would
 happen if you connected a 9-Volt (V) battery to a simple light bulb.
@@ -196,7 +196,7 @@ connected and no current is flowing.
 ![](./ECE215_L01_media/image6.png)
 
 
-### Current
+## Current, Power, and Resistance
 
 > We know that voltage applies a "pressure" to move electrons, and once
 > we hook a device that supplies a voltage, such as a battery, up to a
@@ -421,7 +421,7 @@ $$\ P = \ IV\  = \ (90mA)(9V)\  = \ 810mW$$
 
 **Answer:** The light bulb consumes 810 mW of power.
 
-## Basic Electrical Devices
+## Basic Electrical Devices and Examples
 
 > Hopefully, you now understand what happens when we connect a battery
 > to a light bulb -- the battery provides a voltage "pressure" that
