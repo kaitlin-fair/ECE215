@@ -12,3 +12,4 @@ parts:
     chapters:
       - file: Block1/L01/ECE215_L01_Reading
       - file: Block1/L02/ECE215_L02_Reading
+      - file: Block1/L03/ECE215_L03_Reading
