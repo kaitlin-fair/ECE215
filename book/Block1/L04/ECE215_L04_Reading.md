@@ -106,7 +106,7 @@ two rules to consider when choosing ratings:
 
     2. The rating must be lower than the failure point of the wiring.
 
-For ECE 315, we will calculate fuse or circuit breaker ratings in a very
+For this course, we will calculate fuse or circuit breaker ratings in a very
 specific way. First, we will calculate the maximum current that could be
 flowing through the fuse or circuit breaker under normal operating
 conditions. Next, we will multiply this current by 1.1 (adding 10% to
