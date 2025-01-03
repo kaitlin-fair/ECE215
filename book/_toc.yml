@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Learning Objectives
+  - caption: Course Learning Objectives
     chapters:
       - file: LOs
   - caption: Course Downloads
