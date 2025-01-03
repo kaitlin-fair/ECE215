@@ -1,10 +1,8 @@
-# Principles of Electronic Cyber Warfare
+# Welcome to ECE215 / ECE215S!
 
-Welcome to EC215 - Principles of Electronic Cyber Warfare!
+Both ECE215 and ECE 215S are titled _Principles of Electronic Cyber Warfare_. 
 
-You can download your syllabus [here](_static/ECE495_Syllabus_Fall2024.pdf) or find it on our Teams page.  
-
-This page contains the readings, slides, and practice problems that you can download for use throughout the course.
+These courses will be taught on a similar schedule utilizing the same course readings, slides, and practice problems that you will find on this website. 
 
 Some of these files will be updated throughout the semester. It's recommended you download files just prior to the lecture for which the material pertains.
 
