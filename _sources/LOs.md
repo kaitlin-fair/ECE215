@@ -2,6 +2,8 @@
 
 This course will focus on specific learning objectives, which are key concepts required to succeed in this course and retain knowledge for future academic and professional endeavors. Your mastery (i.e. understanding) of each learning objective will be assessed with quizzes, projects, and examinations (midterm and final).
 
+You will see each of these learning objectives referenced across course material by the number you see on this list. The objectives are listed in the order in which they will be covered. Specifically, you will see these learning objectives in your syllabus, reading materials, slides, quizzes, and exams. 
+
 ## Block 1: Resistive Circuits Analysis and Power Distribution
 1. I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.
 2. I can determine appropriate circuit breaker values for adequate system protection.
