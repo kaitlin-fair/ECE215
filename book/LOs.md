@@ -4,7 +4,7 @@ This course will focus on specific learning objectives, which are key concepts r
 
 You will see each of these learning objectives referenced across course material by the number you see on this list. The objectives are listed in the order in which they will be covered. Specifically, you will see these learning objectives in your syllabus, reading materials, slides, quizzes, and exams. 
 
-## Block 1: Resistive Circuits Analysis and Power Distribution
+### Block 1: Resistive Circuits Analysis and Power Distribution
 1. I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.
 2. I can determine appropriate circuit breaker values for adequate system protection.
 3. I can calculate the voltages, currents, and power associated with devices in a simple AC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.
@@ -17,7 +17,7 @@ You will see each of these learning objectives referenced across course material
 10. I can calculate the efficiency, source voltage, and current of a power transmission system with AC and DC busses.
 11. I can use a decision matrix to quantitatively compare various measures of merit.
 
-## Block 2: Signal Processing
+### Block 2: Signal Processing
 12. I can graph a given sinusoidal signal (to include DC voltages) in the time and frequency domains and calculate the signal's bandwidth.
 13. I can identify types of ideal filters and their associated cutoff frequency(ies). 
 14. I can determine the output of an ideal filter given an input sinusoidal signal or signal spectrum.
@@ -31,7 +31,7 @@ You will see each of these learning objectives referenced across course material
 22. I can relate digital inputs to digital outputs using tools such as fundamental digital logic gates (AND, OR, NOT), truth tables, and Sum of Products (SOP) and Product of Sums (POS) Boolean expressions.
 23. I can model Moore and Mealy Finite State Machines (FSMs) using tools such as state transition diagrams, transition tables, and combinational and sequential logic circuits.
 
-## Block 3: Communication Systems, Radar, and Electronic Warfare
+### Block 3: Communication Systems, Radar, and Electronic Warfare
 24. I can describe the four types of wireless communication channels, advantages and disadvantages to each, and respective communication types.
 25. I can explain the three basic types of modulation and the motivation behind modulating signals.
 26. I can determine an Amplitude Modulation (AM) system output and modulation index in both time and frequency domains.
