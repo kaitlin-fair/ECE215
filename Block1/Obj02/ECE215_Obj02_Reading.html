@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -475,15 +475,29 @@ two rules to consider when choosing ratings:</p>
 2. The rating must be lower than the failure point of the wiring.
 </pre></div>
 </div>
-<p>For this course, we will calculate fuse or circuit breaker ratings in a very
-specific way. First, we will calculate the maximum current that could be
-flowing through the fuse or circuit breaker under normal operating
-conditions. Next, we will multiply this current by 1.1 (adding 10% to
-the current), and then we will round that up to the nearest whole or
-half number within the units dictated by proper engineering notation.
-This means that if, after multiplying by 1.1, the current is in
-milliamps, round up to the nearest milliamp, but if the current is in
-amps, round up to the nearest amp.</p>
+<p>You have learned how to calculate the expected current at a point in a circuit, so you know how to apply Rule 1. Finding the failure point of the wiring for Rule 2 involves knowing the wire size, or gauge, and material. The larger the diameter of the wire is the more current the wire can safely support, and copper wire can support more current than aluminum wire of the same dimensions. In the United States, we use standard American wire gauges, or AWG, as shown in the chart below from Home Depot. Once you have the values for Rules 1 and 2, you simply pick a fuse or circuit breaker rated in between those values. Stores and websites that sell these parts have many ratings available. For instance, one industry supplier, DigiKey, has well over 100 different fuse ratings for you to choose from.</p>
+<p><img alt="wire conversion chart" src="../../_images/image29.jpeg" />
+Figure 12: Home Depot wire gauge chart (Source: <a class="reference external" href="https://www.homedepot.com/c/ab/how-to-read-a-wire-gauge-chart/9ba683603be9fa5395fab9015a6d2c99">The Home Depot</a>)</p>
+<p>Now you may be thinking, “Great, now I know how to design circuit protection in real life!” You are welcome. However, you may also be wondering, “In this class do I have to consult an AWG chart and look up an electronics supply website every time I do a fuse or circuit breaker problem?!” No, in this class you will not need to worry about the wire gauges. Instead, after you find the expected, or nominal, current value for Rule 1, you will add 10% and 50% more to it. Then, in lieu of checking what values a company has available, you will select from a provided table of potential ratings for your fuse or circuit breaker.</p>
+<p>As a simple example, say you calculated the nominal current to be 10A in a given problem. You then multiply 10A by 1.1 and 1.5 to get a range of 11A-15A. You will then check the table provided for that problem and choose the appropriate one.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fuse Ratings</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>10A</p></td>
+</tr>
+<tr class="row-odd"><td><p>12A</p></td>
+</tr>
+<tr class="row-even"><td><p>14A</p></td>
+</tr>
+<tr class="row-odd"><td><p>16A</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For this simple example, both 12A and 14A fall within your 11A-15A range, so either rating would be acceptable.</p>
 <hr class="docutils" />
 <p><strong>Example Problem:</strong> The internal circuitry of a battery powered
 camera is modeled as the resistive circuit below. What fuse rating would

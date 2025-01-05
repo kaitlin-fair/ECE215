@@ -106,15 +106,23 @@ two rules to consider when choosing ratings:
 
     2. The rating must be lower than the failure point of the wiring.
 
-For this course, we will calculate fuse or circuit breaker ratings in a very
-specific way. First, we will calculate the maximum current that could be
-flowing through the fuse or circuit breaker under normal operating
-conditions. Next, we will multiply this current by 1.1 (adding 10% to
-the current), and then we will round that up to the nearest whole or
-half number within the units dictated by proper engineering notation.
-This means that if, after multiplying by 1.1, the current is in
-milliamps, round up to the nearest milliamp, but if the current is in
-amps, round up to the nearest amp.
+You have learned how to calculate the expected current at a point in a circuit, so you know how to apply Rule 1. Finding the failure point of the wiring for Rule 2 involves knowing the wire size, or gauge, and material. The larger the diameter of the wire is the more current the wire can safely support, and copper wire can support more current than aluminum wire of the same dimensions. In the United States, we use standard American wire gauges, or AWG, as shown in the chart below from Home Depot. Once you have the values for Rules 1 and 2, you simply pick a fuse or circuit breaker rated in between those values. Stores and websites that sell these parts have many ratings available. For instance, one industry supplier, DigiKey, has well over 100 different fuse ratings for you to choose from. 
+
+![wire conversion chart](./ECE215_L04_media/media/image29.jpeg)
+Figure 12: Home Depot wire gauge chart (Source: [The Home Depot](https://www.homedepot.com/c/ab/how-to-read-a-wire-gauge-chart/9ba683603be9fa5395fab9015a6d2c99))
+
+Now you may be thinking, "Great, now I know how to design circuit protection in real life!" You are welcome. However, you may also be wondering, "In this class do I have to consult an AWG chart and look up an electronics supply website every time I do a fuse or circuit breaker problem?!" No, in this class you will not need to worry about the wire gauges. Instead, after you find the expected, or nominal, current value for Rule 1, you will add 10% and 50% more to it. Then, in lieu of checking what values a company has available, you will select from a provided table of potential ratings for your fuse or circuit breaker.
+
+As a simple example, say you calculated the nominal current to be 10A in a given problem. You then multiply 10A by 1.1 and 1.5 to get a range of 11A-15A. You will then check the table provided for that problem and choose the appropriate one.
+
+| Fuse Ratings | 
+|----------|
+| 10A    | 
+| 12A    | 
+| 14A    | 
+| 16A    | 
+
+For this simple example, both 12A and 14A fall within your 11A-15A range, so either rating would be acceptable.
 
 ---------------------------
 **Example Problem:** The internal circuitry of a battery powered
