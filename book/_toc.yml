@@ -10,6 +10,7 @@ parts:
       - file: LOs
   - caption: Course Downloads
     chapters:
+      # - file: _downloads
       - file: _slides
       - file: _PPs
   - caption: Block 1 Readings
