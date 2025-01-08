@@ -1,4 +1,4 @@
-# Slides
+# Slides and Practice Problems
 
 Here you will find the slides used for both ECE215 and ECE215S. These files will be updated throughout the semester and posted as we go. It's recommended you download files just prior to the lecture for which the material pertains.
 
@@ -8,8 +8,8 @@ If the slides are different for ECE215 and ECE215S, you will see two files for t
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
 |----------|----------|----------|----------|
 | 1.0  | [Course Overview L1](_static/ECE215_L01.pdf)  | NA |  |
-| 1.1  | [Obj1 L2-4ish](_static/B1_Obj01_DCcircuits_Slides.pdf)  |  | |
-| 1.2  | Obj2 L5 coming soon |  | |
+| 1.1  | [Obj1 L2-4ish](_static/B1_Obj01_DCcircuits_Slides.pdf)  |  | [LO1.1 Pt1](_static/PPs/ECE215_PP01_answers.pdf), [LO1.1 Pt2](_static/PPs/ECE215_PP02_answers.pdf), [LO1.1 Pt3](_static/PPs/ECE215_PP03_answers.pdf), [LO1.1 Pt4](_static/PPs/ECE215_PP04_answers.pdf)   |
+| 1.2  | Obj2 L5 coming soon |  |  |
 | 1.3  |  |  | |
 | 1.4  |  |  |   |
 | 1.5  |  |  | | 
