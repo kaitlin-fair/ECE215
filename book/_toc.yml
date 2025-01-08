@@ -4,10 +4,12 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Course Downloads
+  - caption: Administrative
     chapters:
       - file: syllabus
       - file: LOs
+  - caption: Course Downloads
+    chapters:
       - file: _slides
       - file: _PPs
   - caption: Block 1 Readings
