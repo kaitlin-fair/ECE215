@@ -1,4 +1,4 @@
-# Slides and Practice Problems
+# Slides and Practice Problems  
 
 **_Slides_**   
 The slides on this page will be used for both ECE215 and ECE215S. These files will be updated throughout the semester and posted as we go. It's recommended you download files just prior to the lecture for which the material pertains.  
@@ -6,7 +6,6 @@ The slides on this page will be used for both ECE215 and ECE215S. These files wi
 If the slides are different for ECE215 and ECE215S, you will see two files for that lecture. Otherwise, just download the single lecture file.  
 
 **_Practice Problems_**  
-
 The practice problems on this page will be used for both ECE215 and ECE215S. These files are homeworks from prior semesters _and will not be graded_. These are meant as a resource to prepare for quizzes. You will find two files for each set of problems - one blank PDF and one with the answers only so that you can check your work. 
 
 Some homework problems span several objectives. For example: PP4 has problems from Objective 1.1 and 1.2. You can therefore see PP4 listed twice within the table, once for each objective. It's the same file, so feel free to only download once.
