@@ -1,8 +1,8 @@
 # Objective 1.1
 
-The objective covered in this reading is the following:
-
-1.1 -  I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.
+| LO# | Description |
+|----------|----------|
+| 1.1 | I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation. |  
 
 ## Intro to Circuits
 
