@@ -1,8 +1,8 @@
 # Objective 1.2
 
-The objective covered in this reading is the following:
-
-1.2 - I can determine appropriate circuit breaker values for adequate system protection.
+| LO# | Description |
+|----------|----------|
+| 1.2 | I can determine appropriate circuit breaker values for adequate system protection. |
 
 ## Circuit Protection
 
