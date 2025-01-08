@@ -4,18 +4,26 @@ This course will focus on specific learning objectives, which are key concepts r
 
 You will see each of these learning objectives referenced across course material by the number you see on this list. The objectives are listed in the order in which they will be covered. Specifically, you will see these learning objectives in your syllabus, reading materials, slides, quizzes, and exams. 
 
+
+| Fuse Ratings | 
+|----------|
+| 10A    | 
+| 12A    | 
+| 14A    | 
+| 16A    | 
+
 ### Block 1: Resistive Circuits Analysis and Power Distribution
-1.1 - I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.  
-1.2 - I can determine appropriate circuit breaker values for adequate system protection.  
-1.3 - I can calculate the voltages, currents, and power associated with devices in a simple AC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.  
-1.4 - I can calculate the RMS values (current and voltage) of an AC signal and understand the relationship between DC-equivalent and average power values.  
-1.5 - I can compute the reactive and apparent power values for an AC-powered circuit.  
-1.6 - I can calculate the efficiency of a system modeled as an electrical circuit.  
-1.7 - I can calculate a transformer's turns ratio, input voltages and currents, and output voltages and currents.   
-1.8 - I can calculate the efficiency, source voltage, and current of a power transmission system with one or more transformers.  
-1.9 - I can calculate the efficiency, source voltage, and current of a power transmission system with one or more power converters.  
-1.10 - I can calculate the efficiency, source voltage, and current of a power transmission system with AC and DC busses.  
-1.11 - I can use a decision matrix to quantitatively compare various measures of merit.  
+| 1.1 | I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation. |  
+| 1.2 | I can determine appropriate circuit breaker values for adequate system protection. |
+| 1.3 | I can calculate the voltages, currents, and power associated with devices in a simple AC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.  |  
+| 1.4 | I can calculate the RMS values (current and voltage) of an AC signal and understand the relationship between DC-equivalent and average power values.  |  
+| 1.5 | I can compute the reactive and apparent power values for an AC-powered circuit.  |  
+| 1.6 | I can calculate the efficiency of a system modeled as an electrical circuit.  |  
+| 1.7 | I can calculate a transformer's turns ratio, input voltages and currents, and output voltages and currents.   |  
+| 1.8 | I can calculate the efficiency, source voltage, and current of a power transmission system with one or more transformers.  |  
+| 1.9 | I can calculate the efficiency, source voltage, and current of a power transmission system with one or more power converters.  |  
+| 1.10 | I can calculate the efficiency, source voltage, and current of a power transmission system with AC and DC busses.  |  
+| 1.11 | I can use a decision matrix to quantitatively compare various measures of merit.  |  
 
 ### Block 2: Signal Processing
 2.1 - I can graph a given sinusoidal signal (to include DC voltages) in the time and frequency domains and calculate the signal's bandwidth.  
