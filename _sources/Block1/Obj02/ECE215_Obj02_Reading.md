@@ -217,11 +217,17 @@ the circuit to work whether the switch is open or closed, we need the
 fuse to be rated higher than the highest current, 1.7 mA.
 
 Since the maximum current through the fuse under normal operating
-conditions is 1.7 mA, we multiplying this by 1.1 to get 1.87 mA.
-Rounding 1.87 mA up to the nearest whole or half number (also the
-nearest milliamp for this problem) gives us a fuse rating of 2 mA.
+conditions is 1.7 mA, we multiply this by 1.1 to get 1.87 mA and by 1.5 to get 2.55 mA. 
 
-**Answer:** We would choose a fuse with a 2 mA rating to protect this
+Next, we select the appropriate fuse from the following table of fuse ratings.
+| Fuse Ratings | 
+|----------|
+| .2mA    | 
+| 2mA    | 
+| 200mA    | 
+| 2A    | 
+
+**Answer:** We would choose the fuse with a 2 mA rating to protect this
 circuit.
 
 ---------------------------
