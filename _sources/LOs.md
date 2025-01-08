@@ -7,7 +7,7 @@ You will see each of these learning objectives referenced across course material
  ### Block 1: Resistive Circuits Analysis and Power Distribution  
 | LO# | Description |
 |----------|----------|
-| 1.1 | I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation. |  
+| [1.1](Block1/Obj01/ECE215_Obj01_Reading) | I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation. |  
 | 1.2 | I can determine appropriate circuit breaker values for adequate system protection. |
 | 1.3 | I can calculate the voltages, currents, and power associated with devices in a simple AC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.  |  
 | 1.4 | I can calculate the RMS values (current and voltage) of an AC signal and understand the relationship between DC-equivalent and average power values.  |  
