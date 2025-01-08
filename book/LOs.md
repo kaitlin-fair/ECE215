@@ -4,11 +4,13 @@ This course will focus on specific learning objectives, which are key concepts r
 
 You will see each of these learning objectives referenced across course material by the number you see on this list. The objectives are listed in the order in which they will be covered. Specifically, you will see these learning objectives in your syllabus, reading materials, slides, quizzes, and exams. 
 
+Note that the number to the left of the decimal for your learning objective is the block number within which the objective resides. The number to the right of the decimal is the objective number within that block, in the order content will be covered.
+
  ### Block 1: Resistive Circuits Analysis and Power Distribution  
 | LO# | Description |
 |----------|----------|
 | [1.1](Block1/Obj01/ECE215_Obj01_Reading) | I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation. |  
-| 1.2 | I can determine appropriate circuit breaker values for adequate system protection. |
+| [1.2](Block1/Obj02/ECE215_Obj02_Reading) | I can determine appropriate circuit breaker values for adequate system protection. |
 | 1.3 | I can calculate the voltages, currents, and power associated with devices in a simple AC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation.  |  
 | 1.4 | I can calculate the RMS values (current and voltage) of an AC signal and understand the relationship between DC-equivalent and average power values.  |  
 | 1.5 | I can compute the reactive and apparent power values for an AC-powered circuit.  |  
