@@ -6,7 +6,7 @@ If the slides are different for ECE215 and ECE215S, you will see two files for t
 
  ### Block 1: Resistive Circuits Analysis and Power Distribution  
 | LO# | Slides | Practice Problems |
-|----------|----------|
+|----------|----------|----------|
 | 1.0  | [Course Overview L1](_static/ECE215_L01.pdf)  | NA |
 | 1.1  | [Obj1 L2-4ish](_static/B1_Obj01_DCcircuits_Slides.pdf)  |  |
 | 1.2  | Obj2 L5 coming soon |  |
