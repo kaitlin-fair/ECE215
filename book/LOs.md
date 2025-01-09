@@ -12,7 +12,7 @@ Note that the number to the left of the decimal for your learning objective is t
 | [1.1](Block1/Obj01/ECE215_Obj01_Reading) | I can calculate the voltages, currents, and power associated with devices in a simple DC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, and the power equation. |  
 | [1.2](Block1/Obj02/ECE215_Obj02_Reading) | I can determine appropriate circuit breaker values for adequate system protection. |
 | [1.3](Block1/Obj03/ECE215_Obj03_Reading) | I can calculate the voltages, currents, instantaneous power, and average power associated with devices in a simple AC-powered circuit using tools such as KVL, KCL, voltage and current dividers, Ohm’s Law, RMS values, and the power equation.  |  
-| 1.4 | I can compute the reactive and apparent power values for an AC-powered circuit.  |  
+| [1.4](https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/) | I can compute the reactive and apparent power values for an AC-powered circuit.  |  
 | 1.5 | I can calculate the efficiency of a system modeled as an electrical circuit.  |  
 | 1.6 | I can calculate a transformer's turns ratio, input voltages and currents, and output voltages and currents.   |  
 | 1.7 | I can calculate the efficiency, source voltage, and current of a power transmission system with one or more transformers.  |  
