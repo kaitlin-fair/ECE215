@@ -162,7 +162,7 @@ wire (since we will assume it is not blown) and remove all hanging
 wires/components, the circuit simplifies to the circuit below: a 5.1-V
 source in series with the 1.4-kΩ and the 2-kΩ resistors.
 
-![](./ECE215_L04_media/media/image24.png)
+![](./ECE215_L04_media/media/image24.jpeg)
 
 Solving for the equivalent resistance gives us:
 
@@ -186,7 +186,7 @@ greater than 1.5 mA.
 Now, we will repeat the analysis with the switch closed. Note the switch
 is also modeled as a wire when it's closed.
 
-![](./ECE215_L04_media/media/image26.png)
+![](./ECE215_L04_media/media/image26.jpeg)
 
 The 2 kΩ and 8 kΩ resistors are parallel, so we can combine them with
 the equation:
@@ -195,7 +195,7 @@ $$R_{EQ(PARALLEL)} = \frac{(2\ k\Omega)(8\ k\Omega)}{(2\ k\Omega) + (8\ k\Omega)
 
 We can now redraw the circuit using this value:
 
-![](./ECE215_L04_media/media/image27.png)
+![](./ECE215_L04_media/media/image27.jpeg)
 
 We can now find the equivalent resistance for the entire circuit:
 
