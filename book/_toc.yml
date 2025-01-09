@@ -22,5 +22,5 @@ parts:
       # - file: Block1/L05/ECE215_L05_Reading
       - file: Block1/Obj01/ECE215_Obj01_Reading
       - file: Block1/Obj02/ECE215_Obj02_Reading
-      - file: Block1/Obj02/ECE215_Obj03_Reading
+      - file: Block1/Obj03/ECE215_Obj03_Reading
 
