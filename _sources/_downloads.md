@@ -17,8 +17,8 @@ Some homework problems span several objectives. For example: PP4 has problems fr
 | 1.0  | [Course Overview L1](_static/ECE215_L01.pdf)  | NA | NA |
 | 1.1  | [L2-4ish](_static/B1_Obj01_DCcircuits_Slides.pdf)  | [PP1](_static/PPs/ECE215_PP01.pdf) <br> [PP2](_static/PPs/ECE215_PP02.pdf) <br> [PP3](_static/PPs/ECE215_PP03.pdf) <br> [PP4](_static/PPs/ECE215_PP04.pdf) | [PP1](_static/PPs/ECE215_PP01_answers.pdf) <br> [PP2](_static/PPs/ECE215_PP02_answers.pdf) <br> [PP3](_static/PPs/ECE215_PP03_answers.pdf) <br> [PP4](_static/PPs/ECE215_PP04_answers.pdf)   |
 | 1.2  | L5 coming soon | [PP4](_static/PPs/ECE215_PP04.pdf) | [PP4](_static/PPs/ECE215_PP04_answers.pdf)   |
-| 1.3  |  |  | |
-| 1.4  |  |  |   |
+| 1.3  | L6 pt1 coming soon | [PP5](_static/PPs/ECE215_PP05.pdf) | [PP5](_static/PPs/ECE215_PP05_answers.pdf)  |
+| 1.4  | L6 pt2 coming soon | [PP6](_static/PPs/ECE215_PP06.pdf) | [PP6](_static/PPs/ECE215_PP06_answers.pdf)   |
 | 1.5  |  |  | | 
 | 1.6  |  |  | |
 | 1.7  |  |  | |
