@@ -150,7 +150,7 @@ units of volts with amps.
 
 This standard format is portrayed graphically in Figure 1.
 
-![](./ECE215_Obj03_media/media/image4.png)
+![](./ECE215_Obj03_media/media/image4.jpeg)
 
 Figure 1: Graphical representation of the AC standard form
 
@@ -251,7 +251,7 @@ $$T = \frac{1}{60\ Hz} = 16.67\ ms$$
 
 **Answer:** The graph of the source current signal is
 
-![](./ECE215_Obj03_media/media/image7.png)
+![](./ECE215_Obj03_media/media/image7.jpeg)
 
 In the previous example, the signal did not have a bias, and we could
 determine the amplitude by knowing that the cosine function varies from
@@ -315,7 +315,7 @@ $$p(8.333\ ms) = i(8.333\ ms)\ v(8.333\ ms) = ( - 1.70\ A)( - 170\ V) = 289\ W$$
 
 If we graph the function *p*(*t*), we get
 
-![](./ECE215_Obj03_media/media/image8.png)
+![](./ECE215_Obj03_media/media/image8.jpeg)
 
 Figure 2: Voltage, current, and power over time for an AC signal
 
