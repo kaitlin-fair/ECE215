@@ -1,0 +1,961 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Objective 1.5 &#8212; ECE215 Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block1Reading/Obj05/ECE215_Obj05_Reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215 Course Webpage - Home"/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="ECE215 Course Webpage - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock1Reading/Obj05/ECE215_Obj05_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block1Reading/Obj05/ECE215_Obj05_Reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Objective 1.5</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#power-generation-and-motors">Power Generation and Motors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motors-and-generators">Motors and Generators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#efficiency-mathbf-eta">Efficiency (<span class="math notranslate nohighlight">\(\mathbf{\eta)}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motor-efficiency">Motor Efficiency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generators">Generators</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#power-generation">Power Generation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-1-5">
+<h1>Objective 1.5<a class="headerlink" href="#objective-1-5" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.5</p></td>
+<td><p>I can calculate the efficiency of a system modeled as an electrical circuit.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="power-generation-and-motors">
+<h2>Power Generation and Motors<a class="headerlink" href="#power-generation-and-motors" title="Link to this heading">#</a></h2>
+<p>We’re fortunate to live in a society that has electrical power at our
+disposal. The simplicity of plugging a device into an outlet makes it
+all too easy to take this for granted. However, this is a very modern
+convenience made possible by many advancements at the end of the 19^th^
+century and throughout the 20^th^ century. The most notable advancements
+were those in generators and motors at the end of the 19^th^ century by
+the electrical engineer Nikola Tesla<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and others that paved the way
+for reliable and cheap electrical power. Due to the importance of motors
+and generators in power generation and distribution, we will cover the
+principles of motors and generators before discussing their efficiencies
+and various sources of electrical power. Interestingly, generators are
+not restricted to powerplants; generators are attached to the turbines
+in many modern aircraft and provide all of the usable electricity for
+the aircraft and its passengers.</p>
+<section id="motors-and-generators">
+<h3>Motors and Generators<a class="headerlink" href="#motors-and-generators" title="Link to this heading">#</a></h3>
+<p>Motors allow us to convert electrical energy into rotational mechanical
+energy. They consume electrical energy and output rotational mechanical
+energy in the form of a rotating shaft which can do work. From there,
+mechanical engineers can convert it into all sorts of other mechanical
+work such as moving a vehicle, raising an elevator, or pumping water.
+Generators simply reverse this process: mechanical energy is used to
+turn a shaft, which outputs electrical energy as it rotates.</p>
+<p><img alt="" src="../../_images/image1.jpg" /></p>
+<p>Figure 1: A 3D cross-section of a DC motor.</p>
+<p>The basic principles of motors are fairly
+straightforward. When two magnets are near each other, they naturally
+want to line up so the “North” end is near the “South” end of the other.
+To leverage this effect, we place a magnet on a shaft that can rotate,
+inside another magnet that stays stationary. In this case, the rotating
+magnet, called the <em>rotor</em>, will perform work in rotating to align
+itself with the outer magnet, called the <em>stator</em>. This can be
+visualized in Figure 1 and Figure 2.</p>
+<p><img alt="" src="../../_images/image29.png" /></p>
+<p>Figure 2: A motor consisting of a rotor and stator</p>
+<p>According to Ampere’s Law, a wire with an electric current going through
+it creates a magnetic field around it. Furthermore, if we coil that wire
+around a ferromagnetic material, such as a block of iron, it strengthens
+the field and makes a magnet with a North and South pole. In fact, it is
+possible to make a very simple electromagnet by wrapping a wire around a
+large nail and then connecting the wire to a battery. However, the most
+useful thing about electromagnets in motors is this: if the direction of
+the current is reversed, the polarity of the magnet switches. This is
+shown in Figure 3 below.</p>
+<p><img alt="" src="../../_images/image36.png" /></p>
+<p>Figure 3: A DC motor with permanent magnet stators and an
+electromagnetic rotor</p>
+<p>When we reverse the polarity, the North and South poles on the rotor
+switch sides, causing a force that tries to place the rotor in the
+opposite position. If we properly time the polarity reversal while the
+rotor is in motion, the rotor tries to align to a new position, creating
+torque as it tries to reach the new position. In essence, a DC motor
+turns by changing the poles on the rotor while the poles on the stator
+are held constant. This effect is visualized in Figure 3.</p>
+<p>In order to properly coordinate the timing of this effect, a DC motor
+uses a commutator and brushes to both transfer the electricity and
+reverse the polarity. A <em>commutator</em> is a metal strip on the outside of
+the shaft which provides metal conductivity from the rotating shaft to
+the coils on the rotor. <em>Brushes</em> are metal strips (or a roller) that
+touch the commutator and provide the electric source. While not
+completely accurate, think of the commutator and brushes as the voltage
+source (+ V – and – V +) in Figure 3. Every time the shaft completes
+half a rotation, the commutators switch which charged brush (positive or
+negative) they are connected to. Therefore, the current is reversed and
+so is the polarity of the electromagnet, and the motor continues to
+spin. The brushes, commutator, and rotor of a DC motor are shown in
+Figure 4.</p>
+<p><img alt="" src="../../_images/image44.png" /></p>
+<p>Figure 4: A view of the commutator and brushes</p>
+<p>Motors can work on either AC or DC electricity, and within each of those
+groups, there are several different designs. However, all are based on
+the concept of magnetic fields trying to align.</p>
+<p>One last note on motors: as with all electrical machines, they are rated
+in how much work they can do per unit time. However, while electrical
+engineers use Watts to rate power, motors are rated in <em>horsepower</em>.
+Horsepower was used for motors and engines before electricity was
+discovered, and the convention stuck. The conversion is one horsepower
+(hp) to 745.7 Watts.</p>
+</section>
+<section id="efficiency-mathbf-eta">
+<h3>Efficiency (<span class="math notranslate nohighlight">\(\mathbf{\eta)}\)</span><a class="headerlink" href="#efficiency-mathbf-eta" title="Link to this heading">#</a></h3>
+<p>As we prepare to move into more real-world scenarios, we need to
+introduce the concept of <em>efficiency</em>. Efficiency is a measure of how
+much power is wasted when we use electricity to do useful tasks. If we
+don’t waste any power, or we use all the power we produce, the
+efficiency of our system is 100%. If we only waste a little power, then
+our efficiency is high (usually, above 95%). If we waste a lot of power,
+our efficiency is low. There are a number of ways to calculate
+efficiency; the one you use depends on what you know about the system at
+hand.</p>
+<div class="math notranslate nohighlight">
+\[
+\eta = \frac{P_{OUT}}{P_{IN}} = \ \frac{P_{USEFUL}}{P_{PRODUCED}} = \ \frac{P_{PRODUCED} - P_{LOSS}}{P_{PRODUCED}} = \frac{P_{USEFUL}}{P_{USEFUL} + P_{LOSS\ }}
+\]</div>
+<p>In the above equation, P<sub>OUT</sub> or P<sub>USEFUL</sub> is the power consumed doing
+useful work, while P<sub>IN</sub> or P<sub>PRODUCED</sub> is the total amount of power the
+source needs to supply to meet the needs of the load and the loss
+(P<sub>LOSS</sub>). Up until this point, we have presented ideal circuits (100%
+efficient) where all of the devices were performing useful functions.
+Most electrical circuits actually lose power somewhere - think of the
+heat radiating off of your laptop after it has run for a while. We can
+model these losses fairly easily by including an additional resistor in
+series with our load. This resistor doesn’t physically exist in the
+circuit, but is useful for helping us understand where the power is
+going. The circuit in Figure 5 illustrates this concept:</p>
+<p><img alt="" src="../../_images/image52.png" /></p>
+<p>Figure 5: Modeling losses in a system with a series resistor</p>
+</section>
+<hr class="docutils" />
+<section id="example-problem-1">
+<h3>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
+<p>An AC-powered rotating beacon, modeled as a <span class="math notranslate nohighlight">\(120 kΩ\)</span> resistor, is to be installed on an aircraft.
+Since the beacon requires <span class="math notranslate nohighlight">\(40 V_{RMS}\)</span> to operate, a resistor is
+placed in series to act as a voltage divider. The aircraft generator
+produces a voltage of <span class="math notranslate nohighlight">\(v(t) = 84.85*\cos(360°*400*t)V_{RMS}\)</span>. If the
+required efficiency for this circuit is 85%, is this a viable option?</p>
+<p><img alt="" src="../../_images/image64.jpeg" /></p>
+<p><strong>Understand:</strong> This is a voltage division problem where the resistor
+<span class="math notranslate nohighlight">\(R\)</span> will drop voltage so the beacon only receives <span class="math notranslate nohighlight">\(40 V_{RMS}\)</span>. In the
+circuit, we want the rotating beacon to operate, so the power consumed
+by the beacon itself is useful. The power consumed by the resistor <span class="math notranslate nohighlight">\(R\)</span>,
+however, is wasted. The power dissipated by the resistor is a loss that
+lowers efficiency. The source needs to provide both the useful power and
+the wasted power to make the circuit work. We can model this scenario as
+the circuit to the right.</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the voltage provided to the circuit is
+<span class="math notranslate nohighlight">\(v(t) = 84.85*\cos(360°*400*t)V_{RMS}\)</span> and the beacon needs <span class="math notranslate nohighlight">\(40 V_{RMS}\)</span>
+, but the efficiency of the overall system needs to be 85%.</p></li>
+<li><p><strong>Unknowns:</strong> The current in the circuit, the resistance of the
+“loss resistor”, the voltage dropped across the “loss resistor”.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Solve:</strong> The first thing we need to do is convert the source voltage
+into RMS. Since no <span class="math notranslate nohighlight">\(V_{Bias}\)</span> was mentioned, we will assume it is zero and
+that the <span class="math notranslate nohighlight">\(V_{RMS}\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[
+V_{RMS} = \frac{V_{m}}{\sqrt{2}} = \frac{84.85}{\sqrt{2}} = 60\ V_{RMS}
+\]</div>
+<p>We know that the source produces <span class="math notranslate nohighlight">\(60 V_{RMS}\)</span> and the beacon drops <span class="math notranslate nohighlight">\(40 V_{RMS}\)</span>
+KVL tells us that <span class="math notranslate nohighlight">\(R\)</span> must drop <span class="math notranslate nohighlight">\(20 V_{RMS}\)</span>.</p>
+<p><img alt="05 Example Problem voltage dividerv2.jpg" src="../../_images/image75.jpeg" /></p>
+<p>Since we know that the current in series components is the same, we can
+determine <span class="math notranslate nohighlight">\(I\)</span> (in <span class="math notranslate nohighlight">\(A_{RMS}\)</span>) from Ohm’s Law at the beacon:</p>
+<div class="math notranslate nohighlight">
+\[
+I_{RMS} = \frac{V_{Beacon}}{R_{Beacon}} = \frac{40{\ V}_{RMS}}{120\ k\Omega} = 333.3\ \mu A_{RMS}
+\]</div>
+<p>We can now determine the power produced by the source:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{S,AVG} = I_{RMS}V_{RMS}
+\]</div>
+<div class="math notranslate nohighlight">
+\[= \left( 333.3\ \mu A_{RMS} \right)\left( 60{\ V}_{RMS} \right)\]</div>
+<div class="math notranslate nohighlight">
+\[= 20\ mW\]</div>
+<p>The power consumed by the beacon is:</p>
+<div class="math notranslate nohighlight">
+\[P_{BEACON,AVG} = I_{RMS}V_{RMS} = \left( 333.3\ \mu A_{RMS} \right)\left( 40\ V_{RMS} \right) = 13.33\ mW\]</div>
+<p>Finally, the efficiency is</p>
+<div class="math notranslate nohighlight">
+\[\eta = \frac{P_{USEFUL}}{P_{PRODUCED}} = \frac{13.33\ mW}{20\ mW} = 0.6667 = 66.67\%\]</div>
+<p><strong>Answer:</strong> No, this is not a viable option since the efficiency is only
+66.67%, which is less than the required 85%.</p>
+</section>
+<section id="motor-efficiency">
+<h3>Motor Efficiency<a class="headerlink" href="#motor-efficiency" title="Link to this heading">#</a></h3>
+<p>Now let’s look at how conservation of power applies within a DC motor.
+Figure 6 shows the relationship between the input electrical power we
+supply to the motor compared to the output power. The input power will
+be the voltage we provide across the terminal of the motor, <span class="math notranslate nohighlight">\(V_T\)</span>,
+times the current going into the motor.</p>
+<p><img alt="" src="../../_images/image86.png" /></p>
+<p>Figure 6: Relationship between input and output power</p>
+<p>Before the electricity gets to the coils on the rotor to create the
+electromagnet, it must pass across the brushes/commutator. As those
+connections are made and switched, there is typically a little sparking.
+This is energy that is lost to heat/light, and we will call this
+<span class="math notranslate nohighlight">\(P_{brush}\)</span>. Within the motor there are resistive (heat) losses due to
+the current flowing through components that have resistance, such as the
+copper wires in the coils. These are called copper losses or <span class="math notranslate nohighlight">\(I^{2}R\)</span>
+losses for this reason. There are core losses within the electromagnet,
+such as the magnetic flux leaking outside the motor and molecules within
+the electromagnet consuming energy. These are lumped as <em>core losses</em>.
+Also, some power is lost to friction of the rotor spinning as well as
+air resistance. These mechanical losses are lumped together as
+<span class="math notranslate nohighlight">\(P_{mech}\)</span>. All that is left is the power transferred out of the motor as
+torque.</p>
+<p>If we model this discussion as a circuit with lossy devices, we would
+get circuit below, where:</p>
+<div class="math notranslate nohighlight">
+\[P_{losses} = P_{brush} + P_{i^{2}R} + P_{core} + P_{mech}\]</div>
+<div class="math notranslate nohighlight">
+\[P_{useful} = \ P_{out}\]</div>
+<p><img alt="" src="../../_images/image96.png" /></p>
+<p>Figure 7: A circuit modeling the losses in a motor</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Symbol</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(P_{brush}\)</span></p></td>
+<td><p>Loss due to sparking during commutation</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(P_{I^2R}\)</span></p></td>
+<td><p>Loss due to resistance of copper wires</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(P_{core}\)</span></p></td>
+<td><p>Loss due to magnetic flux leaking outside the motor</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(P_{mech}\)</span></p></td>
+<td><p>Loss due to friction</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We can use the input and output power to determine the efficiency of the
+motor. The efficiency tells us the percent of the input power that can
+be used at the output.</p>
+<div class="math notranslate nohighlight">
+\[\eta = \frac{P_{out}}{P_{in}} = \frac{P_{in} - P_{losses}}{P_{in}}\]</div>
+</section>
+<hr class="docutils" />
+<section id="example-problem-2">
+<h3>Example Problem 2:<a class="headerlink" href="#example-problem-2" title="Link to this heading">#</a></h3>
+<p>An 87% efficient, 40-hp motor is plugged into a
+standard electrical outlet. How much power will it consume and how much
+current will it draw when operating at rated conditions?</p>
+<p><strong>Understand:</strong> By definition, a motor of a given rated horsepower is
+expected to deliver that quantity of power in a mechanical form at the
+motor shaft. Since the motor is not 100% efficient, we will need to
+supply more power to the motor in order to account for the losses.</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the horsepower rating and the efficiency. We
+also know the outlet is providing 120V<sub>RMS</sub>.</p></li>
+<li><p><strong>Unknowns:</strong> The power and current drawn by the motor.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan:</strong> First, we need to convert the power from hp to W. Then, we
+need to use the efficiency equation to determine the required input
+power. Finally, use the power law to determine the current drawn by the
+motor.</p>
+<p><strong>Solve:</strong> Determine the power delivered to the shaft, in Watts:</p>
+<div class="math notranslate nohighlight">
+\[P_{out} = \ 40\ hp = 40\ hp\frac{745.7\ W}{1\ hp} = \ 29.83\ kW\]</div>
+<p>Then use the efficiency equation to determine the motor’s power
+requirement.</p>
+<div class="math notranslate nohighlight">
+\[\eta = \frac{P_{out}}{P_{in}}\]</div>
+<div class="math notranslate nohighlight">
+\[P_{in} = \frac{P_{out}}{\eta} = \frac{29.83\ kW}{0.87} = 34.29\ kW\]</div>
+<p>Since a standard electrical outlet delivers 120 V<sub>RMS</sub>, we can use the
+average power equation to determine current draw:</p>
+<div class="math notranslate nohighlight">
+\[I_{RMS} = \frac{P_{in}}{V_{RMS}} = \frac{34.29\ kW}{120\ V_{RMS}} = 286\ A_{RMS}\]</div>
+<p><strong>Answer:</strong> The motor will consume <span class="math notranslate nohighlight">\(34.29 kW\)</span> and draw <span class="math notranslate nohighlight">\(286 A_{RMS}\)</span> when
+running at rated conditions.</p>
+</section>
+<section id="generators">
+<h3>Generators<a class="headerlink" href="#generators" title="Link to this heading">#</a></h3>
+<p>Thus far, we’ve exclusively discussed motors and have not really
+mentioned generators. However, generators, except in some very
+specialized cases, look exactly like motors, as illustrated in Figure 8.
+Physically, they are the same. Instead of applying a voltage and
+watching the rotor spin, we can physically spin the rotor to extract
+electrical energy. When the coils of wire on the rotor spin through the
+magnetic field of the stator, a voltage is induced in the coils of wire!</p>
+<p><img alt="" src="../../_images/image104.png" /></p>
+<p>Figure 8: Generator power flow</p>
+<p>In an aircraft, an AC generator is driven by the rotation of the engine,
+and Figure 9 shows the myriad of different generators and motors found
+on a standard aircraft. These generators are typically used to provide
+<span class="math notranslate nohighlight">\(115 V_{RMS}\)</span> running at <span class="math notranslate nohighlight">\(400 Hz\)</span> to the devices on board with some of it
+converted to DC voltage (we’ll talk about how to do that later in this
+block).</p>
+<p><img alt="" src="../../_images/image11.jpg" /></p>
+<p>Figure 9: An example of the power architecture of a commercial aircraft.</p>
+<p>Source: <a class="reference external" href="https://www.greencarcongress.com/2017/11/20171128-efanx.html">https://www.greencarcongress.com/2017/11/20171128-efanx.html</a></p>
+<section id="power-generation">
+<h4>Power Generation<a class="headerlink" href="#power-generation" title="Link to this heading">#</a></h4>
+<p>Although electricity is all around us, very few of us give much thought
+to where it comes from. The power plants are usually, but not always,
+far removed from the population so we simply do not have to deal with
+them on a regular basis.</p>
+<p>This was not always true though. In the late 1800’s, when electricity
+was first beginning to be used, multiple power stations were spread out
+through population centers due to the power losses (in the form of heat)
+caused by resistance in the wires travelling over long distances. The
+advent of transformers helped solve that problem, although it was a
+fierce battle between Thomas Edison and George Westinghouse/Nikola
+Tesla. The next lesson is devoted to explaining how transformers enable
+efficient transmission of power.</p>
+<p>There are many advantages to having power plants far removed from
+population centers. This allows them to:</p>
+<ul class="simple">
+<li><p>Be closer to the fuel/resources which generate the electricity</p></li>
+<li><p>Be large plants which are more efficient due to economy of scale</p></li>
+<li><p>Minimize the impact of exhaust/pollution within the community</p></li>
+</ul>
+<p>As you would expect, power needs vary throughout the day, and those
+needs are classified into into three categories: base power,
+intermediate power, and peak power. Base power is the minimum required
+power to meet the needs of an area. Intermediate power is a predictable
+increase in power demand throughout the day due to normal activities,
+such as lights and kitchen appliances being turned on in the evenings
+when people return home from work. Peak power is the absolute maximum
+power needed to fill unforeseen requirements, such as an especially hot
+or cold day (which means more air conditioners or furnaces are
+operating).</p>
+<p>Almost all electrical power plants share one thing in common:
+electricity is generated by turning the shaft of a generator. The most
+common type of power plant is a <em>thermal power plant</em>. In these types of
+plants, water is heated to steam, which then passes through a turbine
+connected to the shaft of the generator. As the steam passes through the
+turbine, it causes the turbine and shaft to rotate, producing electrical
+energy. This process is seen in Figure 10.</p>
+<p><img alt="" src="../../_images/image123.png" /></p>
+<p>Figure 10: A nuclear power plant is an example of a thermal power plant.</p>
+<p>Steam is not the only way the shaft can be turned. Wind, water, expanded
+air, or mechanical energy from a motor can turn the shaft, generating
+electricity. However, more than 70% of our electricity is generated
+using steam to turn large turbines.</p>
+<p>Electricity can be generated by several different sources, but the
+following six sources provide about 96% of our electricity.</p>
+<p><strong>Natural Gas.</strong> Natural gas plants use the expansion of the gas when it
+is burned to turn turbines (though some hybrid plants exist which also
+use steam) and provide approximately 40% of US electricity. Since they
+do not need to heat water for steam, they are very responsive to
+changing power needs and are often used to provide intermediate and peak
+power. While they are not as clean as nuclear plants, they have fewer
+emissions than coal plants. Their most severe disadvantage comes from
+the difficulty and high cost of transporting and storing natural gas in
+bulk due to its low density and instability (it’s prone to erupting into
+flames).</p>
+<p><strong>Nuclear.</strong> These thermal plants provide approximately 20% of US
+electricity and are also used for base loads since they cannot change
+their output quickly. Their primary advantages are that they provide a
+consistent amount of power and tend to be very cost effective. Similar
+to coal plants, they are poor candidates for filling intermediate and
+peak power requirements because they require more than a day to start
+up. In contrast to coal plants, nuclear plants do not emit contaminants
+into the atmosphere. However, the large amount of water required for
+cooling can have an environmental impact. Nuclear plants are a very
+popular electricity source in Europe, where France receives 80% of its
+electricity from nuclear production. On the other hand, construction of
+nuclear plants in the U.S. has stalled due to concerns about radiation
+accidents, such as the one from Three Mile Island in 1979. Furthermore,
+finding a long-term, safe method of disposing of waste products,
+especially for the enriched uranium used to make nuclear weapons, has
+been a significant problem.</p>
+<p><strong>Coal</strong>. These thermal plants are used for base loads since they cannot
+change their output quickly. Coal power plants provide 19% of U.S.
+electricity. Their primary advantages are that they provide a consistent
+amount of power and tend to be very cost effective, especially here in
+the U.S. where coal is relatively plentiful. They are poor candidates
+for filling intermediate and peak power requirements because they
+require more than a day to start up. They are also a source of
+pollution, which can damage the environment. The Clean Air Act of 1970
+eliminated a significant amount of pollution caused by coal power
+plants, and now, they are now required to install equipment to limit
+contaminants.</p>
+<p><strong>Wind.</strong> Generating power by using wind to
+turn a turbine accounts for approximately 8% (and rising) of US
+electricity. Wind turbines tend to be cost effective because of their
+use of a renewable resource and are also “clean” (though many detractors
+point to their destruction of landscapes and impact on bird populations
+as environmental concerns). Because power generation is highly variable
+and completely unrelated to power needs, they are not reliable for
+meeting base or peak power needs. Additionally, in order for them to be
+useful in helping with intermediate loads, storage mechanisms are needed
+to keep the energy for periods when it is needed. For example, some wind
+turbine farms can redirect power to move water uphill into tanks where
+it can be released when required to generate hydroelectric power.</p>
+<p><img alt="" src="../../_images/image131.jpeg" /></p>
+<p>Figure 11: Wind turbines</p>
+<p><strong>Hydroelectric.</strong> Dams in the U.S. provide 7% of the country’s
+electricity by using moving water to turn a turbine. Once built,
+hydroelectric plants are relatively cost effective (so long as water
+continues to flow) and do not emit contaminants. They are very
+responsive to peak and intermediate power needs because of their ability
+to ramp up power generation by increasing water flow through the plant.
+These advantages make hydroelectric plants extremely popular; however,
+there are a limited number of locations where they can be built. Since
+we have no control over the location of a hydroelectric dam, they can be
+far from population centers, requiring significant infrastructure in
+order to transmit the power.</p>
+<p><strong>Solar.</strong>
+Solar power provides less than 2% of US electricity. There are two types
+of solar energy: thermal and photovoltaic. Thermal, like other thermal
+plants, uses the sun’s energy to heat oil which is then used to boil
+water. Photovoltaic, however, directly uses photons from the sun to
+excite materials like silicon to release electrons, directly creating
+electricity. Since clouds and storms can greatly reduce the power
+generated by solar power, it cannot be used for base or intermediate
+power loads. Even though solar power can be variable, it is used to help
+meet peak demand needs because peak demand tends to occur when the sun
+is at its strongest: during the day and in the summer. The benefits of
+solar are that it is a renewable resource and that it has a low
+operational cost. However, even though efforts are being made to reduce
+the costs associated with solar power, solar panels are expensive and
+require a large initial investment. Also, there are negative
+environmental impacts associated with manufacturing solar panels.
+Lastly, in contrast to wind farms where the land may be used for cattle
+grazing, it is difficult to repurpose the land once a solar farm has
+been built on it.</p>
+<p><img alt="" src="../../_images/image141.jpeg" /></p>
+<p>Figure 12: A photovoltaic solar energy farm.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>For those interested in the history of technology, we highly
+recommend reading <em>Tesla: Inventor of the Electrical Age</em> by W.
+Bernard Carlson.</p>
+</aside>
+</aside>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block1Reading/Obj05"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#power-generation-and-motors">Power Generation and Motors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motors-and-generators">Motors and Generators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#efficiency-mathbf-eta">Efficiency (<span class="math notranslate nohighlight">\(\mathbf{\eta)}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motor-efficiency">Motor Efficiency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generators">Generators</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#power-generation">Power Generation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
