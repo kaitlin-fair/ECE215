@@ -15,14 +15,10 @@ parts:
       # - file: _PPs
   - caption: Block 1 Readings
     chapters:
-      # - file: Block1/L01/ECE215_L01_Reading
-      # - file: Block1/L02/ECE215_L02_Reading
-      # - file: Block1/L03/ECE215_L03_Reading
-      # - file: Block1/L04/ECE215_L04_Reading
-      # - file: Block1/L05/ECE215_L05_Reading
       - file: Block1Reading/Obj01/ECE215_Obj01_Reading
       - file: Block1Reading/Obj02/ECE215_Obj02_Reading
       - file: Block1Reading/Obj03/ECE215_Obj03_Reading
       - url: https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/
         title: Objective 1.4
+      # - file: Block1Reading/Obj05/ECE215_Obj05_Reading
 
