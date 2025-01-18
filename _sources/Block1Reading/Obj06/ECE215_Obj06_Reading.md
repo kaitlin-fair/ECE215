@@ -1,16 +1,8 @@
-# Lesson 9 -- Power Transmission
+# Objective 1.6
 
-## Learning Outcomes
-
-1.  Describe how transformers work, what they do, and how they are used
-    in power transmission systems.
-
-2.  Given a transformer's primary and secondary electrical values
-    (voltage and current), calculate the required turns ratio, and vice
-    versa.
-
-3.  Calculate the efficiency and source voltage of a power transmission
-    system with one or more transformers.
+| LO# | Description |
+|----------|----------|
+| 1.6 | I can use a transformer's turns ratio, input voltages and currents, and output voltages and currents to calculate the efficiency, source voltage, and current of a power transmission system with one or more transformers.  |  
 
 ## Power Transmission
 
@@ -23,7 +15,7 @@ However, looking at the US national and regional power grid layout in
 Figure 1, we see that power transmission distances are not usually
 small.
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image1.png)
+![](./ECE215_Obj06_media/media/image1.png)
 
 Figure 1: US national power grid
 
@@ -34,7 +26,7 @@ scenario, as in Figure 2, where we have a power plant producing DC power
 then transmitting it across a large distance to a house, which consumes
 12kW at 120V.
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image2.png)
+![](./ECE215_Obj06_media/media/image2.png)
 
 Figure 2: Model of DC power transmission system
 
@@ -102,8 +94,8 @@ the ratio N<sub>1</sub>:N<sub>2</sub>, which is the *turns ratio* of the transfo
 this case, N<sub>1</sub> is the number of turns in the primary, and N<sub>2</sub> the
 number of turns in the secondary.
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image3.png)
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image4.png)
+![](./ECE215_Obj06_media/media/image3.png)
+![](./ECE215_Obj06_media/media/image4.png)
 
 Figure 3: The physical configuration of a transformer and a transformer shown in a circuit
 diagram.
@@ -157,7 +149,7 @@ $$a = \frac{N_{1}}{N_{2}} = \frac{V_{1}}{V_{2}} = \frac{I_{2}}{I_{1}}$$
 Sometimes, when we draw transformers, it is more convenient to draw
 block diagrams:
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image5.png)
+![](./ECE215_Obj06_media/media/image5.png)
 
 Figure 4: Block diagram of a transformer with a voltage source and load
 
@@ -177,7 +169,7 @@ A transformer with 100 turns on the primary and
 source to a 100-Ω load. How much power does the resistor consume? How
 much power does the source provide?
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image6.png)
+![](./ECE215_Obj06_media/media/image6.png)
 
 **Understand:** We have two circuits here that interact through a
 transformer. On the left, the voltage source provides power to the
@@ -247,7 +239,7 @@ resistance of 5 Ω (roughly equivalent to a single 20 mm diameter
 aluminum wire), and the home runs on 120 V<sub>RMS</sub>. What is the efficiency
 of the system?
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image7.png)
+![](./ECE215_Obj06_media/media/image7.png)
 
 **Understand:** This system is very similar to the previous problem,
 except the transmission line from the source to the primary side of the
@@ -325,7 +317,7 @@ transformer with a turns ratio of 10:1, while Option B uses a turns
 ratio of 25:1. Calculate the efficiency and required generator voltage
 for both options.
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image8.png)
+![](./ECE215_Obj06_media/media/image8.png)
 
 **Understand:** Here we have a block diagram of a power transmission
 system, which is nearly exactly the same as the previous problem. The
@@ -400,11 +392,11 @@ $$V_{S} = \ V_{Line} + \ V_{1} = \ 12.8\ V_{RMS} + \ 250\ V_{RMS}\  = \ \ 262.8\
 Therefore, Option A (with a 10:1 turns ratio) requires a 262.8 V<sub>RMS</sub>
 generator and has a 95.13 % efficiency.
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image9.png)
+![](./ECE215_Obj06_media/media/image9.png)
 
 Now, let's do the same analysis for Option B.
 
-![](./ECE315_B1_L09_PowerTransmission_Reading_23Su_media/media/image10.png)
+![](./ECE215_Obj06_media/media/image10.png)
 
 Since the power and voltage are the same as the previous option, we know
 the current is also the same. Therefore,
