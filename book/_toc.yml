@@ -21,4 +21,5 @@ parts:
       - url: https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/
         title: Objective 1.4
       # - file: Block1Reading/Obj05/ECE215_Obj05_Reading
+      # - file: Block1Reading/Obj06/ECE215_Obj06_Reading
 

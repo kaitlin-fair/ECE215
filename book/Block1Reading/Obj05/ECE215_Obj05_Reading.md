@@ -300,7 +300,7 @@ $$I_{RMS} = \frac{P_{in}}{V_{RMS}} = \frac{34.29\ kW}{120\ V_{RMS}} = 286\ A_{RM
 **Answer:** The motor will consume $34.29 kW$ and draw $286 A_{RMS}$ when
 running at rated conditions.
 
-### Generators
+### Generators - Extra Info
 
 Thus far, we've exclusively discussed motors and have not really
 mentioned generators. However, generators, except in some very
