@@ -22,4 +22,6 @@ parts:
         title: Objective 1.4
       - file: Block1Reading/Obj05/ECE215_Obj05_Reading
       - file: Block1Reading/Obj06/ECE215_Obj06_Reading
+      #- file: Block1Reading/Obj07/ECE215_Obj07_Reading
+      - file: Block1Reading/Obj08/ECE215_Obj08_Reading
 
