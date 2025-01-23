@@ -1,0 +1,1048 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Objective 1.8 &#8212; ECE215 Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block1Reading/Obj08/ECE215_Obj08_reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215 Course Webpage - Home"/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="ECE215 Course Webpage - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj05/ECE215_Obj05_Reading.html">Objective 1.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj06/ECE215_Obj06_Reading.html">Objective 1.6</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock1Reading/Obj08/ECE215_Obj08_reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block1Reading/Obj08/ECE215_Obj08_reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Objective 1.8</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-matrices">Decision Matrices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify">Identify:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknowns">Unknowns:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting">Weighting:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-score">Total Score:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Normalization:</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-1-8">
+<h1>Objective 1.8<a class="headerlink" href="#objective-1-8" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.8</p></td>
+<td><p>I can use a decision matrix to quantitatively compare various measures of merit.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="decision-matrices">
+<h2>Decision Matrices<a class="headerlink" href="#decision-matrices" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>Oftentimes, you find yourself trying to make a decision based on two
+or more different criteria or parameters. For example, suppose you
+want to use your cadet loan to buy a new car. You’re having
+difficulties making a choice, but you know that you want to make a
+decision based solely on cost and fuel economy. In order to decide
+which car is the best for you, you must either convert both parameters
+to a common metric (e.g., cost <em>or</em> fuel economy) or find a way to
+combine the two measures into a single score. The danger of converting
+to a common metric is that, while the measures may seem the same,
+their importance may vary. For example, depending on the situation you
+are in, the one-time cost of buying a car may be more important to you
+than the recurring cost of fuel economy, and vice versa. Common
+metrics don’t allow us to compare the importance of the various
+metrics, and for that reason, we will not be using common metrics in
+ECE 315. In this class, we will be combining the two metrics into a
+single score, and we will do that with <em>decision matrices</em>.</p>
+<p>Decision matrices are tables that allow us to systematically work
+through the metrics of each options to arrive at a single quantified
+score for each option. Once we’ve identified each option’s final
+score, it will be a simple matter to select the option with the best
+score. This is done by following a 5-step process:</p>
+<p><strong>Step 1: Identify the Measures of Merit</strong></p>
+<p>The first thing you need to do is list the metrics we want to use in
+our decision. These metrics are called <em>measures of merit</em> since each
+one should have some sort of quantifiable value for each option under
+consideration. In our car-buying example, the cost of the car will be
+in units of dollars ($), and the value will be somewhere in the
+thousands of dollars. On the other hand, the fuel economy will be in
+units of miles per gallon, and the value will be somewhere in the tens
+of miles per gallon. These values for each option will be need to be
+listed in the decision matrix.</p>
+<p><strong>Step 2: Normalization</strong></p>
+<p>Once you have identified all measures of merit and listed their values
+in the decision matrix, the next step will be convert these values
+into a unit-less range of scores. This process is known as
+<em>normalization</em>. If we think of the different measure of merit values
+as raw values, then normalization works to convert all the raw values
+to normalized scores that do not have units and fall somewhere between
+0 and 1. To begin normalization, we must determine whether to
+<em>maximize</em> or <em>minimize</em> each measure of merit. Going back to our car
+buying example, we would prefer a smaller cost, so we would minimize
+that measure of merit. On the other hand, we would prefer a larger
+fuel economy, so we want to maximize that measure of merit. From this,
+we will be able to see that the “best raw value” for cost will be the
+smallest cost among all of the cars you are considering, and the “best
+raw value” for fuel economy will be the largest fuel economy. Then, we
+can use the following equations to find the normalized scores. In the
+following equations, the “raw value” refers to the value of the
+measure of merit being normalized for each of the options being
+considered.</p>
+</div></blockquote>
+<p><strong>Minimize:</strong> <span class="math notranslate nohighlight">\({Score}_{norm} = \ \ \frac{Best\ Raw\ Value}{Raw\ Value}\)</span>
+<strong>Maximize:</strong><span class="math notranslate nohighlight">\({\ Score}_{norm} = \ \ \frac{Raw\ Value}{Best\ Raw\ Value}\)</span></p>
+<p>As you can see from the minimizing equation, we will have a smaller
+value (the best raw value) divided by a larger value (the raw value), so
+that should make the normalized score less than 1. With the maximizing
+equation, we will always have a smaller value (the raw value) divided by
+a larger value (the best raw value), resulting in a normalized score
+less than 1. To create a normalized score for the option that has the
+best raw value, we plug the best raw value in for the raw value in these
+equations, leading to a normalized score of 1 in both cases.</p>
+<blockquote>
+<div><p><strong>Key Concept</strong>: When normalizing, the score should <strong>always</strong> be less
+than or equal to one. If you end up with a normalized score greater
+than one, then you used the wrong equation.</p>
+<p><strong>Step 3: Weighting</strong></p>
+<p>Once you have normalized all your measures of merit, you still need to
+combine them into a single score. This combination step gives us the
+opportunity to increase the value of one measure over the other by
+assigning <em>weights</em> to the measures of merit. In our car-buying
+example, if you would prefer to pay more now in order to save in
+future gasoline costs, you should give fuel economy a higher weight
+than cost. You could give cost a weight of 40%, or 0.4, and fuel
+economy a weight of 60%, or 0.6. Therefore, we assign weights to each
+measure of merit based on their relative importance where the weights
+must total to 100%, or 1.0. In our example, we could have picked any
+weights for cost and fuel economy as long as they summed to 100%.</p>
+<p><strong>Key Concept</strong>: When assigning weights to measures of merits, the
+weights must sum to 100%.</p>
+<p><strong>Note:</strong> Assigning weights can be a subjective process, and for this
+reason, you need to clearly state the weights you chose and fully
+justify why you chose those weights. This is all a part of sound
+engineering analysis!</p>
+<p>Once we have assigned the weights, we calculate the weighted score for
+each measure of merit for each option. We do this by multiplying the
+normalized score by the measure of merit’s weight.</p>
+<div class="math notranslate nohighlight">
+\[Score_{weighted} = Score_{norm} \times Weight\]</div>
+<p>The weights for each measure of merit and the weighted scores for each
+option’s measures of merit can now be entered into the decision
+matrix.</p>
+<p><strong>Step 4: Calculate Each Option’s Final Score</strong></p>
+<p>Now that you have all the weighted scores for each option, you’ll need
+to sum up the weighted scores for each option to determine the
+option’s total score as follows:</p>
+</div></blockquote>
+<div class="math notranslate nohighlight">
+\[Score_{total} = \ Scor{e_{weighted}}_{1} + Scor{e_{weighted}}_{2} + \ldots + \ Scor{e_{weighted}}_{N}\]</div>
+<blockquote>
+<div><p>At the end of this step, we should have a final score for each option
+that falls somewhere between 1 and 0 which will go in the last column
+of the decision matrix.</p>
+<p><strong>Step 5: Select the Best Option</strong></p>
+<p>The final step is to compare each options final score to pick out the
+best option. In this class, the option with the highest score final
+score will be the best option.</p>
+<p>Let’s now look at some examples for how we can use a decision matrix
+to pick the best option for a given situation.</p>
+<p><strong>Example Problem 1:</strong> A team has identified two options for the power
+supply of a UAS. After finding the efficiencies of the two options,
+you research the costs for each option. Since Option B requires a
+larger transformer and more efficient converter, it costs more. If
+Option A costs $600 and Option B costs $1500, which should the
+government buy? Assume the two measures of merit are cost and
+efficiency and are equally important.</p>
+<p><strong>Understand:</strong> We need to compare options with multiple measures of
+merit to select a winner. This requires us to use step 4 of the
+Engineering Method.</p>
+</div></blockquote>
+</section>
+<section id="identify">
+<h2>Identify:<a class="headerlink" href="#identify" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Knowns</strong>: Measures of merit for the options we are comparing are
+summarized in the following table:</p></li>
+</ul>
+<div align="center">Table 1: UAS power supply options</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p><strong>Cost</strong></p></th>
+<th class="head text-center"><p><strong>Efficiency</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Option A</strong></p></td>
+<td class="text-center"><p>$600</p></td>
+<td class="text-center"><p>95.13%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Option B</strong></p></td>
+<td class="text-center"><p>$1500</p></td>
+<td class="text-center"><p>99.19%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="unknowns">
+<h2>Unknowns:<a class="headerlink" href="#unknowns" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What is the best solution?</p></li>
+<li><p>Normalized Cost and Efficiency scores for both systems</p></li>
+<li><p>Weighted Cost and Efficiency scores for both systems</p></li>
+<li><p>Total Cost and Efficiency scores for both systems</p>
+<ul>
+<li><p><strong>Assumptions:</strong> Since the measures are equally important, each
+will have a weight of 50%, or 0.5.</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p><strong>Plan:</strong> In order to determine which power supply the Government
+should buy, we must determine the normalized and weighted for the
+measures of merit for each option then use the weighted scores to
+calculate the total score for each option. The following expansion of
+the decision matrix is helpful in doing so.</p>
+</div></blockquote>
+<div align="center">Table 2: Empty decision matrix for UAS power supply</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Cost</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Efficiency</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Total</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Weight</strong></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.5</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.5</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Option A</strong></p></td>
+<td class="text-center"><p>$600</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>95.13%</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Option B</strong></p></td>
+<td class="text-center"><p>$1500</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>99.19%</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<div><p>To populate this table, we should calculate the normalized score for
+each option first, then the weighted score for each option, then the
+total scores.</p>
+</div></blockquote>
+</section>
+<section id="normalization">
+<h2>Normalization:<a class="headerlink" href="#normalization" title="Link to this heading">#</a></h2>
+<p><strong>Minimize:</strong> <span class="math notranslate nohighlight">\({Score}_{norm} = \ \ \frac{Best\ Raw\ Value}{Raw\ Value}\)</span></p>
+<p><strong>Maximize:</strong><span class="math notranslate nohighlight">\({\ Score}_{norm} = \ \ \frac{Raw\ Value}{Best\ Raw\ Value}\)</span></p>
+</section>
+<section id="weighting">
+<h2>Weighting:<a class="headerlink" href="#weighting" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[{Score}_{weighted} = {Score}_{norm}*Weight\]</div>
+</div></blockquote>
+</section>
+<section id="total-score">
+<h2>Total Score:<a class="headerlink" href="#total-score" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Score_{total} = Score_{weighted_{cost}} + Score_{weighted_{efficiency}}\]</div>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Best Choice:</strong> the option with the highest total score</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Solve:</strong> Use the plan we created above</p>
+</div></blockquote>
+</section>
+<section id="id1">
+<h2>Normalization:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>a.  <strong>Cost</strong>: We recognize that cost should be minimized; therefore, the
+best cost is option A, which receives a normalized cost score of
+1.0.</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[{Score}_{Norm_{A,cost}} = \frac{Best\ Raw\ Value_{cost}}{Raw\ Value_{A,cost}} = \ \frac{600}{600} = 1.0\]</div>
+<p>To calculate Option B’s cost score, we use the same equation, except
+we use Option B’s cost for the raw value:</p>
+<div class="math notranslate nohighlight">
+\[{Score}_{Norm_{B,cost}} = \frac{Best\ Raw\ Value_{cost}}{Raw\ Value_{B,cost}} = \ \frac{600}{1500} = 0.4\]</div>
+<p>One way to view this number is that in terms of cost, Option B is only
+40% as good as Option A.</p>
+</div></blockquote>
+<p>b.  <strong>Efficiency</strong>: Since we want to maximize efficiency, the best
+efficiency is Option B, so it receives a normalized score of 1.0.
+What about Option A’s efficiency score? If we use the wrong equation
+for efficiency (the one for minimizing a measure), we have:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[{Score}_{Norm_{A,efficiency}} = \frac{Best\ Raw\ Value_{efficiency}}{Raw\ Value_{A,efficiency}} = \ \frac{99.19\%}{95.13\%} = 1.043\]</div>
+<p>Clearly, something is wrong since the answer is above 1. We need to be
+maximizing efficiency, but we used the equation to minimize it.
+Looking at the values given to us, Option B has the better efficiency,
+but we just gave a higher score to Option A. We should use the correct
+equation for maximizing a measure:</p>
+<div class="math notranslate nohighlight">
+\[{Score}_{Norm_{A,efficiency}} = \frac{Raw\ Value_{A,efficiency}}{Best\ Raw\ Value_{efficiency}} = \ \frac{95.13\%}{99.19\%} = 0.959\]</div>
+<p>This time, the value is less than 1. This result makes more sense.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Weighting</strong>: To get the weighted score, we multiply the normalized
+score by the weighting. In our assumptions, we noted that each has a
+weighting of 0.5. Therefore, we have:</p></li>
+</ul>
+<p>c.  <strong>Cost</strong>:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[{Score}_{weighted_{A,cost}} = {Score}_{Norm_{A,cost}}*Weight_{cost} = 1.0*0.5 = 0.5\]</div>
+<div class="math notranslate nohighlight">
+\[{Score}_{weighted_{B,cost}} = {Score}_{Norm_{B,cost}}*Weight_{cost} = 0.4*0.5 = 0.2\]</div>
+</div></blockquote>
+<p>d.  <strong>Efficiency</strong>:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[{Score}_{weighted_{A,efficiency}} = {Score}_{Norm_{A,efficiency}}*Weight_{efficiency} = 0.959*0.5 = 0.480\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[{Score}_{weighted_{B,efficiency}} = {Score}_{Norm_{B,efficiency}}*Weight_{efficiency} = 1.0*0.5 = 0.5\]</div>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Total Score:</strong> this is simply the sum of the weighted scores:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[Score_{total_{A}} = Score_{weighted_{A,cost}} + Score_{weighted_{A,efficiency}} = 0.5 + 0.480 = 0.980\]</div>
+<div class="math notranslate nohighlight">
+\[Score_{total_{B}} = Score_{weighted_{B,cost}} + Score_{weighted_{B,efficiency}} = 0.2 + 0.5 = 0.7\]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Now, we can populate our decision matrix:
+</pre></div>
+</div>
+<div align="center">Table 3: Populated decision matrix for UAS power supply</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Cost</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Efficiency</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Total</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Weight</strong></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.5</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.5</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Option A</strong></p></td>
+<td class="text-center"><p>$600</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0.500</p></td>
+<td class="text-center"><p>95.13%</p></td>
+<td class="text-center"><p>0.959</p></td>
+<td class="text-center"><p>0.480</p></td>
+<td class="text-center"><p>0.980</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Option B</strong></p></td>
+<td class="text-center"><p>$1500</p></td>
+<td class="text-center"><p>0.4</p></td>
+<td class="text-center"><p>0.200</p></td>
+<td class="text-center"><p>99.19%</p></td>
+<td class="text-center"><p>1.000</p></td>
+<td class="text-center"><p>0.500</p></td>
+<td class="text-center"><p>0.700</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><strong>Best choice:</strong> Option A has the highest score and is the best
+choice.</p></li>
+</ul>
+<p><strong>Answer:</strong> The Government should buy Option A.</p>
+<p><strong>Example Problem 2:</strong> Let’s do the same analysis but this time, we’ll
+account for a difference in importance by assigning a weight of 70% to
+efficiency (since it’s a long-term recurring cost) and only 30% to the
+cost.</p>
+<p><strong>Understand:</strong> We need to compare two different options using
+different weights.</p>
+<p><strong>Identify:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns</strong>: We have the cost and efficiency information from the
+previous problem, but we can also reuse the normalized scores since
+the raw values did not change. Therefore, we have the following
+decision matrix.</p></li>
+</ul>
+<div align="center">Table 4: Partially filled in decision matrix for UAS power supply with updated weights</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Cost</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Efficiency</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Total</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Weight</strong></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.3</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.7</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Option A</strong></p></td>
+<td class="text-center"><p>$600</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0.500</p></td>
+<td class="text-center"><p>95.13%</p></td>
+<td class="text-center"><p>0.959</p></td>
+<td class="text-center"><p>0.480</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Option B</strong></p></td>
+<td class="text-center"><p>$1500</p></td>
+<td class="text-center"><p>0.4</p></td>
+<td class="text-center"><p>0.200</p></td>
+<td class="text-center"><p>99.19%</p></td>
+<td class="text-center"><p>1.000</p></td>
+<td class="text-center"><p>0.500</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We also know that the cost and efficiency weights should be updated to
+0.3 and 0.7, respectively.</p>
+<ul class="simple">
+<li><p><strong>Unknowns:</strong></p>
+<ul>
+<li><p>Weighted scores for each option</p></li>
+<li><p>Total score for each option</p></li>
+<li><p>What is the best solution?</p></li>
+</ul>
+</li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan:</strong> We need to use the provided weights to calculate new
+weighted and total scores for the decision matrix. Since we did this
+in the previous example problem, the calculations are left as an
+exercise for the reader. We will jump straight to the answers.</p>
+<p><strong>Solve:</strong> We have the new decision matrix as:</p>
+<div align="center">Table 5: Populated Decision Matrix for UAS Power Supply with Updated Weights</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Cost</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Efficiency</strong></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head text-center"><p><strong>Total</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Weight</strong></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.3</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>0.7</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p><strong>Value</strong></p></td>
+<td class="text-center"><p><strong>Norm Score</strong></p></td>
+<td class="text-center"><p><strong>Weight Score</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Option A</strong></p></td>
+<td class="text-center"><p>$600</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0.300</p></td>
+<td class="text-center"><p>95.13%</p></td>
+<td class="text-center"><p>0.959</p></td>
+<td class="text-center"><p>0.671</p></td>
+<td class="text-center"><p>0.971</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Option B</strong></p></td>
+<td class="text-center"><p>$1500</p></td>
+<td class="text-center"><p>0.4</p></td>
+<td class="text-center"><p>0.120</p></td>
+<td class="text-center"><p>99.19%</p></td>
+<td class="text-center"><p>1.000</p></td>
+<td class="text-center"><p>0.700</p></td>
+<td class="text-center"><p>0.820</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Answer</strong>: When we compare the scores, we find that Option A is still
+the best choice.</p>
+<p>Our use of normalized scores and weighted scores kept us from assuming
+that the more efficient system was automatically the best choice. If
+we do some more calculations (as shown in Figure <em>1</em> below), we find
+that Option B won’t be chosen until we assign a weight of 94% to
+efficiency and 6% to cost! The difference in efficiency from option A
+to option B is small, but if you plan to run this system for 50 years,
+the cost savings may become that important!</p>
+<p><img alt="" src="../../_images/figure1.png" /></p>
+<div align="center">Figure 1: Cost weight vs. total score for Options A and B</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block1Reading/Obj08"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-matrices">Decision Matrices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify">Identify:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknowns">Unknowns:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting">Weighting:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-score">Total Score:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Normalization:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
