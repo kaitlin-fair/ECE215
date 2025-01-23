@@ -19,13 +19,11 @@ Some homework problems span several objectives. For example: PP4 has problems fr
 | 1.2  | [L5](_static/B1_Obj02_CircuitProtection_Slides.pdf) | [PP4](_static/PPs/ECE215_PP04.pdf) | [PP4](_static/PPs/ECE215_PP04_answers.pdf)   |
 | 1.3  | [L6](_static/B1_Obj03_ACcircuits_Slides.pdf) | [PP5](_static/PPs/ECE215_PP05.pdf) | [PP5](_static/PPs/ECE215_PP05_answers.pdf)  |
 | 1.4  | [L7](_static/B1_Obj04_SQpowers_Slides.pdf) | [PP6](_static/PPs/ECE215_PP06.pdf) | [PP6](_static/PPs/ECE215_PP06_answers.pdf)   |
-| 1.5  | [L8 pt1](_static\B1_Obj05_PowerEfficiency_Slides.pdf) |  | | 
-| 1.6  | [L8 pt2](_static\B1_Obj06_XFMRS_Slides.pdf)  |  | |
-| 1.7  | [L9](_static\B1_Obj07_Converters_Slides.pdf)  |  | |
-| 1.8  |  |  | |
-| 1.9  |  |  | |
-| 1.10 |  |  | |
-| 1.11 |  |  | |
+| 1.5  | [L8](_static\B1_Obj05_PowerEfficiency_Slides.pdf) |  | | 
+| 1.6  | [L9](_static\B1_Obj06_XFMRS_Slides.pdf)  |  | |
+| 1.7  | [L10](_static\B1_Obj07_Converters_Slides.pdf)  |  | |
+| 1.8  | L11 coming soon |  | |
+| 1.9  | L12 coming soon |  | |
 
 ### Block 2: Signal Processing
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
