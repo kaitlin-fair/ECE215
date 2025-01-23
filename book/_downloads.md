@@ -22,8 +22,8 @@ Some homework problems span several objectives. For example: PP4 has problems fr
 | 1.5  | [L8](_static\B1_Obj05_PowerEfficiency_Slides.pdf) | [PP7](_static/PPs/ECE215_PP07.pdf) |[PP7](_static/PPs/ECE215_PP07_answers.pdf) | 
 | 1.6  | [L9](_static\B1_Obj06_XFMRS_Slides.pdf)  | [PP8](_static/PPs/ECE215_PP08.pdf) |[PP8](_static/PPs/ECE215_PP08_answers.pdf) |
 | 1.7  | [L10](_static\B1_Obj07_Converters_Slides.pdf)  | [PP9](_static/PPs/ECE215_PP09.pdf) |[PP9](_static/PPs/ECE215_PP09_answers.pdf) |
-| 1.8  | L11 coming soon |  | |
-| 1.9  | L11 coming soon | [PP10](_static/PPs/ECE215_PP10.pdf) | [PP10](_static/PPs/ECE215_PP10_answers.pdf) |
+| 1.8  | Coming soon |  | |
+| 1.9  | [L11](_static\B1_Obj08_DecisionMatrices_Slides.pdf) | [PP10](_static/PPs/ECE215_PP10.pdf) | [PP10](_static/PPs/ECE215_PP10_answers.pdf) |
 
 ### Block 2: Signal Processing
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
