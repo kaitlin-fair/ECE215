@@ -2,7 +2,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: ECE215 Course Webpage
+title: ECE215/S Course Webpage
 author: DFEC
 logo: logo.png
 copyright: '2024'
