@@ -6,7 +6,6 @@
 
 
 # **Understanding Power Converters**  
-### *A Fundamental Component in Electrical and Computer Engineering*
 
 Power converters are essential components in electrical and computer engineering, allowing electrical energy to be transformed to meet the specific voltage, current, and frequency requirements of different electronic systems. They are widely used in consumer electronics, industrial applications, renewable energy systems, and power distribution networks. Understanding how power converters work, their types, and how to select the right one is crucial for engineers working with modern electrical systems.  
 
