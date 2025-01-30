@@ -12,7 +12,7 @@ Some homework problems span several objectives. For example: PP4 has problems fr
 
 
  ### Block 1: Resistive Circuits Analysis and Power Distribution  
-| LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
+| LO# | Slides | Practice Problems (Blank) | Practice Problems (w/ Answers)
 |----------|----------|----------|----------|
 | 1.0  | [Course Overview L1](_static/ECE215_L01.pdf)  | NA | NA |
 | 1.1  | [L2-4](_static/B1_Obj01_DCcircuits_Slides.pdf)  | [PP1](_static/PPs/ECE215_PP01.pdf) <br> [PP2](_static/PPs/ECE215_PP02.pdf) <br> [PP3](_static/PPs/ECE215_PP03.pdf) <br> [PP4](_static/PPs/ECE215_PP04.pdf) | [PP1](_static/PPs/ECE215_PP01_answers.pdf) <br> [PP2](_static/PPs/ECE215_PP02_answers.pdf) <br> [PP3](_static/PPs/ECE215_PP03_answers.pdf) <br> [PP4](_static/PPs/ECE215_PP04_answers.pdf)   |
