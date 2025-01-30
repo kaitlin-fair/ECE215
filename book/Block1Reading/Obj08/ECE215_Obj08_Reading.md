@@ -133,6 +133,7 @@ $$Score_{total} = \ Scor{e_{weighted}}_{1} + Scor{e_{weighted}}_{2} + \ldots + \
  best option. In this class, the option with the highest score final
  score will be the best option.
 
+ ## Examples
  Let's now look at some examples for how we can use a decision matrix
  to pick the best option for a given situation.
 
