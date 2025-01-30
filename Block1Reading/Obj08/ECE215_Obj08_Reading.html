@@ -382,13 +382,14 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-matrices">Decision Matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify">Identify:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknowns">Unknowns:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting">Weighting:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-score">Total Score:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Normalization:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-matrices">Decision Matrices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-identify-the-measures-of-merit"><strong>Step 1: Identify the Measures of Merit</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-normalization"><strong>Step 2: Normalization</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-weighting"><strong>Step 3: Weighting</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-calculate-each-option-s-final-score"><strong>Step 4: Calculate Each Option’s Final Score</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-select-the-best-option"><strong>Step 5: Select the Best Option</strong></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -417,8 +418,7 @@
 </div>
 <section id="decision-matrices">
 <h2>Decision Matrices<a class="headerlink" href="#decision-matrices" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>Oftentimes, you find yourself trying to make a decision based on two
+<p>Oftentimes, you find yourself trying to make a decision based on two
 or more different criteria or parameters. For example, suppose you
 want to use your cadet loan to buy a new car. You’re having
 difficulties making a choice, but you know that you want to make a
@@ -432,14 +432,15 @@ are in, the one-time cost of buying a car may be more important to you
 than the recurring cost of fuel economy, and vice versa. Common
 metrics don’t allow us to compare the importance of the various
 metrics, and for that reason, we will not be using common metrics in
-ECE 315. In this class, we will be combining the two metrics into a
+ECE 215. In this class, we will be combining the two metrics into a
 single score, and we will do that with <em>decision matrices</em>.</p>
 <p>Decision matrices are tables that allow us to systematically work
 through the metrics of each options to arrive at a single quantified
 score for each option. Once we’ve identified each option’s final
 score, it will be a simple matter to select the option with the best
 score. This is done by following a 5-step process:</p>
-<p><strong>Step 1: Identify the Measures of Merit</strong></p>
+<section id="step-1-identify-the-measures-of-merit">
+<h3><strong>Step 1: Identify the Measures of Merit</strong><a class="headerlink" href="#step-1-identify-the-measures-of-merit" title="Link to this heading">#</a></h3>
 <p>The first thing you need to do is list the metrics we want to use in
 our decision. These metrics are called <em>measures of merit</em> since each
 one should have some sort of quantifiable value for each option under
@@ -449,7 +450,9 @@ thousands of dollars. On the other hand, the fuel economy will be in
 units of miles per gallon, and the value will be somewhere in the tens
 of miles per gallon. These values for each option will be need to be
 listed in the decision matrix.</p>
-<p><strong>Step 2: Normalization</strong></p>
+</section>
+<section id="step-2-normalization">
+<h3><strong>Step 2: Normalization</strong><a class="headerlink" href="#step-2-normalization" title="Link to this heading">#</a></h3>
 <p>Once you have identified all measures of merit and listed their values
 in the decision matrix, the next step will be convert these values
 into a unit-less range of scores. This process is known as
@@ -468,9 +471,10 @@ can use the following equations to find the normalized scores. In the
 following equations, the “raw value” refers to the value of the
 measure of merit being normalized for each of the options being
 considered.</p>
-</div></blockquote>
-<p><strong>Minimize:</strong> <span class="math notranslate nohighlight">\({Score}_{norm} = \ \ \frac{Best\ Raw\ Value}{Raw\ Value}\)</span>
-<strong>Maximize:</strong><span class="math notranslate nohighlight">\({\ Score}_{norm} = \ \ \frac{Raw\ Value}{Best\ Raw\ Value}\)</span></p>
+<center>
+<p><strong>Minimize:</strong> <span class="math notranslate nohighlight">\({Score}_{norm} = \ \ \frac{Best\ Raw\ Value}{Raw\ Value}\)</span></p>
+<p><strong>Maximize:</strong><span class="math notranslate nohighlight">\({\ Score}_{norm} = \ \ \frac{Raw\ Value}{Best\ Raw\ Value}\)</span></p>
+</center>
 <p>As you can see from the minimizing equation, we will have a smaller
 value (the best raw value) divided by a larger value (the raw value), so
 that should make the normalized score less than 1. With the maximizing
@@ -483,7 +487,10 @@ equations, leading to a normalized score of 1 in both cases.</p>
 <div><p><strong>Key Concept</strong>: When normalizing, the score should <strong>always</strong> be less
 than or equal to one. If you end up with a normalized score greater
 than one, then you used the wrong equation.</p>
-<p><strong>Step 3: Weighting</strong></p>
+</div></blockquote>
+</section>
+<section id="step-3-weighting">
+<h3><strong>Step 3: Weighting</strong><a class="headerlink" href="#step-3-weighting" title="Link to this heading">#</a></h3>
 <p>Once you have normalized all your measures of merit, you still need to
 combine them into a single score. This combination step gives us the
 opportunity to increase the value of one measure over the other by
@@ -495,12 +502,16 @@ economy a weight of 60%, or 0.6. Therefore, we assign weights to each
 measure of merit based on their relative importance where the weights
 must total to 100%, or 1.0. In our example, we could have picked any
 weights for cost and fuel economy as long as they summed to 100%.</p>
-<p><strong>Key Concept</strong>: When assigning weights to measures of merits, the
+<blockquote>
+<div><p><strong>Key Concept</strong>: When assigning weights to measures of merits, the
 weights must sum to 100%.</p>
-<p><strong>Note:</strong> Assigning weights can be a subjective process, and for this
+</div></blockquote>
+<blockquote>
+<div><p><strong>Note:</strong> Assigning weights can be a subjective process, and for this
 reason, you need to clearly state the weights you chose and fully
 justify why you chose those weights. This is all a part of sound
 engineering analysis!</p>
+</div></blockquote>
 <p>Once we have assigned the weights, we calculate the weighted score for
 each measure of merit for each option. We do this by multiplying the
 normalized score by the measure of merit’s weight.</p>
@@ -509,42 +520,40 @@ normalized score by the measure of merit’s weight.</p>
 <p>The weights for each measure of merit and the weighted scores for each
 option’s measures of merit can now be entered into the decision
 matrix.</p>
-<p><strong>Step 4: Calculate Each Option’s Final Score</strong></p>
+</section>
+<section id="step-4-calculate-each-option-s-final-score">
+<h3><strong>Step 4: Calculate Each Option’s Final Score</strong><a class="headerlink" href="#step-4-calculate-each-option-s-final-score" title="Link to this heading">#</a></h3>
 <p>Now that you have all the weighted scores for each option, you’ll need
 to sum up the weighted scores for each option to determine the
 option’s total score as follows:</p>
-</div></blockquote>
 <div class="math notranslate nohighlight">
 \[Score_{total} = \ Scor{e_{weighted}}_{1} + Scor{e_{weighted}}_{2} + \ldots + \ Scor{e_{weighted}}_{N}\]</div>
-<blockquote>
-<div><p>At the end of this step, we should have a final score for each option
+<p>At the end of this step, we should have a final score for each option
 that falls somewhere between 1 and 0 which will go in the last column
 of the decision matrix.</p>
-<p><strong>Step 5: Select the Best Option</strong></p>
+</section>
+<section id="step-5-select-the-best-option">
+<h3><strong>Step 5: Select the Best Option</strong><a class="headerlink" href="#step-5-select-the-best-option" title="Link to this heading">#</a></h3>
 <p>The final step is to compare each options final score to pick out the
 best option. In this class, the option with the highest score final
 score will be the best option.</p>
 <p>Let’s now look at some examples for how we can use a decision matrix
 to pick the best option for a given situation.</p>
-<p><strong>Example Problem 1:</strong> A team has identified two options for the power
+<blockquote>
+<div><p><strong>Example Problem 1:</strong> A team has identified two options for the power
 supply of a UAS. After finding the efficiencies of the two options,
 you research the costs for each option. Since Option B requires a
 larger transformer and more efficient converter, it costs more. If
 Option A costs $600 and Option B costs $1500, which should the
 government buy? Assume the two measures of merit are cost and
 efficiency and are equally important.</p>
-<p><strong>Understand:</strong> We need to compare options with multiple measures of
-merit to select a winner. This requires us to use step 4 of the
-Engineering Method.</p>
-</div></blockquote>
-</section>
-<section id="identify">
-<h2>Identify:<a class="headerlink" href="#identify" title="Link to this heading">#</a></h2>
+<p><em><strong>Step 1: Identify</strong></em></p>
 <ul class="simple">
 <li><p><strong>Knowns</strong>: Measures of merit for the options we are comparing are
 summarized in the following table:</p></li>
 </ul>
-<div align="center">Table 1: UAS power supply options</div>
+ <div align="center">Table 1: UAS power supply options</div>
+ <center>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p></p></th>
@@ -564,28 +573,26 @@ summarized in the following table:</p></li>
 </tbody>
 </table>
 </div>
-</section>
-<section id="unknowns">
-<h2>Unknowns:<a class="headerlink" href="#unknowns" title="Link to this heading">#</a></h2>
+ </center>
 <ul class="simple">
+<li><p><strong>Unknowns:</strong></p>
+<ul>
 <li><p>What is the best solution?</p></li>
 <li><p>Normalized Cost and Efficiency scores for both systems</p></li>
 <li><p>Weighted Cost and Efficiency scores for both systems</p></li>
-<li><p>Total Cost and Efficiency scores for both systems</p>
-<ul>
+<li><p>Total Cost and Efficiency scores for both systems</p></li>
+</ul>
+</li>
 <li><p><strong>Assumptions:</strong> Since the measures are equally important, each
 will have a weight of 50%, or 0.5.</p></li>
 </ul>
-</li>
-</ul>
-<blockquote>
-<div><p><strong>Plan:</strong> In order to determine which power supply the Government
+<p>In order to determine which power supply the Government
 should buy, we must determine the normalized and weighted for the
 measures of merit for each option then use the weighted scores to
 calculate the total score for each option. The following expansion of
 the decision matrix is helpful in doing so.</p>
-</div></blockquote>
-<div align="center">Table 2: Empty decision matrix for UAS power supply</div>
+ <div align="center">Table 2: Empty decision matrix for UAS power supply</div>
+ <center>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p></p></th>
@@ -638,44 +645,19 @@ the decision matrix is helpful in doing so.</p>
 </tbody>
 </table>
 </div>
-<blockquote>
-<div><p>To populate this table, we should calculate the normalized score for
+</center>
+<p>To populate this table, we should calculate the normalized score for
 each option first, then the weighted score for each option, then the
 total scores.</p>
-</div></blockquote>
-</section>
-<section id="normalization">
-<h2>Normalization:<a class="headerlink" href="#normalization" title="Link to this heading">#</a></h2>
+<p><em><strong>Step 2: Normalization</strong></em></p>
+<center> 
 <p><strong>Minimize:</strong> <span class="math notranslate nohighlight">\({Score}_{norm} = \ \ \frac{Best\ Raw\ Value}{Raw\ Value}\)</span></p>
 <p><strong>Maximize:</strong><span class="math notranslate nohighlight">\({\ Score}_{norm} = \ \ \frac{Raw\ Value}{Best\ Raw\ Value}\)</span></p>
-</section>
-<section id="weighting">
-<h2>Weighting:<a class="headerlink" href="#weighting" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><div class="math notranslate nohighlight">
-\[{Score}_{weighted} = {Score}_{norm}*Weight\]</div>
-</div></blockquote>
-</section>
-<section id="total-score">
-<h2>Total Score:<a class="headerlink" href="#total-score" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><div class="math notranslate nohighlight">
-\[Score_{total} = Score_{weighted_{cost}} + Score_{weighted_{efficiency}}\]</div>
-</div></blockquote>
-<ul class="simple">
-<li><p><strong>Best Choice:</strong> the option with the highest total score</p></li>
-</ul>
-<blockquote>
-<div><p><strong>Solve:</strong> Use the plan we created above</p>
-</div></blockquote>
-</section>
-<section id="id1">
-<h2>Normalization:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<p>a.  <strong>Cost</strong>: We recognize that cost should be minimized; therefore, the
+</center>
+<p><strong>Cost</strong>: We recognize that cost should be minimized; therefore, the
 best cost is option A, which receives a normalized cost score of
 1.0.</p>
-<blockquote>
-<div><div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[{Score}_{Norm_{A,cost}} = \frac{Best\ Raw\ Value_{cost}}{Raw\ Value_{A,cost}} = \ \frac{600}{600} = 1.0\]</div>
 <p>To calculate Option B’s cost score, we use the same equation, except
 we use Option B’s cost for the raw value:</p>
@@ -683,13 +665,11 @@ we use Option B’s cost for the raw value:</p>
 \[{Score}_{Norm_{B,cost}} = \frac{Best\ Raw\ Value_{cost}}{Raw\ Value_{B,cost}} = \ \frac{600}{1500} = 0.4\]</div>
 <p>One way to view this number is that in terms of cost, Option B is only
 40% as good as Option A.</p>
-</div></blockquote>
-<p>b.  <strong>Efficiency</strong>: Since we want to maximize efficiency, the best
+<p><strong>Efficiency</strong>: Since we want to maximize efficiency, the best
 efficiency is Option B, so it receives a normalized score of 1.0.
 What about Option A’s efficiency score? If we use the wrong equation
 for efficiency (the one for minimizing a measure), we have:</p>
-<blockquote>
-<div><div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[{Score}_{Norm_{A,efficiency}} = \frac{Best\ Raw\ Value_{efficiency}}{Raw\ Value_{A,efficiency}} = \ \frac{99.19\%}{95.13\%} = 1.043\]</div>
 <p>Clearly, something is wrong since the answer is above 1. We need to be
 maximizing efficiency, but we used the equation to minimize it.
@@ -699,38 +679,28 @@ equation for maximizing a measure:</p>
 <div class="math notranslate nohighlight">
 \[{Score}_{Norm_{A,efficiency}} = \frac{Raw\ Value_{A,efficiency}}{Best\ Raw\ Value_{efficiency}} = \ \frac{95.13\%}{99.19\%} = 0.959\]</div>
 <p>This time, the value is less than 1. This result makes more sense.</p>
-</div></blockquote>
-<ul class="simple">
-<li><p><strong>Weighting</strong>: To get the weighted score, we multiply the normalized
-score by the weighting. In our assumptions, we noted that each has a
-weighting of 0.5. Therefore, we have:</p></li>
-</ul>
-<p>c.  <strong>Cost</strong>:</p>
-<blockquote>
-<div><div class="math notranslate nohighlight">
+<p><em><strong>Step 3: Weighting</strong></em></p>
+<p>To get the weighted score, we multiply the normalized score by the weighting:</p>
+<div class="math notranslate nohighlight">
+\[{Score}_{weighted} = {Score}_{norm}*Weight\]</div>
+<p>In our assumptions, we noted that each has a weighting of 0.5. Therefore, we have:</p>
+<p><strong>Cost</strong>:</p>
+<div class="math notranslate nohighlight">
 \[{Score}_{weighted_{A,cost}} = {Score}_{Norm_{A,cost}}*Weight_{cost} = 1.0*0.5 = 0.5\]</div>
 <div class="math notranslate nohighlight">
 \[{Score}_{weighted_{B,cost}} = {Score}_{Norm_{B,cost}}*Weight_{cost} = 0.4*0.5 = 0.2\]</div>
-</div></blockquote>
-<p>d.  <strong>Efficiency</strong>:</p>
-<blockquote>
-<div><div class="math notranslate nohighlight">
+<p><strong>Efficiency</strong>:</p>
+<div class="math notranslate nohighlight">
 \[{Score}_{weighted_{A,efficiency}} = {Score}_{Norm_{A,efficiency}}*Weight_{efficiency} = 0.959*0.5 = 0.480\]</div>
-</div></blockquote>
-<blockquote>
-<div><div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[{Score}_{weighted_{B,efficiency}} = {Score}_{Norm_{B,efficiency}}*Weight_{efficiency} = 1.0*0.5 = 0.5\]</div>
-</div></blockquote>
-<ul class="simple">
-<li><p><strong>Total Score:</strong> this is simply the sum of the weighted scores:</p></li>
-</ul>
+<p><em><strong>Step 4: Total Score</strong></em></p>
+<p>This is simply the sum of the weighted scores:</p>
 <div class="math notranslate nohighlight">
 \[Score_{total_{A}} = Score_{weighted_{A,cost}} + Score_{weighted_{A,efficiency}} = 0.5 + 0.480 = 0.980\]</div>
 <div class="math notranslate nohighlight">
 \[Score_{total_{B}} = Score_{weighted_{B,cost}} + Score_{weighted_{B,efficiency}} = 0.2 + 0.5 = 0.7\]</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Now, we can populate our decision matrix:
-</pre></div>
-</div>
+<p>Now, we can populate our decision matrix:</p>
 <div align="center">Table 3: Populated decision matrix for UAS power supply</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -763,7 +733,7 @@ weighting of 0.5. Therefore, we have:</p></li>
 <td class="text-center"><p><strong>Weight Score</strong></p></td>
 <td class="text-center"><p></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><strong>Option A</strong></p></td>
+<tr class="row-even"><td class="text-left"><p>Option A</p></td>
 <td class="text-center"><p>$600</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>0.500</p></td>
@@ -772,7 +742,7 @@ weighting of 0.5. Therefore, we have:</p></li>
 <td class="text-center"><p>0.480</p></td>
 <td class="text-center"><p>0.980</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><strong>Option B</strong></p></td>
+<tr class="row-odd"><td class="text-left"><p>Option B</p></td>
 <td class="text-center"><p>$1500</p></td>
 <td class="text-center"><p>0.4</p></td>
 <td class="text-center"><p>0.200</p></td>
@@ -784,94 +754,20 @@ weighting of 0.5. Therefore, we have:</p></li>
 </tbody>
 </table>
 </div>
-<ul class="simple">
-<li><p><strong>Best choice:</strong> Option A has the highest score and is the best
-choice.</p></li>
-</ul>
-<p><strong>Answer:</strong> The Government should buy Option A.</p>
-<p><strong>Example Problem 2:</strong> Let’s do the same analysis but this time, we’ll
+<p><em><strong>Step 5: Select the Best Option</strong></em></p>
+<p>Option A has the highest score and is the best choice. The Government should buy Option A.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Example Problem 2:</strong> Let’s do the same analysis but this time, we’ll
 account for a difference in importance by assigning a weight of 70% to
 efficiency (since it’s a long-term recurring cost) and only 30% to the
 cost.</p>
-<p><strong>Understand:</strong> We need to compare two different options using
-different weights.</p>
-<p><strong>Identify:</strong></p>
-<ul class="simple">
-<li><p><strong>Knowns</strong>: We have the cost and efficiency information from the
-previous problem, but we can also reuse the normalized scores since
-the raw values did not change. Therefore, we have the following
-decision matrix.</p></li>
-</ul>
-<div align="center">Table 4: Partially filled in decision matrix for UAS power supply with updated weights</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p></p></th>
-<th class="head text-center"><p></p></th>
-<th class="head text-center"><p><strong>Cost</strong></p></th>
-<th class="head text-center"><p></p></th>
-<th class="head text-center"><p></p></th>
-<th class="head text-center"><p><strong>Efficiency</strong></p></th>
-<th class="head text-center"><p></p></th>
-<th class="head text-center"><p><strong>Total</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><strong>Weight</strong></p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p>0.3</p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p>0.7</p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p></p></td>
-<td class="text-center"><p><strong>Value</strong></p></td>
-<td class="text-center"><p><strong>Norm Score</strong></p></td>
-<td class="text-center"><p><strong>Weight Score</strong></p></td>
-<td class="text-center"><p><strong>Value</strong></p></td>
-<td class="text-center"><p><strong>Norm Score</strong></p></td>
-<td class="text-center"><p><strong>Weight Score</strong></p></td>
-<td class="text-center"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><strong>Option A</strong></p></td>
-<td class="text-center"><p>$600</p></td>
-<td class="text-center"><p>1</p></td>
-<td class="text-center"><p>0.500</p></td>
-<td class="text-center"><p>95.13%</p></td>
-<td class="text-center"><p>0.959</p></td>
-<td class="text-center"><p>0.480</p></td>
-<td class="text-center"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><strong>Option B</strong></p></td>
-<td class="text-center"><p>$1500</p></td>
-<td class="text-center"><p>0.4</p></td>
-<td class="text-center"><p>0.200</p></td>
-<td class="text-center"><p>99.19%</p></td>
-<td class="text-center"><p>1.000</p></td>
-<td class="text-center"><p>0.500</p></td>
-<td class="text-center"><p></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>We also know that the cost and efficiency weights should be updated to
-0.3 and 0.7, respectively.</p>
-<ul class="simple">
-<li><p><strong>Unknowns:</strong></p>
-<ul>
-<li><p>Weighted scores for each option</p></li>
-<li><p>Total score for each option</p></li>
-<li><p>What is the best solution?</p></li>
-</ul>
-</li>
-<li><p><strong>Assumptions:</strong> None.</p></li>
-</ul>
-<p><strong>Plan:</strong> We need to use the provided weights to calculate new
-weighted and total scores for the decision matrix. Since we did this
-in the previous example problem, the calculations are left as an
-exercise for the reader. We will jump straight to the answers.</p>
-<p><strong>Solve:</strong> We have the new decision matrix as:</p>
+<p>We have the cost and efficiency raw values from the previous problem, and we can also reuse the normalized scores since those raw values did not change.
+We know the cost and efficiency weights should be updated to 0.3 and 0.7, respectively.
+Then we simply recalculate new weighted and total scores for the decision matrix.
+Since we did this in the previous example problem, the calculations are left as an exercise for the reader.
+We will jump straight to the answers.</p>
+<p>We have the new decision matrix as:</p>
 <div align="center">Table 5: Populated Decision Matrix for UAS Power Supply with Updated Weights</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -925,17 +821,18 @@ exercise for the reader. We will jump straight to the answers.</p>
 </tbody>
 </table>
 </div>
-<p><strong>Answer</strong>: When we compare the scores, we find that Option A is still
-the best choice.</p>
+<p><strong>Answer</strong>: When we compare the scores, we find that Option A is still the best choice.</p>
 <p>Our use of normalized scores and weighted scores kept us from assuming
 that the more efficient system was automatically the best choice. If
-we do some more calculations (as shown in Figure <em>1</em> below), we find
+we do some more calculations (as shown in Figure 1 below), we find
 that Option B won’t be chosen until we assign a weight of 94% to
 efficiency and 6% to cost! The difference in efficiency from option A
 to option B is small, but if you plan to run this system for 50 years,
 the cost savings may become that important!</p>
 <p><img alt="" src="../../_images/figure1.png" /></p>
 <div align="center">Figure 1: Cost weight vs. total score for Options A and B</div>
+</div></blockquote>
+</section>
 </section>
 </section>
 
@@ -995,13 +892,14 @@ the cost savings may become that important!</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-matrices">Decision Matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify">Identify:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknowns">Unknowns:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting">Weighting:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-score">Total Score:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Normalization:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-matrices">Decision Matrices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-identify-the-measures-of-merit"><strong>Step 1: Identify the Measures of Merit</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-normalization"><strong>Step 2: Normalization</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-weighting"><strong>Step 3: Weighting</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-calculate-each-option-s-final-score"><strong>Step 4: Calculate Each Option’s Final Score</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-select-the-best-option"><strong>Step 5: Select the Best Option</strong></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
