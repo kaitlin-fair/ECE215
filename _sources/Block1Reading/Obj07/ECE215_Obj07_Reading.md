@@ -40,7 +40,7 @@ By using these methods, power converters efficiently transform electrical energy
 
 Power converters are classified into four main types based on their input and output characteristics. Given the ubiquity of AC-DC converters, this reading goes into much more depth for AC-DC converters than the other types of power converters. Those other three types are covered at a high level after the AC-DC converter section - don't forget to read about them, too!  
 
-**Note**: power conversion work-out problems will be covered in class time. This reading details how power conversion works. See the Objective 7 lecture slides for examples of work-out problems. 
+**Note**: power conversion work-out problems will be covered in class time. This reading details how power conversion works. See the Objective 7 lecture slides and practice problems for examples of work-out problems. 
 
 ### **A. AC-DC Converters (Rectifiers)**  
 AC-DC converters transform alternating current (AC) into direct current (DC). Although transformers make it more efficient to transmit AC power over
