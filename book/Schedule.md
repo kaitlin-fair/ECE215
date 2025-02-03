@@ -1,6 +1,6 @@
 # Course Schedule
 
-This is meant to serve an a _notional_ schedule for both ECE215 and ECE215S. We will keep this up to date throughout the semester so come back to this page (not your syllabus) for the schedule closest to reality.
+This is meant to serve an a _notional_ schedule for both ECE215 and ECE215S. We will keep this up to date throughout the semester so come back to this page (not your syllabus) for the schedule closest to reality. If there is a discrepancy between this schedule and a due date on Gradescope, use the due date on Gradescope. 
 
 Note that the schedule may vary across sections given the classes are interactive, but we will attempt to stick closely to what you see here across all sections.  
 
