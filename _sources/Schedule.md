@@ -15,9 +15,9 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 6 | [Obj 1.3](Block1Reading/Obj03/ECE215_Obj03_Reading) | Quiz 1 Due (Obj 1.1-1.2)  |  
 | 7 | [Obj 1.4](https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/) |  |  
 | 8 | [Obj 1.5](Block1Reading/Obj05/ECE215_Obj05_Reading) |   |  
-| 9 | [Obj 1.6](Block1Reading/Obj06/ECE215_Obj06_Reading) |  Quiz 2 Due (Obj 1.3-1.5) |
+| 9 | [Obj 1.6](Block1Reading/Obj06/ECE215_Obj06_Reading) |   |
 | 10 | Obj 1.7 |   |
-| 11 | [Obj 1.8](Block1Reading/Obj08/ECE215_Obj08_Reading) |   |
+| 11 | [Obj 1.8](Block1Reading/Obj08/ECE215_Obj08_Reading) | Quiz 2 Due (Obj 1.3-1.5)   |
 | 12 | Block 1 Wrap-up |   |
 | 13 | Project 1 Workday |   |
 | 14 | Project 1 Workday |   |
