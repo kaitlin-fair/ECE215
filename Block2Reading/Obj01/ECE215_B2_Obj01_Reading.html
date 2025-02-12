@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Objective 1.2 &#8212; ECE215/S Course Webpage</title>
+    <title>Motivation &#8212; ECE215/S Course Webpage</title>
   
   
   
@@ -62,10 +62,12 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Block1Reading/Obj02/ECE215_Obj02_Reading';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block2Reading/Obj01/ECE215_B2_Obj01_Reading';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Motivation" href="../Obj02/ECE215_B2_Obj02_Reading.html" />
+    <link rel="prev" title="Slides and Practice Problems" href="../../_downloads.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -116,8 +118,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -182,9 +182,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj01/ECE215_B2_Obj01_Reading.html">Motivation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj02/ECE215_B2_Obj02_Reading.html">Motivation</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B2_Obj02_Reading.html">Motivation</a></li>
 </ul>
 
     </div>
@@ -261,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock1Reading/Obj02/ECE215_Obj02_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock2Reading/Obj01/ECE215_B2_Obj01_Reading.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +291,7 @@
       
       
       
-      <li><a href="../../_sources/Block1Reading/Obj02/ECE215_Obj02_Reading.md" target="_blank"
+      <li><a href="../../_sources/Block2Reading/Obj01/ECE215_B2_Obj01_Reading.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +367,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Objective 1.2</h1>
+    <h1>Motivation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,10 +377,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-protection">Circuit Protection</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fuses-and-breakers">Fuses and Breakers</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-domain">Frequency Domain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-signals-in-the-frequency-domain">DC Signals in the Frequency Domain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bandwidth">Bandwidth</a></li>
 </ul>
             </nav>
         </div>
@@ -392,212 +391,164 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="objective-1-2">
-<h1>Objective 1.2<a class="headerlink" href="#objective-1-2" title="Link to this heading">#</a></h1>
-<div class="pst-scrollable-table-container"><table class="table">
+  <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>LO#</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>1.2</p></td>
-<td><p>I can determine appropriate circuit breaker values for adequate system protection.</p></td>
+<tr class="row-even"><td><p>2.1</p></td>
+<td><p>I can graph a given sinusoidal signal, including DC components, in both the time and frequency domains and determine its bandwidth.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<section id="circuit-protection">
-<h2>Circuit Protection<a class="headerlink" href="#circuit-protection" title="Link to this heading">#</a></h2>
-<p>Bad things can happen if we fail to keep electricity under control:
-equipment can be damaged; buildings can catch fire; and people can be
-injured, or even killed. Fortunately, using simple devices like fuses
-and circuit breakers can protect us and our circuits if something goes
-wrong. When selecting fuses and circuit breakers for our circuits, we
-must use sound engineering analysis because selecting the wrong fuse or
-circuit breaker could prevent the circuit from working or be ineffective
-in protecting the circuit. The outcome will be dependent upon whether
-the rating of the fuse or circuit breaker was too high or too low for
-the circuit.</p>
-<section id="fuses-and-breakers">
-<h3>Fuses and Breakers<a class="headerlink" href="#fuses-and-breakers" title="Link to this heading">#</a></h3>
-<p>Many of you have probably heard of the term, “short circuit,” and know
-that it’s “bad” (in the smoke pouring out of your electrical device kind
-of “bad”). A short circuit is simply a wire that connects the positive
-terminal of a voltage source directly to the negative terminal as in the
-example circuit below.</p>
-<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings03 ExampleProblem shortcircuit.jpg" src="../../_images/image201.jpeg" /></p>
-<p>Figure 9: A circuit containing a short circuit</p>
-<p>So in this scenario, how much current will be drawn from the source?
-Well, we’ve learned today that solving for a circuit’s equivalent
-resistance allows us to model the circuit as a source and a single
-resistor. So what is the equivalent resistance of the circuit above? If
-we model the wire as a 0-Ω resistor, we can solve for the equivalent
-resistance of the circuit (you saw that they were in parallel already,
-right?):</p>
+<section id="motivation">
+<h1>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h1>
+<p>So far, we’ve only looked at very simple AC signals – sinusoids.
+However, real signals are inherenetly complex. Consider your favorite
+song - at any one point in time you will hear several instruments, which
+produce a range of frequencies. Can you imagine how difficult it would
+be to analyze the signal in the time domain? This is why, for highly
+complex signals, we typically analyze the signal with respect to
+frequency instead of time. Frequency domain representations allow us to
+view and manipulate signals in a more intuitive way. For example, if you
+wanted to add more bass and less treble to your song, you would use an
+equalizer. In essence, an equalizer is a simple filter – one that
+allows us to boost specific frequencies and reduce others. If you wanted
+more bass, then you could reduce the volume of the high frequencies
+while keeping the volume of the low frequencies the same. In this
+lesson, we will look at signals in the frequency domain.</p>
+<section id="frequency-domain">
+<h2>Frequency Domain<a class="headerlink" href="#frequency-domain" title="Link to this heading">#</a></h2>
+<p>In Block I, we explained how the frequency of a sinusoid tells us the number of times the signal repeated
+(or “cycled”) in a second. To graph the signal as a function of time (or
+in the <em>time domain</em>), we translated the frequency into a period using
+the following equation:</p>
 <div class="math notranslate nohighlight">
-\[R_{EQ(PARALLEL)} = \frac{(1\ k\Omega)(0\ \Omega)}{(1\ k\Omega) + (0\ \Omega)} = 0\ \Omega\]</div>
-<p>What this means is that the voltage source only “sees” the wire, which
-we modelled as a 0-Ω resistor. Because of this, all of the current will
-flow through the short circuit, leaving none to flow through the
-resistor. Therefore, the circuit can be redrawn as:</p>
-<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings03 ExampleProblem short circuitv2.jpg" src="../../_images/image211.jpeg" /></p>
-<p>Figure 10: An equivalent circuit for a circuit containing a short
-circuit</p>
-<p>Since the wire and the source are parallel, we know 5 V has to drop
-across the wire. Using Ohm’s Law to solve for current,</p>
+\[T = \frac{1}{f}\]</div>
+<p>When we start looking at moving information around, we will see that
+understanding how fast a signal changes is often more important than
+being able to trace it as it changes. Fast changing signals (with high
+frequencies) require us to collect more data to fully capture them.</p>
+<p>The technique we will use to represent the frequency content of a
+message is known as an <em>amplitude spectrum</em>, or a plot or graph that
+describes a signal’s power or energy as a function of frequency. It is
+important to realize a signal does not exist exclusively in the time or
+frequency domain – those are simply different ways we choose to
+represent the signal. We can represent any signal as an equation, or as
+a combination of sines and cosines, which can then be viewed as a time
+domain waveform, or as an frequency spectrum plot. As we proceed
+further, it will become clearer there is a definite relationship between
+the two domains and each has its own usefulness. It is similar to
+looking at an object through regular binoculars or through night vision
+goggles – we see the same object, but it appears differently.</p>
+<p>Let’s look at a sinusoid first. Electrical engineers like sinusoids
+because they are mathematically straightforward and very easy to
+analyze. In fact, in frequency domain there’s only one value on the
+x-axis instead of the infinite number of values for time we needed when
+we graphed sinusoids in time. So, for an amplitude spectrum, instead of
+plotting the function’s value on the y-axis and time on the x-axis, we
+will plot amplitude on the y-axis and frequency on the x-axis. To
+translate a signal from the time domain to the frequency domain, we only
+need to gather two pieces of information from the equation (or plot):
+amplitude and frequency. For example, if we wanted to graph the
+amplitude spectrum of the monotone signal:</p>
 <div class="math notranslate nohighlight">
-\[I_{S} = \frac{V_{S}}{R_{EQ}} = \frac{6\ V}{0\ \Omega} = \infty\ A\]</div>
-<p>In reality, the current is not infinite. The wire itself has a small
-amount of resistance, which will keep the current from going to
-infinity.</p>
-<p>The important point, though, is that a short circuit causes a very large
-amount of current to be drawn from the source. In the wiring in a house,
-for example, a short circuit can draw enough current to melt a wire’s
-plastic coating and cause any wood or insulation near the wire to catch
-fire. This, obviously, is a bad thing. In addition to fires, short
-circuits can melt wires and destroy electrical components. To prevent
-this from occurring, engineers incorporate fuses and circuit breakers
-into their designs.</p>
-<p>A fuse is nothing more than a very thin wire which usually allows the
-current of a circuit to flow. Under normal conditions, the current flow
-is low enough for the fuse to act as a simple wire. As the current
-increases, however, the wire begins to heat until at some point, the
-fuse melts, severing the connection and stopping the flow of current.</p>
-<p>The highest current a fuse can handle without melting is the rating of
-the fuse. A fuse rated at 2 amps will be able to handle anything up to 2
-amps. Once the current rises above 2 amps, it will melt.</p>
-<p><img alt="testingfuses" src="../../_images/image221.jpeg" /></p>
-<p>Figure 11: A good fuse and blown fuses (Source:
-<a class="reference external" href="http://Electronicrepairguide.com">Electronicrepairguide.com</a>)</p>
-<p>A circuit breaker (or breaker) has the exact same function as a fuse but
-has an advantage over the fuse in that it doesn’t have to be replaced
-every time it “blows.” Most modern house and aircraft wiring systems
-have circuit breakers while most cars still have fuses. Like the fuse,
-the circuit breaker protects against current surges and has its rated
-capability printed on it. Circuit breakers are a more expensive
-investment at first but, usually, pay for themselves over a lifetime.
-Breakers generally consist of a spring-loaded switch that is held closed
-by a catch. The catch is released when the current level gets too high,
-opening the circuit to prevent damage. Usually, the breaker is reset by
-flipping a lever or pushing a button.</p>
-<p>So what rating do we choose for our fuse or circuit breaker? There are
-two rules to consider when choosing ratings:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. The rating must be higher than the expected current in the circuit.
-
-2. The rating must be lower than the failure point of the wiring.
-</pre></div>
-</div>
-<p>You have learned how to calculate the expected current at a point in a circuit, so you know how to apply Rule 1. Finding the failure point of the wiring for Rule 2 involves knowing the wire size, or gauge, and material. The larger the diameter of the wire is the more current the wire can safely support, and copper wire can support more current than aluminum wire of the same dimensions. In the United States, we use standard American wire gauges, or AWG, as shown in the chart below from Home Depot. Once you have the values for Rules 1 and 2, you simply pick a fuse or circuit breaker rated in between those values. Stores and websites that sell these parts have many ratings available. For instance, one industry supplier, DigiKey, has well over 100 different fuse ratings for you to choose from.</p>
-<p><img alt="wire conversion chart" src="../../_images/image29.jpeg" />
-Figure 12: Home Depot wire gauge chart (Source: <a class="reference external" href="https://www.homedepot.com/c/ab/how-to-read-a-wire-gauge-chart/9ba683603be9fa5395fab9015a6d2c99">The Home Depot</a>)</p>
-<p>Now you may be thinking, “Great, now I know how to design circuit protection in real life!” You are welcome. However, you may also be wondering, “In this class do I have to consult an AWG chart and look up an electronics supply website every time I do a fuse or circuit breaker problem?!” No, in this class you will not need to worry about the wire gauges. Instead, after you find the expected, or nominal, current value for Rule 1, you will add 10% and 50% more to it. Then, in lieu of checking what values a company has available, you will select from a provided table of potential ratings for your fuse or circuit breaker.</p>
-<p>As a simple example, say you calculated the nominal current to be 10A in a given problem. You then multiply 10A by 1.1 and 1.5 to get a range of 11A-15A. You will then check the table provided for that problem and choose the appropriate one.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Fuse Ratings</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>10A</p></td>
-</tr>
-<tr class="row-odd"><td><p>12A</p></td>
-</tr>
-<tr class="row-even"><td><p>14A</p></td>
-</tr>
-<tr class="row-odd"><td><p>16A</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>For this simple example, both 12A and 14A fall within your 11A-15A range, so either rating would be acceptable.</p>
-<hr class="docutils" />
-<p><strong>Example Problem:</strong> The internal circuitry of a battery powered
-camera is modeled as the resistive circuit below. What fuse rating would
-you choose to protect the circuit?</p>
-<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings04 ExampleProblem fuse andswitch.jpg" src="../../_images/image231.jpeg" /></p>
-<p><strong>Understand:</strong> In order to determine the fuse rating, we must find the
-current drawn from the source. We’ve added a switch which allows current
-to flow through to the 8-kΩ resistor when it’s closed and blocks the
-current when it’s open. And the circuit includes both series and
-parallel conncections. The circuit’s equivalent resistance (and thus the
-source current drawn from the voltage source) will change based on
-whether the switch is open or closed.</p>
-<p><strong>Identify Key Information:</strong></p>
+\[v(t) = \mathbf{100}\cos{\left( 360{^\circ}\mathbf{440}t \right)mV,}\]</div>
+<p>we simply draw a vertical line at 440 Hz (the frequency of the cosine
+term), with an amplitude of 100mV, as shown below. What this means is
+that the signal, v(t), oscillates at a single frequency (400Hz) and we
+assume it never changes.</p>
+<p><img alt="" src="../../_images/image114.png" /></p>
+<p>Figure 1: Frequency domain graph of a sinusoid with a frequency of 440
+Hz</p>
+<p>If we don’t worry about any phase shifts (and we won’t for the sake of
+this lesson), then we can say the graph above contains exactly the same
+information as the original equation. This is an important point. We now
+have three distinct and useful ways of representing an electrical
+signal:</p>
 <ul class="simple">
-<li><p><strong>Knowns:</strong> We know the values of the voltage source and the
-resistors</p></li>
-<li><p><strong>Unknowns:</strong> The total current drawn from the source by the load
-and the fuse rating.</p></li>
-<li><p><strong>Assumptions:</strong> The resistance in the wire is much smaller than
-that of the resistors.</p></li>
+<li><p>An equation</p></li>
+<li><p>A waveform (graphing voltage/current/power with respect to time)</p></li>
+<li><p>An amplitude spectrum (graphing voltage/current/power with respect
+to frequency).</p></li>
 </ul>
-<p><strong>Plan:</strong> We will determine the current drawn from the source when the
-switch is both open and closed. The fuse rating can be determined once
-we see which configuration draws more current.</p>
-<p><strong>Solve:</strong> When the switch is open, no current gets to the 8-kΩ resistor
-and therefore it has no effect on the circuit. If we model the fuse as a
-wire (since we will assume it is not blown) and remove all hanging
-wires/components, the circuit simplifies to the circuit below: a 5.1-V
-source in series with the 1.4-kΩ and the 2-kΩ resistors.</p>
-<p><img alt="" src="../../_images/image24.jpeg" /></p>
-<p>Solving for the equivalent resistance gives us:</p>
+<p>Now we can complicate things a little bit. True monotone (one single
+frequency) sinusoids don’t happen very often in the physical world. Even
+just a single note on an instrument contains to some additional tones,
+which are slightly above and below the primary frequency. Also, if we
+were to play the same note on a piano, it contains more than one
+harmonic (higher frequency). These harmonics give each instrument it’s
+unique sound. This is the reason why a piano sounds like a piano.</p>
+<p>So, when we play an A above middle C on the piano, we get a signal with
+a fundamental frequency of 440 Hz, plus a series of harmonic
+frequencies, each one at a multiple of 440 Hz. Each successive harmonic
+exists at a lower amplitude than the one before it.</p>
+<p>It is easy to imagine how graphing this signal in the time domain would
+become very complicated very quickly. But just to drive the point home,
+the figures on the next page show the first five harmonics of the 440Hz
+note in both the time domain (left) and frequency domain (right):</p>
+<p><img alt="timedomain_spectrum" src="../../_images/image212.png" />
+<img alt="frequencydomain_spectrum" src="../../_images/image39.png" /></p>
+<p>Figure 3: Frequency domain of first five harmonics of 440 Hz note</p>
+<p>In theory, these harmonics continue out to infinity, each one located at
+a multiple of 440 Hz, but as we add more notes from more instruments,
+the signal becomes even more complex. If we really wanted, we could
+write the signal above as an equation:</p>
 <div class="math notranslate nohighlight">
-\[R_{EQ} = 1.4\ k\Omega + 2\ k\Omega = 3.4\ k\Omega\]</div>
-<p>Redrawing the circuit leads to:</p>
-<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings04 ExampleProblem fuse and switchv3.jpg" src="../../_images/image251.jpeg" /></p>
-<p>Since we model the fuse as a wire, <em>R<sub>EQ</sub></em> drops all 5.1 volts. The
-current through R<sub>EQ</sub> is therefore:</p>
-<div class="math notranslate nohighlight">
-\[I_{EQ} = \frac{V_{S}}{R_{EQ}} = \frac{5.1\ V}{3.4\ k\Omega} = 1.5\ mA\]</div>
-<p>Since <em>R<sub>EQ</sub></em> is in series with the source and the fuse, all three
-devices share the same current. Therefore the fuse rating has to be
-greater than 1.5 mA.</p>
-<p>Now, we will repeat the analysis with the switch closed. Note the switch
-is also modeled as a wire when it’s closed.</p>
-<p><img alt="" src="../../_images/image26.jpeg" /></p>
-<p>The 2 kΩ and 8 kΩ resistors are parallel, so we can combine them with
-the equation:</p>
-<div class="math notranslate nohighlight">
-\[R_{EQ(PARALLEL)} = \frac{(2\ k\Omega)(8\ k\Omega)}{(2\ k\Omega) + (8\ k\Omega)} = 1.6\ k\Omega\]</div>
-<p>We can now redraw the circuit using this value:</p>
-<p><img alt="" src="../../_images/image27.jpeg" /></p>
-<p>We can now find the equivalent resistance for the entire circuit:</p>
-<div class="math notranslate nohighlight">
-\[R_{EQ} = 1.4\ k\Omega + R_{EQ(PARALLEL)} = 1.4\ k\Omega + 1.6\ k\Omega = 3\ k\Omega\]</div>
-<p>Redrawing the circuit leads to:</p>
-<p><img alt="V:CoursesECE3152009 FallWilsonTextbookDrawings04 ExampleProblem fuse and switchv6.jpg" src="../../_images/image281.jpeg" /></p>
-<p>Again, R<sub>EQ</sub> drops all 5.1 volts. The current through R<sub>EQ</sub> is</p>
-<div class="math notranslate nohighlight">
-\[I_{EQ} = \frac{V_{S}}{R_{EQ}} = \frac{5.1\ V}{3\ k\Omega} = 1.7\ mA\]</div>
-<p>With the switch closed, the current through the fuse is 1.7 mA. With the
-switch open, the current through the fuse is only 1.5 mA. Since we want
-the circuit to work whether the switch is open or closed, we need the
-fuse to be rated higher than the highest current, 1.7 mA.</p>
-<p>Since the maximum current through the fuse under normal operating
-conditions is 1.7 mA, we multiply this by 1.1 to get 1.87 mA and by 1.5 to get 2.55 mA.</p>
-<p>Next, we select the appropriate fuse from the following table of fuse ratings.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Fuse Ratings</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>.2mA</p></td>
-</tr>
-<tr class="row-odd"><td><p>2mA</p></td>
-</tr>
-<tr class="row-even"><td><p>200mA</p></td>
-</tr>
-<tr class="row-odd"><td><p>2A</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Answer:</strong> We would choose the fuse with a 2 mA rating to protect this
-circuit.</p>
-<hr class="docutils" />
+\[v_{music}(t) = \mathbf{100}\cos{(360{^\circ}*\mathbf{440}t)} + \mathbf{91}\cos{(360{^\circ}*\mathbf{880}t)} + \mathbf{86}\cos{(360{^\circ}*\mathbf{1320}t)} + \mathbf{71}\cos{(360{^\circ}*\mathbf{1760}t)} + \mathbf{68}\cos{(360{^\circ}*\mathbf{2200}t)}\  + \ldots\ \ mV\]</div>
+<p>Hopefully, you can see three things from this equation:</p>
+<ul class="simple">
+<li><p>First, the time domain plot doesn’t give much useful information</p></li>
+<li><p>Second, the equation is fairly tedious and not that easy to digest</p></li>
+<li><p>Third, each vertical line in the graph corresponds to a single
+cosine term in the equation</p></li>
+</ul>
 </section>
+<section id="dc-signals-in-the-frequency-domain">
+<h2>DC Signals in the Frequency Domain<a class="headerlink" href="#dc-signals-in-the-frequency-domain" title="Link to this heading">#</a></h2>
+<p>DC signals in the
+frequency domain are important because sometimes we will want
+to add a bias to a signal. For example, let’s say that we want to add a
+DC bias of 50 mV to the 440Hz signal. The resulting formula for the
+voltage would be:</p>
+<div class="math notranslate nohighlight">
+\[v(t) = \mathbf{50}mV + \mathbf{100}\cos{\left( 360{^\circ}\mathbf{440}t \right)mV,}\]</div>
+<p>At first glance, this does not appear helpful, as the bias term has no
+cosine, and thus, no frequency. However, if we think of the DC voltage
+as not fluctuating with time, hence having a frequency of ‘zero’ hertz
+(0 Hz), and we keep in mind that the a cos(0) equals “1”, we could
+rewrite the above equation like this:</p>
+<div class="math notranslate nohighlight">
+\[v(t) = \mathbf{50}\cos{\left( 360{^\circ}\mathbf{0}t \right)mV}\mathbf{+ 100}\cos{\left( 360{^\circ}\mathbf{440}t \right)mV,}\]</div>
+<p>Now we see that we can simply draw a spike at ‘zero’ to represent the DC
+voltage.</p>
+<p><img alt="" src="../../_images/image47.png" /></p>
+<p>Figure 4: Frequency domain graph of signal with DC bias and 440 Hz
+sinusoid</p>
+</section>
+<section id="bandwidth">
+<h2>Bandwidth<a class="headerlink" href="#bandwidth" title="Link to this heading">#</a></h2>
+<p><em>Bandwidth</em> is a very important term in ECE, and it refers to the range
+of frequencies that a signal or system contains. Many people like to use
+bandwidth to refer to cell phone or internet data rates, but for this
+class, we will keep these notions separate. A range of frequencies will
+be the bandwidth, and the speed at which you can transfer information on
+a computer or cell phone will be the data rate.</p>
+<p>We can calculate the bandwidth of a signal or system by subtracting the
+lowest frequency from the highest frequency, as shown in the following
+equation.</p>
+<div class="math notranslate nohighlight">
+\[BW = f_{high} - f_{low}\]</div>
+<p>For example, the bandwidth of the signal in Figure 4 is 440 Hz because
+<span class="math notranslate nohighlight">\(f_{high} = 440\ Hz\)</span> and <span class="math notranslate nohighlight">\(f_{low} = 0\ Hz.\)</span> For the signal in Figure 3,
+<span class="math notranslate nohighlight">\(f_{high} = 2.2\ kHz\)</span> and <span class="math notranslate nohighlight">\(f_{low} = 440\ Hz\)</span>, so the bandwidth is 1.76
+kHz. This brings us to two points. First, frequency domain graphs are
+very helpful for calculating the bandwidth of a signal. Second, the
+lowest frequency of a signal, <span class="math notranslate nohighlight">\(f_{low}\)</span>, will only be 0 Hz if the signal
+has a DC bias.</p>
 </section>
 </section>
 
@@ -614,7 +565,7 @@ circuit.</p>
         },
         kernelOptions: {
             name: "python3",
-            path: "./Block1Reading/Obj02"
+            path: "./Block2Reading/Obj01"
         },
         predefinedOutput: true
     }
@@ -631,6 +582,24 @@ circuit.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../../_downloads.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Slides and Practice Problems</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Obj02/ECE215_B2_Obj02_Reading.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Motivation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -648,10 +617,9 @@ circuit.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-protection">Circuit Protection</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fuses-and-breakers">Fuses and Breakers</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-domain">Frequency Domain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-signals-in-the-frequency-domain">DC Signals in the Frequency Domain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bandwidth">Bandwidth</a></li>
 </ul>
   </nav></div>
 
