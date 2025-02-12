@@ -15,7 +15,7 @@ Note that the number to the left of the decimal for your learning objective is t
 | [1.4](https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/) | I can compute the reactive and apparent power values for an AC-powered circuit.  |  
 | [1.5](Block1Reading/Obj05/ECE215_Obj05_Reading) | I can calculate the efficiency of a system modeled as an electrical circuit.  |  
 | [1.6](Block1Reading/Obj06/ECE215_Obj06_Reading) | I can use a transformer's turns ratio, input voltages and currents, and output voltages and currents to calculate the efficiency, source voltage, and current of a power transmission system with one or more transformers.  |  
-| 1.7 | I can calculate the efficiency, source voltage, and current of a power transmission system with one or more power converters.  |  
+| [Obj 1.7](Block1Reading/Obj07/ECE215_Obj07_Reading) | I can calculate the efficiency, source voltage, and current of a power transmission system with one or more power converters.  |  
 | [1.8](Block1Reading/Obj08/ECE215_Obj08_Reading) | I can use a decision matrix to quantitatively compare various measures of merit.  |  
 
 ### Block 2: Signal Processing
