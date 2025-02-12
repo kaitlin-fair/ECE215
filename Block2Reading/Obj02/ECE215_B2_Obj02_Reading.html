@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Motivation &#8212; ECE215/S Course Webpage</title>
+    <title>Objective 2.1 &#8212; ECE215/S Course Webpage</title>
   
   
   
@@ -64,7 +64,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Motivation" href="../Obj01/ECE215_B2_Obj01_Reading.html" />
+    <link rel="prev" title="Objective 2.1" href="../Obj01/ECE215_B2_Obj01_Reading.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -180,8 +180,8 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_B2_Obj01_Reading.html">Motivation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_B2_Obj01_Reading.html">Objective 2.1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 2.1</a></li>
 </ul>
 
     </div>
@@ -364,7 +364,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Motivation</h1>
+    <h1>Objective 2.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -374,9 +374,12 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electronic-filters">Electronic Filters</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electronic-filters">Electronic Filters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -388,7 +391,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="pst-scrollable-table-container"><table class="table">
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-2-1">
+<h1>Objective 2.1<a class="headerlink" href="#objective-2-1" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>LO#</p></th>
 <th class="head"><p>Description</p></th>
@@ -402,7 +407,7 @@
 </table>
 </div>
 <section id="motivation">
-<h1>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h1>
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <p>Now that we understand analyzing a time-domain signal in the frequency domain, we can look at ideal filters. Ideal filters operate in the frequency domain and can help us keep and remove certain parts of a signal. For example, if you
 wanted to add more bass and less treble to a song, you would use an
 equalizer. In essence, an equalizer is a simple filter – one that
@@ -412,7 +417,7 @@ while keeping the volume of the low frequencies the same. In this
 lesson, we will look at signals in the frequency domain and learn the
 basic functions of filters.</p>
 <section id="electronic-filters">
-<h2>Electronic Filters<a class="headerlink" href="#electronic-filters" title="Link to this heading">#</a></h2>
+<h3>Electronic Filters<a class="headerlink" href="#electronic-filters" title="Link to this heading">#</a></h3>
 <p>The bandwidth of a signal drives our information processing and
 transmission systems. We will often reduce the bandwidth of our signals
 using a device known as an <em>electronic filter</em> which only allows certain
@@ -452,7 +457,7 @@ frequency. Returning to the telephone example, telephone companies use a
 voice and limit the amount of bandwidth they must transmit to 4 kHz.</p>
 </section>
 <section id="example-problem-1">
-<h2>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h2>
+<h3>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
 <p>Design a filter system for a stereo to allow only
 high frequency signals (≥ 1.5 kHz) to be sent to the tweeter and only
 low frequency signals (≤ 1.5 kHz) to be sent to the woofer.</p>
@@ -479,7 +484,7 @@ following filter system can be used to feed the woofer and tweeter:</p>
 <p><img alt="" src="../../_images/image74.png" /></p>
 </section>
 <section id="example-problem-2">
-<h2>Example Problem 2<a class="headerlink" href="#example-problem-2" title="Link to this heading">#</a></h2>
+<h3>Example Problem 2<a class="headerlink" href="#example-problem-2" title="Link to this heading">#</a></h3>
 <p>A signal passes through a band pass filter (BPF).
 What is the output signal?</p>
 <p><img alt="" src="../../_images/image89.png" /></p>
@@ -499,6 +504,7 @@ of that band.</p>
 <p><strong>Solve</strong>: The output signal from the depicted band pass filter is shown
 in the frequency spectrum graph below:</p>
 <p><img alt="" src="../../_images/image107.png" /></p>
+</section>
 </section>
 </section>
 
@@ -538,7 +544,7 @@ in the frequency spectrum graph below:</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Motivation</p>
+        <p class="prev-next-title">Objective 2.1</p>
       </div>
     </a>
 </div>
@@ -558,9 +564,12 @@ in the frequency spectrum graph below:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electronic-filters">Electronic Filters</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electronic-filters">Electronic Filters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Motivation &#8212; ECE215/S Course Webpage</title>
+    <title>Objective 2.1 &#8212; ECE215/S Course Webpage</title>
   
   
   
@@ -66,7 +66,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Motivation" href="../Obj02/ECE215_B2_Obj02_Reading.html" />
+    <link rel="next" title="Objective 2.1" href="../Obj02/ECE215_B2_Obj02_Reading.html" />
     <link rel="prev" title="Slides and Practice Problems" href="../../_downloads.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,8 +183,8 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Motivation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B2_Obj02_Reading.html">Motivation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B2_Obj02_Reading.html">Objective 2.1</a></li>
 </ul>
 
     </div>
@@ -367,7 +367,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Motivation</h1>
+    <h1>Objective 2.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,9 +377,12 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-domain">Frequency Domain</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-signals-in-the-frequency-domain">DC Signals in the Frequency Domain</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bandwidth">Bandwidth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-domain">Frequency Domain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-signals-in-the-frequency-domain">DC Signals in the Frequency Domain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bandwidth">Bandwidth</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -391,7 +394,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="pst-scrollable-table-container"><table class="table">
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-2-1">
+<h1>Objective 2.1<a class="headerlink" href="#objective-2-1" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>LO#</p></th>
 <th class="head"><p>Description</p></th>
@@ -405,7 +410,7 @@
 </table>
 </div>
 <section id="motivation">
-<h1>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h1>
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <p>So far, we’ve only looked at very simple AC signals – sinusoids.
 However, real signals are inherenetly complex. Consider your favorite
 song - at any one point in time you will hear several instruments, which
@@ -421,7 +426,7 @@ more bass, then you could reduce the volume of the high frequencies
 while keeping the volume of the low frequencies the same. In this
 lesson, we will look at signals in the frequency domain.</p>
 <section id="frequency-domain">
-<h2>Frequency Domain<a class="headerlink" href="#frequency-domain" title="Link to this heading">#</a></h2>
+<h3>Frequency Domain<a class="headerlink" href="#frequency-domain" title="Link to this heading">#</a></h3>
 <p>In Block I, we explained how the frequency of a sinusoid tells us the number of times the signal repeated
 (or “cycled”) in a second. To graph the signal as a function of time (or
 in the <em>time domain</em>), we translated the frequency into a period using
@@ -508,7 +513,7 @@ cosine term in the equation</p></li>
 </ul>
 </section>
 <section id="dc-signals-in-the-frequency-domain">
-<h2>DC Signals in the Frequency Domain<a class="headerlink" href="#dc-signals-in-the-frequency-domain" title="Link to this heading">#</a></h2>
+<h3>DC Signals in the Frequency Domain<a class="headerlink" href="#dc-signals-in-the-frequency-domain" title="Link to this heading">#</a></h3>
 <p>DC signals in the
 frequency domain are important because sometimes we will want
 to add a bias to a signal. For example, let’s say that we want to add a
@@ -530,7 +535,7 @@ voltage.</p>
 sinusoid</p>
 </section>
 <section id="bandwidth">
-<h2>Bandwidth<a class="headerlink" href="#bandwidth" title="Link to this heading">#</a></h2>
+<h3>Bandwidth<a class="headerlink" href="#bandwidth" title="Link to this heading">#</a></h3>
 <p><em>Bandwidth</em> is a very important term in ECE, and it refers to the range
 of frequencies that a signal or system contains. Many people like to use
 bandwidth to refer to cell phone or internet data rates, but for this
@@ -549,6 +554,7 @@ kHz. This brings us to two points. First, frequency domain graphs are
 very helpful for calculating the bandwidth of a signal. Second, the
 lowest frequency of a signal, <span class="math notranslate nohighlight">\(f_{low}\)</span>, will only be 0 Hz if the signal
 has a DC bias.</p>
+</section>
 </section>
 </section>
 
@@ -596,7 +602,7 @@ has a DC bias.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Motivation</p>
+        <p class="prev-next-title">Objective 2.1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -617,9 +623,12 @@ has a DC bias.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-domain">Frequency Domain</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-signals-in-the-frequency-domain">DC Signals in the Frequency Domain</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bandwidth">Bandwidth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-domain">Frequency Domain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-signals-in-the-frequency-domain">DC Signals in the Frequency Domain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bandwidth">Bandwidth</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

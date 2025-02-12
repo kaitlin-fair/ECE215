@@ -1,3 +1,5 @@
+# Objective 2.1
+
 | LO# | Description |
 |----------|----------|
 | 2.1 | I can graph a given sinusoidal signal, including DC components, in both the time and frequency domains and determine its bandwidth. |

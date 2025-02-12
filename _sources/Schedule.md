@@ -25,7 +25,7 @@ Note that the schedule may vary across sections given the classes are interactiv
 ### Block 2: Signal Processing
 | Lesson | Topic | Due Dates |
 |----------|----------|----------|
-| 15 | Obj 2.1 - 2.2 | Project 1 Pts 2-3 Due | 
+| 15 | [Obj 2.1](Block2Reading/Obj01/ECE215_B2_Obj01_Reading) - [Obj 2.2](Block2Reading/Obj02/ECE215_B2_Obj02_Reading) | Project 1 Pts 2-3 Due | 
 | 16 | Obj 2.3 - 2.4 |  |
 | 17 | Obj 2.5 - 2.6 | Quiz 4 Due (Objs 2.1-2.2) |
 | 18 | Lab Workday |  |

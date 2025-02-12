@@ -1,3 +1,5 @@
+# Objective 2.1
+
 | LO# | Description |
 |----------|----------|
 | 2.2 | I can identify types of ideal filters, determine their cutoff frequencies, and analyze their output given an input sinusoidal signal or signal spectrum. |
