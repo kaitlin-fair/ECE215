@@ -21,18 +21,17 @@ Note that the number to the left of the decimal for your learning objective is t
 ### Block 2: Signal Processing
 | LO# | Description |
 |----------|----------|
-| 2.1 | I can graph a given sinusoidal signal (to include DC voltages) in the time and frequency domains and calculate the signal's bandwidth.  |
-| 2.2 | I can identify types of ideal filters and their associated cutoff frequency(ies).   |
-| 2.3 | I can determine the output of an ideal filter given an input sinusoidal signal or signal spectrum.  |
-| 2.4 | I can model capacitors and inductors as complex resistors.   |
-| 2.5 | I can calculate voltage and power in an AC-powered circuit containing resistors, capacitors, and/or inductors using tools such as voltage dividers, Ohm’s Law, and the power equation.  |
-| 2.6 | I can determine the filter type and gain of simple series circuits containing a resistor, capacitor, and/or inductor.  |
-| 2.7 | I can calculate the output of a filter given a sinusoidal input signal and the filter magnitude and phase responses.  |
-| 2.8 | I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.    |
-| 2.9 | I can calculate the ADC sampling rate, voltage resolution, and digital output based on a given input voltage and the ADC's operational parameters.   |
-| 2.10 | I can calculate the ADC bit rate to estimate the memory required for a given recording duration or determine how long it takes to fill a memory card of a specified size.  |
-| 2.11 | I can relate digital inputs to digital outputs using tools such as fundamental digital logic gates (AND, OR, NOT), truth tables, and Sum of Products (SOP) and Product of Sums (POS) Boolean expressions.  |
-| 2.12 | I can model Moore and Mealy Finite State Machines (FSMs) using tools such as state transition diagrams, transition tables, and combinational and sequential logic circuits.  |
+| 2.1 | I can graph a given sinusoidal signal, including DC components, in both the time and frequency domains and determine its bandwidth. |
+| 2.2 | I can identify types of ideal filters, determine their cutoff frequencies, and analyze their output given an input sinusoidal signal or signal spectrum. |
+| 2.3 | I can model capacitors and inductors as complex resistors.   |
+| 2.4 | I can calculate voltage and power in an AC-powered circuit containing resistors, capacitors, and/or inductors using tools such as voltage dividers, Ohm’s Law, and the power equation.  |
+| 2.5 | I can determine the filter type and gain of simple series circuits containing a resistor, capacitor, and/or inductor.  |
+| 2.6 | I can calculate the output of a filter given a sinusoidal input signal and the filter magnitude and phase responses.  |
+| 2.7 | I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.    |
+| 2.8 | I can calculate the ADC sampling rate, voltage resolution, and digital output based on a given input voltage and the ADC's operational parameters.   |
+| 2.9 | I can calculate the ADC bit rate to estimate the memory required for a given recording duration or determine how long it takes to fill a memory card of a specified size.  |
+| 2.10 | I can relate digital inputs to digital outputs using tools such as fundamental digital logic gates (AND, OR, NOT), truth tables, and Sum of Products (SOP) and Product of Sums (POS) Boolean expressions.  |
+| 2.11 | I can model Moore and Mealy Finite State Machines (FSMs) using tools such as state transition diagrams, transition tables, and combinational and sequential logic circuits.  |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Description |

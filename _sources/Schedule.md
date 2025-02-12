@@ -16,27 +16,27 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 7 | [Obj 1.4](https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/) |  |  
 | 8 | [Obj 1.5](Block1Reading/Obj05/ECE215_Obj05_Reading) |   |  
 | 9 | [Obj 1.6](Block1Reading/Obj06/ECE215_Obj06_Reading) |   |
-| 10 | Obj 1.7 |   |
+| 10 | [Obj 1.7](Block1Reading/Obj07/ECE215_Obj07_Reading) |   |
 | 11 | [Obj 1.8](Block1Reading/Obj08/ECE215_Obj08_Reading) | Quiz 2 Due (Obj 1.3-1.5)   |
 | 12 | Block 1 Wrap-up |   |
 | 13 | Project 1 Workday |   |
-| 14 | Project 1 Workday |   |
+| 14 | Project 1 Workday | Project 1 Pt 1 Due  |
 
 ### Block 2: Signal Processing
 | Lesson | Topic | Due Dates |
 |----------|----------|----------|
-| 15 | Obj 2.1 - 2.3 | Project 1 Due | 
-| 16 | Obj 2.4 - 2.5 |  |
-| 17 | Obj 2.6 - 2.7 | Quiz 4 Due (Objs 2.1-2.3) |
+| 15 | Obj 2.1 - 2.2 | Project 1 Pts 2-3 Due | 
+| 16 | Obj 2.3 - 2.4 |  |
+| 17 | Obj 2.5 - 2.6 | Quiz 4 Due (Objs 2.1-2.2) |
 | 18 | Lab Workday |  |
-| 19 | Midterm Review | Quiz 5 Due (Objs 2.4-2.7) |
-| 20 | Obj 2.8 | Midterm Due (Objs 1.1-1.8, 2.1-2.7) |
-| 21 | Obj 2.9 |  |
-| 22 | Obj 2.10 |  |
-| 23 | Obj 2.11 | Quiz 5 Due (Objs 2.8-2.10) |
-| 24 | Obj 2.12 |  |
-| 25 | Obj 2.12 |  |
-| 26 | Project 2 Workday | Quiz 7 Due (Objs 2.11-2.12) |
+| 19 | Midterm Review | Quiz 5 Due (Objs 2.4-2.6) |
+| 20 | Obj 2.7 | Midterm Due (Objs 1.1-1.8, 2.1-2.6) |
+| 21 | Obj 2.8 |  |
+| 22 | Obj 2.9 |  |
+| 23 | Obj 2.10 | Quiz 5 Due (Objs 2.7-2.9) |
+| 24 | Obj 2.11 |  |
+| 25 | Obj 2.11 |  |
+| 26 | Project 2 Workday | Quiz 7 Due (Objs 2.10-2.11) |
 | 27 | Project 2 Workday |   |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
