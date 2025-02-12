@@ -15,14 +15,14 @@ Note that the number to the left of the decimal for your learning objective is t
 | [1.4](https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/) | I can compute the reactive and apparent power values for an AC-powered circuit.  |  
 | [1.5](Block1Reading/Obj05/ECE215_Obj05_Reading) | I can calculate the efficiency of a system modeled as an electrical circuit.  |  
 | [1.6](Block1Reading/Obj06/ECE215_Obj06_Reading) | I can use a transformer's turns ratio, input voltages and currents, and output voltages and currents to calculate the efficiency, source voltage, and current of a power transmission system with one or more transformers.  |  
-| [Obj 1.7](Block1Reading/Obj07/ECE215_Obj07_Reading) | I can calculate the efficiency, source voltage, and current of a power transmission system with one or more power converters.  |  
+| [1.7](Block1Reading/Obj07/ECE215_Obj07_Reading) | I can calculate the efficiency, source voltage, and current of a power transmission system with one or more power converters.  |  
 | [1.8](Block1Reading/Obj08/ECE215_Obj08_Reading) | I can use a decision matrix to quantitatively compare various measures of merit.  |  
 
 ### Block 2: Signal Processing
 | LO# | Description |
 |----------|----------|
-| 2.1 | I can graph a given sinusoidal signal, including DC components, in both the time and frequency domains and determine its bandwidth. |
-| 2.2 | I can identify types of ideal filters, determine their cutoff frequencies, and analyze their output given an input sinusoidal signal or signal spectrum. |
+| [2.1](Block2Reading/Obj01/ECE215_B2_Obj01_Reading) | I can graph a given sinusoidal signal, including DC components, in both the time and frequency domains and determine its bandwidth. |
+| [2.2](Block2Reading/Obj02/ECE215_B2_Obj02_Reading) | I can identify types of ideal filters, determine their cutoff frequencies, and analyze their output given an input sinusoidal signal or signal spectrum. |
 | 2.3 | I can model capacitors and inductors as complex resistors.   |
 | 2.4 | I can calculate voltage and power in an AC-powered circuit containing resistors, capacitors, and/or inductors using tools such as voltage dividers, Ohm’s Law, and the power equation.  |
 | 2.5 | I can determine the filter type and gain of simple series circuits containing a resistor, capacitor, and/or inductor.  |
