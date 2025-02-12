@@ -28,8 +28,8 @@ Some homework problems span several objectives. For example: PP4 has problems fr
 _Note: there is no PP11_
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
 |----------|----------|----------|----------|
-| 2.1  | [L15](_static/B2_Obj01_FT_Slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
-| 2.2  | [L15](_static/B2_Obj02_IdealFilters_Slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
+| 2.1  | [L15](_static/B2_Obj01_FT_slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
+| 2.2  | [L15](_static/B2_Obj02_IdealFilters_slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
 | 2.3  |  |  |  |
 | 2.4  |  |  |  |
 | 2.5  |  |  |  |
