@@ -26,17 +26,17 @@ Note that the schedule may vary across sections given the classes are interactiv
 | Lesson | Topic | Due Dates |
 |----------|----------|----------|
 | 15 | [Obj 2.1](Block2Reading/Obj01/ECE215_B2_Obj01_Reading) - [Obj 2.2](Block2Reading/Obj02/ECE215_B2_Obj02_Reading) | Project 1 Pts 2-3 Due | 
-| 16 | Obj 2.3 - 2.4 |  |
-| 17 | Obj 2.5 - 2.6 | Quiz 4 Due (Objs 2.1-2.2) |
+| 16 | [Obj 2.3](Block2Reading/Obj03/ECE215_B2_Obj03_Reading) |  |
+| 17 | Obj 2.4 - Obj 2.5 | Quiz 4 Due (Objs 2.1-2.2) |
 | 18 | Lab Workday |  |
-| 19 | Midterm Review | Quiz 5 Due (Objs 2.4-2.6) |
-| 20 | Obj 2.7 | Midterm Due (Objs 1.1-1.8, 2.1-2.6) |
-| 21 | Obj 2.8 |  |
-| 22 | Obj 2.9 |  |
-| 23 | Obj 2.10 | Quiz 5 Due (Objs 2.7-2.9) |
-| 24 | Obj 2.11 |  |
-| 25 | Obj 2.11 |  |
-| 26 | Project 2 Workday | Quiz 7 Due (Objs 2.10-2.11) |
+| 19 | Midterm Review | Quiz 5 Due (Objs 2.3-2.5) |
+| 20 | Obj 2.6 | Midterm Due (Objs 1.1-1.8, 2.1-2.5) |
+| 21 | Obj 2.7 |  |
+| 22 | Obj 2.8 |  |
+| 23 | Obj 2.9 | Quiz 5 Due (Objs 2.6-2.8) |
+| 24 | Obj 2.10 |  |
+| 25 | Obj 2.10 |  |
+| 26 | Project 2 Workday | Quiz 7 Due (Objs 2.9-2.10) |
 | 27 | Project 2 Workday |   |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare

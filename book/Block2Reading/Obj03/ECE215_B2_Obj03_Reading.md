@@ -536,7 +536,7 @@ in parallel:
 
 $$Z_{eq1} = \ \ \frac{Z_{C}Z_{L}}{Z_{C} + Z_{L}} = \ \frac{( - j0.106\Omega)(j0.019\Omega)}{- j0.106\Omega + j0.019\Omega} = \frac{0.002014\Omega^{2}}{- j0.087\Omega} = j0.023\Omega$$
 
-Since $Z_{eq1}$is in series with the resistor, we can add the two
+Since $Z_{eq1}$ is in series with the resistor, we can add the two
 together, leading to:
 
 $Z_{eq} = \ Z_{R} + Z_{eq1} = 150\Omega + j0.023\Omega$.
@@ -654,7 +654,7 @@ capacitor, or we could use a voltage divider. For the sake of practice
 and comparison, we will do both.
 
 **Solve:** First, we will use Ohm's Law to find the voltage V<sub>C</sub>. Since
-the current is given in the time domain, we need to convert IS to phasor form. Remember, the magnitude of the phasor term needs to be RMS, so we have:
+the current is given in the time domain, we need to convert I<sub>S</sub> to phasor form. Remember, the magnitude of the phasor term needs to be RMS, so we have:
 
 $$I_{s,RMS} = \ \frac{953mA}{\sqrt{2}} = 674mA$$
 
