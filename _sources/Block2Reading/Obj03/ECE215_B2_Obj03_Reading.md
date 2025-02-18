@@ -444,7 +444,7 @@ equation.
 
 $$\omega = 2\pi f\ $$
 
-Looking forward, translating to impedance will allow us to apply the
+Translating to impedance will allow us to apply the
 same circuit analysis techniques we used during the first few lessons to
 more complicated circuits that include inductors, capacitors, and AC
 voltages/currents.
