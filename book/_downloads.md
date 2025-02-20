@@ -31,15 +31,12 @@ _Note: there is no PP11_
 | 2.1  | [L15](_static/B2_Obj01_FT_slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
 | 2.2  | [L15](_static/B2_Obj02_IdealFilters_slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
 | 2.3  | [L16](_static/B2_Obj03_ComplexMath_slides.pdf) | [PP13](_static/PPs/ECE215_PP13.pdf) | [PP13](_static/PPs/ECE215_PP13_answers.pdf) |
-| 2.4  |  |  |  |
+| 2.4  | [L17](_static/B2_Obj04_AnalogFilters_slides.pdf) | [PP14](_static/PPs/ECE215_PP14.pdf) | [PP14](_static/PPs/ECE215_PP14_answers.pdf) |
 | 2.5  |  |  |  |
 | 2.6  |  |  |  |
 | 2.7  |  |  |  |
 | 2.8  |  |  |  |
 | 2.9  |  |  |  |
-| 2.10  |  |  |  |
-| 2.11  |  |  |  |
-| 2.12  |  |  |  |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
