@@ -30,6 +30,7 @@ parts:
       - file: Block2Reading/Obj01/ECE215_B2_Obj01_Reading
       - file: Block2Reading/Obj02/ECE215_B2_Obj02_Reading
       - file: Block2Reading/Obj03/ECE215_B2_Obj03_Reading
+      - file: Block2Reading/Obj04/ECE215_B2_Obj04_Reading
       # - file: Block2Reading/Obj05/ECE215_B2_Obj05_Reading
       # - file: Block2Reading/Obj06/ECE215_B2_Obj06_Reading
       # - file: Block2Reading/Obj07/ECE215_B2_Obj07_Reading

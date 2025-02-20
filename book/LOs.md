@@ -24,7 +24,7 @@ Note that the number to the left of the decimal for your learning objective is t
 | [2.1](Block2Reading/Obj01/ECE215_B2_Obj01_Reading) | I can graph a given sinusoidal signal, including DC components, in both the time and frequency domains and determine its bandwidth. |
 | [2.2](Block2Reading/Obj02/ECE215_B2_Obj02_Reading) | I can identify types of ideal filters, determine their cutoff frequencies, and analyze their output given an input sinusoidal signal or signal spectrum. |
 | [2.3](Block2Reading/Obj03/ECE215_B2_Obj03_Reading) | I can model capacitors and inductors as complex resistors and use circuit analysis tools (such as voltage dividers, Ohm’s Law, and the power equation) to calculate voltage and power in AC circuits containing these components. |
-| 2.4 | I can determine the filter type and gain of simple series circuits containing a resistor, capacitor, and/or inductor.  |
+| [2.4](Block2Reading/Obj04/ECE215_B2_Obj04_Reading) | I can determine the filter type and gain of simple series circuits containing a resistor, capacitor, and/or inductor.  |
 | 2.5 | I can calculate the output of a filter given a sinusoidal input signal and the filter magnitude and phase responses.  |
 | 2.6 | I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.    |
 | 2.7 | I can calculate the ADC sampling rate, voltage resolution, and digital output based on a given input voltage and the ADC's operational parameters.   |
