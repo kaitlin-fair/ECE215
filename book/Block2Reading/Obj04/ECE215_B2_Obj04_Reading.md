@@ -57,7 +57,7 @@ $$\lim_{f \rightarrow \infty}\frac{V_{C}}{V_{S}} = \lim_{f \rightarrow \infty}\l
 Therefore, higher frequencies are blocked using this circuit
 configuration. Clearly, this represents a low pass filter, but what is
 the cutoff frequency? With analog filters like this, we have to consider
-the real behavior of circuit components. In the previous lesson, we
+the real behavior of circuit components. In the ideal filter lesson, we
 assumed the output of a filter is binary around the cutoff frequency
 (meaning, everything on one side of the cutoff frequency passes, while
 everything on the other side is blocked). In reality, it's not as clear
@@ -97,7 +97,7 @@ For a simple circuit with a series capacitor and resistor, as shown in
 Figure 1, we can find the cutoff frequency by finding where the
 ***magnitude*** of $\frac{V_{C}}{V_{S}} = \frac{1}{\sqrt{2}}$. Note that
 we only care about **magnitude** at this point, because all the phase
-tells us how much the signal is delayed in time.
+tells us is how much the signal delayed in time.
 
 Remember, we find the magnitude (denoted by vertical bars) of a complex
 number by:
@@ -129,7 +129,7 @@ switched the capacitor and resistor and measure the output voltage
 across the resistor (Figure 3).
 
 ![C-R
-filter](./ECE315_B2_L20_AnalogFilters_Reading_23Sp_media/media/image3.png)
+filter](./ECE215_B2_Obj04_Reading_media/media/image3.png)
 
 Figure 3: A circuit containing a capacitor and resistor in series.
 
