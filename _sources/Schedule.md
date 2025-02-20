@@ -33,7 +33,7 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 20 | Obj 2.5 | Midterm Due (Objs 1.1-1.8, 2.1-2.4) |
 | 21 | Obj 2.6 |  |
 | 22 | Obj 2.7 |  |
-| 23 | Obj 2.8 | Quiz 5 Due (Objs 2.5-2.7) |
+| 23 | Obj 2.8 | Quiz 6 Due (Objs 2.5-2.7) |
 | 24 | Obj 2.9 |  |
 | 25 | Obj 2.9 |  |
 | 26 | Project 2 Workday | Quiz 7 Due (Objs 2.8-2.9) |
