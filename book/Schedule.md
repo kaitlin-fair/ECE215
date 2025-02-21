@@ -29,7 +29,7 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 16 | [Obj 2.3](Block2Reading/Obj03/ECE215_B2_Obj03_Reading) |  |
 | 17 | [Obj 2.4](Block2Reading/Obj04/ECE215_B2_Obj04_Reading) | Quiz 4 Due (Objs 2.1-2.2) |
 | 18 | Lab Workday |  |
-| 19 | Midterm Review | Quiz 5 Due (Objs 2.3-2.4) |
+| 19 | [Midterm Review](_static/ECE215_Midterm_Equation_Sheet.pdf) | Quiz 5 Due (Objs 2.3-2.4) |
 | 20 | Obj 2.5 | Midterm Due (Objs 1.1-1.8, 2.1-2.4) |
 | 21 | Obj 2.6 |  |
 | 22 | Obj 2.7 |  |
