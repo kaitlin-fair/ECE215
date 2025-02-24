@@ -560,7 +560,7 @@ resistor, an inductor, and a capacitor. The end goal is to use Ohm's Law
 **Identify Key Information:**
 
 -   **Knowns:** We know the rectangular form of the input signal and the
-    resistance, inductance, and capacitance of the components**.**
+    resistance, inductance, and capacitance of the components.
     Additionally, we know the frequency, so we can calculate the
     angular frequency, $\omega$.
 
