@@ -2,7 +2,7 @@
 
 | LO# | Description |
 |----------|----------|
-| 2.4 | I can determine the filter type and gain of simple series circuits containing a resistor, capacitor, and/or inductor.  |
+| 2.4 | I can determine the filter type, gain, and cutoff frequency of simple series circuits containing a resistor, capacitor, and/or inductor.  |
 
 ## Passive Filters Using RLC Circuits
 
