@@ -25,7 +25,7 @@ Note that the number to the left of the decimal for your learning objective is t
 | [2.2](Block2Reading/Obj02/ECE215_B2_Obj02_Reading) | I can identify types of ideal filters, determine their cutoff frequencies, and analyze their output given an input sinusoidal signal or signal spectrum. |
 | [2.3](Block2Reading/Obj03/ECE215_B2_Obj03_Reading) | I can model capacitors and inductors as complex resistors and use circuit analysis tools (such as voltage dividers, Ohm’s Law, and the power equation) to calculate voltage and power in AC circuits containing these components. |
 | [2.4](Block2Reading/Obj04/ECE215_B2_Obj04_Reading) | I can determine the filter type, gain, and cutoff frequency of simple series circuits containing a resistor, capacitor, and/or inductor.  |
-| 2.5 | I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.    |
+| [2.5](Block2Reading/Obj05/ECE215_B2_Obj05_Reading) | I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.    |
 | 2.6 | I can calculate the ADC sampling rate, voltage resolution, and digital output based on a given input voltage and the ADC's operational parameters.   |
 | 2.7 | I can calculate the ADC bit rate to estimate the memory required for a given recording duration or determine how long it takes to fill a memory card of a specified size.  |
 | 2.8 | I can relate digital inputs to digital outputs using tools such as fundamental digital logic gates (AND, OR, NOT), truth tables, and Sum of Products (SOP) and Product of Sums (POS) Boolean expressions.  |
