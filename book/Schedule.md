@@ -31,7 +31,7 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 18 | [Lab Workday](_static/ECE215_AnalogFilterLab.pdf) | Turn in lab handout; worth 1 Project point |
 | 19 | [Midterm Review](_static/ECE215_Midterm_Equation_Sheet.pdf) | Quiz 5 Due (Objs 2.3-2.4) |
 | 20 | [Obj 2.5](Block2Reading/Obj05/ECE215_B2_Obj05_Reading) | Midterm Due (Objs 1.1-1.8, 2.1-2.4) |
-| 21 | Obj 2.6 |  |
+| 21 | [Obj 2.6](Block2Reading/Obj06/ECE215_B2_Obj06_Reading) |  |
 | 22 | Obj 2.7 |  |
 | 23 | Obj 2.8 | Quiz 6 Due (Objs 2.5-2.7) |
 | 24 | Obj 2.9 |  |
