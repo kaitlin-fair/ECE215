@@ -63,6 +63,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Objective 2.6" href="../Obj06/ECE215_B2_Obj06_Reading.html" />
     <link rel="prev" title="Objective 2.4" href="../Obj04/ECE215_B2_Obj04_Reading.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -209,6 +210,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_B2_Obj03_Reading.html">Objective 2.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Obj04/ECE215_B2_Obj04_Reading.html">Objective 2.4</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj06/ECE215_B2_Obj06_Reading.html">Objective 2.6</a></li>
 </ul>
 
     </div>
@@ -404,14 +406,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers-and-signal-conditioning">Transducers and Signal Conditioning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers">Transducers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instrumentation-and-signal-conditioning">Instrumentation and Signal Conditioning</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplification-and-biasing">Amplification and Biasing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analog-to-digital-conversion">Analog to Digital Conversion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling">Sampling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digitizing">Digitizing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution">Resolution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding">Encoding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#putting-it-all-together">Putting it All Together</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-4">Example Problem 4</a></li>
 </ul>
 </li>
 </ul>
@@ -435,340 +439,472 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p>2.5</p></td>
-<td><p>I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.</p></td>
+<td><p>I can calculate the ADC sampling rate, voltage resolution, and digital output based on a given input voltage and the ADC’s operational parameters.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<section id="transducers-and-signal-conditioning">
-<h2>Transducers and Signal Conditioning<a class="headerlink" href="#transducers-and-signal-conditioning" title="Link to this heading">#</a></h2>
-<section id="introduction">
-<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>In previous lessons, we discussed a number of basic electrical
-components that are used in all kinds of useful circuits for myriad
-applications. In this lesson, we will continue to build on that
-foundation to understand how devices use electrical signals to
-communicate with one another. But first, we need to discuss how we
-initially get an electrical signal that we would want to communicate
-somewhere else. This is where transducers come into play.</p>
-<p>Take your computer mouse and move it around a little bit and see what
-happens. If your computer is actually turned on while you do this, you
-will probably see the pointer on your computer display move left or
-right or up or down in sync with the movements you made with the mouse.</p>
-<p>Now think about what is really happening during this process. If you
-have an optical mouse, the light from a light-emitting diode (LED)
-reflects off of the surface of your desk and is picked up by an
-opto-electronic sensor which sends the image to an image-processing
-chip. This chip compares the image from one moment to the next and
-determines how much the mouse has moved and in what direction. The mouse
-then creates an electronic signal that contains this movement
-information and sends it to the computer, which, in turn, processes that
-signal and causes the mouse cursor to move with respect to the rest of
-the display. The following block diagram succinctly captures the
-process:</p>
-<p><img alt="" src="../../_images/image117.png" /></p>
-<p>Up to this point, we’ve only studied signals related to the transmission
-and flow of power. While these signals are certainly useful, electrical
-signals can also be used to transmit and process signals conveying
-information. The Air Force spends a massive amount of time gathering
-information with its satellites, reconnaissance aircraft, and unmanned
-aerial systems (UAS) but the data is worthless if we can’t get it to the
-right place for our people to use it.</p>
-</section>
-<section id="transducers">
-<h3>Transducers<a class="headerlink" href="#transducers" title="Link to this heading">#</a></h3>
-<p><em>Transducers</em> are devices that interface the physical world with the
-electrical world. We will consider two primary types of transducers:
-input transducers and output transducers. <em>Input transducers</em> convert a
-physical signal into an electrical signal. For example, a microphone
-turns sound waves into electrical signals. This conversion is useful if
-we want to process the vocal signal digitally, or if we want to transmit
-this signal over a network. In fact, any sensor we want to analyze using
-a computer must include an input transducer. Figure 1 shows an example
-of physical information translated into electrical data where a voice
-has been converted into a voltage waveform.</p>
-<p><img alt="" src="../../_images/image214.png" /></p>
-<p>Figure 1: Example of voice converted to an electrical signal</p>
-<p><a class="reference external" href="http://www.answers.com/topic/frequency-spectrum">http://www.answers.com/topic/frequency-spectrum</a></p>
-<p>Conversely, <em>output transducers</em> convert an electrical signal into a
-physical signal. In keeping with the transmission of your voice over a
-communications network – someone will likely want to hear what you
-said, so they might have headphones connected to their receiving radio.
-In this case, the headphones are converting the electrical signal back
-to sound waves again; therefore, the speakers are an example of an
-output transducer.</p>
-</section>
-<section id="instrumentation-and-signal-conditioning">
-<h3>Instrumentation and Signal Conditioning<a class="headerlink" href="#instrumentation-and-signal-conditioning" title="Link to this heading">#</a></h3>
-<p>Most input transducers do not provide electrical signals that are
-powerful enough to be displayed. For example, the output of most
-microphones is in the millivolt range. In order for this signal to be
-useful, we have to do something to the signal. If we follow the analogy
-of the microphone further, we can’t drive a speaker (an output
-transducer) with the low voltage produced by a microphone. One way to
-condition a signal is to build an <em>instrumentation</em> system consisting of
-amplification and biasing.</p>
-<hr class="docutils" />
-<p><strong>Key Concept</strong></p>
-<p><em>Instrumentation</em> connects input and output transducers in a meaningful
-way.</p>
-</section>
-<hr class="docutils" />
-<section id="amplification-and-biasing">
-<h3>Amplification and Biasing<a class="headerlink" href="#amplification-and-biasing" title="Link to this heading">#</a></h3>
-<p>Amplification is a straightforward concept. An amplifier takes small
-values that we simply need to make larger and multiplies them by a
-constant value. If the dynamic range of the input and output transducers
-are symmetric around zero, amplification alone will suffice for signal
-conditioning. Oftentimes though, the dynamic range of either our input
-or output transducers is not symmetric around zero and, when we amplify
-our signal, we find the magnitude of our values is correct, but they are
-offset from where we need them to be. In this case, we can add a bias
-voltage to shift the output appropriately. The device we use to add two
-voltages together is known as a <em>summer</em>. The generic flow for any
-instrumentation is shown in Figure 2.</p>
-<p><img alt="" src="../../_images/image312.png" /></p>
-<p>Figure 2: Block diagram for a generic instrumentation system.</p>
-<p>In this flow, we see that the input and output are related by the
-equation:</p>
+<section id="analog-to-digital-conversion">
+<h2>Analog to Digital Conversion<a class="headerlink" href="#analog-to-digital-conversion" title="Link to this heading">#</a></h2>
+<p>As humans, we use <em>analog</em> senses to perceive the world. Our eyes detect
+subtle variations in the color and intensity of light. Our ears
+discriminate between a wide and continuous range of frequencies and
+sound levels. Our senses of taste, touch, and smell also differentiate
+between a continuous range of inputs. By definition, analog values are
+continuous, where they can have any value between a defined maximum and
+minimum value at any given instant in time. For example, our eyes
+perceive infinite shades of gray – this is analog. Digital means we
+only allow for a signal to be expressed in terms of values from a
+certain predetermined set of values. It would be akin to seeing the
+world in only black and white, or perhaps only specific combinations of
+red, green, and blue. Either way – we are restricting the possible
+values of our signal.</p>
+<p>One special type of digital value is called <em>binary</em>, which only allows
+two possible values. Computers (and many things we call digital) use
+binary values to store and transmit information.</p>
+<p>A huge amount of Electrical and Computer Engineering is spent bridging
+the gap between the physical world’s analog information and digital
+technology. Consider all the technologies which have been digitized over
+the last 15 years - cameras, cell phone communications, and TVs are just
+a few examples. What drove us to convert these technologies to digital?</p>
+<ul class="simple">
+<li><p>Digital is less susceptible to noise, which is the static that you
+hear in older radios and cell phones</p></li>
+<li><p>Digital can be easily stored and recovered, because the amount of
+data is significantly reduced</p></li>
+<li><p>Digital allows for easier encryption and processing by computers.</p></li>
+</ul>
+<p>Digital signals have disadvantages, which is why many technologies start
+off with analog implementations. For example, the original version of
+the modern day computer was analog. When you convert your original
+analog information into a digital format, you lose some fidelity of the
+information. There’s no way to go from a continuous range of infinite
+values to discrete levels without throwing something away. Although we
+can minimize information loss by increasing the number of possible
+discrete values, this also increases the amount of digital information
+that you have to save, process, and transmit. For example, an image from
+a 12 megapixel (MP) camera is a significantly larger file size than a
+photo from a 1MP camera.</p>
+<p>As we discuss the process of converting data from analog to digital,
+hopefully you’ll begin to understand the tradeoffs. Digitizing a signal
+consists of three basic steps: sampling, quantizing, and encoding.</p>
+<section id="sampling">
+<h3>Sampling<a class="headerlink" href="#sampling" title="Link to this heading">#</a></h3>
+<p>Sampling an analog signal means taking a set number of measurements each
+second. The rate at which we take these measurements, or the <em>sampling
+rate</em>, is simply how often we take a snapshot of whatever it is we’re
+trying to sample within a second. Think about watching a show on TV.
+Even though the movement on the screen looks fairly natural, it really
+has a sampling rate of 60 frames per second, or 60 Hz. Every 1/60 of a
+second, the TV’s screen updates. In fact, if you take a slow motion
+video of your TV with your camera, you will see the flickering of the
+screen, which is the update rate. This is actually the fact that a slow
+motion video is taking many more samples per second than the TV, so it
+“sees” the update rate of the screen.</p>
+<p>But what if our TV only updated once per second, would that be enough?
+What about 1 update per minute? Obviously, there is some minimum
+standard for how often we need to sample whatever we’re trying to
+digitize. The limit is based on the Nyquist rate, which is simply two
+times the highest frequency in the signal:</p>
 <div class="math notranslate nohighlight">
-\[v_{out}(t) = Kv_{in}(t) + B\]</div>
-<p>So, the input voltage is first multiplied by the constant K, which is a
-gain factor. The DC bias <em>B</em> is then added to the result of that
-operation. Practically, this allows us a great deal of flexibility when
-designing instrumentation to interface various input and output
-transducers. In general, input transducers will correlate a physically
-expected behavior with a voltage. A <em>thermocouple</em>, for example, is an
-<em>input transducer</em> that senses a temperature and outputs a voltage for
-that specific temperature. However, we may want to use another device,
-such as a temperature gauge (which is an <em>output transducer</em>) to view
-the output of the thermocouple. In most cases, the temperature gauge
-expects a different range of voltages, which it will then correlate to a
-temperature display. Using the <em>gain</em> and <em>bias</em> of the instrumentation
-system, we can translate the actual output range of the thermocouple to
-the expected input range of the temperature gauge. Let’s look at an
-example problem to see how this plays out in a real world scenario.</p>
+\[f_{S} = 2f_{High}\]</div>
+<p>If we sample at a frequency below the Nyquist rate, we get a distortion
+in the signal known as <em>aliasing.</em> Aliasing is the cardinal sin of ADC
+– once it occurs, it can’t be fixed. We can correct a lot of problems
+but aliased data is unrecoverable!</p>
+<p>One simple visual example of aliasing is the wheels of a car during a
+car commercial. Even though the car is obviously moving forward, the
+wheels sometimes look as if they are rolling backwards. This is because
+the wheel is spinning at a rate higher than half the Nyquist frequency.
+For example, consider the wheel of a car spins at a rate of 35 Hz (or
+rpm). According to the Nyquist criteria, the required sampling rate
+would be:</p>
+<div class="math notranslate nohighlight">
+\[f_{S} &gt; 2f_{High}\]</div>
+<div class="math notranslate nohighlight">
+\[f_{S} &gt; 2*35\ Hz = 70\ Hz\]</div>
+<p>Since the actual TV sampling rate is 60 Hz, the video is aliased and the
+wheel looks like it is moving backwards. Aliasing can actually change
+the frequency of the input signal, so that it looks like something
+completely different. In this case, your digitized signal doesn’t look
+anything like your analog signal, which defeats the purpose of ADC.</p>
+<p>The pictures in figures 1 and 2 show another example of aliasing. Did
+you realize that edges in images are a form of high frequency content?
+The image on the left is sampled well above the Nyquist minimum. When we
+reduce the number of pixels (or samples), we get aliasing in the form of
+the pattern in the lower right corner.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="" src="../../_images/image117.png" /></p></th>
+<th class="head text-center"><p><img alt="" src="../../_images/image214.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 1: Properly sampled image.</p></td>
+<td class="text-center"><p>Figure 2: Aliased image.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="example-problem-1">
-<h3>Example Problem 1:<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
-<p>A small aircraft uses an input transducer called
-a <em>thermocouple</em> to measure the outside air temperature. When the
-temperature is -60° C, the thermocouple produces -2 mV. When the
-temperature is 50° C, it produces 8 mV. The signal from the thermocouple
-is used by a temperature gauge in the cockpit to display the outside air
-temperature to the pilot. The gauge requires -5 V to display a
-temperature of -60° C and 10 V to display 50° C. Design the interface to
-connect these two devices (assuming both the thermocouple and gauge are
-linear devices).</p>
-<p><strong>Understand:</strong> The pilot wants to know the outside air temperature,
-which is sensed by the thermocouple and displayed by the temperature
-gauge. However, the thermocouple produces very low voltages, while the
-gauge requires much larger voltages. We need something to convert the
-relatively small thermocouple voltage into the correspondingly higher
-gauge voltage, so we can display the correct temperature. Obviously, the
-signal needs to be amplified, because we’re going from mV to V.
-Unfortunately, converting -2 mV into -5 V and also converting 8 mV into
-10 V with a single constant gain amplifier is not possible. Therefore,
-we will need to take advantage of both our gain and bias.</p>
-<p><strong>Identify Key Information:</strong></p>
+<h3>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
+<p>A typical human voice has a maximum frequency of
+3.4 kHz. If we wish to digitize a voice signal, what is the lowest
+sampling frequency we can use that would prevent aliasing?</p>
+<p><strong>Understand</strong>: Aliasing is the distortion in a signal when we do not
+sample it at a high enough rate.</p>
+<p><strong>Identify Key Information</strong>:</p>
 <ul class="simple">
-<li><p><strong>Knowns:</strong> We know the correlation between temperature and voltage
-for the thermocouple and for the temperature gauge.</p></li>
+<li><p><strong>Knowns:</strong> We know the maximum frequency of a human voice and we
+know the Nyquist criteria.</p></li>
+<li><p><strong>Unknowns:</strong> The required sampling rate for ADC.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
 </ul>
+<p><strong>Plan:</strong> We must sample at least at the Nyquist rate to prevent
+aliasing. Therefore, we calculate the Nyquist rate based on the maximum
+frequency content of the human voice.</p>
+<p><strong>Solve:</strong></p>
+<div class="math notranslate nohighlight">
+\[f_{S} &gt; 2f_{High}\]</div>
+<div class="math notranslate nohighlight">
+\[f_{S} &gt; 2*3.4\ kHz = 6.8\ kHz\]</div>
+<p><strong>Answer:</strong> We must use a sampling rate of at least 6.8 kHz to prevent
+aliasing.</p>
+<p>Now we know we have to sample at a rate greater than the Nyquist rate,
+but what rate should we use? A good example of something you are
+probably familiar with is music CDs, which are simply digital
+representations of analog music signals. The human ear has a range
+between 20Hz and 22kHz:</p>
+<div class="math notranslate nohighlight">
+\[f_{S} = 2f_{High}\]</div>
+<div class="math notranslate nohighlight">
+\[f_{S} = 2*22\ kHz = 44kHz\]</div>
+<p>Therefore, CDs need to have a sampling rate at 44kHz or higher. The
+actual sampling rate for CDs is 44.1 kHz. But, if 44.1 kHz is good,
+wouldn’t 50 kHz or even 100 kHz be even better? Here, we see the
+engineering trade off. The key is to sample at a high enough frequency
+to adequately reproduce the signal and a low enough frequency to not
+exceed our memory capacity or digital bandwidth. For a CD, each sample
+is stored as a 16-bit binary number (2 Bytes). A sampling rate of 44.1
+kHz allows up to 80 minutes of uncompressed music to be loaded onto a
+single disc. While the quality of the music increases slightly with
+higher sampling rates, it also requires larger discs or reduced play
+time.</p>
+</section>
+<section id="digitizing">
+<h3>Digitizing<a class="headerlink" href="#digitizing" title="Link to this heading">#</a></h3>
+<p>Now, let’s take a look at how we digitize a signal. Suppose the
+following sinusoidal signal needs to be converted into a digital signal:</p>
+<div class="math notranslate nohighlight">
+\[V_{M}(t) = 2\cos(360{^\circ}\ 3kt)V\]</div>
+<p>What would the sampled signal look like if we used a 30 kHz sampling
+frequency? Before we start sampling, we must <em>always</em> check the Nyquist
+rate to make sure we won’t distort the signal. If our sampling frequency
+is higher than the Nyquist rate, we can start collecting samples. The
+Nyquist rate is:</p>
+<div class="math notranslate nohighlight">
+\[f_{S} &gt; 2f_{High}\]</div>
+<div class="math notranslate nohighlight">
+\[f_{S} &gt; 2*3\ kHz = 6kHz\]</div>
+<p>Since the 30 kHz sampling frequency is greater than our signal frequency
+of 6 kHz, we can start taking samples. First, we find the sampling
+period, which is simply the inverse of the sampling frequency:</p>
+<div class="math notranslate nohighlight">
+\[t_{s} = \ \frac{1}{f_{s}} = \frac{1}{30\ kHz} = 33.33\ \mu\sec\]</div>
+<p>Therefore, we will take a sample every 33.33 μsec. The first three
+samples are given by:</p>
+<div class="math notranslate nohighlight">
+\[V_{M}(0\ sec) = 2\cos\left( 360{^\circ}\ 3k(0) \right)V = 2\ V\]</div>
+<div class="math notranslate nohighlight">
+\[V_{M}(33.33\ \mu sec) = 2\cos\left( 360{^\circ}\ 3k(33.33\ \mu sec) \right)V = 1.62\ V\]</div>
+<div class="math notranslate nohighlight">
+\[V_{M}(2\ x\ 33.33\ \mu sec) = 2\cos\left( 360{^\circ}\ 3k(66.66\ \mu sec) \right)V = 0.62\ V\]</div>
+<p>Look at Figure 3. As you can hopefully see, with a sampling frequency of
+30 kHz, we’ve captured a fairly good representation of the original
+sinusoidal curve.</p>
+<p><img alt="" src="../../_images/image312.png" /></p>
+<p>Figure 3: Sampling V­<sub>M­</sub>.</p>
+</section>
+<section id="resolution">
+<h3>Resolution<a class="headerlink" href="#resolution" title="Link to this heading">#</a></h3>
+<p>By virtue of being continuous, analog signals contain an infinite range
+of magnitude values. Once we have sampled the data, we have reduced the
+number of values (in time) we need to store. However, we must also
+convert these values to a finite number of digital outputs, in voltage.
+After an analog signal is sampled, we must then determine which output
+to associate with the sampled value. In order to calculate the discrete
+level of any given sample, we set voltage limits (<em>V­<sub>max­</sub></em> and <em>V­<sub>min­</sub></em>)
+and a number of bits, <em>b</em>, for the process:</p>
+<ul class="simple">
+<li><p>The maximum voltage, <em>V­<sub>max­</sub></em>, is the highest input voltage that
+will be correctly converted. Input voltages higher than <em>V­<sub>max­</sub></em>
+will be treated as though they were <em>V­<sub>max­</sub></em>.</p></li>
+<li><p>The minimum voltage, <em>V­<sub>min­</sub></em>, is the lowest input voltage that will
+be correctly converted. Voltages lower than <em>V­<sub>min­</sub></em> will be treated
+as though they were at <em>V­<sub>min­</sub></em>.</p></li>
+<li><p>The number of bits, <em>b</em>, that will be used to represent the final
+digital value, determines the total number of possible values for
+the process:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[levels = \ 2^{b}\]</div>
+<p>Let’s look at two different settings for converting
+<span class="math notranslate nohighlight">\(v(t) = 2\cos(360{^\circ}*1.6\ Hz*t)V\)</span>. In Figure 5, we allowed each
+sample to be assigned to one of 16 possible levels, while in Figure 4,
+we only allowed 4 levels (easier to see the individual levels).
+Obviously, the levels assigned to each sample in Figure 5 are a truer
+representation of the original signal. An important point here is <em>the
+sampling rate and the resolution are <strong>completely</strong> independent</em>.
+Sampling is dividing the signal along the x-axis, while resolution
+involves dividing the signal along the y-axis.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>Condition</strong></p></th>
-<th class="head"><p><strong><em>v<sub>in</sub>(t)</em>, Thermocouple Input</strong></p></th>
-<th class="head"><p><em><em>v<sub>out</sub>(t),</em> Gauge Input</em>*</p></th>
+<tr class="row-odd"><th class="head"><p><img alt="V:CoursesECE315Spring2010UpdatedReadingsDrawingsLesson22-1.jpg" src="../../_images/image43.jpeg" /></p></th>
+<th class="head"><p><img alt="V:CoursesECE315Spring2010UpdatedReadingsDrawingsLesson22-2.jpg" src="../../_images/image56.jpeg" /></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>-60° C</p></td>
-<td><p>-2 mV</p></td>
-<td><p>-5 V</p></td>
-</tr>
-<tr class="row-odd"><td><p>50° C</p></td>
-<td><p>8 mV</p></td>
-<td><p>10 V</p></td>
+<tr class="row-even"><td><p>Figure 4: Sampling with 4 levels (b=2 bits)</p></td>
+<td><p>Figure 5: Sampling with 16 levels (b=4 bits)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<ul class="simple">
-<li><p><strong>Unknowns:</strong> We want to know the gain (K) and bias (B) of the
-instrumentation system.</p></li>
-<li><p><strong>Assumptions:</strong> The gain and the bias will be produced by linear
-devices, meaning the correlation between the input and output is
-always a straight line.</p></li>
-</ul>
-<p><strong>Plan:</strong></p>
-<p>To see the big picture, we plot the voltage produced by the thermocouple
-against the voltage required by the gauge:</p>
-<p><img alt="" src="../../_images/image410.png" /></p>
-<p>Since we assume the devices are linear, we can draw a straight line
-between them, to represent what we want our interface to do. As the
-thermocouple voltage rises linearly from -2 mV to 8 mV, we want the
-gauge voltage to rise from -5 V to 10 V.</p>
-<p>Recall the straight-line equation in the slope-intercept form is y =
-<em>m</em>x + <em>b</em>, where <em>m</em> is the slope and <em>b</em> is the y-intercept. For a
-signal conditioning system that accounts for this shift in voltage, we
-use a very similar equation:</p>
+<p><em>Resolution</em> is the smallest voltage change that can be measured by the
+analog to digital conversion process and is equal to:</p>
 <div class="math notranslate nohighlight">
-\[v_{out}(t) = Kv_{in}(t) + \ B\]</div>
-<p>In this equation, <em>K</em> is the <em>gain</em> of a scalar multiplier and <em>B</em> is a
-DC <em>bias voltage</em>. The block diagram for this required signal
-conditioning is:</p>
-<p><img alt="" src="../../_images/image58.png" /></p>
-<p>Here, we see the input voltage is multiplied by the amplifier gain, K. A
-bias voltage, <span class="math notranslate nohighlight">\(B\)</span>, is then added to the result of that operation to
-produce the correct relationship for <span class="math notranslate nohighlight">\(v_{out}\)</span>. Here, the circle with
-the Greek sigma inside is a summer, which is an electronic device that
-mathematically adds the two input signals. We will use the extreme cases
-of the thermocouple-gauge relationship to write two independent
-equations and solve for both K and B.</p>
-<p><strong>Solve:</strong> Let’s start by applying this generic block diagram to the
-system we want to design:</p>
-<p><img alt="" src="../../_images/image69.png" /></p>
-<p>Now let’s look at the expected conditions and expected behaviors of the
-transducers we need to design this specific system. When the temperature
-is -60° C, the thermocouple produces -2mV, we will multiply this by <em>K</em>
-and then add B, and the result should be -5 V. Likewise, when the
-temperature is 50° C, the thermocouple produces 8 mV, we multiply this
-by <em>K</em>, add B , and the gauge should get 10 V. These are our two extreme
-cases, and they allow us to write two independent equations to solve for
-our two unknowns (K and B)</p>
-<p>Plugging both sets of values into the equation for our line gives the
-following:</p>
-<div class="math notranslate nohighlight">
-\[- 5\ V = \ K( - 2\ mV)\  + B\]</div>
-<div class="math notranslate nohighlight">
-\[10\ V = \ K(8\ mV)\  + B\]</div>
-<p>Since we have two equations with two unknowns, we can solve for both <em>K</em>
-and <span class="math notranslate nohighlight">\(B\)</span>. There are several ways we can do this (your calculator should
-be able to do it using its built-in equation solver mode), but there is
-a simple approach which will work for all our signal conditioning
-problems. By subtracting the second equation from the first, we can
-quickly solve for <em>K</em>, since the <em>B</em> terms will cancel. Here’s what it
-looks like:</p>
-<div class="math notranslate nohighlight">
-\[( - 5\ V - 10\ V) = \ K( - 2\ mV - 8\ mV) + \ (B - B)\ \]</div>
-<div class="math notranslate nohighlight">
-\[- 15V = \ K( - 10\ mV)\]</div>
-<p>Solving for <em>K</em> gives:</p>
-<div class="math notranslate nohighlight">
-\[K = \ \frac{- 15\ V}{- 10\ mV}\  = 1500.\]</div>
-<p>As you can see, <em>K</em> is a dimensionless number with no units. We can now
-plug <em>K</em> back into either equation to solve for <em>B</em>. If we use the first
-equation, we get:</p>
-<div class="math notranslate nohighlight">
-\[- 5V = \ 1500( - 2\ mV) + B\]</div>
-<div class="math notranslate nohighlight">
-\[- 5V = \  - 3\ V + B.\]</div>
-<p>Solving this for <span class="math notranslate nohighlight">\(B\)</span> gives:</p>
-<div class="math notranslate nohighlight">
-\[B = - 2\ V.\]</div>
-<p>Therefore, we need to build an interface that accomplishes the following
-function:</p>
-<div class="math notranslate nohighlight">
-\[v_{out}(t) = 1500v_{in}(t) - 2V\]</div>
-<p><strong>Answer:</strong> The design for an interface between the thermocouple and the
-gauge is as follows:</p>
-<p><img alt="" src="../../_images/image76.png" /></p>
+\[\Delta V = \ \frac{V_{\max} - \ V_{\min}}{levels}\]</div>
+<p>In the examples above, our resolutions were 1.25 V/level (Figure 4) and
+312.5 mV/level (Figure 5). Some important points worth emphasizing
+regarding resolution:</p>
+<ol class="arabic simple">
+<li><p><em>Resolution is determined by the analog to digital converter (ADC),
+not necessarily the analog signal being converted</em>. While we want
+<span class="math notranslate nohighlight">\(V_{\max}\)</span> and <span class="math notranslate nohighlight">\(V_{\min}\)</span> to encompass the range of our input
+signals, the two ranges are not the same.</p></li>
+<li><p><em>A <strong>smaller resolution</strong> is a <strong>better</strong> resolution</em> because you
+can resolve finer details from your analog signal.</p></li>
+<li><p>The units for resolution are volts per level (V/level).</p></li>
+<li><p>The range from V­<sub>max­</sub> to V­<sub>min­</sub> is called the <em>dynamic range</em> of the
+ADC. If an input signal exceeds the dynamic range of a particular
+ADC, it is said to be <em>clipping</em>.</p></li>
+</ol>
 </section>
 <section id="example-problem-2">
-<h3>Example Problem 2:<a class="headerlink" href="#example-problem-2" title="Link to this heading">#</a></h3>
-<p>Using the system designed in the previous
-problem, what voltage would be sent to the gauge if the thermocouple
-produces 1.3 mV?</p>
-<p><strong>Understand:</strong> We must calculate the effect of our interface on a
-particular input signal received from the thermocouple.</p>
+<h3>Example Problem 2<a class="headerlink" href="#example-problem-2" title="Link to this heading">#</a></h3>
+<p>A 6-bit ADC has a <em>V­<sub>max­</sub></em> of 5 V and a <em>V­<sub>min­</sub></em>
+of -1 V. What is the resolution of this ADC?</p>
+<p><strong>Understand</strong>: The maximum and minimum voltages do not have to be
+symmetric around 0 V.</p>
 <p><strong>Identify Key Information:</strong></p>
 <ul class="simple">
-<li><p><strong>Knowns:</strong> We know the equation for our instrumentation and the
-input voltage.</p></li>
-<li><p><strong>Unknowns:</strong> We want to know the output of the instrumentation
-system, which is the input to the temperature gauge.</p></li>
-<li><p><strong>Assumptions:</strong> Our devices are all linear.</p></li>
+<li><p><strong>Knowns:</strong> We know the dynamic range of the ADC and the number of
+output bits (6).</p></li>
+<li><p><strong>Unknowns:</strong> We want to find the resolution of the ADC.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
 </ul>
-<p><strong>Plan:</strong> Plug the given input value into our instrumentation equation.</p>
-<p><strong>Solve:</strong> The equation for the system above is</p>
+<p><strong>Plan</strong>: We will use the resolution equation to calculate the
+resolution:</p>
 <div class="math notranslate nohighlight">
-\[v_{out}(t) = 1500v_{in}(t) - 2V\]</div>
-<p>Since <em>v<sub>in</sub></em>(<em>t</em>) = 1.3 mV, we have:</p>
+\[\Delta V = \ \frac{V_{\max} - \ V_{\min}}{2^{b}}\]</div>
+<p><strong>Solve:</strong></p>
 <div class="math notranslate nohighlight">
-\[v_{out}(t) = 1500(1.3mV) - 2V = - 50mV\]</div>
-<p><strong>Answer</strong>: This system would send -50 mV to the gauge if the
-thermocouple voltage was 1.3 mV.</p>
+\[\Delta V = \ \frac{V_{\max} - \ V_{\min}}{2^{b}} = \ \frac{5\ V - ( - 1\ V)}{2^{6}\ levels} = \ \frac{6\ V}{64\ levels}\]</div>
+<div class="math notranslate nohighlight">
+\[\Delta V = 0.09375\ \frac{V}{level}\  = 93.75\ \frac{mV}{level}\ \]</div>
+<p><strong>Answer</strong>: The resolution for the given ADC is 93.75 mV per level.</p>
 </section>
 <section id="example-problem-3">
-<h3>Example Problem 3:<a class="headerlink" href="#example-problem-3" title="Link to this heading">#</a></h3>
-<p>An elevator actuator for a UAS requires 1 V to
-move the elevator fully down and -9 V to move the elevator fully up. The
-control unit produces -1 mV when fully down and 4 mV for fully up.
-Design the interface between the control unit and the actuator.</p>
-<p><strong>Understand:</strong> Since we are building an instrumentation as an interface
-for two transducers, we’ll solve this exactly like the earlier problem.
-The most important step in these problems is identifying which device is
-inputting into the interface and which device needs the output from the
-interface, as the inputs and outputs can be a bit confusing. In this
-case, the control unit is providing <em>v<sub>in</sub>(t),</em> while the elevator
-actuator needs <em>v<sub>out</sub>(t)</em>.</p>
+<h3>Example Problem 3<a class="headerlink" href="#example-problem-3" title="Link to this heading">#</a></h3>
+<p>An ADC is to be used with <em>V­<sub>max­</sub></em> = 4 V and
+<em>V­<sub>min­</sub></em> = -2 V. If the worst acceptable resolution is 200 mV per level,
+what is the minimum number of bits that can be used?</p>
+<p><strong>Understand</strong>: The more bits we have, the better (smaller) the
+resolution is.</p>
 <p><strong>Identify Key Information:</strong></p>
 <ul class="simple">
-<li><p><strong>Knowns:</strong> We know the correlation between our expected physical
-behaviors and the voltages for both our input transducer (control
-unit) and the output transducer (actuator), as shown in the
-following table</p></li>
+<li><p><strong>Knowns:</strong> We know the dynamic range of the ADC and the worst
+acceptable resolution.</p></li>
+<li><p><strong>Unknowns:</strong> We want to find the number of output bits required to
+satisfy our resolution requirements.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
 </ul>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Condition</strong></p></th>
-<th class="head"><p><strong><em>v<sub>in</sub>(t)</em> – Input from Control Unit</strong></p></th>
-<th class="head"><p><strong><em>v<sub>out</sub>(t)</em> – Output to Actuator</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Fully down</p></td>
-<td><p>-1 mV</p></td>
-<td><p>1 V</p></td>
-</tr>
-<tr class="row-odd"><td><p>Fully up</p></td>
-<td><p>4 mV</p></td>
-<td><p>-9 V</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<ul class="simple">
-<li><p><strong>Unknowns:</strong> We are trying to find the gain (K) and bias (B) for
-our instrumentation, which will interface between the control unit
-and the actuator.</p></li>
-<li><p><strong>Assumptions:</strong> Our devices are linear.</p></li>
-</ul>
-<p><strong>Plan:</strong> We will use the instrumentation equation and the extreme cases
-of the input/output (i/o) table above.</p>
-<p><strong>Solve:</strong> Using the values from the table above, we can build two
-equations:</p>
+<p><strong>Plan</strong>: Solving the resolution equation for <em>2^b^</em>, we find:</p>
 <div class="math notranslate nohighlight">
-\[1\ V\  = \ K( - 1\ mV)\  + \ B\]</div>
+\[2^{b} = \ \frac{V_{\max} - \ V_{\min}}{\Delta V}\]</div>
+<p>From this equation, we see that the resolution and number of bits are
+inversely proportional, so if we plug in the worst case (highest)
+resolution, we will find the minimum number of levels.</p>
+<p><strong>Solve</strong>:</p>
 <div class="math notranslate nohighlight">
-\[- 9\ V\  = \ K(4\ mV) + \ B\]</div>
-<p>If we subtract the bottom equation from the top equation, we get:</p>
+\[2^{b} = \ \frac{V_{\max} - \ V_{\min}}{\Delta V} = \ \frac{4\ V - ( - 2\ V)}{200\ mV/level} = 30\ levels\]</div>
+<p>There are two different ways to solve for <em>b</em>. The easiest way is to
+simply list the powers of 2 until we get one higher than thirty: 2, 4,
+8, 16, 32. Since 32 is the fifth power of 2 (2^5^ = 32), 5 bits will
+give us an acceptable resolution.</p>
+<p>The second way is to use logarithms, where:</p>
 <div class="math notranslate nohighlight">
-\[(1\ V - \lbrack - 9\ V\rbrack)\  = \ K( - 1\ mV - \ 4\ mV)\  + \ (B - \ B)\]</div>
+\[b = \ \frac{\log{(required\ levels)}}{\log 2} = \ \frac{\log 30}{\log 2} = \ 4.907.\]</div>
+<p>Since we want a better resolution than 200 mV per level, we need more
+than 4.907 bits. There is no such thing as a partial bit; therefore, the
+minimum number of allowable bits is 5.</p>
+<p><strong>Answer</strong>: To get a resolution of at least 200 mV per level, 5 bits are
+required.</p>
+</section>
+<section id="encoding">
+<h3>Encoding<a class="headerlink" href="#encoding" title="Link to this heading">#</a></h3>
+<p>The final step in ADC is to encode the sampled value into a binary
+number. But, first, we must determine what voltage value (or “level”) to
+assign the sampled value to. Consider the following diagram, where an
+ADC with 3 output bits is digitizing the signal:</p>
+<p><img alt="" src="../../_images/image69.png" /></p>
+<p>Figure 6: Example of encoding a signal with a 3-bit ADC</p>
+<p>The black dots on this diagram represent 7 samples taken from an analog
+signal. Each level is assigned a number, which is then translated to
+3-bit binary. Notice each dot falls into one of the eight levels. The
+first dot clearly falls into level 5, and therefore is encoded as 101.
+The second dot is in level 6, or 110. The next two dots are in level 7
+(the highest level) and are therefore encoded as 111. The final three
+dots are in levels 6, 5, and 3 and are encoded as 110, 101, and 011
+respectively.</p>
+<p>If we combine all these samples in series, the binary values resulting
+from these 7 samples would be:</p>
+<div align="center">101 110 111 111 110 101 011</div>
+<p>While graphing might work with short snippets of signals like this, they
+are not practical for real-world systems. Recall, CD-quality music uses
+16 bits per sample. The number of levels would therefore be:</p>
 <div class="math notranslate nohighlight">
-\[10\ V\  = \ K( - 5\ mV)\]</div>
+\[levels = \ 2^{b} = \ 2^{16} = 65,536\ levels.\]</div>
+<p>Fortunately, there is a simple equation to determine which level a given
+signal should be assigned:</p>
 <div class="math notranslate nohighlight">
-\[K = \ \frac{10\ V}{- 5\ mV}\  = - 2000\]</div>
-<p>Using the first equation to solve for <span class="math notranslate nohighlight">\(B\)</span>,</p>
+\[Expected\ Level = EL = \ \frac{V_{in}(t) - V_{\min}}{\Delta V}\]</div>
+<p>Once a sample, <span class="math notranslate nohighlight">\(V_{in}(t)\)</span>, is taken at a specific time, you can solve
+for the expected level and then <em><strong>truncate</strong></em> (or round down) the
+result to get an integer value which can be converted into a binary
+number for saving on a computer. Therefore, the actual <em>quantized level</em>
+of this sample is:</p>
 <div class="math notranslate nohighlight">
-\[1\ V = - 2000( - 1\ mV) + \ B\]</div>
-<div class="math notranslate nohighlight">
-\[1\ V = \ 2\ V + B\]</div>
-<div class="math notranslate nohighlight">
-\[B = - 1\ V\]</div>
-<p><strong>Answer</strong>: The required interface is as follows:</p>
+\[QL = floor(EL)\]</div>
+<p>Remember though, when you round down from the expected level, you are
+introducing error into your result, because you are moving the actual
+voltage value of the sample to a different voltage – the nearest
+allowed value. The goal is to try to include enough levels that this
+<em>quantization error</em> is relatively small and most of the data in the
+original signal is preserved.</p>
+<p>When choosing a resolution, we encounter an engineering tradeoff. In
+this case, we want to minimize the amount of information that is lost
+when we <em>quantize</em> our samples by assigning them an integer level. If
+you look at the figure above, it should be obvious that the maximum
+amount of signal that you can lose is a single level’s worth of
+resolution, so our <em>maximum quantization error</em> is equal to:</p>
+<p><span class="math notranslate nohighlight">\({QE}_{\max} = \ \)</span> <span class="math notranslate nohighlight">\(\Delta V\)</span></p>
+<p>We can lower our resolution by either 1) reducing the range of
+acceptable voltages – by bringing <span class="math notranslate nohighlight">\(V_{\max}\)</span> and <span class="math notranslate nohighlight">\(V_{\min}\)</span> closer
+together, or 2) increasing the number of available levels, which means
+increasing the number of bits used to represent our values.</p>
+<p>Since oftentimes we can’t reduce the range of acceptable voltages
+because it would <em>clip</em> our input signal, the best way to minimize lost
+information is to increase the number of bits used for each sample. The
+downside of this approach, though, is the same as mentioned above: each
+bit added to our samples increases the amount of memory and digital
+bandwidth needed to save and/or transmit our information.</p>
+</section>
+<section id="putting-it-all-together">
+<h3>Putting it All Together<a class="headerlink" href="#putting-it-all-together" title="Link to this heading">#</a></h3>
+<p>Now that we’ve talked about the trade-offs involved in deciding how to
+convert an analog signal into a digital format, consider how you would
+actually convert your signal given a specific ADC. You will need to know
+the sampling rate (<span class="math notranslate nohighlight">\(f_{s})\)</span>, the range of acceptable voltages
+(<span class="math notranslate nohighlight">\(V_{\max}\)</span> and <span class="math notranslate nohighlight">\(V_{\min}\)</span>), and the number of bits to be used (<em>b</em>)
+before you can convert the signal (see diagram below).</p>
+<p><img alt="" src="../../_images/image76.png" /></p>
+<p>Recall, the three steps of the analog to digital conversion process are:</p>
+<ol class="arabic simple">
+<li><p><strong>Sampling</strong>: Take snapshots in time of the signal at the sample
+rate, <em>f­<sub>s­</sub></em>.</p></li>
+<li><p><strong>Quantizing</strong>: Determine the quantized levels of your samples –
+that is, which of the possible digital values does your measured
+value get assigned to.</p></li>
+<li><p><strong>Encoding</strong>: Convert the quantized level into a binary number that
+is <em>b</em> bits long.</p></li>
+</ol>
+<p>The following example problem integrates all of the concepts of an ADC.</p>
+</section>
+<section id="example-problem-4">
+<h3>Example Problem 4<a class="headerlink" href="#example-problem-4" title="Link to this heading">#</a></h3>
+<p>A sinusoidal signal <span class="math notranslate nohighlight">\(V_{M}(t) = 2\cos(360{^\circ}\ 3kt)V\)</span> needs to be converted into a
+digital signal using the following ADC:</p>
 <p><img alt="" src="../../_images/image811.png" /></p>
+<p>Determine the first 3 samples output by the ADC.</p>
+<p><strong>Understand</strong>: By determining the sampling frequency (<em>f­<sub>s­</sub></em>), we have
+already sampled the signal, so now we need to quantize and encode the
+samples.</p>
+<p><strong>Identify Key Information</strong>:</p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the equation of the input signal, the ADC’s
+sampling frequency, the number of bits used to store each sample,
+and the dynamic range of the ADC.</p></li>
+<li><p><strong>Unknowns:</strong> The quantized level and binary representation of each
+sample.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan</strong>: Since we already know the sampling frequency, we can determine
+the sampling period. Then, we can determine the voltage values (<em>V­<sub>M­</sub></em>)
+at each sampling time. Finally, we can calculate the expected level and
+the quantized level, which can easily be converted to binary.</p>
+<p><strong>Solve:</strong> Recall, the sampling period is given by:</p>
+<div class="math notranslate nohighlight">
+\[t_{s} = \ \frac{1}{f_{s}} = \frac{1}{30kHz} = 33.33\ \mu s\]</div>
+<p>Therefore, the first three samples are given by n*33.33<span class="math notranslate nohighlight">\(\ \mu s\)</span>, where
+n = 0,1,2:</p>
+<div class="math notranslate nohighlight">
+\[V_{M}(0) = 2\cos\left( 360{^\circ}\ 3k(0\ sec) \right)V = 2\ V\]</div>
+<div class="math notranslate nohighlight">
+\[V_{M}(33.33\ \mu sec) = 2\cos\left( 360{^\circ}\ 3k(33.33\ \mu sec) \right)V = 1.62\ V\]</div>
+<div class="math notranslate nohighlight">
+\[V_{M}(2\ x\ 33.33\ \mu sec) = 2\cos\left( 360{^\circ}\ 3k(66.66\ \mu sec) \right)V = 0.62\ V\]</div>
+<p>However, before we can do the next conversion step, we need to find the
+ADC’s resolution:</p>
+<div class="math notranslate nohighlight">
+\[\Delta V = \ \frac{V_{\max} - \ V_{\min}}{2^{b}} = \ \frac{3\ V - ( - 3\ V)}{2^{5}\ levels} = \ \frac{6\ V}{32\ levels} = 187.5\ mV/level\]</div>
+<p>Now, the signal will be quantized. If we solve for our expected levels,
+we find:</p>
+<div class="math notranslate nohighlight">
+\[{EL}_{0} = \ \frac{V_{in}(0) - V_{\min}}{\Delta V} = \frac{2\ V - ( - 3\ V)}{187.5\ mV/level} = 26.67\]</div>
+<div class="math notranslate nohighlight">
+\[{EL}_{1} = \ \frac{V_{in}(33.33\ \mu sec) - V_{\min}}{\Delta V} = \frac{1.62\ V - ( - 3\ V)}{187.5\ mV/level} = 24.64\]</div>
+<div class="math notranslate nohighlight">
+\[{EL}_{2} = \ \frac{V_{in}(2\ x\ 33.33\ \mu sec) - V_{\min}}{\Delta V} = \frac{0.62\ V - ( - 3\ V)}{187.5\ mV/level} = 19.31\]</div>
+<p>The FLOOR function is applied to the expected levels to find the
+quantized level:</p>
+<div class="math notranslate nohighlight">
+\[{QL}_{0} = FLOOR(EL) = \ 26\]</div>
+<div class="math notranslate nohighlight">
+\[{QL}_{1} = \ FLOOR(EL) = 24\]</div>
+<div class="math notranslate nohighlight">
+\[{QL}_{2} = FLOOR(EL) = 19\]</div>
+<p>Finally, these values are encoded into their 5-bit binary
+representations:</p>
+<div class="math notranslate nohighlight">
+\[{Q.L.}_{0} = \ 26\  \rightarrow 11010\]</div>
+<div class="math notranslate nohighlight">
+\[{Q.L.}_{1} = \ 24\  \rightarrow 11000\]</div>
+<div class="math notranslate nohighlight">
+\[{Q.L.}_{2} = 19\  \rightarrow 10011\]</div>
+<p>The conversion from a “standard” decimal number into its binary
+representation follows from knowing that these binary digits, from right
+to left, represent <span class="math notranslate nohighlight">\(2^{0},\ 2^{1},2^{2},2^{3},and\ 2^{4}\)</span> respectively.
+If the binary digit is a 1, multiply 1 by <span class="math notranslate nohighlight">\(2^{X}\)</span> for the digit. If the
+binary digit is a 0, multiply 0 by <span class="math notranslate nohighlight">\(2^{X}\)</span> for the digit. After this,
+add all the numbers to get the decimal number. For 26, this would be
+<span class="math notranslate nohighlight">\({1*2}^{4} + 1*2^{3} + 0*2^{2} + 1*2^{1} + 0*2^{0} = 16 + 8 + 0 + 2 + 0 = 26\)</span>.
+<em>You should become proficient at using your calculator to convert
+between decimal and binary numbers</em>.</p>
+<p><strong>Answer:</strong> At <em>t</em> = 0, the ADC would output the binary number, 11010.
+At <em>t</em> = 33.33 μsec, the ADC would output the binary number, 11000. At
+<em>t</em> = 66.66 μsec, the ADC would output the binary number, 10011.</p>
 </section>
 </section>
 </section>
@@ -812,6 +948,15 @@ equations:</p>
         <p class="prev-next-title">Objective 2.4</p>
       </div>
     </a>
+    <a class="right-next"
+       href="../Obj06/ECE215_B2_Obj06_Reading.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Objective 2.6</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -828,14 +973,16 @@ equations:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers-and-signal-conditioning">Transducers and Signal Conditioning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers">Transducers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instrumentation-and-signal-conditioning">Instrumentation and Signal Conditioning</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplification-and-biasing">Amplification and Biasing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analog-to-digital-conversion">Analog to Digital Conversion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling">Sampling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digitizing">Digitizing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution">Resolution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding">Encoding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#putting-it-all-together">Putting it All Together</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-4">Example Problem 4</a></li>
 </ul>
 </li>
 </ul>

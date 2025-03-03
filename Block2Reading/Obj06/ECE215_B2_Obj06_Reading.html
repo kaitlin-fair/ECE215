@@ -1,0 +1,896 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Objective 2.6 &#8212; ECE215/S Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block2Reading/Obj06/ECE215_B2_Obj06_Reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Objective 2.5" href="../Obj05/ECE215_B2_Obj05_Reading.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215/S Course Webpage - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="ECE215/S Course Webpage - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Schedule.html">Course Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj05/ECE215_Obj05_Reading.html">Objective 1.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj06/ECE215_Obj06_Reading.html">Objective 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj07/ECE215_Obj07_Reading.html">Objective 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj08/ECE215_Obj08_Reading.html">Objective 1.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_B2_Obj01_Reading.html">Objective 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B2_Obj02_Reading.html">Objective 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_B2_Obj03_Reading.html">Objective 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj04/ECE215_B2_Obj04_Reading.html">Objective 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj05/ECE215_B2_Obj05_Reading.html">Objective 2.5</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 2.6</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock2Reading/Obj06/ECE215_B2_Obj06_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block2Reading/Obj06/ECE215_B2_Obj06_Reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Objective 2.6</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers-and-signal-conditioning">Transducers and Signal Conditioning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers">Transducers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instrumentation-and-signal-conditioning">Instrumentation and Signal Conditioning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplification-and-biasing">Amplification and Biasing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-2-6">
+<h1>Objective 2.6<a class="headerlink" href="#objective-2-6" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2.6</p></td>
+<td><p>I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="transducers-and-signal-conditioning">
+<h2>Transducers and Signal Conditioning<a class="headerlink" href="#transducers-and-signal-conditioning" title="Link to this heading">#</a></h2>
+<section id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
+<p>In previous lessons, we discussed a number of basic electrical
+components that are used in all kinds of useful circuits for myriad
+applications. In this lesson, we will continue to build on that
+foundation to understand how devices use electrical signals to
+communicate with one another. But first, we need to discuss how we
+initially get an electrical signal that we would want to communicate
+somewhere else. This is where transducers come into play.</p>
+<p>Take your computer mouse and move it around a little bit and see what
+happens. If your computer is actually turned on while you do this, you
+will probably see the pointer on your computer display move left or
+right or up or down in sync with the movements you made with the mouse.</p>
+<p>Now think about what is really happening during this process. If you
+have an optical mouse, the light from a light-emitting diode (LED)
+reflects off of the surface of your desk and is picked up by an
+opto-electronic sensor which sends the image to an image-processing
+chip. This chip compares the image from one moment to the next and
+determines how much the mouse has moved and in what direction. The mouse
+then creates an electronic signal that contains this movement
+information and sends it to the computer, which, in turn, processes that
+signal and causes the mouse cursor to move with respect to the rest of
+the display. The following block diagram succinctly captures the
+process:</p>
+<p><img alt="" src="../../_images/image118.png" /></p>
+<p>Up to this point, we’ve only studied signals related to the transmission
+and flow of power. While these signals are certainly useful, electrical
+signals can also be used to transmit and process signals conveying
+information. The Air Force spends a massive amount of time gathering
+information with its satellites, reconnaissance aircraft, and unmanned
+aerial systems (UAS) but the data is worthless if we can’t get it to the
+right place for our people to use it.</p>
+</section>
+<section id="transducers">
+<h3>Transducers<a class="headerlink" href="#transducers" title="Link to this heading">#</a></h3>
+<p><em>Transducers</em> are devices that interface the physical world with the
+electrical world. We will consider two primary types of transducers:
+input transducers and output transducers. <em>Input transducers</em> convert a
+physical signal into an electrical signal. For example, a microphone
+turns sound waves into electrical signals. This conversion is useful if
+we want to process the vocal signal digitally, or if we want to transmit
+this signal over a network. In fact, any sensor we want to analyze using
+a computer must include an input transducer. Figure 1 shows an example
+of physical information translated into electrical data where a voice
+has been converted into a voltage waveform.</p>
+<p><img alt="" src="../../_images/image215.png" /></p>
+<p>Figure 1: Example of voice converted to an electrical signal</p>
+<p><a class="reference external" href="http://www.answers.com/topic/frequency-spectrum">http://www.answers.com/topic/frequency-spectrum</a></p>
+<p>Conversely, <em>output transducers</em> convert an electrical signal into a
+physical signal. In keeping with the transmission of your voice over a
+communications network – someone will likely want to hear what you
+said, so they might have headphones connected to their receiving radio.
+In this case, the headphones are converting the electrical signal back
+to sound waves again; therefore, the speakers are an example of an
+output transducer.</p>
+</section>
+<section id="instrumentation-and-signal-conditioning">
+<h3>Instrumentation and Signal Conditioning<a class="headerlink" href="#instrumentation-and-signal-conditioning" title="Link to this heading">#</a></h3>
+<p>Most input transducers do not provide electrical signals that are
+powerful enough to be displayed. For example, the output of most
+microphones is in the millivolt range. In order for this signal to be
+useful, we have to do something to the signal. If we follow the analogy
+of the microphone further, we can’t drive a speaker (an output
+transducer) with the low voltage produced by a microphone. One way to
+condition a signal is to build an <em>instrumentation</em> system consisting of
+amplification and biasing.</p>
+<hr class="docutils" />
+<p><strong>Key Concept</strong></p>
+<p><em>Instrumentation</em> connects input and output transducers in a meaningful
+way.</p>
+</section>
+<hr class="docutils" />
+<section id="amplification-and-biasing">
+<h3>Amplification and Biasing<a class="headerlink" href="#amplification-and-biasing" title="Link to this heading">#</a></h3>
+<p>Amplification is a straightforward concept. An amplifier takes small
+values that we simply need to make larger and multiplies them by a
+constant value. If the dynamic range of the input and output transducers
+are symmetric around zero, amplification alone will suffice for signal
+conditioning. Oftentimes though, the dynamic range of either our input
+or output transducers is not symmetric around zero and, when we amplify
+our signal, we find the magnitude of our values is correct, but they are
+offset from where we need them to be. In this case, we can add a bias
+voltage to shift the output appropriately. The device we use to add two
+voltages together is known as a <em>summer</em>. The generic flow for any
+instrumentation is shown in Figure 2.</p>
+<p><img alt="" src="../../_images/image313.png" /></p>
+<p>Figure 2: Block diagram for a generic instrumentation system.</p>
+<p>In this flow, we see that the input and output are related by the
+equation:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = Kv_{in}(t) + B\]</div>
+<p>So, the input voltage is first multiplied by the constant K, which is a
+gain factor. The DC bias <em>B</em> is then added to the result of that
+operation. Practically, this allows us a great deal of flexibility when
+designing instrumentation to interface various input and output
+transducers. In general, input transducers will correlate a physically
+expected behavior with a voltage. A <em>thermocouple</em>, for example, is an
+<em>input transducer</em> that senses a temperature and outputs a voltage for
+that specific temperature. However, we may want to use another device,
+such as a temperature gauge (which is an <em>output transducer</em>) to view
+the output of the thermocouple. In most cases, the temperature gauge
+expects a different range of voltages, which it will then correlate to a
+temperature display. Using the <em>gain</em> and <em>bias</em> of the instrumentation
+system, we can translate the actual output range of the thermocouple to
+the expected input range of the temperature gauge. Let’s look at an
+example problem to see how this plays out in a real world scenario.</p>
+</section>
+<section id="example-problem-1">
+<h3>Example Problem 1:<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
+<p>A small aircraft uses an input transducer called
+a <em>thermocouple</em> to measure the outside air temperature. When the
+temperature is -60° C, the thermocouple produces -2 mV. When the
+temperature is 50° C, it produces 8 mV. The signal from the thermocouple
+is used by a temperature gauge in the cockpit to display the outside air
+temperature to the pilot. The gauge requires -5 V to display a
+temperature of -60° C and 10 V to display 50° C. Design the interface to
+connect these two devices (assuming both the thermocouple and gauge are
+linear devices).</p>
+<p><strong>Understand:</strong> The pilot wants to know the outside air temperature,
+which is sensed by the thermocouple and displayed by the temperature
+gauge. However, the thermocouple produces very low voltages, while the
+gauge requires much larger voltages. We need something to convert the
+relatively small thermocouple voltage into the correspondingly higher
+gauge voltage, so we can display the correct temperature. Obviously, the
+signal needs to be amplified, because we’re going from mV to V.
+Unfortunately, converting -2 mV into -5 V and also converting 8 mV into
+10 V with a single constant gain amplifier is not possible. Therefore,
+we will need to take advantage of both our gain and bias.</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the correlation between temperature and voltage
+for the thermocouple and for the temperature gauge.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Condition</strong></p></th>
+<th class="head"><p><strong><em>v<sub>in</sub>(t)</em>, Thermocouple Input</strong></p></th>
+<th class="head"><p><em><em>v<sub>out</sub>(t),</em> Gauge Input</em>*</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-60° C</p></td>
+<td><p>-2 mV</p></td>
+<td><p>-5 V</p></td>
+</tr>
+<tr class="row-odd"><td><p>50° C</p></td>
+<td><p>8 mV</p></td>
+<td><p>10 V</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><strong>Unknowns:</strong> We want to know the gain (K) and bias (B) of the
+instrumentation system.</p></li>
+<li><p><strong>Assumptions:</strong> The gain and the bias will be produced by linear
+devices, meaning the correlation between the input and output is
+always a straight line.</p></li>
+</ul>
+<p><strong>Plan:</strong></p>
+<p>To see the big picture, we plot the voltage produced by the thermocouple
+against the voltage required by the gauge:</p>
+<p><img alt="" src="../../_images/image410.png" /></p>
+<p>Since we assume the devices are linear, we can draw a straight line
+between them, to represent what we want our interface to do. As the
+thermocouple voltage rises linearly from -2 mV to 8 mV, we want the
+gauge voltage to rise from -5 V to 10 V.</p>
+<p>Recall the straight-line equation in the slope-intercept form is y =
+<em>m</em>x + <em>b</em>, where <em>m</em> is the slope and <em>b</em> is the y-intercept. For a
+signal conditioning system that accounts for this shift in voltage, we
+use a very similar equation:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = Kv_{in}(t) + \ B\]</div>
+<p>In this equation, <em>K</em> is the <em>gain</em> of a scalar multiplier and <em>B</em> is a
+DC <em>bias voltage</em>. The block diagram for this required signal
+conditioning is:</p>
+<p><img alt="" src="../../_images/image58.png" /></p>
+<p>Here, we see the input voltage is multiplied by the amplifier gain, K. A
+bias voltage, <span class="math notranslate nohighlight">\(B\)</span>, is then added to the result of that operation to
+produce the correct relationship for <span class="math notranslate nohighlight">\(v_{out}\)</span>. Here, the circle with
+the Greek sigma inside is a summer, which is an electronic device that
+mathematically adds the two input signals. We will use the extreme cases
+of the thermocouple-gauge relationship to write two independent
+equations and solve for both K and B.</p>
+<p><strong>Solve:</strong> Let’s start by applying this generic block diagram to the
+system we want to design:</p>
+<p><img alt="" src="../../_images/image610.png" /></p>
+<p>Now let’s look at the expected conditions and expected behaviors of the
+transducers we need to design this specific system. When the temperature
+is -60° C, the thermocouple produces -2mV, we will multiply this by <em>K</em>
+and then add B, and the result should be -5 V. Likewise, when the
+temperature is 50° C, the thermocouple produces 8 mV, we multiply this
+by <em>K</em>, add B , and the gauge should get 10 V. These are our two extreme
+cases, and they allow us to write two independent equations to solve for
+our two unknowns (K and B)</p>
+<p>Plugging both sets of values into the equation for our line gives the
+following:</p>
+<div class="math notranslate nohighlight">
+\[- 5\ V = \ K( - 2\ mV)\  + B\]</div>
+<div class="math notranslate nohighlight">
+\[10\ V = \ K(8\ mV)\  + B\]</div>
+<p>Since we have two equations with two unknowns, we can solve for both <em>K</em>
+and <span class="math notranslate nohighlight">\(B\)</span>. There are several ways we can do this (your calculator should
+be able to do it using its built-in equation solver mode), but there is
+a simple approach which will work for all our signal conditioning
+problems. By subtracting the second equation from the first, we can
+quickly solve for <em>K</em>, since the <em>B</em> terms will cancel. Here’s what it
+looks like:</p>
+<div class="math notranslate nohighlight">
+\[( - 5\ V - 10\ V) = \ K( - 2\ mV - 8\ mV) + \ (B - B)\ \]</div>
+<div class="math notranslate nohighlight">
+\[- 15V = \ K( - 10\ mV)\]</div>
+<p>Solving for <em>K</em> gives:</p>
+<div class="math notranslate nohighlight">
+\[K = \ \frac{- 15\ V}{- 10\ mV}\  = 1500.\]</div>
+<p>As you can see, <em>K</em> is a dimensionless number with no units. We can now
+plug <em>K</em> back into either equation to solve for <em>B</em>. If we use the first
+equation, we get:</p>
+<div class="math notranslate nohighlight">
+\[- 5V = \ 1500( - 2\ mV) + B\]</div>
+<div class="math notranslate nohighlight">
+\[- 5V = \  - 3\ V + B.\]</div>
+<p>Solving this for <span class="math notranslate nohighlight">\(B\)</span> gives:</p>
+<div class="math notranslate nohighlight">
+\[B = - 2\ V.\]</div>
+<p>Therefore, we need to build an interface that accomplishes the following
+function:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = 1500v_{in}(t) - 2V\]</div>
+<p><strong>Answer:</strong> The design for an interface between the thermocouple and the
+gauge is as follows:</p>
+<p><img alt="" src="../../_images/image77.png" /></p>
+</section>
+<section id="example-problem-2">
+<h3>Example Problem 2:<a class="headerlink" href="#example-problem-2" title="Link to this heading">#</a></h3>
+<p>Using the system designed in the previous
+problem, what voltage would be sent to the gauge if the thermocouple
+produces 1.3 mV?</p>
+<p><strong>Understand:</strong> We must calculate the effect of our interface on a
+particular input signal received from the thermocouple.</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the equation for our instrumentation and the
+input voltage.</p></li>
+<li><p><strong>Unknowns:</strong> We want to know the output of the instrumentation
+system, which is the input to the temperature gauge.</p></li>
+<li><p><strong>Assumptions:</strong> Our devices are all linear.</p></li>
+</ul>
+<p><strong>Plan:</strong> Plug the given input value into our instrumentation equation.</p>
+<p><strong>Solve:</strong> The equation for the system above is</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = 1500v_{in}(t) - 2V\]</div>
+<p>Since <em>v<sub>in</sub></em>(<em>t</em>) = 1.3 mV, we have:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = 1500(1.3mV) - 2V = - 50mV\]</div>
+<p><strong>Answer</strong>: This system would send -50 mV to the gauge if the
+thermocouple voltage was 1.3 mV.</p>
+</section>
+<section id="example-problem-3">
+<h3>Example Problem 3:<a class="headerlink" href="#example-problem-3" title="Link to this heading">#</a></h3>
+<p>An elevator actuator for a UAS requires 1 V to
+move the elevator fully down and -9 V to move the elevator fully up. The
+control unit produces -1 mV when fully down and 4 mV for fully up.
+Design the interface between the control unit and the actuator.</p>
+<p><strong>Understand:</strong> Since we are building an instrumentation as an interface
+for two transducers, we’ll solve this exactly like the earlier problem.
+The most important step in these problems is identifying which device is
+inputting into the interface and which device needs the output from the
+interface, as the inputs and outputs can be a bit confusing. In this
+case, the control unit is providing <em>v<sub>in</sub>(t),</em> while the elevator
+actuator needs <em>v<sub>out</sub>(t)</em>.</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the correlation between our expected physical
+behaviors and the voltages for both our input transducer (control
+unit) and the output transducer (actuator), as shown in the
+following table</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Condition</strong></p></th>
+<th class="head"><p><strong><em>v<sub>in</sub>(t)</em> – Input from Control Unit</strong></p></th>
+<th class="head"><p><strong><em>v<sub>out</sub>(t)</em> – Output to Actuator</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fully down</p></td>
+<td><p>-1 mV</p></td>
+<td><p>1 V</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fully up</p></td>
+<td><p>4 mV</p></td>
+<td><p>-9 V</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><strong>Unknowns:</strong> We are trying to find the gain (K) and bias (B) for
+our instrumentation, which will interface between the control unit
+and the actuator.</p></li>
+<li><p><strong>Assumptions:</strong> Our devices are linear.</p></li>
+</ul>
+<p><strong>Plan:</strong> We will use the instrumentation equation and the extreme cases
+of the input/output (i/o) table above.</p>
+<p><strong>Solve:</strong> Using the values from the table above, we can build two
+equations:</p>
+<div class="math notranslate nohighlight">
+\[1\ V\  = \ K( - 1\ mV)\  + \ B\]</div>
+<div class="math notranslate nohighlight">
+\[- 9\ V\  = \ K(4\ mV) + \ B\]</div>
+<p>If we subtract the bottom equation from the top equation, we get:</p>
+<div class="math notranslate nohighlight">
+\[(1\ V - \lbrack - 9\ V\rbrack)\  = \ K( - 1\ mV - \ 4\ mV)\  + \ (B - \ B)\]</div>
+<div class="math notranslate nohighlight">
+\[10\ V\  = \ K( - 5\ mV)\]</div>
+<div class="math notranslate nohighlight">
+\[K = \ \frac{10\ V}{- 5\ mV}\  = - 2000\]</div>
+<p>Using the first equation to solve for <span class="math notranslate nohighlight">\(B\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[1\ V = - 2000( - 1\ mV) + \ B\]</div>
+<div class="math notranslate nohighlight">
+\[1\ V = \ 2\ V + B\]</div>
+<div class="math notranslate nohighlight">
+\[B = - 1\ V\]</div>
+<p><strong>Answer</strong>: The required interface is as follows:</p>
+<p><img alt="" src="../../_images/image812.png" /></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block2Reading/Obj06"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Obj05/ECE215_B2_Obj05_Reading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Objective 2.5</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers-and-signal-conditioning">Transducers and Signal Conditioning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transducers">Transducers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instrumentation-and-signal-conditioning">Instrumentation and Signal Conditioning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplification-and-biasing">Amplification and Biasing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
