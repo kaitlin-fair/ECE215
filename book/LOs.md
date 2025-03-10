@@ -27,9 +27,8 @@ Note that the number to the left of the decimal for your learning objective is t
 | [2.4](Block2Reading/Obj04/ECE215_B2_Obj04_Reading) | I can determine the filter type, gain, and cutoff frequency of simple series circuits containing a resistor, capacitor, and/or inductor.  |
 | [2.5](Block2Reading/Obj05/ECE215_B2_Obj05_Reading) | I can calculate the ADC sampling rate, voltage resolution, and digital output based on a given input voltage and the ADC's operational parameters.    |
 | [2.6](Block2Reading/Obj06/ECE215_B2_Obj06_Reading) | I can implement signal conditioning to avoid aliasing and clipping and to ensure maximum compatibility of the dynamic ranges between two devices.   |
-| 2.7 | I can calculate the ADC bit rate to estimate the memory required for a given recording duration or determine how long it takes to fill a memory card of a specified size.  |
-| 2.8 | I can relate digital inputs to digital outputs using tools such as fundamental digital logic gates (AND, OR, NOT), truth tables, and Sum of Products (SOP) and Product of Sums (POS) Boolean expressions.  |
-| 2.9 | I can model Moore and Mealy Finite State Machines (FSMs) using tools such as state transition diagrams, transition tables, and combinational and sequential logic circuits.  |
+| 2.7 | I can relate digital inputs to digital outputs using tools such as fundamental digital logic gates (AND, OR, NOT), truth tables, and Sum of Products (SOP) and Product of Sums (POS) Boolean expressions.  |
+| 2.8 | I can model Moore and Mealy Finite State Machines (FSMs) using tools such as state transition diagrams, transition tables, and combinational and sequential logic circuits.  |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Description |
