@@ -33,7 +33,7 @@ _Note: there is no PP11_
 | 2.3  | [L16](_static/B2_Obj03_ComplexMath_slides.pdf) | [PP13](_static/PPs/ECE215_PP13.pdf) | [PP13](_static/PPs/ECE215_PP13_answers.pdf) |
 | 2.4  | [L17](_static/B2_Obj04_AnalogFilters_slides.pdf) | [PP14](_static/PPs/ECE215_PP14.pdf) | [PP14](_static/PPs/ECE215_PP14_answers.pdf) |
 | 2.5  | [L20](_static/B2_Obj05_ADCI_slides.pdf) | [PP15](_static/PPs/ECE215_PP15.pdf) | [PP15](_static/PPs/ECE215_PP15_answers.pdf) |
-| 2.6  |  |  |  |
+| 2.6  | [L21](_static/B2_Obj06_SignalConditioning_slides.pdf) | [PP16](_static/PPs/ECE215_PP16.pdf) | [PP16](_static/PPs/ECE215_PP16_answers.pdf) |
 | 2.7  |  |  |  |
 | 2.8  |  |  |  |
 | 2.9  |  |  |  |
