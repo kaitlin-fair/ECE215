@@ -33,27 +33,27 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 20 | [Obj 2.5](Block2Reading/Obj05/ECE215_B2_Obj05_Reading) | Midterm Due (Objs 1.1-1.8, 2.1-2.4) |
 | 21 | [Obj 2.6](Block2Reading/Obj06/ECE215_B2_Obj06_Reading) |  |
 | 22 | ADC Lab Workday | Answer Gradescope Question; worth 1 project point |
-| 23 | Obj 2.7 | Quiz 6 Due (Objs 2.5-2.6) |
+| 23 | Obj 2.7 |  |
 | 24 | Obj 2.8 |  |
-| 25 | Obj 2.8 |  |
-| 26 | Project 2 Workday | Quiz 7 Due (Objs 2.7-2.8) |
+| 25 | Obj 2.8 | Quiz 6 Due (Objs 2.5-2.6) |
+| 26 | Project 2 Workday |   |
 | 27 | Project 2 Workday |   |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | Lesson | Topic | Due Dates |
 |----------|----------|----------|
-| 28 | Obj 3.1-3.2 | Project 2 Due | 
-| 29 | Obj 3.3 |  |
+| 28 | Obj 3.1-3.2 | Quiz 7 Due (Objs 2.7-2.8) | 
+| 29 | Obj 3.3 | Project 2 Due |
 | 30 | Obj 3.4 |  |
 | 31 | Obj 3.5-3.6 | Quiz 8 Due (Objs 3.1-3.4) |
 | 32 | Obj 3.7 |  |
-| 33 | Obj 3.8-3.9 | Quiz 9 Due (Objs 3.5-3.7) |
+| 33 | Obj 3.8-3.9 |  |
 | 34 | Obj 3.9-3.10 |  |
-| 35 | Obj 3.11-3.12 | Quiz 10 Due (Objs 3.8-3.10) |
+| 35 | Obj 3.11-3.12 | Quiz 9 Due (Objs 3.5-3.10) |
 | 36 | Obj 3.12-3.13 |  |
 | 37 | Obj 3.14 |  |
 | 38 | Obj 3.15 |  |
-| 39 | Project 3 Workday | Quiz 11 Due (Objs 3.11-3.15) |
+| 39 | Project 3 Workday | Quiz 10 Due (Objs 3.11-3.15) |
 | 40 | Project 3 Workday | Project 3 Due |
 
 
