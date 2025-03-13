@@ -1,0 +1,1334 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Objective 2.7 &#8212; ECE215/S Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block2Reading/Obj07/ECE215_B2_Obj07_Reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215/S Course Webpage - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="ECE215/S Course Webpage - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Schedule.html">Course Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj05/ECE215_Obj05_Reading.html">Objective 1.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj06/ECE215_Obj06_Reading.html">Objective 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj07/ECE215_Obj07_Reading.html">Objective 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj08/ECE215_Obj08_Reading.html">Objective 1.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_B2_Obj01_Reading.html">Objective 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B2_Obj02_Reading.html">Objective 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_B2_Obj03_Reading.html">Objective 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj04/ECE215_B2_Obj04_Reading.html">Objective 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj05/ECE215_B2_Obj05_Reading.html">Objective 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj06/ECE215_B2_Obj06_Reading.html">Objective 2.6</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock2Reading/Obj07/ECE215_B2_Obj07_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block2Reading/Obj07/ECE215_B2_Obj07_Reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Objective 2.7</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-digital-logic"><strong>1. Introduction to Digital Logic</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-digital-logic"><strong>1.1 Why Digital Logic?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-system"><strong>1.2 Binary System</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-logic-gates"><strong>2. Fundamental Logic Gates</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#not-gate-inverter"><strong>1. NOT Gate (Inverter)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#and-gate"><strong>2. AND Gate</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate"><strong>3. OR Gate</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nand-gate-not-and"><strong>4. NAND Gate (NOT AND)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nor-gate-not-or"><strong>5. NOR Gate (NOT OR)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xor-gate-exclusive-or"><strong>6. XOR Gate (Exclusive OR)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xnor-gate-exclusive-nor"><strong>7. XNOR Gate (Exclusive NOR)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logic-gate-fabrication"><strong>3. Logic Gate Fabrication</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transistor-transistor-logic-ttl"><strong>1. Transistor-Transistor Logic (TTL)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complementary-metal-oxide-semiconductor-cmos"><strong>2. Complementary Metal-Oxide-Semiconductor (CMOS)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables-and-boolean-expressions"><strong>4. Truth Tables and Boolean Expressions</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables"><strong>4.1 Truth Tables</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-xor-gate-truth-table"><strong>Example: XOR Gate Truth Table</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constructing-truth-tables-for-more-complex-circuits"><strong>4.2 Constructing Truth Tables for More Complex Circuits</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-complex-circuit-with-two-inputs"><strong>Example: Complex Circuit with Two Inputs</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-complex-circuit-with-three-inputs"><strong>Example: Complex Circuit with Three Inputs</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra"><strong>4.3 Boolean Algebra</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-boolean-laws"><strong>Basic Boolean Laws</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-of-products-sop-form"><strong>4.4 Sum of Products (SOP) Form</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example"><strong>Example:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#product-of-sums-pos-form"><strong>4.5 Product of Sums (POS) Form</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Example:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-simplification"><strong>4.6 Boolean Simplification</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Example:</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sequential-logic"><strong>5. Sequential Logic</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flip-flops"><strong>5.1. Flip-Flops</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finite-state-machines-fsm"><strong>5.2. Finite State Machines (FSM)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>6. Summary</strong></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-2-7">
+<h1>Objective 2.7<a class="headerlink" href="#objective-2-7" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2.7</p></td>
+<td><p>I can relate digital inputs to digital outputs using tools such as fundamental digital logic gates (AND, OR, NOT), truth tables, and Sum of Products (SOP) and Product of Sums (POS) Boolean expressions.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="introduction-to-digital-logic">
+<h2><strong>1. Introduction to Digital Logic</strong><a class="headerlink" href="#introduction-to-digital-logic" title="Link to this heading">#</a></h2>
+<p>Digital logic forms the foundation of modern electronic systems and computing. It deals with systems that operate using binary states — TRUE (1) and FALSE (0) — to represent and manipulate data. At the core of digital logic are logic gates, which perform basic operations on binary inputs to produce a binary output.</p>
+<section id="why-digital-logic">
+<h3><strong>1.1 Why Digital Logic?</strong><a class="headerlink" href="#why-digital-logic" title="Link to this heading">#</a></h3>
+<p>Digital logic enables the design and functioning of various electronic devices and systems, including:</p>
+<ul class="simple">
+<li><p>Microprocessors and microcontrollers</p></li>
+<li><p>Digital communication systems</p></li>
+<li><p>Signal processing units</p></li>
+<li><p>Control systems in industrial and aerospace applications</p></li>
+</ul>
+</section>
+<section id="binary-system">
+<h3><strong>1.2 Binary System</strong><a class="headerlink" href="#binary-system" title="Link to this heading">#</a></h3>
+<p>All digital logic operations are based on the binary number system, which consists of only two possible values:</p>
+<ul class="simple">
+<li><p><strong>0</strong> – Represents LOW or FALSE</p></li>
+<li><p><strong>1</strong> – Represents HIGH or TRUE</p></li>
+</ul>
+<p>Since binary logic is easy to represent using electrical circuits (voltage levels or current states), digital systems rely heavily on this representation.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="fundamental-logic-gates">
+<h2><strong>2. Fundamental Logic Gates</strong><a class="headerlink" href="#fundamental-logic-gates" title="Link to this heading">#</a></h2>
+<p>Logic gates are the building blocks of digital systems. They are used to create complex digital circuits by combining multiple gates to form logical functions. The seven basic logic gates include:</p>
+<section id="not-gate-inverter">
+<h3><strong>1. NOT Gate (Inverter)</strong><a class="headerlink" href="#not-gate-inverter" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>A NOT gate takes a single input and inverts it:</p>
+<ul>
+<li><p>Input 0 → Output 1</p></li>
+<li><p>Input 1 → Output 0</p></li>
+</ul>
+</li>
+</ul>
+<p>In a digital logic circuit diagram, the symbol for a NOT gate is a triangle with a small circle on the front, as shown below.</p>
+<p><img alt="" src="../../_images/image119.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Input (A)</p></th>
+<th class="head text-center"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="and-gate">
+<h3><strong>2. AND Gate</strong><a class="headerlink" href="#and-gate" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>An AND gate outputs TRUE only if both inputs are TRUE.</p></li>
+</ul>
+<p>The symbol for an AND gate is shown below.</p>
+<p><img alt="" src="../../_images/image216.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>A</p></th>
+<th class="head text-center"><p>B</p></th>
+<th class="head text-center"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="or-gate">
+<h3><strong>3. OR Gate</strong><a class="headerlink" href="#or-gate" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>An OR gate outputs TRUE if at least one input is TRUE.</p></li>
+</ul>
+<p>The symbol for an OR gate is shown below.</p>
+<p><img alt="" src="../../_images/image314.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>A</p></th>
+<th class="head text-center"><p>B</p></th>
+<th class="head text-center"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="nand-gate-not-and">
+<h3><strong>4. NAND Gate (NOT AND)</strong><a class="headerlink" href="#nand-gate-not-and" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Outputs the inverse of the AND gate.</p></li>
+</ul>
+<p>The symbol for a NAND gate is shown below. Note the only difference between the AND and NAND symbols is the small circle on the front to indicate the NOT operation after the AND operation.</p>
+<p><img alt="" src="../../_images/image411.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>A</p></th>
+<th class="head text-center"><p>B</p></th>
+<th class="head text-center"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="nor-gate-not-or">
+<h3><strong>5. NOR Gate (NOT OR)</strong><a class="headerlink" href="#nor-gate-not-or" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Outputs the inverse of the OR gate.</p></li>
+</ul>
+<p>The symbol for a NOR gate is shown below. Note the only difference between the OR and NOR symbols is the small circle on the front to indicate the NOT operation after the OR operation.</p>
+<p><img alt="" src="../../_images/image59.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>A</p></th>
+<th class="head text-center"><p>B</p></th>
+<th class="head text-center"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="xor-gate-exclusive-or">
+<h3><strong>6. XOR Gate (Exclusive OR)</strong><a class="headerlink" href="#xor-gate-exclusive-or" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Outputs TRUE if inputs are different.</p></li>
+</ul>
+<p>The symbol for an XOR gate is shown below.</p>
+<p><img alt="" src="../../_images/image611.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>A</p></th>
+<th class="head text-center"><p>B</p></th>
+<th class="head text-center"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="xnor-gate-exclusive-nor">
+<h3><strong>7. XNOR Gate (Exclusive NOR)</strong><a class="headerlink" href="#xnor-gate-exclusive-nor" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Outputs TRUE if inputs are the same.</p></li>
+</ul>
+<p>The symbol for an XNOR gate is shown below. Note the only difference between the XOR and XNOR symbols is the small circle on the front to indicate the NOT operation after the XOR operation.</p>
+<p><img alt="" src="../../_images/image78.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>A</p></th>
+<th class="head text-center"><p>B</p></th>
+<th class="head text-center"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> All logic operations can be synthesized using only the <strong>AND</strong>, <strong>OR</strong>, and <strong>NOT</strong> gates, making them the fundamental building blocks of all digital circuits. <em>Your quiz and exam problems will only use <strong>AND</strong>, <strong>OR</strong>, and <strong>NOT</strong> gates</em>.</p>
+</div></blockquote>
+</section>
+</section>
+<hr class="docutils" />
+<section id="logic-gate-fabrication">
+<h2><strong>3. Logic Gate Fabrication</strong><a class="headerlink" href="#logic-gate-fabrication" title="Link to this heading">#</a></h2>
+<p>Logic gates are constructed using two primary semiconductor technologies:</p>
+<section id="transistor-transistor-logic-ttl">
+<h3><strong>1. Transistor-Transistor Logic (TTL)</strong><a class="headerlink" href="#transistor-transistor-logic-ttl" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Constructed using <strong>Bipolar Junction Transistors (BJT)</strong>.</p></li>
+<li><p>Known as <strong>7400 series</strong> chips.</p></li>
+<li><p>High-speed operation but higher power consumption.</p></li>
+</ul>
+</section>
+<section id="complementary-metal-oxide-semiconductor-cmos">
+<h3><strong>2. Complementary Metal-Oxide-Semiconductor (CMOS)</strong><a class="headerlink" href="#complementary-metal-oxide-semiconductor-cmos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Constructed using <strong>Field-Effect Transistors (FET)</strong>.</p></li>
+<li><p>Known as <strong>4000 series</strong> chips.</p></li>
+<li><p>Lower power consumption, suitable for large-scale integration.</p></li>
+</ul>
+<p>TTL is preferred for speed, while CMOS is favored for power efficiency.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="truth-tables-and-boolean-expressions">
+<h2><strong>4. Truth Tables and Boolean Expressions</strong><a class="headerlink" href="#truth-tables-and-boolean-expressions" title="Link to this heading">#</a></h2>
+<p>Understanding how digital logic functions requires a strong grasp of truth tables and Boolean expressions. These tools provide a systematic way to describe and analyze the behavior of logic circuits.</p>
+<hr class="docutils" />
+<section id="truth-tables">
+<h3><strong>4.1 Truth Tables</strong><a class="headerlink" href="#truth-tables" title="Link to this heading">#</a></h3>
+<p>A truth table is a structured table used to define the behavior of a digital logic circuit by listing:</p>
+<ul class="simple">
+<li><p><strong>All possible combinations of inputs</strong> (binary values: 0 or 1).</p></li>
+<li><p><strong>The corresponding output</strong> for each combination based on the logical operation being performed.</p></li>
+</ul>
+<p>Truth tables serve as a fundamental tool for analyzing and designing digital logic circuits because they provide a complete specification of how the circuit responds to all input conditions. You’ve already seen truth tables in a previous section, but here is a repeat of the truth table for an XOR gate:</p>
+<section id="example-xor-gate-truth-table">
+<h4><strong>Example: XOR Gate Truth Table</strong><a class="headerlink" href="#example-xor-gate-truth-table" title="Link to this heading">#</a></h4>
+<p>An XOR gate (exclusive OR) outputs <strong>1</strong> if the inputs are different:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Input A</p></th>
+<th class="head"><p>Input B</p></th>
+<th class="head"><p>Output (Y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In this example:</p>
+<ul class="simple">
+<li><p>The output is only <strong>1</strong> when both inputs are different.</p></li>
+<li><p>When the inputs are the same, the output is <strong>0</strong>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="constructing-truth-tables-for-more-complex-circuits">
+<h3><strong>4.2 Constructing Truth Tables for More Complex Circuits</strong><a class="headerlink" href="#constructing-truth-tables-for-more-complex-circuits" title="Link to this heading">#</a></h3>
+<p>To construct a truth table for a complex logic circuit:</p>
+<ol class="arabic simple">
+<li><p><strong>Identify the inputs</strong> – List all possible binary combinations of the inputs.</p></li>
+<li><p><strong>Determine the logical operations</strong> – Apply the AND, OR, and NOT rules based on the circuit design.</p></li>
+<li><p><strong>Compute the output</strong> – Use the logical operations to fill in the corresponding output column for each input combination.</p></li>
+</ol>
+<hr class="docutils" />
+<section id="example-complex-circuit-with-two-inputs">
+<h4><strong>Example: Complex Circuit with Two Inputs</strong><a class="headerlink" href="#example-complex-circuit-with-two-inputs" title="Link to this heading">#</a></h4>
+<p>Consider a circuit with two inputs <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, and the following logic:</p>
+<div class="math notranslate nohighlight">
+\[
+Y = (A \cdot B) + (\overline{A} \cdot B)
+\]</div>
+<p>To create the truth table:</p>
+<ul class="simple">
+<li><p>First, compute the intermediate values. We consider inputs without a bar to be <strong>HIGH</strong> or <strong>1</strong>. Inputs with a bar are <strong>LOW</strong> or <strong>0</strong>.</p></li>
+<li><p>To compute the final output, we <strong>OR</strong> the two intermediate columns row by row.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\( A \cdot B \)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\overline{A} \cdot B\)</span></p></th>
+<th class="head text-center"><p>Output <span class="math notranslate nohighlight">\(Y\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In this table we included two intermediate columns to show how the output is determined step-by-step by applying Boolean logic rules. These intermediate columns are not required but helpful when first solving these types of problems.</p>
+</section>
+<hr class="docutils" />
+<section id="example-complex-circuit-with-three-inputs">
+<h4><strong>Example: Complex Circuit with Three Inputs</strong><a class="headerlink" href="#example-complex-circuit-with-three-inputs" title="Link to this heading">#</a></h4>
+<p>Here is another example, except now we have three inputs <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(C\)</span>. The input-output relationship is defined by the following logic equation:</p>
+<div class="math notranslate nohighlight">
+\[
+Y = (A \cdot B \cdot C) + (\overline{A} \cdot B)+ (\overline{B} \cdot C)
+\]</div>
+<p>To create the truth table:</p>
+<ul class="simple">
+<li><p>First, list out all possible input combinations. With three inputs we have <span class="math notranslate nohighlight">\(2^3=8\)</span> combinations.</p></li>
+<li><p>Next, compute the intermediate values.</p></li>
+<li><p>Then compute the final output.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\( A \cdot B \cdot C \)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\overline{A} \cdot B\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\overline{B} \cdot C\)</span></p></th>
+<th class="head text-center"><p>Output <span class="math notranslate nohighlight">\(Y\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>All rows with a <strong>1</strong> in the intermediate values columns result in a <strong>1</strong> in the final output.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="boolean-algebra">
+<h3><strong>4.3 Boolean Algebra</strong><a class="headerlink" href="#boolean-algebra" title="Link to this heading">#</a></h3>
+<p>Boolean algebra provides a mathematical framework for analyzing and simplifying logic circuits. In Boolean algebra:</p>
+<ul class="simple">
+<li><p>The variables represent binary values (<strong>0</strong> or <strong>1</strong>).</p></li>
+<li><p>The logical operations are represented by:</p>
+<ul>
+<li><p><strong>AND</strong> – Denoted by <span class="math notranslate nohighlight">\(\cdot\)</span> or multiplication.</p></li>
+<li><p><strong>OR</strong> – Denoted by <span class="math notranslate nohighlight">\(+\)</span> or addition.</p></li>
+<li><p><strong>NOT</strong> – Denoted by an overline or prime ( <span class="math notranslate nohighlight">\(\overline{A}\)</span> or <span class="math notranslate nohighlight">\(A'\)</span> ).</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="basic-boolean-laws">
+<h3><strong>Basic Boolean Laws</strong><a class="headerlink" href="#basic-boolean-laws" title="Link to this heading">#</a></h3>
+<p>There are laws in Boolean algebra just like in regular algebra. You won’t be required to use <em>all</em> of these to simplify expressions in this class. However, they can come in handy, so we have listed all of them here. ECE majors will use these more in future ECE courses.</p>
+<ol class="arabic simple">
+<li><p><strong>Identity Law</strong></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[A + 0 = A,\quad A \cdot 1 = A\]</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Null Law</strong></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[A + 1 = 1,\quad A \cdot 0 = 0\]</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Idempotent Law</strong></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[A + A = A,\quad A \cdot A = A\]</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Inverse Law</strong></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[A + \overline{A} = 1,\quad A \cdot \overline{A} = 0\]</div>
+<ol class="arabic simple" start="5">
+<li><p><strong>Distributive Law</strong></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[A \cdot (B + C) = A \cdot B + A \cdot C\]</div>
+<ol class="arabic simple" start="6">
+<li><p><strong>De Morgan’s Theorems</strong></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\overline{A \cdot B} = \overline{A} + \overline{B}\]</div>
+<div class="math notranslate nohighlight">
+\[\overline{A + B} = \overline{A} \cdot \overline{B}\]</div>
+</section>
+<hr class="docutils" />
+<section id="sum-of-products-sop-form">
+<h3><strong>4.4 Sum of Products (SOP) Form</strong><a class="headerlink" href="#sum-of-products-sop-form" title="Link to this heading">#</a></h3>
+<p>A Boolean equation is in <strong>sum of products (SOP)</strong> form when it consists of a series of <strong>AND terms</strong> (products) that are <strong>OR’ed</strong> (added) together.</p>
+<p>To write a SOP:</p>
+<ol class="arabic simple">
+<li><p>Identify rows in the truth table where the output is <strong>1</strong>.</p></li>
+<li><p>Write a product term for each row using AND. Input terms with a <strong>0</strong> in the row should have an overline, and input terms with a <strong>1</strong> do not have an overline.</p></li>
+<li><p>OR all the terms together.</p></li>
+</ol>
+<section id="example">
+<h4><strong>Example:</strong><a class="headerlink" href="#example" title="Link to this heading">#</a></h4>
+<p>Use the truth table to derive a Boolean expression for the output using SOP form:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="head text-center"><p>Output <span class="math notranslate nohighlight">\(Y\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>SOP form</em>:
+You may recognize this table from a previous example, except without the intermediate inputs. We see Rows 2 and 4 have a <strong>1</strong> in the output column. For Row 2 we write <span class="math notranslate nohighlight">\(\overline{A}B\)</span>, since <span class="math notranslate nohighlight">\(A\)</span> is zero on that row. For Row 4 we write <span class="math notranslate nohighlight">\(AB\)</span>, since both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are one on that row. Then we OR both terms together to get:</p>
+<div class="math notranslate nohighlight">
+\[Y = \overline{A}B + AB\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="product-of-sums-pos-form">
+<h3><strong>4.5 Product of Sums (POS) Form</strong><a class="headerlink" href="#product-of-sums-pos-form" title="Link to this heading">#</a></h3>
+<p>A Boolean equation is in <strong>product of sums (POS)</strong> form when it consists of a series of <strong>OR terms</strong> (sums) that are <strong>AND’ed</strong> (multiplied) together.</p>
+<p>To write a POS:</p>
+<ol class="arabic simple">
+<li><p>Identify rows in the truth table where the output is <strong>0</strong>.</p></li>
+<li><p>Write a sum term for each row using OR. Input terms with a <strong>1</strong> in the row should have an overline, and input terms with a <strong>0</strong> do not have an overline. <em>Note that this is the <strong>opposite</strong> of how you write SOP terms!</em></p></li>
+<li><p>AND all the terms together.</p></li>
+</ol>
+<section id="id1">
+<h4><strong>Example:</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>From the same truth table:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="head text-center"><p>Output <span class="math notranslate nohighlight">\(Y\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>POS form</em>: We see Rows 1 and 3 have a <strong>0</strong> in the output column. For Row 1 we write <span class="math notranslate nohighlight">\(A + B\)</span>, since both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are zero on that row. For Row 3 we write <span class="math notranslate nohighlight">\(\overline{A} + B\)</span>, since <span class="math notranslate nohighlight">\(A\)</span> is one and <span class="math notranslate nohighlight">\(B\)</span> is zero on that row. Then we AND both terms together to get:</p>
+<div class="math notranslate nohighlight">
+\[Y = (A + B)(\overline{A} + B)\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="boolean-simplification">
+<h3><strong>4.6 Boolean Simplification</strong><a class="headerlink" href="#boolean-simplification" title="Link to this heading">#</a></h3>
+<p>Boolean expressions can often be simplified using Boolean identities, leading to more efficient circuits.</p>
+<section id="id2">
+<h4><strong>Example:</strong><a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p>In the SOP example, we found <span class="math notranslate nohighlight">\(Y = AB + \overline{A}B\)</span>. This expression would require two AND gates and an OR gate to build. We can simplify it, though, using the Distributive, Inverse, and Identity Laws as follows:</p>
+<p>Simplify:
+$<span class="math notranslate nohighlight">\(Y = AB + \overline{A}B\)</span>$</p>
+<p>Using the Distributive Law:
+$<span class="math notranslate nohighlight">\(Y = B(A + \overline{A})\)</span>$</p>
+<p>Using the Inverse Law:
+$<span class="math notranslate nohighlight">\(Y = B(1)\)</span>$</p>
+<p>Using the Identity Law:
+$<span class="math notranslate nohighlight">\(Y = B\)</span>$</p>
+<p>We can verify this answer by looking at the SOP truth table. Anytime <span class="math notranslate nohighlight">\(B\)</span> is <strong>1</strong>, the output <span class="math notranslate nohighlight">\(Y\)</span> is <strong>1</strong>, regardless of the value of <span class="math notranslate nohighlight">\(A\)</span>. Now we do not need any logic gates to build the expression! We simply set the output <span class="math notranslate nohighlight">\(Y\)</span> equal to the input <span class="math notranslate nohighlight">\(B\)</span>. Simplification reduces the number of gates and increases the efficiency of the circuit.</p>
+<p>Can you show the result we found using the POS form on the same truth table is also equivalent to <span class="math notranslate nohighlight">\(Y = B\)</span>?</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sequential-logic">
+<h2><strong>5. Sequential Logic</strong><a class="headerlink" href="#sequential-logic" title="Link to this heading">#</a></h2>
+<p>While combinational logic only depends on current inputs, sequential logic considers both current inputs and previous states of the circuit as stored in memory. A simple example is a traffic light, which can only go to yellow after being green. Sequential logic uses devices called flip-flops to store previous states.</p>
+<section id="flip-flops">
+<h3><strong>5.1. Flip-Flops</strong><a class="headerlink" href="#flip-flops" title="Link to this heading">#</a></h3>
+<p>Flip-flops are memory elements that store a binary state using a clock. You can learn more about flip-flops
+<a class="reference external" href="https://de-iitr.vlabs.ac.in/exp/truth-tables-flip-flops/theory.html#:~:text=A%20flip%20flop%20is%20an,many%20other%20types%20of%20systems">here</a>.
+Types include:</p>
+<ul class="simple">
+<li><p><strong>RS Flip-Flop</strong> – Set-Reset</p></li>
+<li><p><strong>JK Flip-Flop</strong> – More complex version of RS flip-flop</p></li>
+<li><p><strong>D Flip-Flop</strong> – Stores data based on the clock input</p></li>
+<li><p><strong>T Flip-Flop</strong> – Toggles state on each clock pulse</p></li>
+</ul>
+</section>
+<section id="finite-state-machines-fsm">
+<h3><strong>5.2. Finite State Machines (FSM)</strong><a class="headerlink" href="#finite-state-machines-fsm" title="Link to this heading">#</a></h3>
+<p>A sequential logic circuit with a finite number of states forms a finite state machine. FSMs are used in:</p>
+<ul class="simple">
+<li><p>Control systems</p></li>
+<li><p>Communication protocols</p></li>
+<li><p>Computer processors</p></li>
+</ul>
+<p>We will learn more about FSMs in the next objective!</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="summary">
+<h2><strong>6. Summary</strong><a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p>Digital logic forms the backbone of modern electronic systems. Understanding the fundamental gates, truth tables, and Boolean algebra is essential for designing complex digital circuits. Moving from combinational to sequential logic introduces memory and state-based behavior, enabling more sophisticated designs like finite state machines and control systems.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block2Reading/Obj07"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-digital-logic"><strong>1. Introduction to Digital Logic</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-digital-logic"><strong>1.1 Why Digital Logic?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-system"><strong>1.2 Binary System</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-logic-gates"><strong>2. Fundamental Logic Gates</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#not-gate-inverter"><strong>1. NOT Gate (Inverter)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#and-gate"><strong>2. AND Gate</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate"><strong>3. OR Gate</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nand-gate-not-and"><strong>4. NAND Gate (NOT AND)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nor-gate-not-or"><strong>5. NOR Gate (NOT OR)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xor-gate-exclusive-or"><strong>6. XOR Gate (Exclusive OR)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xnor-gate-exclusive-nor"><strong>7. XNOR Gate (Exclusive NOR)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logic-gate-fabrication"><strong>3. Logic Gate Fabrication</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transistor-transistor-logic-ttl"><strong>1. Transistor-Transistor Logic (TTL)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complementary-metal-oxide-semiconductor-cmos"><strong>2. Complementary Metal-Oxide-Semiconductor (CMOS)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables-and-boolean-expressions"><strong>4. Truth Tables and Boolean Expressions</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables"><strong>4.1 Truth Tables</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-xor-gate-truth-table"><strong>Example: XOR Gate Truth Table</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constructing-truth-tables-for-more-complex-circuits"><strong>4.2 Constructing Truth Tables for More Complex Circuits</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-complex-circuit-with-two-inputs"><strong>Example: Complex Circuit with Two Inputs</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-complex-circuit-with-three-inputs"><strong>Example: Complex Circuit with Three Inputs</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra"><strong>4.3 Boolean Algebra</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-boolean-laws"><strong>Basic Boolean Laws</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-of-products-sop-form"><strong>4.4 Sum of Products (SOP) Form</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example"><strong>Example:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#product-of-sums-pos-form"><strong>4.5 Product of Sums (POS) Form</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Example:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-simplification"><strong>4.6 Boolean Simplification</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Example:</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sequential-logic"><strong>5. Sequential Logic</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flip-flops"><strong>5.1. Flip-Flops</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finite-state-machines-fsm"><strong>5.2. Finite State Machines (FSM)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>6. Summary</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
