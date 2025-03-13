@@ -34,9 +34,8 @@ _Note: there is no PP11_
 | 2.4  | [L17](_static/B2_Obj04_AnalogFilters_slides.pdf) | [PP14](_static/PPs/ECE215_PP14.pdf) | [PP14](_static/PPs/ECE215_PP14_answers.pdf) |
 | 2.5  | [L20](_static/B2_Obj05_ADCI_slides.pdf) | [PP15](_static/PPs/ECE215_PP15.pdf) | [PP15](_static/PPs/ECE215_PP15_answers.pdf) |
 | 2.6  | [L21](_static/B2_Obj06_SignalConditioning_slides.pdf) | [PP16](_static/PPs/ECE215_PP16.pdf) | [PP16](_static/PPs/ECE215_PP16_answers.pdf) |
-| 2.7  |  |  |  |
+| 2.7  | [L23](_static/B2_Obj07_DigitalLogic_slides.pdf) | [PP17](_static/PPs/ECE215_PP17.pdf) | [PP17](_static/PPs/ECE215_PP17_answers.pdf) |
 | 2.8  |  |  |  |
-| 2.9  |  |  |  |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)

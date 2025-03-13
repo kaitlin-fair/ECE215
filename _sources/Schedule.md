@@ -33,7 +33,7 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 20 | [Obj 2.5](Block2Reading/Obj05/ECE215_B2_Obj05_Reading) | Midterm Due (Objs 1.1-1.8, 2.1-2.4) |
 | 21 | [Obj 2.6](Block2Reading/Obj06/ECE215_B2_Obj06_Reading) |  |
 | 22 | ADC Lab Workday | Answer Gradescope Question; worth 1 project point |
-| 23 | Obj 2.7 |  |
+| 23 | [Obj 2.7](Block2Reading/Obj07/ECE215_B2_Obj07_Reading) |  |
 | 24 | Obj 2.8 |  |
 | 25 | Obj 2.8 | Quiz 6 Due (Objs 2.5-2.6) |
 | 26 | Project 2 Workday |   |
