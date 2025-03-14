@@ -33,18 +33,15 @@ Note that the number to the left of the decimal for your learning objective is t
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Description |
 |----------|----------|
-| 3.1 | I can describe the four types of wireless communication channels, advantages and disadvantages to each, and respective communication types.  |
-| 3.2 | I can explain the three basic types of modulation and the motivation behind modulating signals.  |
-| 3.3 | I can determine an Amplitude Modulation (AM) system output and modulation index in both time and frequency domains.  |
-| 3.4 | I can create a block diagram for envelope detection and/or synchronous demodulation.   |
-| 3.5 | I can describe the basic operation of dipole, monopole, and parabolic dish antennas.  |
-| 3.6 | I can calculate the signal wavelength, antenna size, max antenna gain, and basic gain pattern for dipole, monopole, and parabolic dish antennas  |
-| 3.7 | I can convert linear power ratios and values to decibels and vice versa.  |
-| 3.8 | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.   |
-| 3.9 | I can use the Friis and Line-of-Sight equations to calculate the maximum communication distance between a transmitter and receiver.  |
-| 3.10 | I can calculate signal-to-noise ratio (SNR) and understand how it affects wireless communications.  |
-| 3.11 | I can calculate the range from a radar to a target.  |
-| 3.12 | I can use the radar range equation to calculate the power received by the antenna from a target and the maximum detection range from the antenna to the target.|  
-| 3.13 | For pulse Doppler radar, I can calculate the range resolution and use the Doppler equation to calculate a target's velocity.  |
-| 3.14 | I can apply the Friis and RADAR equations in conjunction with SNR to analyze a jamming scenario.  |
-| 3.15 | I can explain frequency hopping and spread spectrum anti-jamming techniques.  |
+| 3.1 | I can determine the modulation index, output signal, and output signal bandwidth of an Amplitude Modulation (AM) system and assess whether the system is under-modulated, over-modulated, or fully modulated. |
+| 3.2 | I can design a demodulator given a modulated signal for envelope and synchronous detection. |
+| 3.3 | I can calculate the signal wavelength, antenna size, max antenna gain, and basic gain pattern for dipole, monopole, and parabolic dish antennas. |
+| 3.4 | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.   |
+| 3.5 | I can convert between linear power ratios and decibels. |
+| 3.6 | I can alculate the maximum communication distance between a transmitter and receiver using the Friis and Line-of-Sight equations.  |
+| 3.7 | I can calculate signal-to-noise ratio (SNR) and determine the affects on wireless communications. |
+| 3.8 | I can calculate the range from a radar to a target. |
+| 3.9 | I can use the radar range equation to calculate the power received by the antenna from a target and the maximum detection range from the antenna to the target.|  
+| 3.10 | For pulse Doppler radar, I can calculate the range resolution and use the Doppler equation to calculate a target's velocity. |
+| 3.11 | I can apply the Friis and RADAR equations in conjunction with SNR to analyze a jamming scenario. |
+| 3.12 | I can explain frequency hopping and spread spectrum anti-jamming techniques.  |
