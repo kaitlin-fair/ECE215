@@ -1,0 +1,1093 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Objective 2.8 &#8212; ECE215/S Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block2Reading/Obj08/ECE215_B2_Obj08_Reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Objective 2.7" href="../Obj07/ECE215_B2_Obj07_Reading.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215/S Course Webpage - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="ECE215/S Course Webpage - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Schedule.html">Course Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj05/ECE215_Obj05_Reading.html">Objective 1.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj06/ECE215_Obj06_Reading.html">Objective 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj07/ECE215_Obj07_Reading.html">Objective 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj08/ECE215_Obj08_Reading.html">Objective 1.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_B2_Obj01_Reading.html">Objective 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B2_Obj02_Reading.html">Objective 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_B2_Obj03_Reading.html">Objective 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj04/ECE215_B2_Obj04_Reading.html">Objective 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj05/ECE215_B2_Obj05_Reading.html">Objective 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj06/ECE215_B2_Obj06_Reading.html">Objective 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj07/ECE215_B2_Obj07_Reading.html">Objective 2.7</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 2.8</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock2Reading/Obj08/ECE215_B2_Obj08_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block2Reading/Obj08/ECE215_B2_Obj08_Reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Objective 2.8</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-finite-state-machines-fsms">1. Introduction to Finite State Machines (FSMs)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-finite-state-machine">1.1 What is a Finite State Machine?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-fsms">1.2 Why Use FSMs?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-examples-in-engineering">1.3 FSM Examples in Engineering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moore-vs-mealy-machines">1.4 Moore vs. Mealy Machines</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moore-machine"><strong>Moore Machine</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mealy-machine"><strong>Mealy Machine</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-implementation-in-hardware">1.5 FSM Implementation in Hardware</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-fsm-structure-in-hardware"><strong>Basic FSM Structure in Hardware:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-implementation-in-software">1.6 FSM Implementation in Software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-and-limitations-of-fsms">1.7 Advantages and Limitations of FSMs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.8 Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#state-transition-diagrams">2. State Transition Diagrams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-a-state-transition-diagram">Components of a State Transition Diagram:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moore-machine-example">Moore Machine Example:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mealy-machine-example">Mealy Machine Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-design-process">3. FSM Design Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-define-encode-the-states">Step 1: Define/Encode the States</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-define-encode-the-inputs">Step 2: Define/Encode the Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-define-encode-the-outputs">Step 3: Define/Encode the Outputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-create-a-state-transition-diagram">Step 4: Create a State Transition Diagram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-create-a-state-transition-table">Step 5: Create a State Transition Table</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-express-logic-equations">Step 6: Express Logic Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-implement-with-flip-flops-and-logic-gates">Step 7: Implement with Flip-Flops and Logic Gates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-fsm-designs">4. Example FSM Designs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-sequence-recognizer">Example 1: Sequence Recognizer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-2-bit-counter">Example 2: 2-Bit Counter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-vending-machine">Example 3: Vending Machine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-traffic-light-control">Example 4: Traffic Light Control</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5. Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-2-8">
+<h1>Objective 2.8<a class="headerlink" href="#objective-2-8" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2.8</p></td>
+<td><p>I can model Moore and Mealy Finite State Machines (FSMs) using tools such as state transition diagrams, transition tables, and combinational and sequential logic circuits.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<section id="introduction-to-finite-state-machines-fsms">
+<h2>1. Introduction to Finite State Machines (FSMs)<a class="headerlink" href="#introduction-to-finite-state-machines-fsms" title="Link to this heading">#</a></h2>
+<section id="what-is-a-finite-state-machine">
+<h3>1.1 What is a Finite State Machine?<a class="headerlink" href="#what-is-a-finite-state-machine" title="Link to this heading">#</a></h3>
+<p>A <strong>Finite State Machine (FSM)</strong> is a computational model used to represent and control the execution flow of a system that can exist in a <strong>finite number of states</strong>. At any given time, an FSM is in one particular state. Based on the input it receives and the current state, it determines the next state and may produce an output. This behavior makes FSMs ideal for modeling systems where outcomes depend on both past and present events.</p>
+<p>FSMs are defined by the following components:</p>
+<ul class="simple">
+<li><p><strong>States</strong> – A finite set of distinct configurations that represent the system’s condition at any given moment.</p></li>
+<li><p><strong>Inputs</strong> – A set of signals or conditions that affect the state transitions.</p></li>
+<li><p><strong>Transitions</strong> – A set of rules that define how the FSM moves from one state to another based on inputs.</p></li>
+<li><p><strong>Outputs</strong> – Signals or values that the FSM generates based on the current state and/or inputs.</p></li>
+<li><p><strong>Initial State</strong> – The state where the FSM starts operating.</p></li>
+</ul>
+<p>FSMs are widely used in various fields of engineering and computer science because they provide a structured and predictable way to model complex systems. They are especially useful in <strong>control systems</strong>, <strong>digital circuits</strong>, <strong>communication protocols</strong>, <strong>robotics</strong>, and <strong>software development</strong>.</p>
+</section>
+<hr class="docutils" />
+<section id="why-use-fsms">
+<h3>1.2 Why Use FSMs?<a class="headerlink" href="#why-use-fsms" title="Link to this heading">#</a></h3>
+<p>FSMs are used because they offer:
+✅ <strong>Predictability</strong> – FSMs follow a clear and deterministic pattern of state transitions based on inputs.<br />
+✅ <strong>Simplicity</strong> – Complex problems are broken down into manageable states and transitions.<br />
+✅ <strong>Reusability</strong> – FSM models can be reused and adapted across different applications.<br />
+✅ <strong>Debuggability</strong> – FSMs offer clear, structured models that simplify troubleshooting.<br />
+✅ <strong>Automation</strong> – FSMs enable the automation of complex sequences and decision-making processes.</p>
+</section>
+<hr class="docutils" />
+<section id="fsm-examples-in-engineering">
+<h3>1.3 FSM Examples in Engineering<a class="headerlink" href="#fsm-examples-in-engineering" title="Link to this heading">#</a></h3>
+<p>FSMs are used extensively in both hardware and software applications:</p>
+<ol class="arabic simple">
+<li><p><strong>Digital Circuits</strong></p>
+<ul class="simple">
+<li><p>Used in control logic for microprocessors, memory controllers, and communication interfaces.</p></li>
+<li><p>Example: An FSM controlling an elevator’s floor selection system.</p></li>
+</ul>
+</li>
+<li><p><strong>Networking and Protocols</strong></p>
+<ul class="simple">
+<li><p>FSMs define the state-based behavior of communication protocols (e.g., TCP/IP handshake).</p></li>
+<li><p>Example: A protocol state machine for handling data transmission and reception.</p></li>
+</ul>
+</li>
+<li><p><strong>Embedded Systems</strong></p>
+<ul class="simple">
+<li><p>Used to control devices like washing machines, traffic lights, and vending machines.</p></li>
+<li><p>Example: An FSM managing the washing cycles of a washing machine.</p></li>
+</ul>
+</li>
+<li><p><strong>Software Development</strong></p>
+<ul class="simple">
+<li><p>Used in artificial intelligence for decision-making models.</p></li>
+<li><p>Example: Game AI where different NPC (Non-Player Character) states determine behavior.</p></li>
+</ul>
+</li>
+<li><p><strong>Automotive Systems</strong></p>
+<ul class="simple">
+<li><p>Used for managing state-dependent functions like anti-lock braking systems (ABS) and automatic transmission.</p></li>
+<li><p>Example: FSM controlling gear shifts based on speed and load.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="moore-vs-mealy-machines">
+<h3>1.4 Moore vs. Mealy Machines<a class="headerlink" href="#moore-vs-mealy-machines" title="Link to this heading">#</a></h3>
+<p>FSMs are classified into two types based on how they generate outputs:</p>
+<section id="moore-machine">
+<h4><strong>Moore Machine</strong><a class="headerlink" href="#moore-machine" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>The output depends <strong>only on the current state</strong>.</p></li>
+<li><p>State transitions are determined by inputs, but outputs are defined solely by the state.</p></li>
+<li><p>Moore machines typically have <strong>more states</strong> but <strong>simpler transition logic</strong>.</p></li>
+<li><p>Outputs are generated after a state transition has occurred, which may introduce a delay.</p></li>
+</ul>
+<p><img alt="" src="Block2Reading/Obj08/ECE215_B2_Obj08_Reading_media/image2.png" /></p>
+<p>✅ <strong>Advantages of Moore Machines:</strong></p>
+<ul class="simple">
+<li><p>Simpler to design and understand.</p></li>
+<li><p>Outputs are more stable since they depend only on the state.</p></li>
+</ul>
+<p>❌ <strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li><p>More states may be required to implement the same functionality compared to Mealy machines.</p></li>
+</ul>
+<p>✅ <strong>Example:</strong><br />
+Traffic lights are typically modeled as Moore machines where the light state determines the output (red, green, yellow).</p>
+</section>
+<hr class="docutils" />
+<section id="mealy-machine">
+<h4><strong>Mealy Machine</strong><a class="headerlink" href="#mealy-machine" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>The output depends on <strong>both the current state and the input</strong>.</p></li>
+<li><p>State transitions and outputs can change simultaneously when the input changes.</p></li>
+<li><p>Mealy machines can have <strong>fewer states</strong> than Moore machines for the same task but require <strong>more complex transition logic</strong>.</p></li>
+<li><p>Outputs can change more quickly in response to inputs since they are not tied to state alone.</p></li>
+</ul>
+<p><img alt="" src="Block2Reading/Obj08/ECE215_B2_Obj08_Reading_media/image3.png" /></p>
+<p>✅ <strong>Advantages of Mealy Machines:</strong></p>
+<ul class="simple">
+<li><p>Fewer states are required for complex behavior.</p></li>
+<li><p>Can respond faster to inputs since the output is computed directly from the input and state.</p></li>
+</ul>
+<p>❌ <strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li><p>More complex to design and test.</p></li>
+<li><p>Outputs can be less stable since they depend on real-time inputs.</p></li>
+</ul>
+<p>✅ <strong>Example:</strong><br />
+A vending machine is often modeled as a Mealy machine because the output (dispensing an item) depends on both the state (amount of money entered) and the input (coin type).</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="fsm-implementation-in-hardware">
+<h3>1.5 FSM Implementation in Hardware<a class="headerlink" href="#fsm-implementation-in-hardware" title="Link to this heading">#</a></h3>
+<p>FSMs are commonly implemented in digital hardware using:</p>
+<ul class="simple">
+<li><p><strong>Flip-Flops</strong> – To store the current state.</p></li>
+<li><p><strong>Combinational Logic</strong> – To compute the next state and outputs based on current state and inputs.</p></li>
+</ul>
+<p>Modern FSM designs are often implemented using <strong>Field Programmable Gate Arrays (FPGAs)</strong> and <strong>hardware description languages</strong> like <strong>VHDL</strong> and <strong>Verilog</strong>.</p>
+<section id="basic-fsm-structure-in-hardware">
+<h4><strong>Basic FSM Structure in Hardware:</strong><a class="headerlink" href="#basic-fsm-structure-in-hardware" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Inputs</strong> – Binary signals that control the state transitions.</p></li>
+<li><p><strong>Next State Logic</strong> – Determines the next state based on the present state and inputs using combinational logic.</p></li>
+<li><p><strong>Flip-Flops</strong> – Hold the current state and update it on each clock cycle.</p></li>
+<li><p><strong>Output Logic</strong> – Generates the output signals based on the state and inputs (Mealy) or state alone (Moore).</p></li>
+</ol>
+<p>FSM Hardware Block Diagram:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>         +-------------+               +--------------+
+ Inputs →| Next State  |→ Next State → | Flip-Flops    |
+         | Logic       |               | (State Memory)|
+         +-------------+               +--------------+
+                |                             |
+                ↓                             ↓
+         +-------------+               +--------------+
+         | Output Logic |→ Outputs →   | Output Signals|
+         +-------------+               +--------------+
+</pre></div>
+</div>
+<p><strong>Example:</strong><br />
+A traffic light FSM in hardware would:</p>
+<ul class="simple">
+<li><p>Use a D flip-flop to store the current state.</p></li>
+<li><p>Combinational logic to determine the next state and outputs.</p></li>
+<li><p>Outputs would control the traffic lights based on the current state.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="fsm-implementation-in-software">
+<h3>1.6 FSM Implementation in Software<a class="headerlink" href="#fsm-implementation-in-software" title="Link to this heading">#</a></h3>
+<p>FSMs are also widely used in software design for state-based control and behavior modeling.</p>
+<ul class="simple">
+<li><p>A state can be represented using <strong>constants</strong> or <strong>enumerations</strong>.</p></li>
+<li><p>A state transition table can be implemented using <strong>arrays</strong> or <strong>switch-case</strong> statements.</p></li>
+<li><p>Transitions can be triggered by user input, timeouts, or external events.</p></li>
+</ul>
+<p><strong>Example:</strong><br />
+A video game AI might use an FSM to control the behavior of a character:</p>
+<ul class="simple">
+<li><p><strong>State 1</strong> – Idle →</p></li>
+<li><p><strong>State 2</strong> – Patrol →</p></li>
+<li><p><strong>State 3</strong> – Attack →</p></li>
+<li><p><strong>State 4</strong> – Flee</p></li>
+</ul>
+<p>Transitions would be based on game events like proximity to an enemy or health level.</p>
+</section>
+<hr class="docutils" />
+<section id="advantages-and-limitations-of-fsms">
+<h3>1.7 Advantages and Limitations of FSMs<a class="headerlink" href="#advantages-and-limitations-of-fsms" title="Link to this heading">#</a></h3>
+<p><strong>✅ Advantages:</strong><br />
+✔️ Simple to design and understand.<br />
+✔️ Predictable behavior.<br />
+✔️ Efficient in hardware and software implementations.<br />
+✔️ Good for sequential control problems.</p>
+<p><strong>❌ Limitations:</strong><br />
+✖️ Limited scalability – FSMs become difficult to manage when the number of states becomes large.<br />
+✖️ Not well suited for complex, parallel operations.<br />
+✖️ State explosion – As the complexity increases, the number of states can grow exponentially.</p>
+</section>
+<hr class="docutils" />
+<section id="summary">
+<h3>1.8 Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<p>Finite State Machines provide a structured approach to modeling complex state-based behavior. Moore and Mealy machines each offer unique advantages depending on the application. FSMs are central to digital design, embedded systems, and software development due to their simplicity and predictability. When properly designed, FSMs can lead to efficient, reliable, and scalable systems.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="state-transition-diagrams">
+<h2>2. State Transition Diagrams<a class="headerlink" href="#state-transition-diagrams" title="Link to this heading">#</a></h2>
+<p>FSMs are often modeled using <strong>state transition diagrams</strong>, which provide a graphical representation of states and transitions.</p>
+<section id="components-of-a-state-transition-diagram">
+<h3>Components of a State Transition Diagram:<a class="headerlink" href="#components-of-a-state-transition-diagram" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>States</strong> – Represented as circles, showing all possible configurations of the system.</p></li>
+<li><p><strong>Transitions</strong> – Represented as arrows connecting states, indicating how the system moves from one state to another.</p></li>
+<li><p><strong>Events/Inputs</strong> – Labels on the arrows that describe the condition that causes the transition.</p></li>
+<li><p><strong>Outputs</strong> – The values produced based on the state (Moore) or state and inputs (Mealy).</p></li>
+</ol>
+</section>
+<section id="moore-machine-example">
+<h3>Moore Machine Example:<a class="headerlink" href="#moore-machine-example" title="Link to this heading">#</a></h3>
+<p>A Moore FSM that recognizes the binary sequence <code class="docutils literal notranslate"><span class="pre">10</span></code> would have states:</p>
+<ul class="simple">
+<li><p>S0 → Start state</p></li>
+<li><p>S1 → After seeing <code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
+<li><p>S2 → After seeing <code class="docutils literal notranslate"><span class="pre">10</span></code></p></li>
+</ul>
+<p>Transition Example:</p>
+<ul class="simple">
+<li><p>Start in S0</p></li>
+<li><p>If input = <code class="docutils literal notranslate"><span class="pre">1</span></code>, transition to S1</p></li>
+<li><p>If next input = <code class="docutils literal notranslate"><span class="pre">0</span></code>, transition to S2 and generate an output</p></li>
+</ul>
+<p><img alt="" src="Block2Reading/Obj08/ECE215_B2_Obj08_Reading_media/image4.png" /></p>
+</section>
+<section id="mealy-machine-example">
+<h3>Mealy Machine Example:<a class="headerlink" href="#mealy-machine-example" title="Link to this heading">#</a></h3>
+<p>In a Mealy FSM, the output can change based on the input while in a given state. This can reduce the number of required states but increases the complexity of the transition logic.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="fsm-design-process">
+<h2>3. FSM Design Process<a class="headerlink" href="#fsm-design-process" title="Link to this heading">#</a></h2>
+<section id="step-1-define-encode-the-states">
+<h3>Step 1: Define/Encode the States<a class="headerlink" href="#step-1-define-encode-the-states" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Assign a binary value to each state.</p></li>
+<li><p>Example: 3 states require 2 bits (<span class="math notranslate nohighlight">\(2² = 4\)</span> states).</p></li>
+<li><p>S0 = 00, S1 = 01, S2 = 10</p></li>
+</ul>
+</section>
+<section id="step-2-define-encode-the-inputs">
+<h3>Step 2: Define/Encode the Inputs<a class="headerlink" href="#step-2-define-encode-the-inputs" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Inputs are typically binary (0 or 1), but multi-bit inputs are possible.</p></li>
+<li><p>Example: An input <code class="docutils literal notranslate"><span class="pre">x</span></code> could represent <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>, or more complex values.</p></li>
+</ul>
+</section>
+<section id="step-3-define-encode-the-outputs">
+<h3>Step 3: Define/Encode the Outputs<a class="headerlink" href="#step-3-define-encode-the-outputs" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In a Moore machine, output depends on state only.</p></li>
+<li><p>In a Mealy machine, output depends on state and input.</p></li>
+</ul>
+</section>
+<section id="step-4-create-a-state-transition-diagram">
+<h3>Step 4: Create a State Transition Diagram<a class="headerlink" href="#step-4-create-a-state-transition-diagram" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Draw the states as circles.</p></li>
+<li><p>Connect them with arrows showing the transitions based on input.</p></li>
+</ul>
+</section>
+<section id="step-5-create-a-state-transition-table">
+<h3>Step 5: Create a State Transition Table<a class="headerlink" href="#step-5-create-a-state-transition-table" title="Link to this heading">#</a></h3>
+<p>A state transition table maps the present state and input to the next state and output. In the example below, there are two states represented by two bits, <span class="math notranslate nohighlight">\(q_1\)</span> and <span class="math notranslate nohighlight">\(q_0\)</span>, and one input, <span class="math notranslate nohighlight">\(x\)</span>. All possible combinations of the states and input a listed. The third column shows the next state (represented by the <span class="math notranslate nohighlight">\(^+\)</span>) for each present state and input combination, while the fourth column shows the output, <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Present State, <span class="math notranslate nohighlight">\(q_1 q_0\)</span></p></th>
+<th class="head text-center"><p>Input, <span class="math notranslate nohighlight">\(x\)</span></p></th>
+<th class="head text-center"><p>Next State, <span class="math notranslate nohighlight">\(q_1^+ q_0^+\)</span></p></th>
+<th class="head text-center"><p>Output, <span class="math notranslate nohighlight">\(z\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>00</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>00</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>00</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>01</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>01</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>10</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>01</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>00</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="step-6-express-logic-equations">
+<h3>Step 6: Express Logic Equations<a class="headerlink" href="#step-6-express-logic-equations" title="Link to this heading">#</a></h3>
+<p>Use Boolean algebra to express the next state and output logic. From the state transition table above, we use the Sum of Products (SOP) form to find <span class="math notranslate nohighlight">\(q_1^+\)</span>, <span class="math notranslate nohighlight">\(q_0^+\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>:</p>
+<ul class="simple">
+<li><p>Next state equation:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[q_1^+ = \overline{q_1} q_0 \overline{x}\]</div>
+<div class="math notranslate nohighlight">
+\[q_0^+ = \overline{q_1} \overline{q_0} x\]</div>
+<ul class="simple">
+<li><p>Output equation:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[z = q_1^+ = \overline{q_1} q_0 \overline{x}\]</div>
+</section>
+<section id="step-7-implement-with-flip-flops-and-logic-gates">
+<h3>Step 7: Implement with Flip-Flops and Logic Gates<a class="headerlink" href="#step-7-implement-with-flip-flops-and-logic-gates" title="Link to this heading">#</a></h3>
+<p>Use flip-flops to store the state and combinational logic to calculate the next state and outputs:</p>
+<ul class="simple">
+<li><p>Flip-flop holds the current state.</p></li>
+<li><p>Combinational logic calculates the next state and output.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="example-fsm-designs">
+<h2>4. Example FSM Designs<a class="headerlink" href="#example-fsm-designs" title="Link to this heading">#</a></h2>
+<p>The following examples will be worked out in class.</p>
+<section id="example-1-sequence-recognizer">
+<h3>Example 1: Sequence Recognizer<a class="headerlink" href="#example-1-sequence-recognizer" title="Link to this heading">#</a></h3>
+<p><strong>Design Goal:</strong> Recognize the sequence <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<ul class="simple">
+<li><p>States: S0 → S1 → S2</p></li>
+<li><p>Inputs: Binary input</p></li>
+<li><p>Outputs: Output <code class="docutils literal notranslate"><span class="pre">1</span></code> when sequence <code class="docutils literal notranslate"><span class="pre">10</span></code> is detected</p></li>
+</ul>
+</section>
+<section id="example-2-2-bit-counter">
+<h3>Example 2: 2-Bit Counter<a class="headerlink" href="#example-2-2-bit-counter" title="Link to this heading">#</a></h3>
+<p><strong>Design Goal:</strong> Count from 0 to 3 and wrap around</p>
+<ul class="simple">
+<li><p>States: 00, 01, 10, 11</p></li>
+<li><p>Inputs: Increment signal (1 = increment, 0 = hold)</p></li>
+<li><p>Outputs: Current state (Moore machine)</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Present State</p></th>
+<th class="head"><p>Input</p></th>
+<th class="head"><p>Next State</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>00</p></td>
+<td><p>0</p></td>
+<td><p>00</p></td>
+<td><p>00</p></td>
+</tr>
+<tr class="row-odd"><td><p>00</p></td>
+<td><p>1</p></td>
+<td><p>01</p></td>
+<td><p>01</p></td>
+</tr>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>0</p></td>
+<td><p>01</p></td>
+<td><p>01</p></td>
+</tr>
+<tr class="row-odd"><td><p>01</p></td>
+<td><p>1</p></td>
+<td><p>10</p></td>
+<td><p>10</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="example-3-vending-machine">
+<h3>Example 3: Vending Machine<a class="headerlink" href="#example-3-vending-machine" title="Link to this heading">#</a></h3>
+<p><strong>Design Goal:</strong> Dispense product after receiving 20¢</p>
+<ul class="simple">
+<li><p>States represent total amount inserted (0¢, 5¢, 10¢, 15¢, 20¢)</p></li>
+<li><p>Inputs: N = nickel, D = dime, Q = quarter</p></li>
+<li><p>Outputs: Dispense product and return change</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Present State</p></th>
+<th class="head"><p>Input</p></th>
+<th class="head"><p>Next State</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>00</p></td>
+<td><p>N</p></td>
+<td><p>01</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>01</p></td>
+<td><p>D</p></td>
+<td><p>11</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>N</p></td>
+<td><p>00</p></td>
+<td><p>1 (Dispense)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="example-4-traffic-light-control">
+<h3>Example 4: Traffic Light Control<a class="headerlink" href="#example-4-traffic-light-control" title="Link to this heading">#</a></h3>
+<p><strong>Design Goal:</strong> Control traffic light based on sensor inputs</p>
+<ul class="simple">
+<li><p>States:</p>
+<ul>
+<li><p>S0 = NS green, EW red</p></li>
+<li><p>S1 = NS yellow, EW red</p></li>
+<li><p>S2 = NS red, EW green</p></li>
+<li><p>S3 = NS red, EW yellow</p></li>
+</ul>
+</li>
+<li><p>Inputs: Sensor data</p></li>
+<li><p>Outputs: Light configuration</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Present State</p></th>
+<th class="head"><p>Input</p></th>
+<th class="head"><p>Next State</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>S0</p></td>
+<td><p>00</p></td>
+<td><p>S0</p></td>
+<td><p>NS green, EW red</p></td>
+</tr>
+<tr class="row-odd"><td><p>S0</p></td>
+<td><p>01</p></td>
+<td><p>S1</p></td>
+<td><p>NS yellow, EW red</p></td>
+</tr>
+<tr class="row-even"><td><p>S1</p></td>
+<td><p>-</p></td>
+<td><p>S2</p></td>
+<td><p>NS red, EW green</p></td>
+</tr>
+<tr class="row-odd"><td><p>S2</p></td>
+<td><p>10</p></td>
+<td><p>S2</p></td>
+<td><p>NS red, EW green</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>5. Summary<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Finite State Machines (FSMs) provide a structured and systematic way to design and analyze state-based systems. They are widely used in both hardware and software applications due to their ability to represent complex sequences of operations in a clear and predictable manner. FSMs consist of a finite number of states, and the system transitions between these states based on inputs and defined transition rules.</p>
+<p>FSMs are classified into two main types: <strong>Moore machines</strong> and <strong>Mealy machines</strong>. Moore machines generate outputs based only on the current state, making them more stable and easier to test. Mealy machines generate outputs based on both the current state and the inputs, allowing them to respond more quickly to changes but adding complexity to the design.</p>
+<p>The design process for FSMs includes defining the states, encoding inputs and outputs, creating state transition diagrams and tables, deriving logic equations, and implementing the system using flip-flops and combinational logic. Modern FSMs are frequently implemented using <strong>FPGAs</strong> and programmed with hardware description languages like <strong>VHDL</strong> and <strong>Verilog</strong>.</p>
+<p>FSMs offer significant advantages, such as predictability, simplicity, and reusability, but they can become challenging to manage when the number of states grows too large. Despite this, FSMs remain one of the most effective methods for modeling and controlling state-dependent behavior in modern engineering and computer science.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block2Reading/Obj08"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Obj07/ECE215_B2_Obj07_Reading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Objective 2.7</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-finite-state-machines-fsms">1. Introduction to Finite State Machines (FSMs)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-finite-state-machine">1.1 What is a Finite State Machine?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-fsms">1.2 Why Use FSMs?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-examples-in-engineering">1.3 FSM Examples in Engineering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moore-vs-mealy-machines">1.4 Moore vs. Mealy Machines</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moore-machine"><strong>Moore Machine</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mealy-machine"><strong>Mealy Machine</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-implementation-in-hardware">1.5 FSM Implementation in Hardware</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-fsm-structure-in-hardware"><strong>Basic FSM Structure in Hardware:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-implementation-in-software">1.6 FSM Implementation in Software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-and-limitations-of-fsms">1.7 Advantages and Limitations of FSMs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.8 Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#state-transition-diagrams">2. State Transition Diagrams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-a-state-transition-diagram">Components of a State Transition Diagram:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moore-machine-example">Moore Machine Example:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mealy-machine-example">Mealy Machine Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fsm-design-process">3. FSM Design Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-define-encode-the-states">Step 1: Define/Encode the States</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-define-encode-the-inputs">Step 2: Define/Encode the Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-define-encode-the-outputs">Step 3: Define/Encode the Outputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-create-a-state-transition-diagram">Step 4: Create a State Transition Diagram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-create-a-state-transition-table">Step 5: Create a State Transition Table</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-express-logic-equations">Step 6: Express Logic Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-implement-with-flip-flops-and-logic-gates">Step 7: Implement with Flip-Flops and Logic Gates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-fsm-designs">4. Example FSM Designs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-sequence-recognizer">Example 1: Sequence Recognizer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-2-bit-counter">Example 2: 2-Bit Counter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-vending-machine">Example 3: Vending Machine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-traffic-light-control">Example 4: Traffic Light Control</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5. Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

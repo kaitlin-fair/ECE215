@@ -35,7 +35,7 @@ _Note: there is no PP11_
 | 2.5  | [L20](_static/B2_Obj05_ADCI_slides.pdf) | [PP15](_static/PPs/ECE215_PP15.pdf) | [PP15](_static/PPs/ECE215_PP15_answers.pdf) |
 | 2.6  | [L21](_static/B2_Obj06_SignalConditioning_slides.pdf) | [PP16](_static/PPs/ECE215_PP16.pdf) | [PP16](_static/PPs/ECE215_PP16_answers.pdf) |
 | 2.7  | [L23](_static/B2_Obj07_DigitalLogic_slides.pdf) | [PP17](_static/PPs/ECE215_PP17.pdf) | [PP17](_static/PPs/ECE215_PP17_answers.pdf) |
-| 2.8  |  |  |  |
+| 2.8  | [L24](_static/B2_Obj08_FSM_slides.pdf) |  |  |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
