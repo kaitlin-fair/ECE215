@@ -40,8 +40,7 @@ Note that the number to the left of the decimal for your learning objective is t
 | 3.5 | I can convert between linear power ratios and decibels. |
 | 3.6 | I can alculate the maximum communication distance between a transmitter and receiver using the Friis and Line-of-Sight equations.  |
 | 3.7 | I can calculate signal-to-noise ratio (SNR) and determine the affects on wireless communications. |
-| 3.8 | I can calculate the range from a radar to a target. |
-| 3.9 | I can use the radar range equation to calculate the power received by the antenna from a target and the maximum detection range from the antenna to the target.|  
-| 3.10 | For pulse Doppler radar, I can calculate the range resolution and use the Doppler equation to calculate a target's velocity. |
-| 3.11 | I can apply the Friis and RADAR equations in conjunction with SNR to analyze a jamming scenario. |
-| 3.12 | I can explain frequency hopping and spread spectrum anti-jamming techniques.  |
+| 3.8 | I can calculate the distance from a monostatic radar to a stationary target based on pulse timing, assuming a direct line-of-sight path. |
+| 3.9 | I can calculate the maximum detection range from a radar antenna to a target using the Radar Range equation. |  
+| 3.10 | I can calculate the range resolution, unambiguous range, and a target's velocity for pulse Doppler radar. |
+| 3.11 | I can analyze jamming scenarios using the Friis equation, RADAR equation, and SNR. |
