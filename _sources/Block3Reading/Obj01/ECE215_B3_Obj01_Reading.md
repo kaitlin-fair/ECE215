@@ -33,7 +33,7 @@ Although you most likely won't be designing or building transmitters any
 time soon, even if you're only operating a communication system of some
 kind, a basic understanding of *how* it works can be a great help.
 
-Figure 22 shows a block diagram of a simplified communications system.
+Figure 1 shows a block diagram of a simplified communications system.
 This block diagram serves to show where we are going with our discussion
 of communications systems. We already discussed transducers and
 transducer interfaces, and we will be covering modulation, antennas, and
@@ -61,11 +61,11 @@ $$v_{out}(t) = A_{c}(t)\ \cos\left( 360{^\circ}*f_{c}(t)*t + \phi_{c}(t) \right)
 
 Note how the amplitude, frequency, and phase are now shown as
 time-varying. The basic block diagram of a modulator is shown in Figure
-23:
+2:
 
 ![](./ECE215_B3_Obj01_Reading/media/image2.png)
 
-Figure 23: Block diagram of a modulator.
+Figure 2: Block diagram of a modulator.
 
 The basic modulation types are:
 
@@ -79,13 +79,13 @@ The basic modulation types are:
     varying the phase of the carrier $(\phi_{c})$ in time.
 
 We are most familiar with AM and FM terminology because of the radios in
-our cars, but Figure 24 shows the difference between the two.
+our cars, but Figure 3 shows the difference between the two.
 
 ![](./ECE215_B3_Obj01_Reading/media/image3.png)
 
-Figure 24: Amplitude modulation compared with Frequency modulation.
+Figure 3: Amplitude modulation compared with Frequency modulation.
 
-In Figure 24, the *message*, *v­<sub>m­</sub>*(*t*), is the voice or data signal we
+In Figure 3, the *message*, *v­<sub>m­</sub>*(*t*), is the voice or data signal we
 want to send. The *carrier*, *v­<sub>c­</sub>*(*t*), will be modified by
 *v­<sub>m­</sub>*(*t*)*,* depending on the type of modulation. The output of the
 modulator is either *v­<sub>FM­</sub>*(*t*) (message carried in the frequency) in
@@ -113,7 +113,7 @@ with a PM demodulator. As it appears, PM and FM are very similar.
 
 ![](./ECE215_B3_Obj01_Reading/media/image4.png)
 
-Figure 25: Frequency modulation vs. phase modulation.
+Figure 4: Frequency modulation vs. phase modulation.
 
 In each of these graphs, the message displayed is a sinusoid. However,
 the message signal will vary depending on the application -- and does
@@ -128,7 +128,7 @@ Amplitude modulation makes use of a device called a *function
 multiplier*, but allows for the addition of a DC bias voltage, V­<sub>bias­</sub>.
 Adding the bias voltage can make demodulation more straightforward. To
 add the DC bias voltage, we just use a summer before the function
-multiplier, as shown in the block diagram in Figure 26.
+multiplier, as shown in the block diagram in Figure 5.
 
 The *function multiplier* is an electronic device that produces an
 output signal equal to the product of the input signals. When radio
@@ -143,7 +143,7 @@ V, not of V­<sup>2­</sup>.
 
 ![](./ECE215_B3_Obj01_Reading/media/image5.png)
 
-Figure 26: A generic AM block diagram.
+Figure 5: A generic AM block diagram.
 
 Notice the output of the modulator has the same frequency as the
 carrier; however, the amplitude varies as the message changes over time.
@@ -179,7 +179,7 @@ visualize this result in the frequency domain:
 
 ![](./ECE215_B3_Obj01_Reading/media/image6.png)
 
-Figure 27: AM in the frequency domain.
+Figure 6: AM in the frequency domain.
 
 Now is a good time to introduce a few new terms. The first of these is
 *modulation index* *(α)* which is given by the equation:
@@ -432,7 +432,7 @@ To summarize the three modulation cases (ignoring the bias = 0V case,
 which is also over-modulated), the output signals for bias voltages of
 1V, 2V, and 3V are given in
 
-Figure *28*.
+Figure *7*.
 
 Notice the effect the bias has on the output signals. In the first
 signal, the two envelopes overlap. As more bias is added, however, the
@@ -448,7 +448,7 @@ demodulator.
 |![](./ECE215_B3_Obj01_Reading/media/image30.png)|![](./ECE215_B3_Obj01_Reading/media/image31.png)|![](./ECE215_B3_Obj01_Reading/media/image32.png)|
 |![](./ECE215_B3_Obj01_Reading/media/image33.png)|![](./ECE215_B3_Obj01_Reading/media/image34.png)|![](./ECE215_B3_Obj01_Reading/media/image35.png)|
 
-Figure 28: Summary of the effect of various DC bias voltages on a
+Figure 7: Summary of the effect of various DC bias voltages on a
 modulated signal.
 
 ### AM with More Than One Frequency
@@ -548,12 +548,12 @@ one, the output signal's amplitude is 5V. We call this Amplitude Shift
 Keying (ASK). We can do the same thing with frequency -- one frequency
 represents a binary zero, while another represents a binary one. This is
 called Frequency Shift Keying (FSK). The two methods are shown in
-Figure 29. Many modern systems make use of both methods to transmit
+Figure 8. Many modern systems make use of both methods to transmit
 information.
 
 ![](./ECE215_B3_Obj01_Reading/media/image43.png)
 
-Figure 29: Amplitude Shift Keying and Frequency Shift Keying.
+Figure 8: Amplitude Shift Keying and Frequency Shift Keying.
 
 
 ### Frequency Division Multiplexing (FDM) System

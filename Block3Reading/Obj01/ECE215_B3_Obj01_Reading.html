@@ -63,6 +63,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Objective 2.8" href="../../Block2Reading/Obj08/ECE215_B2_Obj08_Reading.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -213,6 +212,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj06/ECE215_B2_Obj06_Reading.html">Objective 2.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj07/ECE215_B2_Obj07_Reading.html">Objective 2.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj08/ECE215_B2_Obj08_Reading.html">Objective 2.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 3 Readings</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 3.1</a></li>
 </ul>
 
     </div>
@@ -470,7 +473,7 @@ modulation.</p>
 <p>Although you most likely won’t be designing or building transmitters any
 time soon, even if you’re only operating a communication system of some
 kind, a basic understanding of <em>how</em> it works can be a great help.</p>
-<p>Figure 22 shows a block diagram of a simplified communications system.
+<p>Figure 1 shows a block diagram of a simplified communications system.
 This block diagram serves to show where we are going with our discussion
 of communications systems. We already discussed transducers and
 transducer interfaces, and we will be covering modulation, antennas, and
@@ -494,9 +497,9 @@ the modulated carrier, <em>v­<sub>out­</sub></em>(<em>t</em>):</p>
 \[v_{out}(t) = A_{c}(t)\ \cos\left( 360{^\circ}*f_{c}(t)*t + \phi_{c}(t) \right)\]</div>
 <p>Note how the amplitude, frequency, and phase are now shown as
 time-varying. The basic block diagram of a modulator is shown in Figure
-23:</p>
+2:</p>
 <p><img alt="" src="../../_images/image217.png" /></p>
-<p>Figure 23: Block diagram of a modulator.</p>
+<p>Figure 2: Block diagram of a modulator.</p>
 <p>The basic modulation types are:</p>
 <ul class="simple">
 <li><p>Amplitude modulation (AM) – information carried in the signal by
@@ -507,10 +510,10 @@ varying the frequency of the carrier (<span class="math notranslate nohighlight"
 varying the phase of the carrier <span class="math notranslate nohighlight">\((\phi_{c})\)</span> in time.</p></li>
 </ul>
 <p>We are most familiar with AM and FM terminology because of the radios in
-our cars, but Figure 24 shows the difference between the two.</p>
+our cars, but Figure 3 shows the difference between the two.</p>
 <p><img alt="" src="../../_images/image315.png" /></p>
-<p>Figure 24: Amplitude modulation compared with Frequency modulation.</p>
-<p>In Figure 24, the <em>message</em>, <em>v­<sub>m­</sub></em>(<em>t</em>), is the voice or data signal we
+<p>Figure 3: Amplitude modulation compared with Frequency modulation.</p>
+<p>In Figure 3, the <em>message</em>, <em>v­<sub>m­</sub></em>(<em>t</em>), is the voice or data signal we
 want to send. The <em>carrier</em>, <em>v­<sub>c­</sub></em>(<em>t</em>), will be modified by
 <em>v­<sub>m­</sub></em>(<em>t</em>)<em>,</em> depending on the type of modulation. The output of the
 modulator is either <em>v­<sub>FM­</sub></em>(<em>t</em>) (message carried in the frequency) in
@@ -535,7 +538,7 @@ lowest frequency occurs where the message has the steepest <em>negative</em>
 slope. The graphs below compare the output of an FM modulator compared
 with a PM demodulator. As it appears, PM and FM are very similar.</p>
 <p><img alt="" src="../../_images/image412.png" /></p>
-<p>Figure 25: Frequency modulation vs. phase modulation.</p>
+<p>Figure 4: Frequency modulation vs. phase modulation.</p>
 <p>In each of these graphs, the message displayed is a sinusoid. However,
 the message signal will vary depending on the application – and does
 not have to be a sinusoid. In general, there are two types of messages:
@@ -549,7 +552,7 @@ will focus on analog modulation.</p>
 multiplier</em>, but allows for the addition of a DC bias voltage, V­<sub>bias­</sub>.
 Adding the bias voltage can make demodulation more straightforward. To
 add the DC bias voltage, we just use a summer before the function
-multiplier, as shown in the block diagram in Figure 26.</p>
+multiplier, as shown in the block diagram in Figure 5.</p>
 <p>The <em>function multiplier</em> is an electronic device that produces an
 output signal equal to the product of the input signals. When radio
 frequency (RF) signals are used, this device is also known as a <em>mixer</em>.
@@ -561,7 +564,7 @@ follows the product of the input functions. Keep in mind the units do
 not multiply, so the product of two voltage signals will have units of
 V, not of V­<sup>2­</sup>.</p>
 <p><img alt="" src="../../_images/image510.png" /></p>
-<p>Figure 26: A generic AM block diagram.</p>
+<p>Figure 5: A generic AM block diagram.</p>
 <p>Notice the output of the modulator has the same frequency as the
 carrier; however, the amplitude varies as the message changes over time.
 In fact, the message signal creates a kind of envelope, while the
@@ -591,7 +594,7 @@ at the sum of the frequencies. If there is a bias, it simply produces a
 signal at the carrier frequency. It is perhaps more intuitive to
 visualize this result in the frequency domain:</p>
 <p><img alt="" src="../../_images/image612.png" /></p>
-<p>Figure 27: AM in the frequency domain.</p>
+<p>Figure 6: AM in the frequency domain.</p>
 <p>Now is a good time to introduce a few new terms. The first of these is
 <em>modulation index</em> <em>(α)</em> which is given by the equation:</p>
 <div class="math notranslate nohighlight">
@@ -834,7 +837,7 @@ the higher vias voltage.</p>
 <p>To summarize the three modulation cases (ignoring the bias = 0V case,
 which is also over-modulated), the output signals for bias voltages of
 1V, 2V, and 3V are given in</p>
-<p>Figure <em>28</em>.</p>
+<p>Figure <em>7</em>.</p>
 <p>Notice the effect the bias has on the output signals. In the first
 signal, the two envelopes overlap. As more bias is added, however, the
 envelopes are pulled apart until by the last signal, they are no longer
@@ -865,7 +868,7 @@ demodulator.</p>
 </tbody>
 </table>
 </div>
-<p>Figure 28: Summary of the effect of various DC bias voltages on a
+<p>Figure 7: Summary of the effect of various DC bias voltages on a
 modulated signal.</p>
 </section>
 <section id="am-with-more-than-one-frequency">
@@ -949,10 +952,10 @@ one, the output signal’s amplitude is 5V. We call this Amplitude Shift
 Keying (ASK). We can do the same thing with frequency – one frequency
 represents a binary zero, while another represents a binary one. This is
 called Frequency Shift Keying (FSK). The two methods are shown in
-Figure 29. Many modern systems make use of both methods to transmit
+Figure 8. Many modern systems make use of both methods to transmit
 information.</p>
 <p><img alt="" src="../../_images/image431.png" /></p>
-<p>Figure 29: Amplitude Shift Keying and Frequency Shift Keying.</p>
+<p>Figure 8: Amplitude Shift Keying and Frequency Shift Keying.</p>
 </section>
 <section id="frequency-division-multiplexing-fdm-system">
 <h3>Frequency Division Multiplexing (FDM) System<a class="headerlink" href="#frequency-division-multiplexing-fdm-system" title="Link to this heading">#</a></h3>
@@ -1066,6 +1069,15 @@ the following graph:</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../../Block2Reading/Obj08/ECE215_B2_Obj08_Reading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Objective 2.8</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
