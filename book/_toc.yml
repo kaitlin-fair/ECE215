@@ -45,5 +45,5 @@ parts:
       # - file: Block3Reading/Obj06/ECE215_B3_Obj06_Reading
       # - file: Block3Reading/Obj07/ECE215_B3_Obj07_Reading
       # - file: Block3Reading/Obj08/ECE215_B3_Obj08_Reading
-      - file: Block3Reading/Obj08/ECE215_B3_Obj09_Reading
-      # - file: Block3Reading/Obj08/ECE215_B3_Obj10_Reading
+      - file: Block3Reading/Obj09/ECE215_B3_Obj09_Reading
+      # - file: Block3Reading/Obj10/ECE215_B3_Obj10_Reading
