@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lesson 31 – Antennas &#8212; ECE215/S Course Webpage</title>
+    <title>Objective 3.3 &#8212; ECE215/S Course Webpage</title>
   
   
   
@@ -63,6 +63,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Objective 3.2" href="../Obj02/ECE215_B3_Obj02_Reading.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -215,9 +214,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj08/ECE215_B2_Obj08_Reading.html">Objective 2.8</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 3 Readings</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_B3_Obj01_Reading.html">Objective 3.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B3_Obj02_Reading.html">Objective 3.2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 3.3</a></li>
 </ul>
 
     </div>
@@ -403,7 +403,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lesson 31 – Antennas</h1>
+    <h1>Objective 3.3</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -413,15 +413,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-outcomes">Learning Outcomes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antennas">Antennas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-antenna-theory">General Antenna Theory</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-antennas">Types of Antennas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antenna-parameters">Antenna Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phased-array-antennas">Phased Array Antennas</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antennas-introduction">Antennas Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-antenna-theory">General Antenna Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-antennas">Types of Antennas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antenna-parameters">Antenna Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phased-array-antennas">Phased Array Antennas</a></li>
 </ul>
             </nav>
         </div>
@@ -433,24 +429,23 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="lesson-31-antennas">
-<h1>Lesson 31 – Antennas<a class="headerlink" href="#lesson-31-antennas" title="Link to this heading">#</a></h1>
-<section id="learning-outcomes">
-<h2>Learning Outcomes<a class="headerlink" href="#learning-outcomes" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Understand how a basic dipole antenna works.</p></li>
-<li><p>Calculate the wavelength of an electromagnetic signal given the
-carrier frequency.</p></li>
-<li><p>Understand what antenna gain is and the concept of an antenna gain
-pattern.</p></li>
-<li><p>Know the three basic types of antennas and their sizes, maximum
-gains, and basic gain patterns.</p></li>
-</ol>
-</section>
-<section id="antennas">
-<h2>Antennas<a class="headerlink" href="#antennas" title="Link to this heading">#</a></h2>
-<section id="introduction">
-<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-3-3">
+<h1>Objective 3.3<a class="headerlink" href="#objective-3-3" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3.3</p></td>
+<td><p>I can calculate the signal wavelength, antenna size, max antenna gain, and basic gain pattern for dipole, monopole, and parabolic dish antennas.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="antennas-introduction">
+<h2>Antennas Introduction<a class="headerlink" href="#antennas-introduction" title="Link to this heading">#</a></h2>
 <p>Generically, we can divide electronic communications into four steps:</p>
 <ol class="arabic simple">
 <li><p>Preparing the message for transmission using an <em>input transducer</em>,
@@ -460,7 +455,7 @@ gains, and basic gain patterns.</p></li>
 <li><p>Recovering the message using a receiver <em>interface, demodulator,</em>
 <em>and transducer</em></p></li>
 </ol>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image1.png" /></p>
+<p><img alt="" src="../../_images/image127.png" /></p>
 <p>In previous lessons, we learned about steps 1 and 4. We prepare the
 message by converting the information to an electrical signal,
 conditioning the signal, filtering, and/or digitizing, then modulating
@@ -475,7 +470,7 @@ at Electronic Warfare (EW) techniques. But first, we will look at how we
 transmit a signal wirelessly with an antenna.</p>
 </section>
 <section id="general-antenna-theory">
-<h3>General Antenna Theory<a class="headerlink" href="#general-antenna-theory" title="Link to this heading">#</a></h3>
+<h2>General Antenna Theory<a class="headerlink" href="#general-antenna-theory" title="Link to this heading">#</a></h2>
 <p>Coulomb’s Law states an electric force exists between a stationary
 positive charge and a stationary negative charge. Since the electric
 field is just the force per unit of charge, the electric field pattern
@@ -486,7 +481,7 @@ charge, if one existed. Since positive test charges follow the direction
 of electric field lines and negative charges behave in the opposite
 manner as positive test charges, we know that negative charges must move
 in the direction <em>opposite</em> of the arrows on the electric field lines.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image2.png" /></p>
+<p><img alt="" src="../../_images/image220.png" /></p>
 <p>In this case, the charges are stationary. However, Ampere’s Law states
 that if the charges move along a conductor (such as a wire or a sheet of
 metal), these moving charges (current) generate a magnetic field around
@@ -500,14 +495,14 @@ electromagnetic waves can be explained well with a specific type of
 antenna called a dipole antenna, which will be discussed in more detail
 later in this reading. Consider a dipole antenna made out of two wires
 as shown in the figure below.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image3.png" /></p>
+<p><img alt="" src="../../_images/image318.png" /></p>
 <p>Recall that oppositely charged particles attract and similarly charged
 particles repel one another. Recall also that metals easily give up
 electrons, which can create areas of positive charge (when electrons
 have departed) and negative charge (when electrons accumulate).</p>
 <p>When we apply a voltage across the input of this antenna, we cause
 similarly charged particles to accumulate together:</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image4.png" /></p>
+<p><img alt="" src="../../_images/image415.png" /></p>
 <p>Therefore, in the bottom half of this antenna, the input, which is the
 negative terminal of <span class="math notranslate nohighlight">\(V_{in}\)</span>, pushes the electrons in the lower wire
 away, causing an accumulation of negative charge at the bottom of the
@@ -521,7 +516,7 @@ between the two ends of the antenna creates an electric field, labeled E
 in the above diagram.</p>
 <p>Now what happens if we were to put another antenna inside this electric
 field?</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image5.png" /></p>
+<p><img alt="" src="../../_images/image512.png" /></p>
 <p>In the diagram above, the antenna we applied a voltage to is on the
 left, and the new antenna is on the right. As discussed earlier, the
 arrows on electric field lines tell us the direction of force on a
@@ -546,7 +541,7 @@ antenna and positive charges at the bottom.</p>
 <p>In the receiving antenna, the opposite occurs. Positive charges
 accumulate at the top of the receiving antenna and negative charges
 accumulate at the bottom.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image6.png" /></p>
+<p><img alt="" src="../../_images/image614.png" /></p>
 <p>Therefore, as our input signal from the transmitting antenna changes
 from positive to negative, the output signal at the receiving antenna
 changes from negative to positive. This is how antennas transmit
@@ -566,7 +561,7 @@ antenna can be used to transmit, it can also be used equally well to
 receive.</p>
 </section>
 <section id="types-of-antennas">
-<h3>Types of Antennas<a class="headerlink" href="#types-of-antennas" title="Link to this heading">#</a></h3>
+<h2>Types of Antennas<a class="headerlink" href="#types-of-antennas" title="Link to this heading">#</a></h2>
 <p>There are many types of antennas, but we will discuss four main types:
 the dipole, monopole, parabolic dish, and array antenna.</p>
 <p><strong>Dipole:</strong> The basic dipole is one of the most common types of
@@ -623,7 +618,7 @@ incident electromagnetic field. Then, the field from the top half and
 “mirror image” from the bottom half interfere constructively, meaning
 they add together. Using this phenomenon, the ground plane “fools” the
 quarter-wave monopole into behaving like a half-wave dipole.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image7.png" /></p>
+<p><img alt="" src="../../_images/image711.png" /></p>
 <p>The radiation characteristics of the quarter-wave monopole are the same
 as that of the half-wave dipole from the ground plane up. Radio antennas
 mounted on cars are monopoles. This antenna works the same as if the
@@ -697,10 +692,10 @@ small spatial area. In the transmitter case, the feed directs the energy
 towards the dish, where the energy is then focused in the direction the
 antenna is pointing. Note spherical and parabolic antennas are very
 similar but differ slightly in the way they focus energy.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image8.png" /></p>
+<p><img alt="" src="../../_images/image815.png" /></p>
 </section>
 <section id="antenna-parameters">
-<h3>Antenna Parameters<a class="headerlink" href="#antenna-parameters" title="Link to this heading">#</a></h3>
+<h2>Antenna Parameters<a class="headerlink" href="#antenna-parameters" title="Link to this heading">#</a></h2>
 <p>In what directions do antennas radiate energy and how much energy do
 they radiate in each direction? In what directions do antennas transmit
 or receive energy and how much energy do they transmit or receive in
@@ -735,8 +730,8 @@ maximum on the circle, the energy gradually increases.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image9.png" /></p></td>
-<td class="text-center"><p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image10.png" /></p></td>
+<tr class="row-even"><td class="text-center"><p><img alt="" src="../../_images/image913.png" /></p></td>
+<td class="text-center"><p><img alt="" src="../../_images/image1010.png" /></p></td>
 </tr>
 </tbody>
 </table>
@@ -747,14 +742,14 @@ shown in Figure 3. This radiation pattern explains why you never point
 the top of a radio antenna in the direction from which you are trying to
 receive signal. Instead hold the radio upright so the entire length of
 the antenna can capture radiation.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image11.png" /></p>
+<p><img alt="" src="../../_images/image1112.png" /></p>
 <p>Figure 3: 3-D radiation pattern for a simple dipole antenna.</p>
 <p>A parabolic dish has a different radiation pattern because of its
 ability to focus radiation in one direction. The pattern is narrower and
 longer as shown below. This means a parabolic dish radiates and receives
 extremely well in a specific direction at the expense of poor
 performance in every other direction.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image12.png" /></p>
+<p><img alt="" src="../../_images/image128.png" /></p>
 <p><em>Antenna gain</em> refers to the antenna’s ability to focus energy in a
 specific direction. You might be familiar with flashlights that can
 focus the light beam by turning the head of the flashlight. As the
@@ -775,7 +770,7 @@ in the figure below) to that of a point source (grey circle in the
 figure below), we find the dipole antenna has more power radiated in
 some directions than the point source (Gain &gt; 1) while in some
 directions, no power is radiated (Gain = 0 or a null zone).</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image13.png" /></p>
+<p><img alt="" src="../../_images/image137.png" /></p>
 <p>Both the dipole and monopole have modest gain. Ideally, a half-wave
 dipole has a gain of G = 1.64. The quarter-wave monopole ideally has
 twice the gain of a half-wave dipole (G = 3.28). However, this is only
@@ -824,7 +819,7 @@ first, we should calculate the wavelength.</p>
 <p><strong>Answer:</strong> The dish’s gain is 181.9.</p>
 </section>
 <section id="phased-array-antennas">
-<h3>Phased Array Antennas<a class="headerlink" href="#phased-array-antennas" title="Link to this heading">#</a></h3>
+<h2>Phased Array Antennas<a class="headerlink" href="#phased-array-antennas" title="Link to this heading">#</a></h2>
 <p>Now that we have discussed the three basic types of antennas and their
 associated parameters, it is worth looking at one more type of antenna
 – the phased array antenna. Although dish antennas focus their energy
@@ -845,12 +840,11 @@ peaks of the overall wave from the array antenna define the direction
 the beam appears to be propagating. As such, the beam appears to be
 moving away from the array at the desired angle θ. Therefore, we can
 change the angle by changing the time delay between each element.</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image14.png" /></p>
+<p><img alt="" src="../../_images/image147.png" /></p>
 <p>Figure 4: A phased array of antennas elements.</p>
 <p>Taking advantage of this abilty to change the direction of the “beam” by changing the time delay of the antenna elements allows us to build a completely flat antenna. Many modern antennas in aircraft, satellites, and other weapon systems use such phased array technology. One example is the Northrop Grumman AN/APG-83 Scalable Agile Beam Radar (SABR) used in the nosecone of the F-16 (Figure 5). Technology in the area of phased arrays has improved such that we can realize relatively high gain antennas and also steer the beams in both azimuth and elevation (2-D steering).</p>
-<p><img alt="" src="Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su_media/media/image15.jpeg" /></p>
+<p><img alt="" src="../../_images/image151.jpeg" /></p>
 <p>Figure 5: The AN/APG-83 SABR installed in the nosecone of an F-16.</p>
-</section>
 </section>
 </section>
 
@@ -884,6 +878,15 @@ change the angle by changing the time delay between each element.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../Obj02/ECE215_B3_Obj02_Reading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Objective 3.2</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
@@ -900,15 +903,11 @@ change the angle by changing the time delay between each element.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-outcomes">Learning Outcomes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antennas">Antennas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-antenna-theory">General Antenna Theory</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-antennas">Types of Antennas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antenna-parameters">Antenna Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phased-array-antennas">Phased Array Antennas</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antennas-introduction">Antennas Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-antenna-theory">General Antenna Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-antennas">Types of Antennas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antenna-parameters">Antenna Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phased-array-antennas">Phased Array Antennas</a></li>
 </ul>
   </nav></div>
 
