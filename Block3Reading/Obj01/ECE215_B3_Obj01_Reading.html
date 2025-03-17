@@ -411,15 +411,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-1">Modulation 1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-modulation">Types of Modulation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-modulation">Amplitude Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation">Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-modulation">Types of Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-modulation">Amplitude Modulation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-signals-in-the-time-domain">AM Signals in the Time Domain</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-example">Modulation Example</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-with-more-than-one-frequency">AM with More Than One Frequency</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-modulation">Digital Modulation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-division-multiplexing-fdm-system">Frequency Division Multiplexing (FDM) System</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#am-with-more-than-one-frequency">AM with More Than One Frequency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-modulation">Digital Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-division-multiplexing-fdm-system">Frequency Division Multiplexing (FDM) System</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fdm-example-problem-1">FDM Example Problem 1</a></li>
 </ul>
 </li>
 </ul>
@@ -448,8 +450,8 @@ document.write(`
 </tbody>
 </table>
 </div>
-<section id="modulation-1">
-<h2>Modulation 1<a class="headerlink" href="#modulation-1" title="Link to this heading">#</a></h2>
+<section id="modulation">
+<h2>Modulation<a class="headerlink" href="#modulation" title="Link to this heading">#</a></h2>
 <p>Without any technological assistance, our ability to communicate over a
 given distance is limited by how loud we can speak. If we wanted to talk
 to someone next to us, we could use a normal conversational volume.
@@ -479,8 +481,9 @@ of communications systems. We already discussed transducers and
 transducer interfaces, and we will be covering modulation, antennas, and
 the propagation of electromagnetic waves over the course of this block.</p>
 <p><img alt="" src="../../_images/image120.png" /></p>
+</section>
 <section id="types-of-modulation">
-<h3>Types of Modulation<a class="headerlink" href="#types-of-modulation" title="Link to this heading">#</a></h3>
+<h2>Types of Modulation<a class="headerlink" href="#types-of-modulation" title="Link to this heading">#</a></h2>
 <p>To modulate simply means to <em>change</em> something in some way. In
 Electrical and Computer Engineering, we normally modulate a sinusoidal
 signal called the <em>carrier signal</em>, using a <em>message signal</em>. In this
@@ -547,7 +550,7 @@ same, the message content will vary based on the scheme used. This class
 will focus on analog modulation.</p>
 </section>
 <section id="amplitude-modulation">
-<h3>Amplitude Modulation<a class="headerlink" href="#amplitude-modulation" title="Link to this heading">#</a></h3>
+<h2>Amplitude Modulation<a class="headerlink" href="#amplitude-modulation" title="Link to this heading">#</a></h2>
 <p>Amplitude modulation makes use of a device called a <em>function
 multiplier</em>, but allows for the addition of a DC bias voltage, V­<sub>bias­</sub>.
 Adding the bias voltage can make demodulation more straightforward. To
@@ -611,7 +614,6 @@ the signals, over-, under-, or 100%-modulated:</p>
 <li><p>α &lt; 1 means the signal is under-modulated.</p></li>
 <li><p>α = 1 means the signal is 100%-modulated.</p></li>
 </ol>
-</section>
 <section id="am-signals-in-the-time-domain">
 <h3>AM Signals in the Time Domain<a class="headerlink" href="#am-signals-in-the-time-domain" title="Link to this heading">#</a></h3>
 <p>While you will not be asked to draw time domain modulation plots on your
@@ -871,8 +873,9 @@ demodulator.</p>
 <p>Figure 7: Summary of the effect of various DC bias voltages on a
 modulated signal.</p>
 </section>
+</section>
 <section id="am-with-more-than-one-frequency">
-<h3>AM with More Than One Frequency<a class="headerlink" href="#am-with-more-than-one-frequency" title="Link to this heading">#</a></h3>
+<h2>AM with More Than One Frequency<a class="headerlink" href="#am-with-more-than-one-frequency" title="Link to this heading">#</a></h2>
 <p>Although it is instructive to consider how to use a single frequency as
 a message signal, it is not very practical. In fact, most systems want
 to send information containing a bandwidth of frequencies. Any
@@ -939,7 +942,7 @@ lowest frequency.</p>
 frequency of the message signal.</p>
 </section>
 <section id="digital-modulation">
-<h3>Digital Modulation<a class="headerlink" href="#digital-modulation" title="Link to this heading">#</a></h3>
+<h2>Digital Modulation<a class="headerlink" href="#digital-modulation" title="Link to this heading">#</a></h2>
 <p>One of the key principles of modulation is that the carrier
 <strong>must</strong> be a sinusoidal signal, but the message data
 can be anything – analog or digital. So far, we have discussed the
@@ -958,7 +961,7 @@ information.</p>
 <p>Figure 8: Amplitude Shift Keying and Frequency Shift Keying.</p>
 </section>
 <section id="frequency-division-multiplexing-fdm-system">
-<h3>Frequency Division Multiplexing (FDM) System<a class="headerlink" href="#frequency-division-multiplexing-fdm-system" title="Link to this heading">#</a></h3>
+<h2>Frequency Division Multiplexing (FDM) System<a class="headerlink" href="#frequency-division-multiplexing-fdm-system" title="Link to this heading">#</a></h2>
 <p>In order to send two or more signals through the same channel, we
 consider two options. First, a signal can be sent at any frequency, but
 only during specified time intervals. This is called Time Division
@@ -991,9 +994,8 @@ signals to the multipliers must not contain frequencies that would
 overlap with any of the other channels. Low pass filters serve this
 purpose, with cutoff frequencies set to the highest desired frequency of
 the input signal.</p>
-</section>
-<section id="example-problem-1">
-<h3>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
+<section id="fdm-example-problem-1">
+<h3>FDM Example Problem 1<a class="headerlink" href="#fdm-example-problem-1" title="Link to this heading">#</a></h3>
 <p>Two music signals are multiplexed according to
 the system below. Graph the output signal in the frequency domain.</p>
 <p><img alt="" src="../../_images/image46.jpeg" /></p>
@@ -1094,15 +1096,17 @@ the following graph:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-1">Modulation 1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-modulation">Types of Modulation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-modulation">Amplitude Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation">Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-modulation">Types of Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-modulation">Amplitude Modulation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-signals-in-the-time-domain">AM Signals in the Time Domain</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-example">Modulation Example</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-with-more-than-one-frequency">AM with More Than One Frequency</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-modulation">Digital Modulation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-division-multiplexing-fdm-system">Frequency Division Multiplexing (FDM) System</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#am-with-more-than-one-frequency">AM with More Than One Frequency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-modulation">Digital Modulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-division-multiplexing-fdm-system">Frequency Division Multiplexing (FDM) System</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fdm-example-problem-1">FDM Example Problem 1</a></li>
 </ul>
 </li>
 </ul>

@@ -4,7 +4,7 @@
 |----------|----------|
 | 3.1 | I can determine the modulation index, output signal, and output signal bandwidth of an Amplitude Modulation (AM) system and assess whether the system is under-modulated, over-modulated, or fully modulated. |
 
-## Modulation 1
+## Modulation
 
 Without any technological assistance, our ability to communicate over a
 given distance is limited by how loud we can speak. If we wanted to talk
@@ -41,7 +41,7 @@ the propagation of electromagnetic waves over the course of this block.
 
 ![](./ECE215_B3_Obj01_Reading/media/image1.png)
 
-### Types of Modulation
+## Types of Modulation
 
 To modulate simply means to *change* something in some way. In
 Electrical and Computer Engineering, we normally modulate a sinusoidal
@@ -122,7 +122,7 @@ not have to be a sinusoid. In general, there are two types of messages:
 same, the message content will vary based on the scheme used. This class
 will focus on analog modulation.
 
-### Amplitude Modulation
+## Amplitude Modulation
 
 Amplitude modulation makes use of a device called a *function
 multiplier*, but allows for the addition of a DC bias voltage, V­<sub>bias­</sub>.
@@ -451,7 +451,7 @@ demodulator.
 Figure 7: Summary of the effect of various DC bias voltages on a
 modulated signal.
 
-### AM with More Than One Frequency
+## AM with More Than One Frequency
 
 Although it is instructive to consider how to use a single frequency as
 a message signal, it is not very practical. In fact, most systems want
@@ -534,7 +534,7 @@ BW = *f­<sub>high­</sub> -- f­<sub>­low­</sub>* = 595kHz -- 585kHz = 10kHz
 The bandwidth of a modulated signal is ALWAYS equal to twice the highest
 frequency of the message signal.
 
-### Digital Modulation
+## Digital Modulation
 
 One of the key principles of modulation is that the carrier
 **must** be a sinusoidal signal, but the message data
@@ -556,7 +556,7 @@ information.
 Figure 8: Amplitude Shift Keying and Frequency Shift Keying.
 
 
-### Frequency Division Multiplexing (FDM) System
+## Frequency Division Multiplexing (FDM) System
 
 In order to send two or more signals through the same channel, we
 consider two options. First, a signal can be sent at any frequency, but
@@ -596,7 +596,7 @@ overlap with any of the other channels. Low pass filters serve this
 purpose, with cutoff frequencies set to the highest desired frequency of
 the input signal.
 
-### Example Problem 1
+### FDM Example Problem 1
 Two music signals are multiplexed according to
 the system below. Graph the output signal in the frequency domain.
 
