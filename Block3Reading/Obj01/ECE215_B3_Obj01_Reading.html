@@ -1,0 +1,1150 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Objective 3.1 &#8212; ECE215/S Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block3Reading/Obj01/ECE215_B3_Obj01_Reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215/S Course Webpage - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="ECE215/S Course Webpage - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Schedule.html">Course Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj05/ECE215_Obj05_Reading.html">Objective 1.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj06/ECE215_Obj06_Reading.html">Objective 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj07/ECE215_Obj07_Reading.html">Objective 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj08/ECE215_Obj08_Reading.html">Objective 1.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj01/ECE215_B2_Obj01_Reading.html">Objective 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj02/ECE215_B2_Obj02_Reading.html">Objective 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj03/ECE215_B2_Obj03_Reading.html">Objective 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj04/ECE215_B2_Obj04_Reading.html">Objective 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj05/ECE215_B2_Obj05_Reading.html">Objective 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj06/ECE215_B2_Obj06_Reading.html">Objective 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj07/ECE215_B2_Obj07_Reading.html">Objective 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj08/ECE215_B2_Obj08_Reading.html">Objective 2.8</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock3Reading/Obj01/ECE215_B3_Obj01_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block3Reading/Obj01/ECE215_B3_Obj01_Reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Objective 3.1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-1">Modulation 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-modulation">Types of Modulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-modulation">Amplitude Modulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-signals-in-the-time-domain">AM Signals in the Time Domain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-example">Modulation Example</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-with-more-than-one-frequency">AM with More Than One Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-modulation">Digital Modulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-division-multiplexing-fdm-system">Frequency Division Multiplexing (FDM) System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-3-1">
+<h1>Objective 3.1<a class="headerlink" href="#objective-3-1" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3.1</p></td>
+<td><p>I can determine the modulation index, output signal, and output signal bandwidth of an Amplitude Modulation (AM) system and assess whether the system is under-modulated, over-modulated, or fully modulated.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="modulation-1">
+<h2>Modulation 1<a class="headerlink" href="#modulation-1" title="Link to this heading">#</a></h2>
+<p>Without any technological assistance, our ability to communicate over a
+given distance is limited by how loud we can speak. If we wanted to talk
+to someone next to us, we could use a normal conversational volume.
+However, if we wanted to talk to someone on the other side of a crowded
+room, we would need to yell fairly loud to get their attention. As the
+communication distance increases, we would need to become louder and
+louder in order to be heard. But, what if we wanted to talk to someone
+many miles away, or deliver information without sending a messenger?</p>
+<p>Whether you want to relax and listen to music from your favorite radio
+station, or whether your life depends on maintaining a tactical
+communication link during a battle with enemy forces, <em>modulation</em> plays
+a key role. In fact, understanding how communication systems (radio,
+satellites, optical fiber links, even the dial-up modem or network card
+in your computer) operate requires a basic understanding of modulation.</p>
+<p>Another advantage of modulation is the ability to transmit more than one
+signal over a single communications <em>channel</em>. A single telephone line
+can carry both voice and computer data because the two signals use
+different frequencies for modulation. Similarly, many radio stations can
+serve the same area because their signals use different frequencies for
+modulation.</p>
+<p>Although you most likely won’t be designing or building transmitters any
+time soon, even if you’re only operating a communication system of some
+kind, a basic understanding of <em>how</em> it works can be a great help.</p>
+<p>Figure 22 shows a block diagram of a simplified communications system.
+This block diagram serves to show where we are going with our discussion
+of communications systems. We already discussed transducers and
+transducer interfaces, and we will be covering modulation, antennas, and
+the propagation of electromagnetic waves over the course of this block.</p>
+<p><img alt="" src="../../_images/image120.png" /></p>
+<section id="types-of-modulation">
+<h3>Types of Modulation<a class="headerlink" href="#types-of-modulation" title="Link to this heading">#</a></h3>
+<p>To modulate simply means to <em>change</em> something in some way. In
+Electrical and Computer Engineering, we normally modulate a sinusoidal
+signal called the <em>carrier signal</em>, using a <em>message signal</em>. In this
+case, the information in the <em>message signal</em> is encoded within the
+<em>carrier signal</em>. Consider a <em>carrier signal</em> of the form:</p>
+<div class="math notranslate nohighlight">
+\[v_{c}(t) = A_{c}\ \cos\left( 360{^\circ}*f_{c}*t + \phi_{c} \right)\]</div>
+<p>With this type of signal, it is possible change either the amplitude
+(<em>A­<sub>c­</sub></em>), the frequency (<em>f­<sub>c­</sub></em>), or the phase (<em>φ­<sub>c­</sub></em>) of the
+sinusoidal carrier in such a way that the <em>information</em> (e.g. voice,
+music, video, targeting coordinates, intel report, etc.) becomes part of
+the modulated carrier, <em>v­<sub>out­</sub></em>(<em>t</em>):</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = A_{c}(t)\ \cos\left( 360{^\circ}*f_{c}(t)*t + \phi_{c}(t) \right)\]</div>
+<p>Note how the amplitude, frequency, and phase are now shown as
+time-varying. The basic block diagram of a modulator is shown in Figure
+23:</p>
+<p><img alt="" src="../../_images/image217.png" /></p>
+<p>Figure 23: Block diagram of a modulator.</p>
+<p>The basic modulation types are:</p>
+<ul class="simple">
+<li><p>Amplitude modulation (AM) – information carried in the signal by
+varying the amplitude of the carrier (<span class="math notranslate nohighlight">\(A_{c})\)</span> in time.</p></li>
+<li><p>Frequency modulation (FM) – information carried in the signal by
+varying the frequency of the carrier (<span class="math notranslate nohighlight">\(f_{c})\)</span> in time.</p></li>
+<li><p>Phase modulation (PM) – information carried in the signal by
+varying the phase of the carrier <span class="math notranslate nohighlight">\((\phi_{c})\)</span> in time.</p></li>
+</ul>
+<p>We are most familiar with AM and FM terminology because of the radios in
+our cars, but Figure 24 shows the difference between the two.</p>
+<p><img alt="" src="../../_images/image315.png" /></p>
+<p>Figure 24: Amplitude modulation compared with Frequency modulation.</p>
+<p>In Figure 24, the <em>message</em>, <em>v­<sub>m­</sub></em>(<em>t</em>), is the voice or data signal we
+want to send. The <em>carrier</em>, <em>v­<sub>c­</sub></em>(<em>t</em>), will be modified by
+<em>v­<sub>m­</sub></em>(<em>t</em>)<em>,</em> depending on the type of modulation. The output of the
+modulator is either <em>v­<sub>FM­</sub></em>(<em>t</em>) (message carried in the frequency) in
+the case of an FM modulator, or <em>v­<sub>AM­</sub></em>(<em>t</em>) (message carried in the
+amplitude) in the case of an AM modulator. The difference between the
+outputs of the two different modulation schemes is evident. Of course,
+to the listener the most noticeable difference when listening to an AM
+radio versus an FM radio is the noise. This is because, in general,
+noise affects the <em>amplitude</em> of a signal. Since the message in an AM
+signal is contained entirely in the amplitude, AM signals are very
+susceptible to noise. For FM signals, however, the message is contained
+in the frequency and not the amplitude. Even if the amplitude of an FM
+signal is affected by a noisy environment, such as a lightning storm,
+this noise is effectively ignored during the demodulation process, since
+the amplitude and frequency are independent.</p>
+<p>Along with FM, Phase Modulation (PM) signals are also far more immune to
+noise than AM. Although PM is typically much less familiar to most
+people, it is used extensively with cell phones. PM is based on the
+signal’s <em>rate of change</em> (or slope). The highest frequency in the PM
+signal occurs when the message has the steepest <em>positive</em> slope. The
+lowest frequency occurs where the message has the steepest <em>negative</em>
+slope. The graphs below compare the output of an FM modulator compared
+with a PM demodulator. As it appears, PM and FM are very similar.</p>
+<p><img alt="" src="../../_images/image412.png" /></p>
+<p>Figure 25: Frequency modulation vs. phase modulation.</p>
+<p>In each of these graphs, the message displayed is a sinusoid. However,
+the message signal will vary depending on the application – and does
+not have to be a sinusoid. In general, there are two types of messages:
+<em>analog</em> and <em>digital</em>. While the principles between the two are the
+same, the message content will vary based on the scheme used. This class
+will focus on analog modulation.</p>
+</section>
+<section id="amplitude-modulation">
+<h3>Amplitude Modulation<a class="headerlink" href="#amplitude-modulation" title="Link to this heading">#</a></h3>
+<p>Amplitude modulation makes use of a device called a <em>function
+multiplier</em>, but allows for the addition of a DC bias voltage, V­<sub>bias­</sub>.
+Adding the bias voltage can make demodulation more straightforward. To
+add the DC bias voltage, we just use a summer before the function
+multiplier, as shown in the block diagram in Figure 26.</p>
+<p>The <em>function multiplier</em> is an electronic device that produces an
+output signal equal to the product of the input signals. When radio
+frequency (RF) signals are used, this device is also known as a <em>mixer</em>.
+The function multiplier is different than the scalar multiplier
+(amplifier) discussed earlier with transducer interfaces because the
+output of the scalar multiplier is a scaled version of the input.
+However, the output of the function multiplier is a signal whose shape
+follows the product of the input functions. Keep in mind the units do
+not multiply, so the product of two voltage signals will have units of
+V, not of V­<sup>2­</sup>.</p>
+<p><img alt="" src="../../_images/image510.png" /></p>
+<p>Figure 26: A generic AM block diagram.</p>
+<p>Notice the output of the modulator has the same frequency as the
+carrier; however, the amplitude varies as the message changes over time.
+In fact, the message signal creates a kind of envelope, while the
+carrier signal “colors in between the lines” of that envelope. Two
+important facts to note with function multipliers:</p>
+<ol class="arabic simple">
+<li><p>The carrier frequency is ALWAYS much higher than the message
+frequency.</p></li>
+<li><p>The carrier is ALWAYS a sinusoid; however, the message could be any
+analog or digital signal… it’s the information you want to
+communicate!</p></li>
+</ol>
+<p>Mathematically speaking, we represent the result of the modulator as:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = A_{c}\cos\left( 360{^\circ}f_{c}t \right) \times \lbrack B + \ A_{m}\cos{(360{^\circ}f_{m}t)\rbrack} = \ \ \frac{1}{2}A_{c}A_{m}\cos{\left( 360{^\circ}{\lbrack f}_{c} - f_{m}\rbrack t \right) + \ \frac{1}{2}A_{c}A_{m}\cos\left( 360{{^\circ}\lbrack f}_{c} + f_{m}\rbrack t \right)\ \ \ \  + A_{c}B}\cos\left( 360{{^\circ}f}_{c}t \right)\]</div>
+<p>where the “<em>m”</em> subscript denotes the message and the “<em>c”</em> subscript
+denotes the carrier. This equation looks both scary and complicated, but
+it really isn’t. Remember, when dealing with sinusoidal terms, the two
+key pieces of information needed are: amplitude and frequency. In
+generic terms, the output of the function multiplier is:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{v}_{\mathbf{out}}\left( \mathbf{t} \right)\mathbf{= \ }\frac{\mathbf{Product}\mathbf{\ }\mathbf{of}\mathbf{\ }\mathbf{amplitudes}}{\mathbf{2}}*\ \cos\left( 360{^\circ}*\mathbf{difference}\mathbf{\ }\mathbf{of}\mathbf{\ }\mathbf{frequencies}*t \right) + \ \frac{\mathbf{Product}\mathbf{\ }\mathbf{of}\mathbf{\ }\mathbf{amplitudes}}{\mathbf{2}}*\ \cos\left( 360{^\circ}*\mathbf{sum}\mathbf{\ }\mathbf{of}\mathbf{\ }\mathbf{frequencies*}\ t \right)\ \ \ \ \ \ \ \  + \ \mathbf{V}_{\mathbf{bias}}\mathbf{*}\mathbf{\ Carrier\ Amplitude}\mathbf{*}\cos\left( 360{^\circ}*\mathbf{carrier\ frequency*}\ t \right)\text{ }\]</div>
+<p>Therefore, you can think of the function multiplier as dividing the
+combined energy contained in the message and carrier signals between two
+new sinusoidal signals: one at the difference of the frequencies and one
+at the sum of the frequencies. If there is a bias, it simply produces a
+signal at the carrier frequency. It is perhaps more intuitive to
+visualize this result in the frequency domain:</p>
+<p><img alt="" src="../../_images/image612.png" /></p>
+<p>Figure 27: AM in the frequency domain.</p>
+<p>Now is a good time to introduce a few new terms. The first of these is
+<em>modulation index</em> <em>(α)</em> which is given by the equation:</p>
+<div class="math notranslate nohighlight">
+\[\alpha = \frac{A_{m}}{V_{bias}}\]</div>
+<p>We can determine the modulation index directly from the frequency plot,
+if it is available. We simply add up signals in the sidebands and divide
+them by the signal at the carrier frequency:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\frac{{A_{c}*A}_{M}}{2} + \frac{{A_{c}*A}_{M}}{2}}{V_{bias}*A_{c}} = \frac{A_{c}*A_{m}}{V_{bias}*A_{c}} = \frac{A_{m}}{V_{bias}} = \alpha\]</div>
+<p>AM signals can be characterized by their modulation index, where we call
+the signals, over-, under-, or 100%-modulated:</p>
+<ol class="arabic simple">
+<li><p>α &gt; 1 means the signal is over-modulated.</p></li>
+<li><p>α &lt; 1 means the signal is under-modulated.</p></li>
+<li><p>α = 1 means the signal is 100%-modulated.</p></li>
+</ol>
+</section>
+<section id="am-signals-in-the-time-domain">
+<h3>AM Signals in the Time Domain<a class="headerlink" href="#am-signals-in-the-time-domain" title="Link to this heading">#</a></h3>
+<p>While you will not be asked to draw time domain modulation plots on your
+own, you do need to understand what they look like and why. The output
+of the function multiplier can be drawn in the time domain by following
+these steps:</p>
+<ol class="arabic simple">
+<li><p>The message is drawn on the graph using dashed lines.</p></li>
+<li><p>The amplitude is set to (<em>A­<sub>C­</sub></em> * <em>A­<sub>M­</sub></em>), and the period of the
+message signal is marked.</p></li>
+</ol>
+<p><img alt="" src="../../_images/image79.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>The message reflection is then represented about the x-axis using
+dashed lines.</p></li>
+</ol>
+<p><img alt="" src="../../_images/image813.png" /></p>
+<ol class="arabic simple" start="4">
+<li><p>The carrier frequency is then used to “color in” between the two
+dashed lines. The dashed lines are called the envelope, and are
+used as a guideline to better distinguish the changes in amplitude
+of the carrier.</p></li>
+</ol>
+<p><img alt="" src="../../_images/image911.png" /></p>
+<p>We could also represent the output signal in the frequency domain, by
+identifying the two key pieces of information – amplitude and
+frequency.</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t) = \mathbf{3}\cos{(360{^\circ}\ \mathbf{99}\mathbf{k}t)}\  + \ \ \mathbf{3}\cos{(360{^\circ}\ \mathbf{101}kt)}\ V.\]</div>
+<p>Therefore, we can plot <em>v­<sub>out­</sub></em>(<em>t</em>) as:</p>
+<p><img alt="" src="../../_images/image109.png" /></p>
+<p>Notice the the message is contained in frequencies symetrical about the
+carrier frequency, 100kHz. So, by changing the carrier frequency, we can
+change the location of the output signal on the frequency spectrum. If,
+for example, we wanted to broadcast at 1MHz, we would simply change the
+carrier frequency to 1MHz.</p>
+</section>
+<section id="modulation-example">
+<h3>Modulation Example<a class="headerlink" href="#modulation-example" title="Link to this heading">#</a></h3>
+<p>To understand the effect of bias, consider the message signal
+<em>v­<sub>M­</sub></em>(<em>t</em>) <em>=</em> 2 cos(360<em>°*<em>2</em>k*t</em>) <em>V</em> , which is input into the
+following amplitude modulator. We will start with a bias of 0V, then
+change it to 1V, 2V and finally to 3V. We will graph the output signal,
+<em>v­<sub>AM­</sub></em>, in both the <em>time</em> and <em>frequency</em> domain for each case.</p>
+<p><img alt="" src="../../_images/image1110.png" /></p>
+<p>It would be helpful at first to list the known quantities:</p>
+<ol class="arabic simple">
+<li><p>A­<sub>M­</sub> = 2V</p></li>
+<li><p>A­<sub>C­</sub> = 2V</p></li>
+<li><p>f­<sub>c­</sub> = 590 kHz</p></li>
+<li><p>τ­<sub>c­</sub> = 1.7 µs</p></li>
+<li><p>f­<sub>m­</sub> = 2 kHz</p></li>
+<li><p>τ­<sub>m­</sub> = 500 µs</p></li>
+</ol>
+<p><em><strong>Bias = 0V</strong></em></p>
+<p>We begin with the bias set to 0V.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1)  The graph of the message signal is:</p></td>
+<td><p><img alt="" src="../../_images/image124.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>2) The amplitude of our message signal is 2V, which means it varies from 2V to -2V. Now, we can draw the graph in the time domain. First, the message signal and its reflection are represented about the x-axis as a dashed line.</p></td>
+<td><p><img alt="" src="../../_images/image135.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>3)  Finally, the carrier signal is drawn between these envelopes and we label the y-axis</p></td>
+<td><p><img alt="" src="../../_images/image145.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Notice the maximum and minimum values of the previous two figures are
+different. To find out why, let’s look at the maximum and minimum values
+of the message as it flows through the modulation system:</p>
+<p><img alt="" src="../../_images/image154.png" /></p>
+<p>When we start, our message has an amplitude of 2V, which means it varies
+between 2V and -2V. Then, as we pass through the function multiplier,
+the message is multiplied by a carrier signal. Since the amplitude of
+the carrier signal is 2V, we simply multiply 2V and -2V by 2, giving us
+4V and -4V.</p>
+<p>In the equation for this signal, the amplitude of the message signal
+(<em>A­<sub>M­</sub></em>) is 2V and the bias voltage (V­<sub>bias­</sub>) is 0V; therefore, the
+modulation index is:</p>
+<div class="math notranslate nohighlight">
+\[\alpha = \frac{A_{M}}{B} = \frac{2V}{0V} = \infty\]</div>
+<p>While this may not make much sense mathematically, by definition
+whenever <em>α</em> &gt; 1, then our output signal will be <em>over-modulated</em>. It
+is important to note that when we do not include bias in our design, the
+output signal will always be over-modulated. Notice in the graph above
+that part of the signal still drops below the x-axis, and the two
+envelopes <em>over</em>lap. This is another indication the output signal will
+be over-modulated.</p>
+<p>Finally, we can easily plot the output signal in the frequency domain.
+The equation of the output is:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t)\ \ \  = \ \ \frac{1}{2}A_{c}A_{m}\cos{\left( 360{^\circ}*{\lbrack f}_{c} - f_{m}\rbrack*t \right)\  + \ \frac{1}{2}A_{c}A_{m}\cos\left( 360{{^\circ}*\lbrack f}_{c} + f_{m}\rbrack*t \right)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  + V_{bias}A_{c}}\cos\left( 360{{^\circ}*f}_{c*}*t \right)\]</div>
+<div class="math notranslate nohighlight">
+\[v_{out}(t)\ \ \  = \ \ 2\cos{(360{^\circ}*588k*t)\  + \ 2\cos\left( 360^{\circ}*592k*t \right)\ \ V}\]</div>
+<p>Therefore, we can draw the amplitude spectrum as:</p>
+<p><img alt="" src="../../_images/image161.png" /></p>
+<p><em><strong>Bias = 1V</strong></em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1)The amplitude of our message signal is 2V, which means it varies from 2V to -2V.  By adding a bias of 1V, we shift the entire signal up, so that it alternates between 3V and -1V, as shown.  Therefore, the graph of the message signal is:</p></td>
+<td><p><img alt="" src="../../_images/image171.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>2)	Now, the message signal and its reflection are represented about the x-axis as a dashed line.</p></td>
+<td><p><img alt="" src="../../_images/image182.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>3)	Finally, the carrier signal is drawn between these envelopes and we label the y-axis:</p></td>
+<td><p><img alt="" src="../../_images/image192.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Notice the maximum and minimum values of the previous two figures are
+different. To find out why, let’s look at the maximum and minimum values
+of the message as it flows through the modulation system:</p>
+<p><img alt="" src="../../_images/image20.png" /></p>
+<p>When we start, our message has an amplitude of 2V, which means it varies
+between 2V and -2V. When we pass through the summer, however, we add 1V
+of bias, so our signal now varies from 3V to -1V. Finally, we pass
+through the function multiplier where our biased message is multiplied
+by a carrier signal. Since the amplitude of the carrier signal is 2V, we
+simply multiply 3V and -1V by 2 or -2 and pick the biggest and smallest
+results, giving us 6V and -6V.</p>
+<p>In the equation for this signal, the amplitude of the message signal
+(<em>A­<sub>M­</sub></em>) is 2V and the bias voltage (V­<sub>bias­</sub>) is 1V; therefore, the
+modulation index is:</p>
+<div class="math notranslate nohighlight">
+\[\alpha = \frac{A_{M}}{B} = \frac{2V}{1V} = 2\]</div>
+<p>By definition, whenever <em>α</em> &gt; 1, then our output signal will be
+<em>over-modulated</em>. Notice in the graph above that part of the signal
+still drops below the x-axis, and the two envelopes <em>over</em>lap. This is
+another indication the output signal will be over-modulated.</p>
+<p>Finally, we can write the equation of the output signal as:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t)\ \ \  = \ \ 2\cos{(360{^\circ}*588k*t)\  + \ 2\cos\left( 360^{\circ}*592k*t \right) + 2\cos\left( 360^{\circ}*590k*t \right)\ V}\]</div>
+<p>So we can plot the frequency amplitude spectrum as:</p>
+<p><img alt="" src="../../_images/image218.png" /></p>
+<p>Notice how the bias voltage has generated a new “spike” at the carrier
+frequency, and we can calculate the modulation index directly from the
+amplitude spectrum:</p>
+<div class="math notranslate nohighlight">
+\[\alpha = \ \frac{2V + 2V}{2V} = 2\]</div>
+<p>Which agrees with our previous calculation.</p>
+<p><em><strong>Bias = 2V</strong></em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1)	We’ve now shifted the original curve up to the point where it just touches the x-axis.  This will always occur when the bias equals the amplitude of the message signal.  The message signal is:</p></td>
+<td><p><img alt="" src="../../_images/image221.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>2)	Following the same steps for graphing, the output, v­<sub>AM­</sub>(t), looks as shown:</p></td>
+<td><p><img alt="" src="../../_images/image231.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We can examine the maximum and minimums for our 100% modulated case as
+before:</p>
+<p><img alt="" src="../../_images/image241.png" /></p>
+<p>The modulation index is for this system is:</p>
+<div class="math notranslate nohighlight">
+\[\alpha = \frac{A_{M}}{V_{bias}} = \frac{2V}{2V} = 1\]</div>
+<p>Whenever α = 1, we will have an output signal that is <em>100%-modulated</em>.
+This case occurs when the message just barely touches the x-axis.</p>
+<p>Finally, we can write the equation of the output signal as:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t)\ \ \  = \ \ 2\cos{(360{^\circ}*588k*t)\  + \ 2\cos\left( 360^{\circ}*592k*t \right) + 4\cos\left( 360^{\circ}*590k*t \right)\ V}\]</div>
+<p>and, the amplitude spectrum is:</p>
+<p><img alt="" src="../../_images/image251.png" /></p>
+<p>Notice how the spike at the carrier frequency is increasing based on the
+increasing DC bias.</p>
+<p><em><strong>Bias = 3V</strong></em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1)	Our signal now varies from 5V to 1V, with none of the signal dropping below or touching the x-axis.  Therefore, the message signal is:</p></td>
+<td><p><img alt="" src="../../_images/image261.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>2)	Following the same steps for graphing, the output, vAM(t), looks as shown:</p></td>
+<td><p><img alt="" src="../../_images/image271.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The maximum and minimums of the signals as they flow through the
+modulator are:</p>
+<p><img alt="" src="../../_images/image281.png" /></p>
+<p>Therefore, the message envelope varies from 10 V to 2 V and the mirror
+image varies from -2 V to -10 V. The output signal is therefore:</p>
+<p>And, finally, our modulation index in this case is</p>
+<div class="math notranslate nohighlight">
+\[\alpha = \frac{A_{M}}{V_{bias}} = \frac{2V}{3V} = 0.667\]</div>
+<p>When <em>α</em> &lt; 1, our output signal will be <em>under-modulated</em>.
+Under-modulation occurs when the message signal is entirely above the
+x-axis, and the two message envelopes do not overlap.</p>
+<p>Finally, we can write the equation of the output signal as:</p>
+<div class="math notranslate nohighlight">
+\[v_{out}(t)\ \ \  = \ \ 2\cos{(360{^\circ}*588k*t)\  + \ 2\cos\left( 360^{\circ}*592k*t \right) + 6\cos\left( 360^{\circ}*590k*t \right)\ V}\]</div>
+<p>and we can plot the amplitude spectrum:</p>
+<p><img alt="" src="../../_images/image291.png" /></p>
+<p>Again, we notice the increasing signal at the carrier frequency, due to
+the higher vias voltage.</p>
+<p>To summarize the three modulation cases (ignoring the bias = 0V case,
+which is also over-modulated), the output signals for bias voltages of
+1V, 2V, and 3V are given in</p>
+<p>Figure <em>28</em>.</p>
+<p>Notice the effect the bias has on the output signals. In the first
+signal, the two envelopes overlap. As more bias is added, however, the
+envelopes are pulled apart until by the last signal, they are no longer
+touching. At 100%-modulation and for under-modulated signals, the phase
+change of the carrier as it crosses the x-axis does not occur;
+therefore, it is easier to demodulate and we can use a cheaper
+demodulator.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Over-Modulated</strong></p></th>
+<th class="head text-center"><p><strong>100%-Modulated</strong></p></th>
+<th class="head text-center"><p><strong>Under-Modulated</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>$<span class="math notranslate nohighlight">\(\alpha\  = \ \frac{A_{M}}{V_{bias}} = \frac{1V}{2V} = \mathbf{2}\)</span>$</p></td>
+<td class="text-center"><p>$<span class="math notranslate nohighlight">\(\alpha\  = \frac{A_{M}}{V_{bias}} = \frac{2V}{2V} = \ \mathbf{1}\)</span>$</p></td>
+<td class="text-center"><p>$<span class="math notranslate nohighlight">\(\alpha\  = \frac{A_{M}}{V_{bias}}= \frac{2V}{3V} =\ \mathbf{0.667}\)</span>$</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><img alt="" src="../../_images/image30.png" /></p></td>
+<td class="text-center"><p><img alt="" src="../../_images/image316.png" /></p></td>
+<td class="text-center"><p><img alt="" src="../../_images/image321.png" /></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><img alt="" src="../../_images/image331.png" /></p></td>
+<td class="text-center"><p><img alt="" src="../../_images/image341.png" /></p></td>
+<td class="text-center"><p><img alt="" src="../../_images/image351.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Figure 28: Summary of the effect of various DC bias voltages on a
+modulated signal.</p>
+</section>
+<section id="am-with-more-than-one-frequency">
+<h3>AM with More Than One Frequency<a class="headerlink" href="#am-with-more-than-one-frequency" title="Link to this heading">#</a></h3>
+<p>Although it is instructive to consider how to use a single frequency as
+a message signal, it is not very practical. In fact, most systems want
+to send information containing a bandwidth of frequencies. Any
+communications system, for example, wants to ensure it can at least use
+data in the audible range (20 Hz – 22kHz) as its message signal.
+Everything up to this point still applies to a message signal with more
+than one frequency. For example, consider the following modulation
+system:</p>
+<p><img alt="" src="../../_images/image413.png" /></p>
+<p>Where <em>v</em>­<sub>m­</sub>(<em>t</em>) is now:</p>
+<div class="math notranslate nohighlight">
+\[v_{m}(t)\ \ \  = \ \ 2\cos{(360{^\circ}*1k*t)\  + \ \cos\left( 360^{\circ}*3k*t \right) + 6\cos\left( 360^{\circ}*5k*t \right)\ V}\]</div>
+<p>In this case, determining the time domain representation of the output
+signal (<em>v</em>­<sub>AM­</sub>) is overly complicated. Even using the distributive law
+to write the equation of the output signal is overly tedious. However,
+it is perfectly feasible to draw this signal in the time domain, if we
+recall that each frequency in the message signal, we will produce <em>two</em>
+frequencies in the output signal – one at each frequency added to the
+carrier frequency, and one at each frequency subtracted from the carrier
+frequency. The amplitude of each frequency will be half of the product
+of that frequency’s amplitude (in the message signal) and the amplitude
+of the carrier frequency. So, the example above produces <strong>six</strong>
+frequencies in the output:</p>
+<p><img alt="" src="../../_images/image413.png" /></p>
+<p>First, take notice how the spectrum is symmetric around the carrier
+frequency, <em>f­<sub>c­</sub>.</em> The frequencies to the right of the carrier frequency
+are simply the frequencies from the message signal added to the carrier
+frequency:</p>
+<p>590kHz + 1 kHz = 591 kHz</p>
+<p>590 kHz + 3 kHz = 593 kHz</p>
+<p>590 kHz + 5 kHz = 595 kHz</p>
+<p>The amplitudes of those frequencies are calculated by
+<span class="math notranslate nohighlight">\(\frac{A_{m}*A_{c}}{2}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[A_{m1} = \frac{2V*2V}{2} = 2V\]</div>
+<div class="math notranslate nohighlight">
+\[A_{m2} = \frac{1V*2V}{2} = 1V\]</div>
+<div class="math notranslate nohighlight">
+\[A_{m3} = \frac{6V*2V}{2} = 6V\]</div>
+<p>Finally, observe how the frequencies to the left of the carrier
+frequency are the higher frequencies reflected (as a mirror image)
+around the carrier frequency. This represents the difference of the
+message and carrier frequencies. The amplitudes are also the same as
+those on the right of the carrier frequency. With this in mind, it does
+not matter how many frequencies are contained in a signal, we can find
+the amplitude spectrum by:</p>
+<ol class="arabic simple">
+<li><p>Adding the carrier frequency to each message frequency</p></li>
+<li><p>Calculating the amplitude by <span class="math notranslate nohighlight">\(\frac{A_{m}*A_{c}}{2}\)</span> for each
+message frequency</p></li>
+<li><p>Reflecting the results around the carrier frequency on the graph.</p></li>
+</ol>
+<p>Another concept that is useful to understand is the idea of <em>bandwidth</em>.
+Bandwidth, when taken in context with modulation, is the range of
+frequencies in a given band, particularly those used for transmitting a
+signal. When modulating a signal, the transmitter is limited to a
+certain bandwidth they are allowed to transmit over. To find the
+bandwidth of a signal, the highest frequency is subtracted from the
+lowest frequency.</p>
+<p>BW = <em>f­<sub>high­</sub> – f­<sub>­low­</sub></em></p>
+<p>Examining our modulated signal, we can determine the bandwidth to be:</p>
+<p>BW = <em>f­<sub>high­</sub> – f­<sub>­low­</sub></em> = 595kHz – 585kHz = 10kHz</p>
+<p>The bandwidth of a modulated signal is ALWAYS equal to twice the highest
+frequency of the message signal.</p>
+</section>
+<section id="digital-modulation">
+<h3>Digital Modulation<a class="headerlink" href="#digital-modulation" title="Link to this heading">#</a></h3>
+<p>One of the key principles of modulation is that the carrier
+<strong>must</strong> be a sinusoidal signal, but the message data
+can be anything – analog or digital. So far, we have discussed the
+modulation of analog signals (sinusoids), but it is just as easy to use
+a digital signal as a message signal. In the case of amplitude
+modulation, we choose one amplitude as a binary zero (usually 0V) and
+another as a binary one (5V, for example). When the message signal is a
+binary zero, the output signal is zero. When the message signal is a
+one, the output signal’s amplitude is 5V. We call this Amplitude Shift
+Keying (ASK). We can do the same thing with frequency – one frequency
+represents a binary zero, while another represents a binary one. This is
+called Frequency Shift Keying (FSK). The two methods are shown in
+Figure 29. Many modern systems make use of both methods to transmit
+information.</p>
+<p><img alt="" src="../../_images/image431.png" /></p>
+<p>Figure 29: Amplitude Shift Keying and Frequency Shift Keying.</p>
+</section>
+<section id="frequency-division-multiplexing-fdm-system">
+<h3>Frequency Division Multiplexing (FDM) System<a class="headerlink" href="#frequency-division-multiplexing-fdm-system" title="Link to this heading">#</a></h3>
+<p>In order to send two or more signals through the same channel, we
+consider two options. First, a signal can be sent at any frequency, but
+only during specified time intervals. This is called Time Division
+Multiplexing (TDM). Second, a signal can be sent at any time, but only
+in a specified frequency range. This is Frequency Division Multiplexing
+(FDM).</p>
+<p>FDM is a multiplexing technique used in analog telephone communications,
+FM stereo, space vehicle telemetry, and many other applications. In FDM,
+several independent signals are simultaneously transmitted through one
+channel by allocating each signal a unique band of the available
+frequency spectrum. Many times the signal will need to be filtered to
+restrict its bandwidth over the frequency spectrum to prevent
+interference with other signals. The signals shown in the frequency
+domain below are from three local Colorado Springs FM radio stations.
+Notice each signal has its own unique center frequency, but the
+frequency content is the same for all three stations (in the audible
+range). This is an example of FDM.</p>
+<p><img alt="" src="../../_images/image441.png" /></p>
+<p>Breaking this process down, FDM involves band-limiting the input
+signals, moving their spectra through modulation, and combining these
+into one composite signal. In general, an FDM signal is generated from
+any number of input signals (i.e., two or more) by translating each one
+to a unique frequency band. The translated signals are then added
+together creating the composite FDM signal whose amplitude spectrum
+consists of the non-overlapping, frequency translated spectrum of all
+the signals. Your basic FDM system is shown below.</p>
+<p><img alt="" src="../../_images/image451.png" /></p>
+<p>To guarantee no overlap of spectra at the output of the adder, the input
+signals to the multipliers must not contain frequencies that would
+overlap with any of the other channels. Low pass filters serve this
+purpose, with cutoff frequencies set to the highest desired frequency of
+the input signal.</p>
+</section>
+<section id="example-problem-1">
+<h3>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
+<p>Two music signals are multiplexed according to
+the system below. Graph the output signal in the frequency domain.</p>
+<p><img alt="" src="../../_images/image46.jpeg" /></p>
+<p><strong>Understand</strong>: We are multiplexing signals in the frequency domain (two
+signals on the same graph). This block diagram may be confusing, but
+please realize it is using <em>f­<sub>C­</sub></em> to mean two different things in this
+system. For the filters, <em>f­<sub>C­</sub></em> means the cutoff frequency. For the
+signals coming into the function multipliers, <em>f­<sub>C­</sub></em> means carrier
+frequency.</p>
+<p><strong>Identify Key Information</strong>:</p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the frequency content of each input signal, the
+cutoff frequencies of the band-limiting LPFs, and the amplitude and
+frequency of each function multiplier.</p></li>
+<li><p><strong>Unknowns:</strong> We want to graph the output spectrum.</p></li>
+<li><p><strong>Assumptions:</strong> The transmission system can support the entire
+bandwidth.</p></li>
+</ul>
+<p><strong>Plan</strong>: We will follow each signal through its own modulation path,
+taking into account frequencies cut off by the LPFs, and determining the
+final modulated signal. Since the signals are then added together, they
+can be plotted on the same axis.</p>
+<p><strong>Solve:</strong> Consider the first signal and what happens when it passes
+through the filter. Since <em>f­<sub>C­</sub></em> =15 kHz, every frequency above 15 kHz
+will be cut off. Therefore, the signal coming out of the filter will be:</p>
+<p><img alt="" src="../../_images/image47.jpeg" /></p>
+<p>For the second signal, the filter will also kill all frequencies greater
+than 15 kHz:</p>
+<p><img alt="" src="../../_images/image48.jpeg" /></p>
+<p>Everything else we do is the same (mathematically) as previous problems.
+We shift the first signal by the carrier frequency, 120 kHz (since this
+represents the sum of the frequencies), then draw its mirror image
+(since this represents the difference of the frequencies). Next, we
+shift the second signal by 155 kHz and draw its mirror image. If the
+LPFs were not in the signal chain, the output signals would interfere
+with each other, however, because the filters enforce a channel
+bandwidth of 30 kHz, though, the resulting signals no longer interfere
+with each other.</p>
+<p><strong>Answer</strong>: The output signal for the multiplexing system is shown in
+the following graph:</p>
+<p><img alt="" src="../../_images/image49.jpeg" /></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block3Reading/Obj01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-1">Modulation 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-modulation">Types of Modulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-modulation">Amplitude Modulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-signals-in-the-time-domain">AM Signals in the Time Domain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modulation-example">Modulation Example</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#am-with-more-than-one-frequency">AM with More Than One Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-modulation">Digital Modulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-division-multiplexing-fdm-system">Frequency Division Multiplexing (FDM) System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

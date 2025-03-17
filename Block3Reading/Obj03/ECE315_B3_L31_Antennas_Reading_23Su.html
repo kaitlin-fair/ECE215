@@ -1,0 +1,961 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lesson 31 – Antennas &#8212; ECE215/S Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215/S Course Webpage - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="ECE215/S Course Webpage - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Schedule.html">Course Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj05/ECE215_Obj05_Reading.html">Objective 1.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj06/ECE215_Obj06_Reading.html">Objective 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj07/ECE215_Obj07_Reading.html">Objective 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj08/ECE215_Obj08_Reading.html">Objective 1.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj01/ECE215_B2_Obj01_Reading.html">Objective 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj02/ECE215_B2_Obj02_Reading.html">Objective 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj03/ECE215_B2_Obj03_Reading.html">Objective 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj04/ECE215_B2_Obj04_Reading.html">Objective 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj05/ECE215_B2_Obj05_Reading.html">Objective 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj06/ECE215_B2_Obj06_Reading.html">Objective 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj07/ECE215_B2_Obj07_Reading.html">Objective 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj08/ECE215_B2_Obj08_Reading.html">Objective 2.8</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block3Reading/Obj03/ECE315_B3_L31_Antennas_Reading_23Su.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lesson 31 – Antennas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-outcomes">Learning Outcomes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antennas">Antennas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-antenna-theory">General Antenna Theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-antennas">Types of Antennas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antenna-parameters">Antenna Parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phased-array-antennas">Phased Array Antennas</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lesson-31-antennas">
+<h1>Lesson 31 – Antennas<a class="headerlink" href="#lesson-31-antennas" title="Link to this heading">#</a></h1>
+<section id="learning-outcomes">
+<h2>Learning Outcomes<a class="headerlink" href="#learning-outcomes" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Understand how a basic dipole antenna works.</p></li>
+<li><p>Calculate the wavelength of an electromagnetic signal given the
+carrier frequency.</p></li>
+<li><p>Understand what antenna gain is and the concept of an antenna gain
+pattern.</p></li>
+<li><p>Know the three basic types of antennas and their sizes, maximum
+gains, and basic gain patterns.</p></li>
+</ol>
+</section>
+<section id="antennas">
+<h2>Antennas<a class="headerlink" href="#antennas" title="Link to this heading">#</a></h2>
+<section id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
+<p>Generically, we can divide electronic communications into four steps:</p>
+<ol class="arabic simple">
+<li><p>Preparing the message for transmission using an <em>input transducer</em>,
+<em>signal conditioning, and modulator</em></p></li>
+<li><p>Sending the signal through a <em>communications medium</em></p></li>
+<li><p>Receiving the signal from the <em>communications medium</em></p></li>
+<li><p>Recovering the message using a receiver <em>interface, demodulator,</em>
+<em>and transducer</em></p></li>
+</ol>
+<p><img alt="" src="../../_images/image127.png" /></p>
+<p>In previous lessons, we learned about steps 1 and 4. We prepare the
+message by converting the information to an electrical signal,
+conditioning the signal, filtering, and/or digitizing, then modulating
+the signal for transmission. Likewise, we recover the message by
+demodulating and employing optional signal conditioning techniques, such
+as converting to analog, amplifying, and/or filtering, before we send it
+to an output transducer.</p>
+<p>In the remaining lessons, we will focus on wireless communications. As
+we do so, we will use radio communications and RADAR as examples. We
+will then explore how this process affects our tactics by taking a look
+at Electronic Warfare (EW) techniques. But first, we will look at how we
+transmit a signal wirelessly with an antenna.</p>
+</section>
+<section id="general-antenna-theory">
+<h3>General Antenna Theory<a class="headerlink" href="#general-antenna-theory" title="Link to this heading">#</a></h3>
+<p>Coulomb’s Law states an electric force exists between a stationary
+positive charge and a stationary negative charge. Since the electric
+field is just the force per unit of charge, the electric field pattern
+in the following figure can be found by knowing the direction of force
+on a positive test charge placed in the vicinity of the two fixed
+charges. The arrows indicate the direction of force on a positive test
+charge, if one existed. Since positive test charges follow the direction
+of electric field lines and negative charges behave in the opposite
+manner as positive test charges, we know that negative charges must move
+in the direction <em>opposite</em> of the arrows on the electric field lines.</p>
+<p><img alt="" src="../../_images/image220.png" /></p>
+<p>In this case, the charges are stationary. However, Ampere’s Law states
+that if the charges move along a conductor (such as a wire or a sheet of
+metal), these moving charges (current) generate a magnetic field around
+the current. The charge separation causes an electric field, and the
+current causes a magnetic field. Together, we call these interdependent
+fields an <em>electromagnetic field,</em> which radiates away from the
+conductor in waves, much like ripples from a stone thrown in a pond. But
+instead of the two-dimensional rings in the pond, the electromagnetic
+waves radiate outward in three-dimensional spheres. The radiation of
+electromagnetic waves can be explained well with a specific type of
+antenna called a dipole antenna, which will be discussed in more detail
+later in this reading. Consider a dipole antenna made out of two wires
+as shown in the figure below.</p>
+<p><img alt="" src="../../_images/image318.png" /></p>
+<p>Recall that oppositely charged particles attract and similarly charged
+particles repel one another. Recall also that metals easily give up
+electrons, which can create areas of positive charge (when electrons
+have departed) and negative charge (when electrons accumulate).</p>
+<p>When we apply a voltage across the input of this antenna, we cause
+similarly charged particles to accumulate together:</p>
+<p><img alt="" src="../../_images/image415.png" /></p>
+<p>Therefore, in the bottom half of this antenna, the input, which is the
+negative terminal of <span class="math notranslate nohighlight">\(V_{in}\)</span>, pushes the electrons in the lower wire
+away, causing an accumulation of negative charge at the bottom of the
+antenna. Similarly, in the top half of the antenna, there is a positive
+charge at the input, which draws electrons in the wire towards the
+input, leaving behind an area of positive charges at the tip of the
+antenna (we can denote positive charge as the <em>absence</em> of electrons).
+The result is an area of positive charges at one tip of the antenna and
+an area of negative charges at the other. The difference in charges
+between the two ends of the antenna creates an electric field, labeled E
+in the above diagram.</p>
+<p>Now what happens if we were to put another antenna inside this electric
+field?</p>
+<p><img alt="" src="../../_images/image512.png" /></p>
+<p>In the diagram above, the antenna we applied a voltage to is on the
+left, and the new antenna is on the right. As discussed earlier, the
+arrows on electric field lines tell us the direction of force on a
+positive test charge, and from this, we know that electrons will move in
+the opposite direction of the arrows. For this reason, the electric
+field, E, created by the antenna on the left moves electons to the top
+portion of each half of the antenna on the right, creating an area of
+negative charge at the top of the upper half and an area of positive
+charge at the bottom of the lower half. Another way to think about this
+is about how charges attract and repel. The arrows in an electric field
+originate from an area of positive charge, and they end in an area of
+negative charge. The positive charge at the top of the electric field
+draws electrons to the top of the new antenna. Likewise, the negative
+portion at the bottom of the electric field pushes the electrons away,
+leaving behind an area of positive charges in the new antenna.</p>
+<p>In order for an electric field to propagate (move), the input needs to
+change over time. One way we can get it to change is by applying an
+alternating current, such as a sinusoidal signal, to the input.</p>
+<p>Therefore, when the input signal reverses polarity, the electric field
+is reversed. We now have negative charges at the top of the transmitting
+antenna and positive charges at the bottom.</p>
+<p>In the receiving antenna, the opposite occurs. Positive charges
+accumulate at the top of the receiving antenna and negative charges
+accumulate at the bottom.</p>
+<p><img alt="" src="../../_images/image614.png" /></p>
+<p>Therefore, as our input signal from the transmitting antenna changes
+from positive to negative, the output signal at the receiving antenna
+changes from negative to positive. This is how antennas transmit
+information!</p>
+<p>This also demonstrates an important concept about how antennas radiate
+electromagnetic radiation. The electric field travels perpendicular to
+the antenna, and the electric field points parallel to the antenna. In
+order for the electric field to move the charges in the receiving
+antenna, the receiving antenna has to be placed parallel to the incoming
+electric field (as is shown in the image above). For this reason,
+antennas do not work well when the tips are pointing at each other.</p>
+<p>We could just as easily have made the antenna on the right the
+transmitting antenna (connected to <span class="math notranslate nohighlight">\(V_{in}\)</span>) and the antenna on the left
+the receiving antenna (connected to <span class="math notranslate nohighlight">\(V_{out}\)</span>). Because of this, there
+is no difference between a receive antenna and a transmit antenna. If an
+antenna can be used to transmit, it can also be used equally well to
+receive.</p>
+</section>
+<section id="types-of-antennas">
+<h3>Types of Antennas<a class="headerlink" href="#types-of-antennas" title="Link to this heading">#</a></h3>
+<p>There are many types of antennas, but we will discuss four main types:
+the dipole, monopole, parabolic dish, and array antenna.</p>
+<p><strong>Dipole:</strong> The basic dipole is one of the most common types of
+antennas. Its radiation characteristics, simplicity of deisgn, and ease
+of construction make it useful for a wide variety of applications.
+Although there are many types of dipoles, the most common type of
+antenna is the half wavelength dipole (also know as half-wave dipole),
+where the length of the antenna is given by:</p>
+<div class="math notranslate nohighlight">
+\[Length = \ \frac{\lambda}{2}\]</div>
+<p>In the above equation, λ is the wavelength of the electromagnetic wave
+that the antenna is designed to transmit and/or receive. In calculating
+the length of antennas, it is useful to recall the relationship between
+wavelength (λ) and frequency:</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \ \frac{c}{f}\]</div>
+<p>The following example illustrates how to calculate the length of a
+half-wave dipole.</p>
+<p><strong>Example Problem 1:</strong> The carrier frequency of an FM broadcast station
+is 100.7 MHz. How long of a dipole antenna should we use to receive this
+signal?</p>
+<p><strong>Understand:</strong> The length of the antenna is inversely proportional to
+the frequency of the signal.</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the broadcast frequency (100.7 MHz).</p></li>
+<li><p><strong>Unknowns:</strong> The wavelength and the length of the dipole antenna.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan:</strong> A dipole antenna is half of a wavelength, so we need to
+calculate the wavelength and then divide the wavelength by 2.</p>
+<p><strong>Solve:</strong> To find the wavelength of a signal, we use the following
+equation:</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \ \frac{c}{f}\]</div>
+<div class="math notranslate nohighlight">
+\[\lambda = \ \frac{c}{f}\  = \ \frac{3*\ 10^{8}\ m/s}{100.7\ MHz}\  = \ 2.979\ m\ \]</div>
+<p>Therefore, this signal has a wavelength of just under 3 meters. A
+half-wave dipole antenna is one half of the wavelength of the signal.
+Therefore,</p>
+<div class="math notranslate nohighlight">
+\[Length = \ \frac{\lambda}{2}\  = \ \frac{2.979\ m}{2}\  = 1.490\ m\]</div>
+<p><strong>Answer:</strong> The dipole antenna needs to be 1.490 m (4.6 ft) long. Many
+cars embed a dipole antenna in the car window to receive FM signals.
+These antennas are roughly 1.5 meters in length (or just under 5 feet)
+to maximize reception of the frequencies used for FM stations.</p>
+<p><strong>Monopole:</strong> Another very common antenna is the quarter-wave monopole.
+As its name suggests, the length of a quarter-wave monopole is equal to
+one-quarter of the wavelength it is designed to transmit or receive. In
+order for a monopole antenna to work, it needs to have a reflective
+surface called a <em>ground plane</em>. This ground plane acts like a mirror to
+the electromagnetic field, which reflects the “mirror image” of the
+incident electromagnetic field. Then, the field from the top half and
+“mirror image” from the bottom half interfere constructively, meaning
+they add together. Using this phenomenon, the ground plane “fools” the
+quarter-wave monopole into behaving like a half-wave dipole.</p>
+<p><img alt="" src="../../_images/image711.png" /></p>
+<p>The radiation characteristics of the quarter-wave monopole are the same
+as that of the half-wave dipole from the ground plane up. Radio antennas
+mounted on cars are monopoles. This antenna works the same as if the
+sheet metal of the car under the antenna, functioning as the ground
+plane, were replaced by the bottom half of a half-wave dipole.</p>
+<p><strong>Example Problem 2:</strong> The carrier frequency of an FM broadcast station
+is 100.7 MHz. How long of a <em>monopole</em> antenna should we use to receive
+this signal.</p>
+<p><strong>Understand</strong>: We are recalculating the previous example problem using
+a monopole antenna to broadcast. However, since a monopole is half the
+length of a dipole, we know the monopole length will be shorter than the
+dipole.</p>
+<p><strong>Identify Key Information</strong>:</p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the broadcast frequency (100.7 MHz).</p></li>
+<li><p><strong>Unknowns:</strong> The wavelength and the length of the monopole antenna.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan</strong>: Since we calculated the wavelength of this signal in the
+problem above, we can start from there and divide by 4 to calculate a
+quarter of a wavelength. The antenna length is therefore:</p>
+<div class="math notranslate nohighlight">
+\[Length = \ \frac{\lambda}{4}\  = \ \frac{2.979\ m}{4}\  = 0.7448\ m = \ 744.8\ mm\]</div>
+<p><strong>Answer</strong>: The required length of a monopole antenna is 744.8 mm. The
+antennas that you see sticking out of car hoods are monopoles. 744.8 mm
+is about 2.5 feet, which is the approximate length of car antennas.</p>
+<p><strong>Example Problem 3</strong>: An AM radio station transmits at 740 kHz. If the
+station broadcasts using a monopole antenna, how tall should the antenna
+be?</p>
+<p><strong>Understanding</strong>: A monopole antenna needs to be 1/4 of the wavelength.</p>
+<p><strong>Identify Key Information</strong>:</p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the broadcast frequency (740 kHz).</p></li>
+<li><p><strong>Unknowns:</strong> The wavelength and the length of the monopole antenna.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan:</strong> We will use the same process as before, calculating the
+wavelength of the signal and then dividing it by 4.</p>
+<p><strong>Solve</strong>: Calculating the wavelength of this signal:</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \ \frac{c}{f}\  = \ \frac{3*\ 10^{8}\ m/s}{740\ kHz}\  = \ 405.4\ m.\ \]</div>
+<p>Recognize how large this wavelength is. In fact, the wavelength for this
+signal is more than 4 football fields long. Even with a quarter-wave
+dipole, the required antenna height is still:</p>
+<div class="math notranslate nohighlight">
+\[antenna\ length = \ \frac{405.4\ m}{4}\  = 101.4\ m.\]</div>
+<p><strong>Answer</strong>: A monopole antenna broadcasting a 740 kHz signal needs to be
+101.4 m (332.7 ft) tall.</p>
+<p>Remember a monopole antenna requires a ground plane in order to work.
+For an AM monopole antenna, the ground itself is used as the ground
+plane (sometimes metal bars are buried in the dirt to increase the
+reflectivity).</p>
+<p>You might also wonder about the answer to the above question. If we need
+such a long transmission antenna, we need an equally long receiving
+antenna, which is impractical for many space-limited applications.
+Fortunately, there are some convenient ways to make antennas more
+usable. In fact, many AM antennas are not just one length of wire.
+Instead, a typical AM antenna is actually a thin copper wire wrapped
+around a frame hundreds of times. This wrapping allows us to create a
+necessarily long antenna while conserving space.</p>
+<p><strong>Parabolic Dish:</strong> A parabolic dish antenna (shown below) focuses
+signals in a specific direction, which allows them to travel farther.
+Recall that a parabola focuses parallel rays to its focal point. The
+actual antenna element, called the feed, is usually a dipole or horn
+antenna placed at the focal point. The feed acts as either a collector
+(receiver) or emitter (transmitter) for the antenna. In the receiving
+case, the feed collects all the rays focused by the parabolic reflector
+dish. In this way, the antenna can capture much more of the energy than
+just the feed antenna by itself. However, this is limited to a very
+small spatial area. In the transmitter case, the feed directs the energy
+towards the dish, where the energy is then focused in the direction the
+antenna is pointing. Note spherical and parabolic antennas are very
+similar but differ slightly in the way they focus energy.</p>
+<p><img alt="" src="../../_images/image815.png" /></p>
+</section>
+<section id="antenna-parameters">
+<h3>Antenna Parameters<a class="headerlink" href="#antenna-parameters" title="Link to this heading">#</a></h3>
+<p>In what directions do antennas radiate energy and how much energy do
+they radiate in each direction? In what directions do antennas transmit
+or receive energy and how much energy do they transmit or receive in
+each direction? Thankfully, the concepts are the same whether the
+antenna is transmitting or receiving. In order to answer these
+questions, we graph the radiation patterns of an antenna. This provides
+a pictorial representation of the amount of energy the antenna radiates
+(or receives) in all directions for some arbitrarily chosen fixed
+distance. Consider once again the dipole antenna. If we want to know how
+much relative power is radiating in all directions from the antenna, we
+can create a radiation pattern graph.</p>
+<p>Consider what would happen if we placed the dipole vertically and walked
+around the dipole in a circle, keeping our distance to the antenna
+constant. In this case, we would find all of the received power
+measurements are equal. So the radiation pattern around the axis
+parallel to the orientation of the dipole would be a circle as shown in
+Figure 1. For the radiation pattern, the outward distance from the
+center of the dipole represents power and not distance in meters.
+Therefore, if the radiation pattern is closer to the antenna, less power
+is being radiated in that direction.</p>
+<p>Next, we can place the dipole antenna in a horizontal position walk
+around it in a circle while taking power measurements. The radiation
+pattern for this case is shown in Figure 2. We see the maximum power
+radiates from the two points on the circle farthest away from the side
+of the antenna. We also see no energy radiates off the end, where there
+is a null in the pattern. In addition, as we go from the null to the
+maximum on the circle, the energy gradually increases.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Figure 1: Vertical dipole radiation pattern</p></th>
+<th class="head text-center"><p>Figure 2: Horizontal dipole radiation pattern</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><img alt="" src="../../_images/image913.png" /></p></td>
+<td class="text-center"><p><img alt="" src="../../_images/image1010.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combining the radiation patterns shown above, the three-dimensional
+radiation pattern is shaped as a toroid, the shape of a doughnut, as
+shown in Figure 3. This radiation pattern explains why you never point
+the top of a radio antenna in the direction from which you are trying to
+receive signal. Instead hold the radio upright so the entire length of
+the antenna can capture radiation.</p>
+<p><img alt="" src="../../_images/image1112.png" /></p>
+<p>Figure 3: 3-D radiation pattern for a simple dipole antenna.</p>
+<p>A parabolic dish has a different radiation pattern because of its
+ability to focus radiation in one direction. The pattern is narrower and
+longer as shown below. This means a parabolic dish radiates and receives
+extremely well in a specific direction at the expense of poor
+performance in every other direction.</p>
+<p><img alt="" src="../../_images/image128.png" /></p>
+<p><em>Antenna gain</em> refers to the antenna’s ability to focus energy in a
+specific direction. You might be familiar with flashlights that can
+focus the light beam by turning the head of the flashlight. As the
+beamwidth becomes narrower, the light intensity becomes brighter. The
+brightness of the bulb is constant; however, as the light from the bulb
+is focused, it can be concentrated into one direction. In antenna
+terminology, we would say the brighter, narrower beam has more <em>gain</em>.</p>
+<p>Antenna gain is defined as the ratio of the energy focused in a
+direction as compared to a standard. The standard is a radiating point
+source, which is simply an antenna that radiates equally in all
+directions. This is called an isotropic source and is only a theoretical
+concept. The 3-D radiation pattern from a point source is simply a
+sphere, meaning it radiates energy equally in all directions. If the
+antenna does nothing to focus energy in a specific direction, its gain
+is simply one.</p>
+<p>When we compare the radiation pattern of a dipole antenna (two circles
+in the figure below) to that of a point source (grey circle in the
+figure below), we find the dipole antenna has more power radiated in
+some directions than the point source (Gain &gt; 1) while in some
+directions, no power is radiated (Gain = 0 or a null zone).</p>
+<p><img alt="" src="../../_images/image137.png" /></p>
+<p>Both the dipole and monopole have modest gain. Ideally, a half-wave
+dipole has a gain of G = 1.64. The quarter-wave monopole ideally has
+twice the gain of a half-wave dipole (G = 3.28). However, this is only
+true if the monopole is directly over a perfectly conductive ground
+plane that extends to infinity, which is rarely the case.</p>
+<p>Since gain is typically a power ratio, it is usually discussed in terms
+of the ratio of the actual antenna power pattern gain compared to the
+power pattern gain of the point source. As stated above, this ratio is
+1.64 for a half-wave dipole. We can also relate this in terms of
+decibels, or dB using the following relationship:</p>
+<div class="math notranslate nohighlight">
+\[Gain\ (dB) = 10\log_{10}{(1.64) = 2.15\ dB\ }\]</div>
+<p>Remember, dB is a power ratio.</p>
+<p>In contrast to a dipole or monopole, a parabolic dish antenna would
+typically have a gain ranging from hundreds to even thousands of times
+that of a point source and depends on both how the dish is built and the
+frequency of the transmitted signal. We can calculate the gain of a dish
+antenna using the following equation:</p>
+<div class="math notranslate nohighlight">
+\[G = \ \frac{{(2\pi r)}^{2}}{\lambda^{2}}*\eta\]</div>
+<p>In this equation, <em>r</em> is the radius of the circular dish (in meters),
+<em>λ</em> is the wavelength of the transmitted signal (in meters), and <em>η</em> is
+the efficiency of the antenna.</p>
+<p><strong>Example Problem 4</strong>: A dish antenna with a radius of 250 mm is used to
+send a microwave communication signal at 2.7 GHz. The dish has an
+efficiency of 91%. What is the antenna’s gain?</p>
+<p><strong>Understand</strong>: A dish antenna has a high gain, but this gain depends on
+the relationship between the radius of the dish and wavelength of the
+transmitted or received signal.</p>
+<p><strong>Identify Key Information</strong>:</p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the radius of the dish, the efficiency, and the
+frequency.</p></li>
+<li><p><strong>Unknowns:</strong> The wavelength and gain of the antenna.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan:</strong> Since we have the dish’s radius and efficiency, we can
+calculate its gain for 2.7 GHz transmission using the gain equation. But
+first, we should calculate the wavelength.</p>
+<p><strong>Solve</strong>: The wavelength of the transmitted signal is</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \ \frac{c}{f}\  = \ \ \frac{3*\ 10^{8}\ m/s}{2.7GHz}\  = 0.1111\ m\  = \ 111.1\ mm\]</div>
+<p>We can now calculate the gain:</p>
+<div class="math notranslate nohighlight">
+\[G = \ \frac{{(2\pi r)}^{2}}{\lambda^{2}}*\eta\  = \ \frac{{(2\pi*.25\ m)}^{2}}{{(0.1111\ m)}^{2}}*0.91\  = \ \ 181.9\]</div>
+<p><strong>Answer:</strong> The dish’s gain is 181.9.</p>
+</section>
+<section id="phased-array-antennas">
+<h3>Phased Array Antennas<a class="headerlink" href="#phased-array-antennas" title="Link to this heading">#</a></h3>
+<p>Now that we have discussed the three basic types of antennas and their
+associated parameters, it is worth looking at one more type of antenna
+– the phased array antenna. Although dish antennas focus their energy
+in one direction, one of their drawbacks is the need to physically turn
+the antenna in the direction of the corresponding transmitter or
+receiver. However, it is possible to construct an <em>array</em> of antennas to
+create an electronically controlled beam. Consider the arrangement of
+transmitting antenna elements shown in Figure 4, where 8 antenna
+elements are connected to a single transmitter/exciter. In this case,
+the direction of the combined beam appears to be moving at some angle θ
+off the “straight ahead” direction (boresight). To do this, each
+radiating element (antenna) is progressively delayed in phase (which is
+really just a time delay). For Figure 4, this delay increases as we move
+up the chain of antennas. Recall that as waves propagate, they spread
+out spherically. Therefore, by introducing this progressive delay, the
+<em>peaks</em>, or strongest parts of the waves, interfere constructively. The
+peaks of the overall wave from the array antenna define the direction
+the beam appears to be propagating. As such, the beam appears to be
+moving away from the array at the desired angle θ. Therefore, we can
+change the angle by changing the time delay between each element.</p>
+<p><img alt="" src="../../_images/image147.png" /></p>
+<p>Figure 4: A phased array of antennas elements.</p>
+<p>Taking advantage of this abilty to change the direction of the “beam” by changing the time delay of the antenna elements allows us to build a completely flat antenna. Many modern antennas in aircraft, satellites, and other weapon systems use such phased array technology. One example is the Northrop Grumman AN/APG-83 Scalable Agile Beam Radar (SABR) used in the nosecone of the F-16 (Figure 5). Technology in the area of phased arrays has improved such that we can realize relatively high gain antennas and also steer the beams in both azimuth and elevation (2-D steering).</p>
+<p><img alt="" src="../../_images/image151.jpeg" /></p>
+<p>Figure 5: The AN/APG-83 SABR installed in the nosecone of an F-16.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block3Reading/Obj03"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-outcomes">Learning Outcomes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antennas">Antennas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-antenna-theory">General Antenna Theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-antennas">Types of Antennas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antenna-parameters">Antenna Parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phased-array-antennas">Phased Array Antennas</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
