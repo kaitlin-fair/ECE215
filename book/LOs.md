@@ -36,10 +36,10 @@ Note that the number to the left of the decimal for your learning objective is t
 | [3.1](Block3Reading/Obj01/ECE215_B3_Obj01_Reading) | I can determine the modulation index, output signal, and output signal bandwidth of an Amplitude Modulation (AM) system and assess whether the system is under-modulated, over-modulated, or fully modulated. |
 | [3.2](Block3Reading/Obj02/ECE215_B3_Obj02_Reading) | I can design a demodulator given a modulated signal for envelope and synchronous detection. |
 | [3.3](Block3Reading/Obj03/ECE215_B3_Obj03_Reading) | I can calculate the signal wavelength, antenna size, max antenna gain, and basic gain pattern for dipole, monopole, and parabolic dish antennas. |
-| 3.4 | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.   |
-| 3.5 | I can alculate the maximum communication distance between a transmitter and receiver using the Friis and Line-of-Sight equations.  |
+| [3.4](Block3Reading/Obj04/ECE215_B3_Obj04_Reading) | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.   |
+| [3.5](Block3Reading/Obj05/ECE215_B3_Obj05_Reading) | I can alculate the maximum communication distance between a transmitter and receiver using the Friis and Line-of-Sight equations.  |
 | 3.6 | I can calculate the distance from a monostatic radar to a stationary target based on pulse timing, assuming a direct line-of-sight path. |
 | 3.7 | I can calculate the maximum detection range from a radar antenna to a target using the Radar Range equation. |  
 | 3.8 | I can calculate the range resolution, unambiguous range, and a target's velocity for pulse Doppler radar. |
-| 3.9 | I can calculate signal-to-noise ratio (SNR) and determine the affects on wireless communications. |
+| [3.9](Block3Reading/Obj08/ECE215_B3_Obj09_Reading) | I can calculate signal-to-noise ratio (SNR) and determine the affects on wireless communications. |
 | 3.10 | I can analyze jamming scenarios using the Friis equation, RADAR equation, and SNR. |

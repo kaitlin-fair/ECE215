@@ -1,28 +1,10 @@
-# Lesson 30 -- Communications
+# Objective 3.4
 
-## Learning Outcomes
+| LO# | Description |
+|----------|----------|
+| 3.4 | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.   |
 
-1.  Know the four types of communication media and their advantages and
-    disadvantages.
-
-2.  Know the four types of wireless radio frequency (RF) propagation
-    methods and their advantages and disadvantages.
-
-3.  Understand the relationship between frequency and wavelength for an
-    electromagnetic wave.
-
-4.  Know the different regions of the electromagnetic spectrum and which
-    are typically used for communications.
-
-5.  Understand the usable range of the RF spectrum and the types of
-    communications associated with them.
-
-6.  Calculate the maximum line-of-sight (LOS) distance between two
-    objects given the height above the terrain for each.
-
-## Communications
-
-### Introduction
+## Communications Introduction
 
 Today, communication affects our lives in so many different ways. Given
 the ubiquity of smart phones and other connected devices, we can
@@ -61,7 +43,7 @@ as the frequency gets smaller. Understanding this relationship is
 critical as we go forward through this block, as communication media and
 antennas depend on the frequency of the signal being transmitted.
 
-### Communication Media
+## Communication Media
 
 In general, there are four main types of communication media:
 
@@ -75,9 +57,9 @@ In general, there are four main types of communication media:
 
 |     |     |
 |:---:|:---:|
-|![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image1.png)|![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image2.png)|
+|![](./ECE215_B3_Obj04_Reading_media/media/image1.png)|![](./ECE215_B3_Obj04_Reading_media/media/image2.png)|
 |**Transmission lines (coaxial cable)**|**Waveguide**|
-|![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image3.jpeg)|![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image4.png)|
+|![](./ECE215_B3_Obj04_Reading_media/media/image3.jpeg)|![](./ECE215_B3_Obj04_Reading_media/media/image4.png)|
 |**Optical Fibers**|**Wireless**|
 
 
@@ -95,7 +77,7 @@ Despite these drawbacks, transmission lines do have some advantages: 1)
 they are very reliable, 2) they are easy to repair, and 3) they are
 relatively secure.
 
-### Waveguides
+## Waveguides
 
 A *waveguide* is simply a hollow pipe through which an electromagnetic
 signal is sent. The internal surfaces of a waveguide are highly
@@ -118,7 +100,7 @@ $$f_{c/o} = \ \frac{c}{2a}$$
 In this equation, *c* is the speed of light and *a* is the length of the
 longest side of the waveguide as shown here:
 
-![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image5.png)
+![](./ECE215_B3_Obj04_Reading_media/media/image5.png)
 
 The primary advantage of waveguides is very low attenuation, which is to
 say the signal does not lose much power as it moves through the
@@ -157,7 +139,7 @@ frequencies below 8.33 MHz from passing. Therefore, AM stations will be
 blocked. FM stations, on the other hand, transmit near 100 MHz, and the
 FM signals can be received under the same underpass.
 
-### Optical Fibers
+## Optical Fibers
 
 *Optical fibers* act like waveguides for beams of light, which are very
 high frequency signals. The light signal itself is most often a laser
@@ -178,7 +160,7 @@ uses optical fiber to implement its "fly-by-light" system, but
 maintaining the cabling can be a nightmare for the crews, especially
 when donned in CBRNE gear.
 
-### Wireless
+## Wireless
 
 *Wireless* communications use the electromagnetic spectrum to transmit
 and receive information without the use of wires, waveguides, or other
@@ -211,7 +193,7 @@ communications are widely used in today's world, and for that reason,
 various wireless communications will be the focus of the rest of this
 block.
 
-## Wireless Communications
+### Wireless Communications
 
 Imagine this scenario: you are stranded behind enemy lines, a few
 kilometers from the smoking remains of your airplane. From intelligence
@@ -238,7 +220,7 @@ munitions guidance and fusing systems; strategic and tactical
 communications systems; and intelligence, surveillance, and
 reconnaissance (ISR) systems.
 
-![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image6.png)
+![](./ECE215_B3_Obj04_Reading_media/media/image6.png)
 
 Figure 1: The RF spectrum.
 
@@ -273,7 +255,7 @@ certain bands within the RF spectrum.
     communications commonly occur through LOS microwave links. Some
     telephone company "trunks" and cell phone towers also use LOS.
 
-    ![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image7.png)
+    ![](./ECE215_B3_Obj04_Reading_media/media/image7.png)
 
     Figure 2: Line-of-sight (LOS) propagation between several repeater
     stations.
@@ -299,7 +281,7 @@ certain bands within the RF spectrum.
     transmit their signals - this is one of the main reasons AM radio
     signals can travel much further than FM radio signals.
 
-    ![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image8.png)
+    ![](./ECE215_B3_Obj04_Reading_media/media/image8.png)
 
     Figure 3: Surface wave propagation.
 
@@ -316,7 +298,7 @@ certain bands within the RF spectrum.
     Figure 4 below, plays a role in determine if the radio energy will
     be reflected back to Earth.
 
-    ![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image9.png)
+    ![](./ECE215_B3_Obj04_Reading_media/media/image9.png)
 
     Figure 4: Sky wave propagation.
 
@@ -356,7 +338,7 @@ certain bands within the RF spectrum.
     *quiet zone*. Figure 5 below illustrates the concepts of skip distance
     and quiet zone.
 
-    ![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image10.png)
+    ![](./ECE215_B3_Obj04_Reading_media/media/image10.png)
 
     Figure 5: Skip Distance and Quite Zone.
 
@@ -378,7 +360,7 @@ certain bands within the RF spectrum.
     in-theater military communication was accomplished using this type of
     propagation.
 
-    ![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image11.png)
+    ![](./ECE215_B3_Obj04_Reading_media/media/image11.png)
 
     Figure 6: Forward scatter propagation.
 
@@ -419,7 +401,7 @@ radio frequencies are best suited to the four primary pathways that
 radio frequency waves propagate through the air and space: direct or
 line-of-sight (LOS), surface wave, sky wave, and forward scatter.
 
-![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image12.png)
+![](./ECE215_B3_Obj04_Reading_media/media/image12.png)
 
 Figure 7: The RF spectrum and the associated wireless RF propagation
 methods.
@@ -482,7 +464,7 @@ methods.
     use 28 GHz (SHF) and 39 GHz (EHF) for their 5G network.
 
 
-### Line-of-sight Communications
+## Line-of-sight Communications
 
 Returning to our original question, "What kind of wireless RF
 propagation method would you use between you and a rescue helicopter?"
@@ -505,7 +487,7 @@ level. The maximum range, *r*, between transmit and receive antennas is
 calculated as the distance from the transmit antenna to the point that
 is tangential to the surface of the earth as shown in Figure 8.
 
-![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image13.png)
+![](./ECE215_B3_Obj04_Reading_media/media/image13.png)
 
 Figure 8: Line-of-sight communication range.
 
@@ -565,7 +547,7 @@ communicate, so we need to calculate the maximum LOS distance.
 
 -   **Unknowns:** The maximum line of sight distance.
 
-![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image14.png)
+![](./ECE215_B3_Obj04_Reading_media/media/image14.png)
 
 -   **Assumptions:** We assume the terrain is flat (mountains cause
     significant problems).
@@ -593,7 +575,7 @@ tall hill, how far away could the helicopter establish line-of-sight?
 **Understand**: We have to use the LOS equation twice because the airman
 has raised himself above the surface, as shown below.
 
-![](./ECE315_B3_L30_Communications_Reading_23Su_media/media/image15.png)
+![](./ECE215_B3_Obj04_Reading_media/media/image15.png)
 
 **Identify Key Information**:
 
