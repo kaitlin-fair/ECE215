@@ -38,7 +38,7 @@ parts:
   - caption: Block 3 Readings
     chapters:
       - file: Block3Reading/Obj01/ECE215_B3_Obj01_Reading
-      # - file: Block3Reading/Obj02/ECE215_B3_Obj02_Reading
+      - file: Block3Reading/Obj02/ECE215_B3_Obj02_Reading
       # - file: Block3Reading/Obj03/ECE215_B3_Obj03_Reading
       # - file: Block3Reading/Obj04/ECE215_B3_Obj04_Reading
       # - file: Block3Reading/Obj05/ECE215_B3_Obj05_Reading
