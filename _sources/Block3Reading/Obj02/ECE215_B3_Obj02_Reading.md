@@ -1,32 +1,19 @@
-# Lesson 29 -- Demodulation
+# Objective 3.2
 
-## Learning Outcomes
+| LO# | Description |
+|----------|----------|
+| 3.2 | I can design a demodulator given a modulated signal for envelope and synchronous detection. |
 
-1.  Compute transmitter power efficiency for an AM system with a given
-    modulation index.
+## Demodulation Intro
 
-2.  Understand block diagram AM demodulators and their limitations.
-
-3.  Analyze envelope detectors in the time domain and synchronous
-    detectors in the frequency domain.
-
-4.  Given an AM modulated signal design an AM demodulator to recover the
-    original message.
-
-5.  Understand the engineering trade-offs between over- and
-    under-modulated AM communications scenarios
-
-## Demodulation
-
-The last several lessons have been spent learning about how to modulate
-signals to prepare them for transmission. This lesson focuses on
+This lesson focuses on
 demodulating the signals to recover the original information. We will
 also look at the different trade-offs that are made when choosing how to
 modulate and demodulate a signal.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image1.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image1.png)
 
-### Modulation Efficiency
+## Modulation Efficiency
 
 Previously, we introduced the concept of adding a bias signal to our
 message before sending the message through a function multiplier. We
@@ -51,8 +38,8 @@ examples of two classes of amplitude modulation:
 | **Over-modulated**    | **100%-modulated**    | **Under-modulated**  |
 |-----------------------|-----------------------|----------------------|
 | ***α* → ∞**           | ***α* = 1**           | ***α* = 0.667**      |
-|![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image2.png)|![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image3.png)|![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image4.png)|
-|![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image5.png)|![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image6.png)|![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image7.png)|
+|![](./ECE215_B3_Obj02_Reading_media/media/image2.png)|![](./ECE215_B3_Obj02_Reading_media/media/image3.png)|![](./ECE215_B3_Obj02_Reading_media/media/image4.png)|
+|![](./ECE215_B3_Obj02_Reading_media/media/image5.png)|![](./ECE215_B3_Obj02_Reading_media/media/image6.png)|![](./ECE215_B3_Obj02_Reading_media/media/image7.png)|
 
 
 In order to calculate the efficiency of AM, we need to identify what
@@ -96,7 +83,7 @@ the carrier frequency component! So why do most AM radio stations opt to
 use DSB-LC for their signals? Well, it comes down to what kind of
 demodulator you want to use to retrieve your message.
 
-### Demodulation - Envelope Detector
+## Demodulation - Envelope Detector
 
 Consider an under-modulated AM signal again. The message signal has
 enough bias that the signal entering the function multiplier is
@@ -104,7 +91,7 @@ completely positive. This means that the resulting AM signal has
 completely separate envelopes, thus the original message can be easily
 retrieved if we can isolate the upper envelope.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image8.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image8.png)
 
 The device that accomplishes these tasks is called an *envelope
 detector*. An envelope detector consists of a diode, a low pass filter,
@@ -127,7 +114,7 @@ low pass filtered version of *V­<sub>R­</sub>*(*t*) which has a frequency of 0
 signal which replicates the original message signal *V­<sub>m­</sub>*(*t*)). These
 signal processing steps are shown pictorially on the next page.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image9.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image9.png)
 
 Since diodes, capacitors, and resistors are very cheap, demodulators can
 be inexpensive if the signal is 100%-modulated or under-modulated. In
@@ -136,7 +123,7 @@ basically an envelope detector) from on-hand parts. We sacrifice
 efficiency in order to gain a cheap solution to recovering our
 information.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image10.jpeg)
+![](./ECE215_B3_Obj02_Reading_media/media/image10.jpeg)
 
 http://www.wired.com/geekdad/wp-content/uploads/2009/08/fox3.jpg
 
@@ -145,7 +132,7 @@ A voice message is input into an AM modulator.
 The output of the modulator is shown below. Design an AM demodulator to
 recover the message signal.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image11.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image11.png)
 
 **Understand**: Here, we have an under-modulated signal, which means we
 can use an envelope detector. The message we want to recover is the
@@ -170,7 +157,7 @@ to define the cutoff frequencies of the LPF and HPF.
 **Solve:** Feeding the under-modulated signal into the diode results in
 the following waveform:
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image12.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image12.png)
 
 In order to remove the high frequency carrier signal, we need to pass
 this signal through a low pass filter, but we don't have the cutoff
@@ -184,7 +171,7 @@ $$f_{M} = \frac{1}{T_{M}} = \frac{1}{250\ \mu\sec} = 4\ kHz$$
 So as long as we choose a cutoff frequency above 4 kHz, our detector
 will remove the high frequency information, resulting in:
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image13.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image13.png)
 
 The last step is to remove the bias signal from the message. This step
 doesn't require any calculations because we already know the frequency
@@ -194,7 +181,7 @@ pass filter with a cutoff greater than 0 Hz; 10 Hz will suffice.
 **Answer:** The envelope detector below will successfully retrieve our
 original voice message.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image14.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image14.png)
 
 Before we move on, let's quickly review what the three components in an
 envelope detector do:
@@ -218,9 +205,9 @@ for over-modulated signals, or DSB-SC modulation. They simply trace the
 upper envelope, and as you can see by the example below, they definitely
 give you the wrong message back.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image15.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image15.png)
 
-### Demodulation -- Synchronous Detector
+## Demodulation -- Synchronous Detector
 
 If we have an over-modulated signal, then we have to use a more
 complicated demodulator. Demodulation is still fairly straightforward,
@@ -229,14 +216,14 @@ demodulation is the opposite of modulation -- the incoming signal is
 mixed (using a function multiplier) with the original carrier frequency,
 and the output is run through a series of filters.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image16.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image16.png)
 
 **Figure 1: Block diagram for a demodulator.**
 
 The block diagram of a *synchronous* demodulator, which works for
 **all** modulated signals, is:
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image17.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image17.png)
 
 **Figure 2: Block diagram for a synchronous detector.**
 
@@ -249,7 +236,7 @@ properties of the function multiplier.
 
 Let's start by looking at the AM signal itself:
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image18.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image18.png)
 
 As shown in the above graph, the signal is a combination of a message
 signal, a bias spike, and a mirror image of the message signal.
@@ -271,7 +258,7 @@ function multiplier with a frequency of 80 kHz and an amplitude, *A­<sub>c­</s
 -   Note: the amplitudes stay the same since we are conveniently using a
     carrier frequency with an amplitude of 2V.
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image19.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image19.png)
 
 Notice that the message signal, represented by a triangle, is exactly
 where we want it to be.
@@ -282,7 +269,7 @@ details, the portion of the signal that is shown between 0 and -3 kHz is
 added to the message between 0 and 3 kHz. This effectively doubles the
 amplitude of the other portion of the shifted signal:
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image20.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image20.png)
 
 Notice we still have a bias signal and a higher frequency component to
 remove. Therefore, after passing through the function multiplier, we
@@ -292,7 +279,7 @@ be greater than the highest frequency in the message signal (which, for
 this case, is 3 kHz). For this example, we choose *f­<sub>c/o­</sub>* = 4 kHz. This
 results in:
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image21.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image21.png)
 
 Now all that remains is to remove the bias. Just as with the envelope
 detector, the bias can be removed by passing the signal through a high
@@ -302,7 +289,7 @@ is slightly different).
 
 The final form of the synchronous detector is:
 
-![](./ECE315_B3_L29_Demodulation_Reading_23Su_media/media/image22.png)
+![](./ECE215_B3_Obj02_Reading_media/media/image22.png)
 
 In summary, the three components in a synchronous detector:
 
