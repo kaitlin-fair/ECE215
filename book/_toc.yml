@@ -35,4 +35,15 @@ parts:
       - file: Block2Reading/Obj06/ECE215_B2_Obj06_Reading
       - file: Block2Reading/Obj07/ECE215_B2_Obj07_Reading
       - file: Block2Reading/Obj08/ECE215_B2_Obj08_Reading
-
+  - caption: Block 3 Readings
+    chapters:
+      - file: Block3Reading/Obj01/ECE215_B3_Obj01_Reading
+      # - file: Block3Reading/Obj02/ECE215_B3_Obj02_Reading
+      # - file: Block3Reading/Obj03/ECE215_B3_Obj03_Reading
+      # - file: Block3Reading/Obj04/ECE215_B3_Obj04_Reading
+      # - file: Block3Reading/Obj05/ECE215_B3_Obj05_Reading
+      # - file: Block3Reading/Obj06/ECE215_B3_Obj06_Reading
+      # - file: Block3Reading/Obj07/ECE215_B3_Obj07_Reading
+      # - file: Block3Reading/Obj08/ECE215_B3_Obj08_Reading
+      # - file: Block3Reading/Obj08/ECE215_B3_Obj09_Reading
+      # - file: Block3Reading/Obj08/ECE215_B3_Obj10_Reading

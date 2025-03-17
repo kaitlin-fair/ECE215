@@ -33,7 +33,7 @@ Note that the number to the left of the decimal for your learning objective is t
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Description |
 |----------|----------|
-| 3.1 | I can determine the modulation index, output signal, and output signal bandwidth of an Amplitude Modulation (AM) system and assess whether the system is under-modulated, over-modulated, or fully modulated. |
+| [3.1](Block3Reading/Obj01/ECE215_B3_Obj01_Reading) | I can determine the modulation index, output signal, and output signal bandwidth of an Amplitude Modulation (AM) system and assess whether the system is under-modulated, over-modulated, or fully modulated. |
 | 3.2 | I can design a demodulator given a modulated signal for envelope and synchronous detection. |
 | 3.3 | I can calculate the signal wavelength, antenna size, max antenna gain, and basic gain pattern for dipole, monopole, and parabolic dish antennas. |
 | 3.4 | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.   |
