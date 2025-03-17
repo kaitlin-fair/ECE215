@@ -1,21 +1,10 @@
-# Lesson 31 -- Antennas
+# Objective 3.3
 
-## Learning Outcomes
+| LO# | Description |
+|----------|----------|
+| 3.3 | I can calculate the signal wavelength, antenna size, max antenna gain, and basic gain pattern for dipole, monopole, and parabolic dish antennas. |
 
-1.  Understand how a basic dipole antenna works.
-
-2.  Calculate the wavelength of an electromagnetic signal given the
-    carrier frequency.
-
-3.  Understand what antenna gain is and the concept of an antenna gain
-    pattern.
-
-4.  Know the three basic types of antennas and their sizes, maximum
-    gains, and basic gain patterns.
-
-## Antennas
-
-### Introduction
+## Antennas Introduction
 
 Generically, we can divide electronic communications into four steps:
 
@@ -29,7 +18,7 @@ Generically, we can divide electronic communications into four steps:
 4.  Recovering the message using a receiver *interface, demodulator,*
     *and transducer*
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image1.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image1.png)
 
 In previous lessons, we learned about steps 1 and 4. We prepare the
 message by converting the information to an electrical signal,
@@ -45,7 +34,7 @@ will then explore how this process affects our tactics by taking a look
 at Electronic Warfare (EW) techniques. But first, we will look at how we
 transmit a signal wirelessly with an antenna.
 
-### General Antenna Theory
+## General Antenna Theory
 
 Coulomb's Law states an electric force exists between a stationary
 positive charge and a stationary negative charge. Since the electric
@@ -58,7 +47,7 @@ of electric field lines and negative charges behave in the opposite
 manner as positive test charges, we know that negative charges must move
 in the direction *opposite* of the arrows on the electric field lines.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image2.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image2.png)
 
 In this case, the charges are stationary. However, Ampere's Law states
 that if the charges move along a conductor (such as a wire or a sheet of
@@ -74,7 +63,7 @@ antenna called a dipole antenna, which will be discussed in more detail
 later in this reading. Consider a dipole antenna made out of two wires
 as shown in the figure below.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image3.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image3.png)
 
 Recall that oppositely charged particles attract and similarly charged
 particles repel one another. Recall also that metals easily give up
@@ -84,7 +73,7 @@ have departed) and negative charge (when electrons accumulate).
 When we apply a voltage across the input of this antenna, we cause
 similarly charged particles to accumulate together:
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image4.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image4.png)
 
 Therefore, in the bottom half of this antenna, the input, which is the
 negative terminal of $V_{in}$, pushes the electrons in the lower wire
@@ -101,7 +90,7 @@ in the above diagram.
 Now what happens if we were to put another antenna inside this electric
 field?
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image5.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image5.png)
 
 In the diagram above, the antenna we applied a voltage to is on the
 left, and the new antenna is on the right. As discussed earlier, the
@@ -131,7 +120,7 @@ In the receiving antenna, the opposite occurs. Positive charges
 accumulate at the top of the receiving antenna and negative charges
 accumulate at the bottom.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image6.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image6.png)
 
 Therefore, as our input signal from the transmitting antenna changes
 from positive to negative, the output signal at the receiving antenna
@@ -153,7 +142,7 @@ is no difference between a receive antenna and a transmit antenna. If an
 antenna can be used to transmit, it can also be used equally well to
 receive.
 
-### Types of Antennas
+## Types of Antennas
 
 There are many types of antennas, but we will discuss four main types:
 the dipole, monopole, parabolic dish, and array antenna.
@@ -224,7 +213,7 @@ incident electromagnetic field. Then, the field from the top half and
 they add together. Using this phenomenon, the ground plane "fools" the
 quarter-wave monopole into behaving like a half-wave dipole.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image7.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image7.png)
 
 The radiation characteristics of the quarter-wave monopole are the same
 as that of the half-wave dipole from the ground plane up. Radio antennas
@@ -317,9 +306,9 @@ towards the dish, where the energy is then focused in the direction the
 antenna is pointing. Note spherical and parabolic antennas are very
 similar but differ slightly in the way they focus energy.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image8.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image8.png)
 
-### Antenna Parameters
+## Antenna Parameters
 
 In what directions do antennas radiate energy and how much energy do
 they radiate in each direction? In what directions do antennas transmit
@@ -353,7 +342,7 @@ maximum on the circle, the energy gradually increases.
 
 |Figure 1: Vertical dipole radiation pattern|Figure 2: Horizontal dipole radiation pattern|
 |:---------------:|:---------------:|
-|![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image9.png)|![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image10.png)|
+|![](./ECE215_B3_Obj03_Reading_media/media/image9.png)|![](./ECE215_B3_Obj03_Reading_media/media/image10.png)|
 
 Combining the radiation patterns shown above, the three-dimensional
 radiation pattern is shaped as a toroid, the shape of a doughnut, as
@@ -362,7 +351,7 @@ the top of a radio antenna in the direction from which you are trying to
 receive signal. Instead hold the radio upright so the entire length of
 the antenna can capture radiation.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image11.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image11.png)
 
 Figure 3: 3-D radiation pattern for a simple dipole antenna.
 
@@ -372,7 +361,7 @@ longer as shown below. This means a parabolic dish radiates and receives
 extremely well in a specific direction at the expense of poor
 performance in every other direction.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image12.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image12.png)
 
 *Antenna gain* refers to the antenna's ability to focus energy in a
 specific direction. You might be familiar with flashlights that can
@@ -397,7 +386,7 @@ figure below), we find the dipole antenna has more power radiated in
 some directions than the point source (Gain \> 1) while in some
 directions, no power is radiated (Gain = 0 or a null zone).
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image13.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image13.png)
 
 Both the dipole and monopole have modest gain. Ideally, a half-wave
 dipole has a gain of G = 1.64. The quarter-wave monopole ideally has
@@ -458,7 +447,7 @@ $$G = \ \frac{{(2\pi r)}^{2}}{\lambda^{2}}*\eta\  = \ \frac{{(2\pi*.25\ m)}^{2}}
 
 **Answer:** The dish's gain is 181.9.
 
-### Phased Array Antennas
+## Phased Array Antennas
 
 Now that we have discussed the three basic types of antennas and their
 associated parameters, it is worth looking at one more type of antenna
@@ -481,12 +470,12 @@ the beam appears to be propagating. As such, the beam appears to be
 moving away from the array at the desired angle θ. Therefore, we can
 change the angle by changing the time delay between each element.
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image14.png)
+![](./ECE215_B3_Obj03_Reading_media/media/image14.png)
 
 Figure 4: A phased array of antennas elements.
 
 Taking advantage of this abilty to change the direction of the "beam" by changing the time delay of the antenna elements allows us to build a completely flat antenna. Many modern antennas in aircraft, satellites, and other weapon systems use such phased array technology. One example is the Northrop Grumman AN/APG-83 Scalable Agile Beam Radar (SABR) used in the nosecone of the F-16 (Figure 5). Technology in the area of phased arrays has improved such that we can realize relatively high gain antennas and also steer the beams in both azimuth and elevation (2-D steering).
 
-![](./ECE315_B3_L31_Antennas_Reading_23Su_media/media/image15.jpeg)
+![](./ECE215_B3_Obj03_Reading_media/media/image15.jpeg)
 
 Figure 5: The AN/APG-83 SABR installed in the nosecone of an F-16.
