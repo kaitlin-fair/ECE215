@@ -63,7 +63,8 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Objective 3.5" href="../Obj05/ECE215_B3_Obj05_Reading.html" />
+    <link rel="next" title="Objective 3.10" href="../Obj10/ECE215_B3_Obj10_Reading.html" />
+    <link rel="prev" title="Objective 3.8" href="../Obj08/ECE215_B3_Obj08_Reading.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -220,7 +221,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_B3_Obj03_Reading.html">Objective 3.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Obj04/ECE215_B3_Obj04_Reading.html">Objective 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Obj05/ECE215_B3_Obj05_Reading.html">Objective 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj06/ECE215_B3_Obj06_Reading.html">Objective 3.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj07/ECE215_B3_Obj07_Reading.html">Objective 3.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj08/ECE215_B3_Obj08_Reading.html">Objective 3.8</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 3.9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj10/ECE215_B3_Obj10_Reading.html">Objective 3.10</a></li>
 </ul>
 
     </div>
@@ -419,6 +424,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-to-noise-ratio-snr">Signal-to-Noise Ratio (SNR)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3</a></li>
 </ul>
 </li>
 </ul>
@@ -542,6 +548,29 @@ the minimum required receive power.</p>
 \[P_{R} = \ 3.5*\left( 1.38*\frac{10^{- 23}J}{K} \right)(320\ K)*12\ MHz = \ 185.5\ fW\]</div>
 <p><strong>Answer</strong>: The minimum power required by the system is 185.5 fW.</p>
 </section>
+<section id="example-problem-3">
+<h3>Example Problem 3<a class="headerlink" href="#example-problem-3" title="Link to this heading">#</a></h3>
+<p>Consider a RADAR that transmits 1 kW of power at a frequency of
+300 MHz using an antenna with a gain of 150 towards an aircraft with a
+RADAR cross section (RCS) of 100 <span class="math notranslate nohighlight">\(m^2\)</span>, which is 86 km away. How much
+power will the RADAR receive and what will be the signal to noise ratio
+(SNR) at the RADAR’s antenna? Solving for the received power, using the
+RADAR equation, gives:</p>
+<div class="math notranslate nohighlight">
+\[P_{R} = \ \frac{P_{T}G^{2}\sigma\left( \frac{c}{f} \right)^{2}}{({4\pi)}^{3}R^{4}} = \ \frac{(1000\ W)(150)^{2}(100\ m^{2})\left( \frac{3 \times 10^{8}\ m/s}{300 \times 10^{6}\ Hz} \right)^{2}}{({4\pi)}^{3}{(86,000\ m)}^{4}} = 20.73\ fW\]</div>
+<p>Now for many ultra-sensitive receivers, 20.73 fW is an acceptable power.
+However, what if the RADAR is still transmitting its 1 kW of power at
+the same time? If we treat this transmitted power as noise, we can
+calculate a signal to noise ratio of:</p>
+<div class="math notranslate nohighlight">
+\[SNR = \ \frac{P_{signal}}{P_{noise}}\  = \ \ \frac{20.73\ fW}{1\ kW} = 20.73 \times 10^{- 18}\]</div>
+<p>This number is unacceptably small – no receiver will be able to
+distinguish the returned signal from the “noise” of the transmitter.
+There are two distinct ways to solve this problem: use separate antennas
+for transmitting and receiving (this is called <em>bistatic</em>) or send
+pulses of energy, instead of a continuous stream, with a <em>monostatic</em>
+RADAR (aka pulse-Doppler RADAR!).</p>
+</section>
 </section>
 </section>
 
@@ -576,13 +605,22 @@ the minimum required receive power.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../Obj05/ECE215_B3_Obj05_Reading.html"
+       href="../Obj08/ECE215_B3_Obj08_Reading.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Objective 3.5</p>
+        <p class="prev-next-title">Objective 3.8</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="../Obj10/ECE215_B3_Obj10_Reading.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Objective 3.10</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -603,6 +641,7 @@ the minimum required receive power.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-to-noise-ratio-snr">Signal-to-Noise Ratio (SNR)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3</a></li>
 </ul>
 </li>
 </ul>

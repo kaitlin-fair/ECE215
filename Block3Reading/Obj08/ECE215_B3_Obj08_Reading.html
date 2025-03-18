@@ -1,0 +1,901 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Objective 3.8 &#8212; ECE215/S Course Webpage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Block3Reading/Obj08/ECE215_B3_Obj08_Reading';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Objective 3.9" href="../Obj09/ECE215_B3_Obj09_Reading.html" />
+    <link rel="prev" title="Objective 3.7" href="../Obj07/ECE215_B3_Obj07_Reading.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ECE215/S Course Webpage - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="ECE215/S Course Webpage - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ECE215 / ECE215S!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Administrative</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LOs.html">Course Learning Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Schedule.html">Course Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Downloads</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../_downloads.html">Slides and Practice Problems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 1 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj01/ECE215_Obj01_Reading.html">Objective 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj02/ECE215_Obj02_Reading.html">Objective 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj03/ECE215_Obj03_Reading.html">Objective 1.3</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://control.com/technical-articles/active-power-reactive-power-apparent-power-and-the-role-of-power-factor/">Objective 1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj05/ECE215_Obj05_Reading.html">Objective 1.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj06/ECE215_Obj06_Reading.html">Objective 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj07/ECE215_Obj07_Reading.html">Objective 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block1Reading/Obj08/ECE215_Obj08_Reading.html">Objective 1.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 2 Readings</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj01/ECE215_B2_Obj01_Reading.html">Objective 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj02/ECE215_B2_Obj02_Reading.html">Objective 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj03/ECE215_B2_Obj03_Reading.html">Objective 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj04/ECE215_B2_Obj04_Reading.html">Objective 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj05/ECE215_B2_Obj05_Reading.html">Objective 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj06/ECE215_B2_Obj06_Reading.html">Objective 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj07/ECE215_B2_Obj07_Reading.html">Objective 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Block2Reading/Obj08/ECE215_B2_Obj08_Reading.html">Objective 2.8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Block 3 Readings</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Obj01/ECE215_B3_Obj01_Reading.html">Objective 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj02/ECE215_B3_Obj02_Reading.html">Objective 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj03/ECE215_B3_Obj03_Reading.html">Objective 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj04/ECE215_B3_Obj04_Reading.html">Objective 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj05/ECE215_B3_Obj05_Reading.html">Objective 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj06/ECE215_B3_Obj06_Reading.html">Objective 3.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj07/ECE215_B3_Obj07_Reading.html">Objective 3.7</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Objective 3.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj09/ECE215_B3_Obj09_Reading.html">Objective 3.9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Obj10/ECE215_B3_Obj10_Reading.html">Objective 3.10</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/usafa-ece/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2FBlock3Reading/Obj08/ECE215_B3_Obj08_Reading.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Block3Reading/Obj08/ECE215_B3_Obj08_Reading.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Objective 3.8</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pulse-doppler-radar-introduction">Pulse-Doppler RADAR Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pulsed-radar-parameters">Pulsed RADAR Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum-unambiguous-range">Maximum Unambiguous Range</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radar-range-resolution">RADAR Range Resolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#target-speed-determination">Target Speed Determination</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-4">Example Problem 4</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="objective-3-8">
+<h1>Objective 3.8<a class="headerlink" href="#objective-3-8" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>LO#</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3.8</p></td>
+<td><p>I can calculate the range resolution, unambiguous range, and a target’s velocity for pulse-Doppler radar.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="pulse-doppler-radar-introduction">
+<h2>Pulse-Doppler RADAR Introduction<a class="headerlink" href="#pulse-doppler-radar-introduction" title="Link to this heading">#</a></h2>
+<p>Up to this point, we’ve assumed most RADARs
+use the same antenna for both transmitting and receiving. We then
+calculated how much power would actually return for some operational
+scenarios. However, if a RADAR is still transmitting when it should be receiving, it may not be able to “hear” the incoming signal.</p>
+<p>There are two distinct ways to solve this problem: use separate antennas
+for transmitting and receiving (this is called <em>bistatic</em>) or send
+pulses of energy, instead of a continuous stream, with a colocated transmitter and receiver (called a <em>monostatic</em> RADAR).</p>
+<p>While there are many bistatic RADARs in operation today, this
+essentially doubles the required hardware and increases the complexity
+of the processing algorithms. Some weapon systems simply cannot
+accommodate the necessary hardware. Therefore, the second solution,
+using a <em>pulsed RADAR</em>, is the most common.</p>
+</section>
+<section id="pulsed-radar-parameters">
+<h2>Pulsed RADAR Parameters<a class="headerlink" href="#pulsed-radar-parameters" title="Link to this heading">#</a></h2>
+<p>A monostatic RADAR works by periodically sending a high-frequency pulse
+(typically in the UHF to EHF frequency band) for a short period of time,
+waiting for a return, sending out the next pulse, waiting for a return,
+and so on. The Figure 1 shows the various parameters that determine how
+this process works:</p>
+<ul class="simple">
+<li><p><strong>Pulse width or pulse length (τ, sec):</strong> Amount of time the RADAR
+transmits a pulse</p></li>
+<li><p><strong>Pulse Repetition Frequency (PRF, Hz):</strong> The number of pulses
+transmitted per second.</p></li>
+<li><p><strong>Pulse Repetition Interval (PRI, sec):</strong> The duration of the
+transmit and wait cycle. Related to the PRF by:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[PRI = \frac{1}{PRF}\]</div>
+<p><img alt="" src="../../_images/image139.png" /></p>
+<p>Figure : Pulsed RADAR parameters.</p>
+<p>Now, clearly, these parameters impact the performance of a RADAR. For example, a shorter pulse width leads to a smaller average power, which reduces the RADAR’s maximum detection distance. However, making the pulse width too long presents a challenge with resolving objects that are too close together. Therefore, as with all engineering, we must carefully balance the trade-offs with our specific requirements.</p>
+</section>
+<section id="maximum-unambiguous-range">
+<h2>Maximum Unambiguous Range<a class="headerlink" href="#maximum-unambiguous-range" title="Link to this heading">#</a></h2>
+<p>The maximum unambiguous range for a RADAR is the maximum range at which a RADAR can both detect two objects and differentiate between them. This range is different than the maximum ranges calculated last lesson from the LOS and RADAR equations. Those equations tell us at what distance the RADAR will see anything. However, the concept of pulsed RADAR has now introduced a problem – we have multiple pulses traveling through space at one time. As such, a RADAR’s PRF (PRI) determines its <em>maximum</em> <em>unambiguous</em> <em>range</em>.</p>
+<p>An example will help clarify the situation. Consider a RADAR system with
+a PRF of 10 kHz, which results in a PRI of 100 μs. If the first pulse is
+transmitted at <em>t</em> = 0 s, the pulse travels through the air until it
+strikes an aircraft at a given time (in this case, <em>t</em> = 30 μs). We can
+calculate the range of the aircraft by multiplying the time by the speed
+of light (<span class="math notranslate nohighlight">\(30\ \mu s \times 3 \times 10^{8}\ m/s = 9\ km\)</span>). The signal
+then reflects off the aircraft and travels back to the RADAR, a process
+that takes another 30 μs. This means the pulse from this aircraft –
+which is 9 km away from the RADAR – will return 60 μs into the 100 μs
+pulse interval. In this case, the RADAR signal can make its entire
+two-way trip and get back to the antenna before the next RADAR pulse is
+transmitted.</p>
+<p><img alt="" src="../../_images/image224.png" /></p>
+<p>Figure : A RADAR pulse transmitted and received with no range ambiguity.</p>
+<p>Our range ambiguity appears when we receive echoes from farther away.
+Consider the case where the aircraft is 18 km away from the RADAR. In
+this situation, the first RADAR pulse doesn’t reach the aircraft until
+<span class="math notranslate nohighlight">\(t = 60\ \mu s\)</span>. That means the RADAR won’t receive the return signal
+until 120 μs. Therefore, the echo from the aircraft arrives at the RADAR
+20 μs after the second pulse has been sent. How does the RADAR know
+whether this echo came from the first pulse (from an object 18 km away)
+or the second one (from an object only 3 km away)? In fact, a simple
+RADAR can’t distinguish between the two cases, because it will always
+assume any received energy comes from the most recent pulse.</p>
+<p><img alt="" src="../../_images/image319.png" /></p>
+<p>Figure : A RADAR pulse transmitted and received with range ambiguity.</p>
+<p>The maximum unambiguous range, <em>R</em>­<sub>unamb­</sub>, is calculated from the PRI
+as:</p>
+<div class="math notranslate nohighlight">
+\[R_{unamb} = \ \frac{c(PRI)}{2}\]</div>
+<p>In other words, a RADAR’s PRI setting directly determines the
+unambiguous range where:</p>
+<ul class="simple">
+<li><p>If a RADAR target is beyond the maximum unambiguous range, then the
+RADAR will not know exactly where the target is located; its
+position will be ambiguous.</p></li>
+<li><p>If the RADAR target is inside (or right at) the maximum unambiguous
+range, then the RADAR will know exactly where the target is located;
+its position will be unambiguous.</p></li>
+</ul>
+<p>In the previous example, the RADAR’s maximum unambiguous range was 15
+km, so the return from the aircraft at 18 km would actually be
+interpreted as being only 3 km away. To help prevent this from
+happening, many ground RADAR sites set their maximum unambiguous range
+to be equal to their <em>R­<sub>max­</sub></em>(determined by LOS or by the minimum
+detectable power, P­<sub>R,min­</sub>) to prevent ambiguities.</p>
+<p>In real RADAR systems, there are ways around range ambiguities. Modern
+RADARs frequently stagger the interval between pulses to allow the
+correct range to be determined. With a staggered PRF, a ‘packet’ of
+pulses is transmitted, and each pulse is on a slightly different
+interval from the last pulse (or viewed a different way – delayed
+variable amounts from the reference trigger). At the end of the packet,
+the timing returns to its original value, in sync with the trigger, and
+the process repeats.</p>
+<section id="example-problem-1">
+<h3>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
+<p>A ground RADAR station’s antenna is located 15 ft
+AGL and is looking for targets below 500 ft AGL. What PRF should be used
+to prevent range ambiguities?</p>
+<p><strong>Understand:</strong> In this case, we want to set our maximum unambiguous
+range to our maximum LOS range, so we can be absolutely sure we know
+where any target in our detection range is. To do this, we will adjust
+the RADAR’s PRI (and therefore its PRF).</p>
+<p><strong>Identify Key Information:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the height of our RADAR tower and the maximum
+height of any expected targets.</p></li>
+<li><p><strong>Unknowns:</strong> The LOS range, PRI, and PRF.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan:</strong> First we will calculate the maximum LOS range, based on the
+highest expected target (500 ft AGL). Then, we will use that to
+calculate the longest possible PRI.</p>
+<p><strong>Solve:</strong> We need to calculate the antenna’s maximum LOS range first:</p>
+<div class="math notranslate nohighlight">
+\[r_{LOS,max\ } = \ \sqrt{2h_{RADAR}}\  + \ \sqrt{2h_{target}}\  = \ \sqrt{2*15\ ft} + \sqrt{2*500\ ft}\  = \ 37.1\ miles = 59.73\ km\]</div>
+<p>We will need to set our PRI such that the maximum unambiguous range is
+equal to the LOS range.</p>
+<div class="math notranslate nohighlight">
+\[PRI = \ \frac{2R_{unamb}\ }{c} = \frac{2(59.73\ km)\ }{3\ x\ 10^{8}\ m/sec} = 398.2\ \mu s\]</div>
+<p>We can now calculate the PRF:</p>
+<div class="math notranslate nohighlight">
+\[PRF = \frac{1}{PRI} = \frac{1}{398.2\ \mu s} = 2.51\ kHz\]</div>
+<p><strong>Answer:</strong> The ground RADAR station should be set to a PRF of 2.51 kHz.</p>
+</section>
+</section>
+<section id="radar-range-resolution">
+<h2>RADAR Range Resolution<a class="headerlink" href="#radar-range-resolution" title="Link to this heading">#</a></h2>
+<p>In addition to being able to unambiguously identify a target’s location,
+a RADAR’s ability to resolve two objects separated by a given distance
+(∆<em>R</em>) is called the RADAR’s <em>range resolution.</em> Range resolution is
+limited by the duration of each pulse, known as the pulse width (<em>τ</em>). A
+longer pulse means there’s more energy in the received signal, which
+increases the RADAR’s range. However, a wider pulse also causes less
+resolution in range information.</p>
+<p>Consider a RADAR with PRF of 10 kHz and PRI of 100 μs, which sends out a
+10 μs-long pulse. The transmitted wave strikes two separate aircraft –
+the first at <em>t</em> = 25 μs (7.5 km) and the second at <em>t</em> = 40 μs (12 km).
+The RADAR’s receiver will then receive two distinct returns, the first
+at 50 μs and the second at 80 μs, meaning the RADAR will have no trouble
+resolving the aircraft as unique.</p>
+<p><img alt="" src="../../_images/image417.png" /></p>
+<p>Figure : A RADAR resolving two aircraft separated by more than the
+minimum range resolution.</p>
+<p>However, if the separation between the two aircraft reduces to 1.2 km,
+we will still receive two returns, but they are so close they overlap
+and can’t be distinguished. For example, the pulse hits the first
+aircraft at <em>t</em> = 25 μs (7.5 km) and the second aircraft at <em>t</em> = 29 μs
+(8.7 km). The returns arrive at the receiver at <em>t</em> = 50 μs and <em>t</em> = 58
+μs, respectively. Because the pulses are now overlapping, the RADAR will
+only see one continuous pulse. A RADAR operator may suspect that there
+is more than one aircraft out there, but there is no way to determine
+how many there are and how far apart they are from each other.</p>
+<p><img alt="" src="../../_images/image514.png" /></p>
+<p>Figure : A RADAR unable to resolve two aircraft because they are
+separated by less than the minimum range resolution.</p>
+<p>A RADAR’s pulse width determines the range resolution, ∆<em>R</em>:</p>
+<div class="math notranslate nohighlight">
+\[\Delta R = \ \frac{c(\tau)}{2}\]</div>
+<p>In other words, a RADAR’s pulse width setting directly determines ∆<em>R</em>
+where:</p>
+<ul class="simple">
+<li><p>If a RADAR’s targets are within ∆R of each other, the RADAR will not
+know exactly how many targets exist or exactly where the targets
+are.</p></li>
+<li><p>If the RADAR’s targets are separated by more than ∆R, the RADAR will
+be able to resolve them as individual entities.</p></li>
+</ul>
+<p>In the example above, the RADAR’s resolution is 1.5 km, so when the
+distance between the aircraft closed to 1.2 km, the planes were no
+longer seen as being separate.</p>
+<section id="example-problem-2">
+<h3>Example Problem 2<a class="headerlink" href="#example-problem-2" title="Link to this heading">#</a></h3>
+<p>Two inbound aircraft have a nose-tail separation
+of 20 m. If a tracking RADAR has a pulse width of <em>τ</em> = 1 μs, will it be
+able to tell if there is more than one airplane?</p>
+<p><strong>Understand:</strong> The pulse width of the RADAR determines the RADAR
+resolution.</p>
+<p><strong>Key Issues:</strong></p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the pulse width of the RADAR and the separation
+of the aircraft.</p></li>
+<li><p><strong>Unknowns</strong>: The range resolution for this pulse width.</p></li>
+<li><p><strong>Assumptions</strong>: None.</p></li>
+</ul>
+<p><strong>Plan:</strong> Calculate the range resolution of the RADAR and determine if
+the aircraft are separated by more than this distance.</p>
+<p><strong>Analysis:</strong> In the given problem, <em>τ</em> = 1 μs. We can use this to solve
+for the RADAR resolution,</p>
+<div class="math notranslate nohighlight">
+\[\Delta R = \ \frac{c\tau}{2}\  = \ \frac{\left( 3 \times 10^{8}\ m/s \right)(1 \times 10^{- 6}\ s)}{2}\  = 150\ m\]</div>
+<p>Therefore, with a pulse width of 1 μs, the RADAR cannot distinguish
+between objects with less than a 150-m separation. Since our planes are
+20 m apart, they will be seen as a single object.</p>
+<p><strong>Answer:</strong> No, the RADAR will not be able to tell that there is more
+than one airplane, because its RADAR resolution, Δ<em>R</em>, is 150 m.</p>
+</section>
+</section>
+<section id="target-speed-determination">
+<h2>Target Speed Determination<a class="headerlink" href="#target-speed-determination" title="Link to this heading">#</a></h2>
+<p>RADARs are well known for their ability to calculate the relative
+velocity of targets. To do so, they measure the frequency shift in a
+returned signal relative to the known frequency of the transmitted
+signal. It may seem counterintuitive that a system could receive a
+different frequency than it transmitted. What could cause the frequency
+of the RADAR return to differ from the transmitter frequency? This
+phenomenon is known as the <em>Doppler shift</em>. For example, a passing siren
+has a higher pitched tone as it approaches than it does after it passes
+by and moves away. The sound waves are traveling at a fixed speed, but
+the waves are compressed as the car approaches, creating an increase in
+frequency. As the car passes by, the waves stretch so that the peaks
+spread apart. This causes a decrease in the frequency. For a simple
+system such as that shown in Figure 6, the Doppler shift only occurs on
+the one-way trip from the source to the observer. However, in a RADAR,
+the Doppler shift is experienced twice: once as the wave strikes the
+target, since, in the plane’s frame of reference, the RADAR is moving
+and the plane is stationary; and again as the wave returns to the RADAR,
+as now, in the RADAR’s frame of reference, the plane is moving and the
+RADAR is stationary.</p>
+<p><img alt="" src="../../_images/image616.png" /></p>
+<p>Figure : Doppler Effect as experienced by a target moving towards the
+observer.</p>
+<p>For a stationary target, a RADAR return a pulse would be
+<span class="math notranslate nohighlight">\(V_{m}\cos{(360{^\circ}f_{o}t)}\)</span> where <em>f­<sub>o­</sub></em> is the RADAR’s transmitter
+frequency. However, an approaching target with a closing speed of <em>v</em>
+(m/s) will return a pulse of</p>
+<div class="math notranslate nohighlight">
+\[V_{m}\cos\left\lbrack 360{^\circ}\ f_{o}\left( 1 + \frac{2v}{c} \right)t \right\rbrack\]</div>
+<p>A retreating target will present a negative Doppler shift, leading to:</p>
+<div class="math notranslate nohighlight">
+\[A\cos\left\lbrack 360{^\circ}\ f_{o}\left( 1 - \frac{2v}{c} \right)t \right\rbrack\]</div>
+<p>If the target is not traveling straight toward the RADAR, but rather at
+an angle θ, the frequency for closing targets will be:</p>
+<div class="math notranslate nohighlight">
+\[f = f_{o}\left( 1 + \frac{2v\cos\theta}{c} \right)\]</div>
+<p>and for retreating targets:</p>
+<div class="math notranslate nohighlight">
+\[f = f_{o}\left( 1 - \frac{2v\cos\theta}{c} \right)\]</div>
+<p>In the equations on the preceding page, the angle θ is the angle between
+the target’s velocity vector (the direction it is heading) and a line
+drawn straight from the target to the RADAR.</p>
+<p>By determining the difference between the transmitted frequency and the
+frequency of the received RADAR return, the RADAR system can determine
+the relative speed with respect to the RADAR.</p>
+<section id="example-problem-3">
+<h3>Example Problem 3<a class="headerlink" href="#example-problem-3" title="Link to this heading">#</a></h3>
+<p>A supersonic aircraft is approaching a RADAR
+system at a speed of 400 m/s with an approach angle of 30°. If the RADAR
+uses a frequency of 1 GHz, at what frequency will the signal return?</p>
+<p><strong>Understand</strong>: The Doppler shift will help us determine the received
+frequency. Note that, for a RADAR, the Doppler shift is a two-way shift.
+Also, since the airplane is moving towards the RADAR, the frequency will
+increase. If the airplane were moving away, the frequency would
+decrease.</p>
+<p><strong>Identify Key Information</strong>:</p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the velocity of the incoming aircraft and the
+angle of its velocity vector with respect to the RADAR. We also know
+the transmitting frequency of the RADAR system.</p></li>
+<li><p><strong>Unknowns:</strong> The expected frequency of the RADAR return.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan:</strong> We can use the RADAR Doppler equation to calculate the
+expected return frequency.</p>
+<p><strong>Solve</strong>: Using the RADAR Doppler equation,</p>
+<div class="math notranslate nohighlight">
+\[f = \ f_{o}\left\lbrack 1 + \ \frac{2v\cos\theta}{c} \right\rbrack = (1\ GHz)\left\lbrack 1 + \ \frac{2(400\ m/s)\cos(30{^\circ})}{3 \times 10^{8}\ m/s} \right\rbrack = 1.000002309\ GHz\]</div>
+<p><strong>Answer</strong>: The return signal will be at a frequency of 1.00000<span class="math notranslate nohighlight">\(2309\)</span>
+GHz.</p>
+<p>Notice the use of significant figures here. Since the real information
+is in how much the signal changes (and the change in frequency is very
+small), we need to keep enough digits to capture that change.</p>
+</section>
+<section id="example-problem-4">
+<h3>Example Problem 4<a class="headerlink" href="#example-problem-4" title="Link to this heading">#</a></h3>
+<p>An airplane is flying overhead with an approach
+angle of 60°. If a RADAR signal departs at 300 MHz and returns at
+299.999875 MHz, how fast is the airplane travelling?</p>
+<p><strong>Understand</strong>: We can use Doppler shift to determine the speed of
+objects.</p>
+<p><strong>Identify Key Information</strong>:</p>
+<ul class="simple">
+<li><p><strong>Knowns:</strong> We know the transmitted and received frequencies and the
+angle of the velocity vector with respect to the RADAR.</p></li>
+<li><p><strong>Unknowns:</strong> The aircraft’s velocity.</p></li>
+<li><p><strong>Assumptions:</strong> None.</p></li>
+</ul>
+<p><strong>Plan</strong>: First, we will solve the Doppler equation for velocity. Then,
+we will use the given values to determine the velocity.</p>
+<p><strong>Solve:</strong> Solving for velocity, our original equation (for a closing
+target) becomes:</p>
+<div class="math notranslate nohighlight">
+\[v = \frac{c(f - \ f_{o})}{{2f}_{o}\cos\theta}\]</div>
+<p>We can now use this equation to solve for v:</p>
+<div class="math notranslate nohighlight">
+\[v = \ \frac{c(f - \ f_{o})}{2f_{o}\cos\theta} = \ \frac{(3 \times 10^{8}\ m/s)(299.999875\ MHz - \ 300\ MHz)}{2(300\ MHz)\cos{60{^\circ}}} = \  - 125\ m/s.\ \]</div>
+<p>Notice that the velocity is a <em>negative</em> <span class="math notranslate nohighlight">\(125\)</span> m/s, which means the
+target is <em>moving away</em> from the RADAR.</p>
+<p><strong>Answer</strong>: The airplane is moving away from the RADAR with a velocity
+of <span class="math notranslate nohighlight">\(125\)</span> m/s.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Block3Reading/Obj08"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Obj07/ECE215_B3_Obj07_Reading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Objective 3.7</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Obj09/ECE215_B3_Obj09_Reading.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Objective 3.9</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pulse-doppler-radar-introduction">Pulse-Doppler RADAR Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pulsed-radar-parameters">Pulsed RADAR Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum-unambiguous-range">Maximum Unambiguous Range</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radar-range-resolution">RADAR Range Resolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-2">Example Problem 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#target-speed-determination">Target Speed Determination</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-3">Example Problem 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-4">Example Problem 4</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DFEC
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
