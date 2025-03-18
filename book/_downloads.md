@@ -13,7 +13,7 @@ Some homework problems span several objectives. For example: PP4 has problems fr
 
  ### Block 1: Resistive Circuits Analysis and Power Distribution  
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w/ Answers)
-|----------|----------|----------|----------|
+|:----------:|:----------:|:----------:|:----------:|
 | 1.0  | [Course Overview L1](_static/ECE215_L01.pdf)  | NA | NA |
 | 1.1  | [L2-4](_static/B1_Obj01_DCcircuits_Slides.pdf)  | [PP1](_static/PPs/ECE215_PP01.pdf) <br> [PP2](_static/PPs/ECE215_PP02.pdf) <br> [PP3](_static/PPs/ECE215_PP03.pdf) <br> [PP4](_static/PPs/ECE215_PP04.pdf) | [PP1](_static/PPs/ECE215_PP01_answers.pdf) <br> [PP2](_static/PPs/ECE215_PP02_answers.pdf) <br> [PP3](_static/PPs/ECE215_PP03_answers.pdf) <br> [PP4](_static/PPs/ECE215_PP04_answers.pdf)   |
 | 1.2  | [L5](_static/B1_Obj02_CircuitProtection_Slides.pdf) | [PP4](_static/PPs/ECE215_PP04.pdf) | [PP4](_static/PPs/ECE215_PP04_answers.pdf)   |
@@ -27,7 +27,7 @@ Some homework problems span several objectives. For example: PP4 has problems fr
 ### Block 2: Signal Processing
 _Note: there is no PP11_
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
-|----------|----------|----------|----------|
+|:----------:|:----------:|:----------:|:----------:|
 | 2.1  | [L15](_static/B2_Obj01_FT_slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
 | 2.2  | [L15](_static/B2_Obj02_IdealFilters_slides.pdf) | [PP12](_static/PPs/ECE215_PP12.pdf) | [PP12](_static/PPs/ECE215_PP12_answers.pdf) |
 | 2.3  | [L16](_static/B2_Obj03_ComplexMath_slides.pdf) | [PP13](_static/PPs/ECE215_PP13.pdf) | [PP13](_static/PPs/ECE215_PP13_answers.pdf) |
@@ -35,11 +35,11 @@ _Note: there is no PP11_
 | 2.5  | [L20](_static/B2_Obj05_ADCI_slides.pdf) | [PP15](_static/PPs/ECE215_PP15.pdf) | [PP15](_static/PPs/ECE215_PP15_answers.pdf) |
 | 2.6  | [L21](_static/B2_Obj06_SignalConditioning_slides.pdf) | [PP16](_static/PPs/ECE215_PP16.pdf) | [PP16](_static/PPs/ECE215_PP16_answers.pdf) |
 | 2.7  | [L23](_static/B2_Obj07_DigitalLogic_slides.pdf) | [PP17](_static/PPs/ECE215_PP17.pdf) | [PP17](_static/PPs/ECE215_PP17_answers.pdf) |
-| 2.8  | [L24](_static/B2_Obj08_FSM_slides.pdf) |  |  |
+| 2.8  | [L24](_static/B2_Obj08_FSM_slides.pdf) | [PP18](_static/PPs/ECE215_PP18.pdf) | [PP18](_static/PPs/ECE215_PP18_answers.pdf) |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
-|----------|----------|----------|----------|
+|:----------:|:----------:|:----------:|:----------:|
 | 3.1  |  |  |  |
 | 3.2  |  |  |  |
 | 3.3  |  |  |  |
