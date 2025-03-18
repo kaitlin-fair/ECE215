@@ -115,3 +115,28 @@ $$P_{R} = SNR*k\left( T_{sys} \right)BW$$
 $$P_{R} = \ 3.5*\left( 1.38*\frac{10^{- 23}J}{K} \right)(320\ K)*12\ MHz = \ 185.5\ fW$$
 
 **Answer**: The minimum power required by the system is 185.5 fW.
+
+### Example Problem 3
+
+Consider a RADAR that transmits 1 kW of power at a frequency of
+300 MHz using an antenna with a gain of 150 towards an aircraft with a
+RADAR cross section (RCS) of 100 $m^2$, which is 86 km away. How much
+power will the RADAR receive and what will be the signal to noise ratio
+(SNR) at the RADAR's antenna? Solving for the received power, using the
+RADAR equation, gives:
+
+$$P_{R} = \ \frac{P_{T}G^{2}\sigma\left( \frac{c}{f} \right)^{2}}{({4\pi)}^{3}R^{4}} = \ \frac{(1000\ W)(150)^{2}(100\ m^{2})\left( \frac{3 \times 10^{8}\ m/s}{300 \times 10^{6}\ Hz} \right)^{2}}{({4\pi)}^{3}{(86,000\ m)}^{4}} = 20.73\ fW$$
+
+Now for many ultra-sensitive receivers, 20.73 fW is an acceptable power.
+However, what if the RADAR is still transmitting its 1 kW of power at
+the same time? If we treat this transmitted power as noise, we can
+calculate a signal to noise ratio of:
+
+$$SNR = \ \frac{P_{signal}}{P_{noise}}\  = \ \ \frac{20.73\ fW}{1\ kW} = 20.73 \times 10^{- 18}$$
+
+This number is unacceptably small -- no receiver will be able to
+distinguish the returned signal from the "noise" of the transmitter.
+There are two distinct ways to solve this problem: use separate antennas
+for transmitting and receiving (this is called *bistatic*) or send
+pulses of energy, instead of a continuous stream, with a *monostatic*
+RADAR (aka pulse-Doppler RADAR!). 
