@@ -36,8 +36,8 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 23 | [Obj 2.7](Block2Reading/Obj07/ECE215_B2_Obj07_Reading) |  |
 | 24 | [Obj 2.8](Block2Reading/Obj08/ECE215_B2_Obj08_Reading) |  |
 | 25 | [Obj 2.8](Block2Reading/Obj08/ECE215_B2_Obj08_Reading) | Quiz 6 Due (Objs 2.5-2.6) |
-| 26 | [Project 2 Workday](_static/Project2.md) |   |
-| 27 | [Project 2 Workday](_static/Project2.md) |   |
+| 26 | [Project 2 Workday](_static/Project2) |   |
+| 27 | [Project 2 Workday](_static/Project2) |   |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | Lesson | Topic | Due Dates |
