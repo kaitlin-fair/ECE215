@@ -2,6 +2,9 @@
 
 ## **Finite State Machine for Automated Sorting System**
 
+#### **Authorized Resources**: For this project you will work in groups of 2. You are **not** allowed to work with cadets outside your group or use materials from previous semesters. You **are** allowed to use any ECE 215/S course materials from this semester, get EI from ECE instructors, and use internet resources. You must appropriately document any use of internet resources. If using generative AI, such as ChatGPT, you must include the prompts in your documentation statement. You are responsible for demonstrating understanding of anything you get from generative AI.
+---
+
 ### **Practical Application: Automated Sorting System in a Factory**
 Consider an **automated conveyor belt system** used in a packaging factory to **sort products based on their sizes**. Your finite state machine (FSM) will classify and track items as they move along the conveyor belt.
 
