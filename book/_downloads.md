@@ -40,7 +40,7 @@ _Note: there is no PP11_
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
 |:----------:|:----------:|:----------:|:----------:|
-| 3.1  |  |  |  |
+| 3.1  | [L28](_static/B3_Obj01_Modulation_slides.pdf)|  |  |
 | 3.2  |  |  |  |
 | 3.3  |  |  |  |
 | 3.4  |  |  |  |
