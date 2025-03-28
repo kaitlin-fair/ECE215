@@ -112,7 +112,7 @@ radio jamming:
 
 > **Key Concept**
 >
-> $$SNR\  = \frac{P_{T}G_{T}R_{jam}^{2}}{P_{jam}G_{jam}R_{txrx}^{2}}\ $$
+> $SNR\  = \frac{P_{T}G_{T}R_{jam}^{2}}{P_{jam}G_{jam}R_{txrx}^{2}}\ $
 
 You may find this equation much more straightforward to use.
 Furthermore, from this equation, it is easier to see how, as the jammer
