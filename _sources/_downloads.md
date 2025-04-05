@@ -38,9 +38,12 @@ _Note: there is no PP11_
 | 2.8  | [L24](_static/B2_Obj08_FSM_slides.pdf) | [PP18](_static/PPs/ECE215_PP18.pdf) | [PP18](_static/PPs/ECE215_PP18_answers.pdf) |
 
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
+
+_Please note: headings on PPs have been fixed for this block and match objectives!_
+
 | LO# | Slides | Practice Problems (Blank) | Practice Problems (w Answers)
 |:----------:|:----------:|:----------:|:----------:|
-| 3.1  | [L28](_static/B3_Obj01_Modulation_slides.pdf)|  |  |
+| 3.1  | [L28](_static/B3_Obj01_Modulation_slides.pdf)| [PP3.1](_static/PPs/ECE_215_B3_Obj1_PPs.pdf) |  |
 | 3.2  |  |  |  |
 | 3.3  |  |  |  |
 | 3.4  |  |  |  |
