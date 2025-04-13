@@ -42,16 +42,16 @@ Note that the schedule may vary across sections given the classes are interactiv
 ### Block 3: Communication Systems, Radar, and Electronic Warfare
 | Lesson | Topic | Due Dates |
 |----------|----------|----------|
-| 28 | Obj 3.1 | Quiz 7 Due (Objs 2.7-2.8) | 
-| 29 | Obj 3.1 | Project 2 Due |
-| 30 | Obj 3.2 |  |
-| 31 | Obj 3.3 | Quiz 8 Due (Obj 3.1) |
-| 32 | Obj 3.4 |  |
-| 33 | Obj 3.5 |  |
-| 34 | Obj 3.6 - Obj 3.7 | Quiz 9 Due (Objs 3.2-3.4) |
-| 35 | Obj 3.8 |  |
+| 28 | [Obj 3.1](Block3Reading/Obj01/ECE215_B3_Obj01_Reading) | Quiz 7 Due (Objs 2.7-2.8) | 
+| 29 | [Obj 3.1](Block3Reading/Obj01/ECE215_B3_Obj01_Reading) | Project 2 Due |
+| 30 | [Obj 3.2](Block3Reading/Obj02/ECE215_B3_Obj02_Reading) |  |
+| 31 | [Obj 3.3](Block3Reading/Obj03/ECE215_B3_Obj03_Reading) |  |
+| 32 | [Obj 3.4](Block3Reading/Obj04/ECE215_B3_Obj04_Reading) |  |
+| 33 | Obj 3.5 | Quiz 8 Due (Objs 3.1-3.2) |
+| 34 | Obj 3.6 - Obj 3.7 |  |
+| 35 | Obj 3.8 | Quiz 9 Due (Objs 3.3-3.5) |
 | 36 | Obj 3.9 |  |
-| 37 | Obj 3.10 | Quiz 10 Due (Objs 3.5-3.8)  |
+| 37 | Obj 3.10 | Quiz 10 Due (Objs 3.6-3.8)  |
 | 38 | Obj 3.10 |  |
 | 39 | Project 3 Workday |  |
 | 40 | Project 3 Workday | Project 3 Due |
