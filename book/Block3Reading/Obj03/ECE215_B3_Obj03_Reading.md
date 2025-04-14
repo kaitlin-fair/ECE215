@@ -157,11 +157,22 @@ where the length of the antenna is given by:
 $$Length = \ \frac{\lambda}{2}$$
 
 In the above equation, λ is the wavelength of the electromagnetic wave
-that the antenna is designed to transmit and/or receive. In calculating
-the length of antennas, it is useful to recall the relationship between
-wavelength (λ) and frequency:
+that the antenna is designed to transmit and/or receive. Every sinusoidal signal has a wavelength, or the distance between two successive crests or troughs in the wave. In communications systems, this distance is typically measured in meters. Wavelength and frequency relate to each other using the following equation:
 
 $$\lambda = \ \frac{c}{f}$$
+
+Where:
+
+λ (lambda) is the wavelength of the signal propagated
+
+c is the speed of light (3.0 x 10^8^ $\frac{m}{s}$)
+
+f is the frequency of the signal being propagated.
+
+The relationship above shows that the wavelength of a signal gets larger
+as the frequency gets smaller. Understanding this relationship is
+critical as we go forward through this block, as communication media and
+antennas depend on the frequency of the signal being transmitted.
 
 The following example illustrates how to calculate the length of a
 half-wave dipole.

@@ -2,7 +2,7 @@
 
 | LO# | Description |
 |----------|----------|
-| 3.4 | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.   |
+| 3.4 | I can calculate the maximum line-of-sight (LOS) distance between two terrestrial objects.  |
 
 ## Communications Introduction
 
@@ -18,149 +18,10 @@ to another requires some form of pathway or medium. These pathways can
 be broadly categorized as either wired (such as a transmission line) or
 wireless. We call these pathways *communication media*. Some people
 refer to them as communications channels, so you may hear these two
-terms used synonymously. In this lesson, we will first talk about four
-different communication media, to include wireless, and then discuss
-four types of wireless radio frequency (RF) propagation methods.
+terms used synonymously. In this lesson, we will discuss
+four types of wireless radio frequency (RF) propagation methods and compute the distance at which terrestrial objects can communicate with RF using Line of Sight.
 
-Before discussing communication media, we need to define some common
-terminology. Every sinusoidal signal has a wavelength, or the distance
-between two successive crests or troughs in the wave. In communications
-systems, this distance is typically measured in meters. Wavelength and
-frequency relate to each other using the following equation:
-
-$$\lambda = \ \frac{c}{f}$$
-
-Where:
-
-λ (lambda) is the wavelength of the signal propagated
-
-c is the speed of light (3.0 x 10^8^ $\frac{m}{s}$)
-
-f is the frequency of the signal being propagated.
-
-The relationship above shows that the wavelength of a signal gets larger
-as the frequency gets smaller. Understanding this relationship is
-critical as we go forward through this block, as communication media and
-antennas depend on the frequency of the signal being transmitted.
-
-## Communication Media
-
-In general, there are four main types of communication media:
-
--   Transmission Lines (wires)
-
--   Waveguides
-
--   Optical fibers
-
--   Wireless
-
-|     |     |
-|:---:|:---:|
-|![](./ECE215_B3_Obj04_Reading_media/media/image1.png)|![](./ECE215_B3_Obj04_Reading_media/media/image2.png)|
-|**Transmission lines (coaxial cable)**|**Waveguide**|
-|![](./ECE215_B3_Obj04_Reading_media/media/image3.jpeg)|![](./ECE215_B3_Obj04_Reading_media/media/image4.png)|
-|**Optical Fibers**|**Wireless**|
-
-
-### Transmission Lines
-
-The principles governing *transmission line* behavior of were covered in
-Block 1. Recall, over long distances, transmission lines had an
-intrinsic impedance that reduced the efficiency of power transmission.
-Additionally, transmission lines can only support a limited range of
-frequencies. Specially designed lines (e.g., coaxial or Ethernet cables)
-can transmit signals up to a few hundred MHz, but above those
-frequencies wired transmission lines act like low pass filters.
-
-Despite these drawbacks, transmission lines do have some advantages: 1)
-they are very reliable, 2) they are easy to repair, and 3) they are
-relatively secure.
-
-## Waveguides
-
-A *waveguide* is simply a hollow pipe through which an electromagnetic
-signal is sent. The internal surfaces of a waveguide are highly
-reflective allowing for very efficient transmission of the signal. Many
-waveguides are rectangular in shape, although some are circular. Some
-microwave ovens use waveguides to convey the energy from the magnetron,
-which creates the signal, to the cooking chamber. In satellite dishes,
-waveguides are used to connect the transmitter to the antenna.
-
-The internal dimensions and shape of the waveguide determine which
-frequencies can be transmitted through it. If the wavelength is too
-large, the signal will not propagate in the waveguide. For example, high
-frequency signals have short wavelengths, so they propagate well through
-a waveguide; however, lower frequencies are blocked because of their
-long wavelengths. As such, a waveguide acts as a high pass filter. The
-cutoff frequency of a waveguide can be found using the equation:
-
-$$f_{c/o} = \ \frac{c}{2a}$$
-
-In this equation, *c* is the speed of light and *a* is the length of the
-longest side of the waveguide as shown here:
-
-![](./ECE215_B3_Obj04_Reading_media/media/image5.png)
-
-The primary advantage of waveguides is very low attenuation, which is to
-say the signal does not lose much power as it moves through the
-waveguide. Disadvantages of waveguides include being heavy, rigid,
-fairly difficult to repair, and expensive.
-
-### Example Problem 1
-A freeway underpass is 8 m tall and 18 m wide. If
-the underpass acts as a waveguide, will a signal from an AM radio
-station be able to pass through?
-
-**Understand**: Next time you're driving, tune to an AM station before
-driving under an underpass and see what happens.
-
-**Identify Key Information**:
-
--   **Knowns:** We know the dimensions of the underpass.
-
--   **Unknowns:** The cutoff frequency of the "waveguide", which is the
-    freeway.
-
--   **Assumptions:** AM radio stations transmit near 1 MHz.
-    Additionally, we assume the underpass acts like a waveguide.
-
-**Plan**: Since the freeway underpass acts like a high pass filter, we
-can use the waveguide equation to find the cutoff frequency and then
-compare that frequency with the frequency of an AM radio station.
-
-**Solve:** The waveguide equation is:
-
-$$f_{C} = \ \frac{c}{2a}\  = \ \ \frac{3*\ 10^{8}\ m/s}{2*(18\ m)}\  = 8.33\ MHz$$
-
-Since the cutoff frequency of the underpass "waveguide" is above that of
-the typical AM radio station, the underpass should prevent any
-frequencies below 8.33 MHz from passing. Therefore, AM stations will be
-blocked. FM stations, on the other hand, transmit near 100 MHz, and the
-FM signals can be received under the same underpass.
-
-## Optical Fibers
-
-*Optical fibers* act like waveguides for beams of light, which are very
-high frequency signals. The light signal itself is most often a laser
-beam, modulated by the information that is being sent. When transmitting
-light in an optical fiber, the light beam bounces off the sides of the
-glass fiber as it travels at the speed of light. Optical fibers allow
-for very large bandwidths, and even allow multiple signals (different
-"colors" of light) to be transmitted on the same fiber. Additionally,
-the fibers are flexible and are relatively inexpensive (especially when
-considering cost per bandwidth). Finally, optical fibers have relatively
-low loss per unit distance.
-
-The primary disadvantage of optical fibers is that they are very
-difficult to install and repair. Fibers must be entirely replaced, or
-spliced using complex equipment. Splicing optical fibers results in the
-introduction of additional loss into the fiber. For example, the F-22
-uses optical fiber to implement its "fly-by-light" system, but
-maintaining the cabling can be a nightmare for the crews, especially
-when donned in CBRNE gear.
-
-## Wireless
+## Wireless Communications
 
 *Wireless* communications use the electromagnetic spectrum to transmit
 and receive information without the use of wires, waveguides, or other
@@ -193,16 +54,14 @@ communications are widely used in today's world, and for that reason,
 various wireless communications will be the focus of the rest of this
 block.
 
-### Wireless Communications
-
-Imagine this scenario: you are stranded behind enemy lines, a few
+>Imagine this scenario: you are stranded behind enemy lines, a few
 kilometers from the smoking remains of your airplane. From intelligence
 briefs received before the mission, you know you're in a safe area, with
 only a very slight chance of capture. Still, you find a reasonably
 sheltered spot and pull out your survival radio, hoping to contact a
 rescue helicopter.
-
-In order to communicate with the helicopter, you will need to
+>
+>In order to communicate with the helicopter, you will need to
 communicate wirelessly. In your situation, though, how does it work? To
 be successful, you will need to understand how wireless communications
 work and what factors affect your communication system's performance.
