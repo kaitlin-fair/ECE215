@@ -45,7 +45,7 @@ _Please note: headings on PPs have been fixed for this block and match objective
 |:----------:|:----------:|:----------:|:----------:|
 | 3.1  | [L28-29](_static/B3_Obj01_Modulation_slides.pdf)| [PP3.1](_static/PPs/ECE_215_B3_Obj1_PPs.pdf) | [PP3.1](_static/PPs/ECE_215_B3_Obj1_PPs_answers.pdf) |
 | 3.2  | [L30](_static/B3_Obj02_Demod_slides.pdf) |  [PP3.2](_static/PPs/ECE215_B3_Obj02_PPs.pdf) | [PP3.2](_static/PPs/ECE215_B3_Obj02_PPs_answers.pdf)  |
-| 3.3  | [L31](_static/B3_Obj03_Antenna_slides.pdf) |  |  |
+| 3.3  | [L31](_static/B3_Obj03_Antenna_slides.pdf) | [PP3.3](_static/PPs/ECE215_B3_Obj03_PPs.pdf) |  |
 | 3.4  |  |  |  |
 | 3.5  |  |  |  |
 | 3.6  |  |  |  |
