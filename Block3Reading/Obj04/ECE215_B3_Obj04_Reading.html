@@ -422,17 +422,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communications-introduction">Communications Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication-media">Communication Media</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmission-lines">Transmission Lines</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#waveguides">Waveguides</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optical-fibers">Optical Fibers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wireless">Wireless</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wireless-communications">Wireless Communications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wireless-communications">Wireless Communications</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radio-frequency-rf-spectrum">Radio Frequency (RF) Spectrum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-propagation-methods">RF Propagation methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-and-bandwidth-considerations">Range and Bandwidth Considerations</a></li>
@@ -484,145 +474,11 @@ to another requires some form of pathway or medium. These pathways can
 be broadly categorized as either wired (such as a transmission line) or
 wireless. We call these pathways <em>communication media</em>. Some people
 refer to them as communications channels, so you may hear these two
-terms used synonymously. In this lesson, we will first talk about four
-different communication media, to include wireless, and then discuss
-four types of wireless radio frequency (RF) propagation methods.</p>
-<p>Before discussing communication media, we need to define some common
-terminology. Every sinusoidal signal has a wavelength, or the distance
-between two successive crests or troughs in the wave. In communications
-systems, this distance is typically measured in meters. Wavelength and
-frequency relate to each other using the following equation:</p>
-<div class="math notranslate nohighlight">
-\[\lambda = \ \frac{c}{f}\]</div>
-<p>Where:</p>
-<p>λ (lambda) is the wavelength of the signal propagated</p>
-<p>c is the speed of light (3.0 x 10^8^ <span class="math notranslate nohighlight">\(\frac{m}{s}\)</span>)</p>
-<p>f is the frequency of the signal being propagated.</p>
-<p>The relationship above shows that the wavelength of a signal gets larger
-as the frequency gets smaller. Understanding this relationship is
-critical as we go forward through this block, as communication media and
-antennas depend on the frequency of the signal being transmitted.</p>
+terms used synonymously. In this lesson, we will discuss
+four types of wireless radio frequency (RF) propagation methods and compute the distance at which terrestrial objects can communicate with RF using Line of Sight.</p>
 </section>
-<section id="communication-media">
-<h2>Communication Media<a class="headerlink" href="#communication-media" title="Link to this heading">#</a></h2>
-<p>In general, there are four main types of communication media:</p>
-<ul class="simple">
-<li><p>Transmission Lines (wires)</p></li>
-<li><p>Waveguides</p></li>
-<li><p>Optical fibers</p></li>
-<li><p>Wireless</p></li>
-</ul>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p></p></th>
-<th class="head text-center"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p><img alt="" src="../../_images/image129.png" /></p></td>
-<td class="text-center"><p><img alt="" src="../../_images/image223.png" /></p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p><strong>Transmission lines (coaxial cable)</strong></p></td>
-<td class="text-center"><p><strong>Waveguide</strong></p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p><img alt="" src="../../_images/image32.jpeg" /></p></td>
-<td class="text-center"><p><img alt="" src="../../_images/image416.png" /></p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p><strong>Optical Fibers</strong></p></td>
-<td class="text-center"><p><strong>Wireless</strong></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<section id="transmission-lines">
-<h3>Transmission Lines<a class="headerlink" href="#transmission-lines" title="Link to this heading">#</a></h3>
-<p>The principles governing <em>transmission line</em> behavior of were covered in
-Block 1. Recall, over long distances, transmission lines had an
-intrinsic impedance that reduced the efficiency of power transmission.
-Additionally, transmission lines can only support a limited range of
-frequencies. Specially designed lines (e.g., coaxial or Ethernet cables)
-can transmit signals up to a few hundred MHz, but above those
-frequencies wired transmission lines act like low pass filters.</p>
-<p>Despite these drawbacks, transmission lines do have some advantages: 1)
-they are very reliable, 2) they are easy to repair, and 3) they are
-relatively secure.</p>
-</section>
-</section>
-<section id="waveguides">
-<h2>Waveguides<a class="headerlink" href="#waveguides" title="Link to this heading">#</a></h2>
-<p>A <em>waveguide</em> is simply a hollow pipe through which an electromagnetic
-signal is sent. The internal surfaces of a waveguide are highly
-reflective allowing for very efficient transmission of the signal. Many
-waveguides are rectangular in shape, although some are circular. Some
-microwave ovens use waveguides to convey the energy from the magnetron,
-which creates the signal, to the cooking chamber. In satellite dishes,
-waveguides are used to connect the transmitter to the antenna.</p>
-<p>The internal dimensions and shape of the waveguide determine which
-frequencies can be transmitted through it. If the wavelength is too
-large, the signal will not propagate in the waveguide. For example, high
-frequency signals have short wavelengths, so they propagate well through
-a waveguide; however, lower frequencies are blocked because of their
-long wavelengths. As such, a waveguide acts as a high pass filter. The
-cutoff frequency of a waveguide can be found using the equation:</p>
-<div class="math notranslate nohighlight">
-\[f_{c/o} = \ \frac{c}{2a}\]</div>
-<p>In this equation, <em>c</em> is the speed of light and <em>a</em> is the length of the
-longest side of the waveguide as shown here:</p>
-<p><img alt="" src="../../_images/image513.png" /></p>
-<p>The primary advantage of waveguides is very low attenuation, which is to
-say the signal does not lose much power as it moves through the
-waveguide. Disadvantages of waveguides include being heavy, rigid,
-fairly difficult to repair, and expensive.</p>
-<section id="example-problem-1">
-<h3>Example Problem 1<a class="headerlink" href="#example-problem-1" title="Link to this heading">#</a></h3>
-<p>A freeway underpass is 8 m tall and 18 m wide. If
-the underpass acts as a waveguide, will a signal from an AM radio
-station be able to pass through?</p>
-<p><strong>Understand</strong>: Next time you’re driving, tune to an AM station before
-driving under an underpass and see what happens.</p>
-<p><strong>Identify Key Information</strong>:</p>
-<ul class="simple">
-<li><p><strong>Knowns:</strong> We know the dimensions of the underpass.</p></li>
-<li><p><strong>Unknowns:</strong> The cutoff frequency of the “waveguide”, which is the
-freeway.</p></li>
-<li><p><strong>Assumptions:</strong> AM radio stations transmit near 1 MHz.
-Additionally, we assume the underpass acts like a waveguide.</p></li>
-</ul>
-<p><strong>Plan</strong>: Since the freeway underpass acts like a high pass filter, we
-can use the waveguide equation to find the cutoff frequency and then
-compare that frequency with the frequency of an AM radio station.</p>
-<p><strong>Solve:</strong> The waveguide equation is:</p>
-<div class="math notranslate nohighlight">
-\[f_{C} = \ \frac{c}{2a}\  = \ \ \frac{3*\ 10^{8}\ m/s}{2*(18\ m)}\  = 8.33\ MHz\]</div>
-<p>Since the cutoff frequency of the underpass “waveguide” is above that of
-the typical AM radio station, the underpass should prevent any
-frequencies below 8.33 MHz from passing. Therefore, AM stations will be
-blocked. FM stations, on the other hand, transmit near 100 MHz, and the
-FM signals can be received under the same underpass.</p>
-</section>
-</section>
-<section id="optical-fibers">
-<h2>Optical Fibers<a class="headerlink" href="#optical-fibers" title="Link to this heading">#</a></h2>
-<p><em>Optical fibers</em> act like waveguides for beams of light, which are very
-high frequency signals. The light signal itself is most often a laser
-beam, modulated by the information that is being sent. When transmitting
-light in an optical fiber, the light beam bounces off the sides of the
-glass fiber as it travels at the speed of light. Optical fibers allow
-for very large bandwidths, and even allow multiple signals (different
-“colors” of light) to be transmitted on the same fiber. Additionally,
-the fibers are flexible and are relatively inexpensive (especially when
-considering cost per bandwidth). Finally, optical fibers have relatively
-low loss per unit distance.</p>
-<p>The primary disadvantage of optical fibers is that they are very
-difficult to install and repair. Fibers must be entirely replaced, or
-spliced using complex equipment. Splicing optical fibers results in the
-introduction of additional loss into the fiber. For example, the F-22
-uses optical fiber to implement its “fly-by-light” system, but
-maintaining the cabling can be a nightmare for the crews, especially
-when donned in CBRNE gear.</p>
-</section>
-<section id="wireless">
-<h2>Wireless<a class="headerlink" href="#wireless" title="Link to this heading">#</a></h2>
+<section id="wireless-communications">
+<h2>Wireless Communications<a class="headerlink" href="#wireless-communications" title="Link to this heading">#</a></h2>
 <p><em>Wireless</em> communications use the electromagnetic spectrum to transmit
 and receive information without the use of wires, waveguides, or other
 conductors. Typically, a wireless signal is transmitted from an antenna,
@@ -651,9 +507,8 @@ a transmission line, does not. Despite these disadvantages, wireless
 communications are widely used in today’s world, and for that reason,
 various wireless communications will be the focus of the rest of this
 block.</p>
-<section id="wireless-communications">
-<h3>Wireless Communications<a class="headerlink" href="#wireless-communications" title="Link to this heading">#</a></h3>
-<p>Imagine this scenario: you are stranded behind enemy lines, a few
+<blockquote>
+<div><p>Imagine this scenario: you are stranded behind enemy lines, a few
 kilometers from the smoking remains of your airplane. From intelligence
 briefs received before the mission, you know you’re in a safe area, with
 only a very slight chance of capture. Still, you find a reasonably
@@ -663,7 +518,7 @@ rescue helicopter.</p>
 communicate wirelessly. In your situation, though, how does it work? To
 be successful, you will need to understand how wireless communications
 work and what factors affect your communication system’s performance.</p>
-</section>
+</div></blockquote>
 <section id="radio-frequency-rf-spectrum">
 <h3>Radio Frequency (RF) Spectrum<a class="headerlink" href="#radio-frequency-rf-spectrum" title="Link to this heading">#</a></h3>
 <p>The lower end of the electromagnetic spectrum, called the RF spectrum,
@@ -840,7 +695,7 @@ exclusively by the carrier frequency. This figure also summarizes which
 radio frequencies are best suited to the four primary pathways that
 radio frequency waves propagate through the air and space: direct or
 line-of-sight (LOS), surface wave, sky wave, and forward scatter.</p>
-<p><img alt="" src="../../_images/image1210.png" /></p>
+<p><img alt="" src="../../_images/image129.png" /></p>
 <p>Figure 7: The RF spectrum and the associated wireless RF propagation
 methods.</p>
 <ul class="simple">
@@ -1094,17 +949,7 @@ distance of 73.25 miles, which is 10 miles farther than before.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communications-introduction">Communications Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication-media">Communication Media</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmission-lines">Transmission Lines</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#waveguides">Waveguides</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-1">Example Problem 1</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optical-fibers">Optical Fibers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wireless">Wireless</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wireless-communications">Wireless Communications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wireless-communications">Wireless Communications</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radio-frequency-rf-spectrum">Radio Frequency (RF) Spectrum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-propagation-methods">RF Propagation methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-and-bandwidth-considerations">Range and Bandwidth Considerations</a></li>
