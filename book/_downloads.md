@@ -48,8 +48,8 @@ _Please note: headings on PPs have been fixed for this block and match objective
 | 3.3  | [L31](_static/B3_Obj03_Antenna_slides.pdf) | [PP3.3](_static/PPs/ECE215_B3_Obj03_PPs.pdf) | [PP3.3](_static/PPs/ECE215_B3_Obj03_PPs_answers.pdf)  |
 | 3.4  | [L32](_static/B3_Obj04_LOS_slides.pdf) |  [PP3.4](_static/PPs/ECE215_B3_Obj04_PPs.pdf) | [PP3.4](_static/PPs/ECE215_B3_Obj04_PPs_answers.pdf) |
 | 3.5  | [L32-33](_static/B3_Obj05_Friis_slides.pdf) |  [PP3.5](_static/PPs/ECE215_B3_Obj05_PPs.pdf) | [PP3.5](_static/PPs/ECE215_B3_Obj05_PPs_answers.pdf)   |
-| 3.6  |  | [PP3.6](_static/PPs/ECE215_B3_Obj06_PPs.pdf) | [PP3.6](_static/PPs/ECE215_B3_Obj06_PPs_answers.pdf)   |
-| 3.7  |  | [PP3.7](_static/PPs/ECE215_B3_Obj07_PPs.pdf) | [PP3.7](_static/PPs/ECE215_B3_Obj07_PPs_answers.pdf)    |
-| 3.8  |  |  |  |
+| 3.6  |  | [PP3.6](_static/PPs/ECE215_B3_Obj06_PPs.pdf) | [PP3.6](_static/PPs/ECE215_B3_Obj06_PPs_answers.pdf) |
+| 3.7  |  | [PP3.7](_static/PPs/ECE215_B3_Obj07_PPs.pdf) | [PP3.7](_static/PPs/ECE215_B3_Obj07_PPs_answers.pdf) |
+| 3.8  |  |  [PP3.8](_static/PPs/ECE215_B3_Obj08_PPs.pdf) | [PP3.8](_static/PPs/ECE215_B3_Obj08_PPs_answers.pdf)  |
 | 3.9  |  |  |  |
 | 3.10  |  |  |  |
