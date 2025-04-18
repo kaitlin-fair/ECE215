@@ -51,5 +51,5 @@ _Please note: headings on PPs have been fixed for this block and match objective
 | 3.6  | [L34](_static/B3_Obj06_Tgtdistance_slides.pdf) | [PP3.6](_static/PPs/ECE215_B3_Obj06_PPs.pdf) | [PP3.6](_static/PPs/ECE215_B3_Obj06_PPs_answers.pdf) |
 | 3.7  | [L34](_static/B3_Obj07_RangeEqn_slides.pdf) | [PP3.7](_static/PPs/ECE215_B3_Obj07_PPs.pdf) | [PP3.7](_static/PPs/ECE215_B3_Obj07_PPs_answers.pdf) |
 | 3.8  |  |  [PP3.8](_static/PPs/ECE215_B3_Obj08_PPs.pdf) | [PP3.8](_static/PPs/ECE215_B3_Obj08_PPs_answers.pdf)  |
-| 3.9  |  |  |  |
-| 3.10  |  |  |  |
+| 3.9  |  |  [PP3.9](_static/PPs/ECE215_B3_Obj09_PPs.pdf) | [PP3.8](_static/PPs/ECE215_B3_Obj09_PPs_answers.pdf)  |
+| 3.10  |  |  [PP3.10](_static/PPs/ECE215_B3_Obj10_PPs.pdf) | [PP3.10](_static/PPs/ECE215_B3_Obj10_PPs_answers.pdf)  |
