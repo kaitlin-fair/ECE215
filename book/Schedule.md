@@ -52,6 +52,6 @@ Note that the schedule may vary across sections given the classes are interactiv
 | 35 | [Obj 3.8](Block3Reading/Obj08/ECE215_B3_Obj08_Reading) | Quiz 9 Due (Objs 3.3-3.5) |
 | 36 | [Obj 3.9](Block3Reading/Obj09/ECE215_B3_Obj09_Reading) - [Obj 3.10](Block3Reading/Obj10/ECE215_B3_Obj10_Reading) |  |
 | 37 | Project 3 Workday |  |
-| 38 | [Obj 3.10](Block3Reading/Obj10/ECE215_B3_Obj10_Reading) | Guest speaker; Quiz 10 Due (Objs 3.6-3.9)|
+| 38 | Guest speaker (EW) | Quiz 10 Due (Objs 3.6-3.9)|
 | 39 | Project 3 - MDL | Project 3 Due |
 | 40 | Review Day |  |
