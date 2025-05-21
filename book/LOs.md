@@ -40,6 +40,6 @@ Note that the number to the left of the decimal for your learning objective is t
 | [3.5](Block3Reading/Obj05/ECE215_B3_Obj05_Reading) | I can calculate the maximum communication distance between a transmitter and receiver using the Friis and Line-of-Sight equations.  |
 | [3.6](Block3Reading/Obj06/ECE215_B3_Obj06_Reading) | I can calculate the distance from a monostatic radar to a stationary target based on pulse timing, assuming a direct line-of-sight path. |
 | [3.7](Block3Reading/Obj07/ECE215_B3_Obj07_Reading) | I can calculate the maximum detection range from a radar antenna to a target using the Radar Range equation. |  
-| [3.8](Block3Reading/Obj08/ECE215_B3_Obj08_Reading) | I can calculate the range resolution, unambiguous range, and a target's velocity for pulse Doppler radar. |
-| [3.9](Block3Reading/Obj09/ECE215_B3_Obj09_Reading) | I can calculate signal-to-noise ratio (SNR) and determine the affects on wireless communications. |
+| [3.8](Block3Reading/Obj08/ECE215_B3_Obj08_Reading) | I can calculate the range resolution, unambiguous range, and target velocity for pulse Doppler radar. |
+| [3.9](Block3Reading/Obj09/ECE215_B3_Obj09_Reading) | I can calculate signal-to-noise ratio (SNR) and determine the effects on wireless communications. |
 | [3.10](Block3Reading/Obj10/ECE215_B3_Obj10_Reading) | I can analyze jamming scenarios using the Friis equation, RADAR equation, and SNR. |
